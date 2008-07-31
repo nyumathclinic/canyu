@@ -2,11 +2,11 @@
 .. meta:: 
    :description: Calendar for Math 121, Fall 2008
    :keywords: Math 121, NYU, Math, Calculus
-   :DC.Identifier scheme=subversion: $Id: cal.txt 239 2008-02-05 16:10:33Z matthew $
+   :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2008-07-15
-   :DCT.Modified scheme=subversion: $Date: 2008-02-05 11:10:33 -0500 (Tue, 05 Feb 2008) $
+   :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
 
