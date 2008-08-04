@@ -19,8 +19,9 @@ $(RST2HTML): $(DUDIR)/tools/rst2html.py
 	cd $(DUDIR) && $(PYTHON) setup.py install --home=$(DUDIR);\
 	echo "#!/usr/bin/env python\n\
 import sys\n\
+sys.path.append('$(shell cd $(LIBDIR) && pwd)')\n\
 sys.path.append('$(shell cd $(DUDIR) && pwd)/lib/python')" > $(RST2HTML); \
-	cat $(DUDIR)/tools/rst2html.py >> $(RST2HTML)
+	cat $(LIBDIR)/rst2html.py >> $(RST2HTML)
 	chmod 701 $(RST2HTML)
 
 %.html: %.txt $(RST2HTML)
