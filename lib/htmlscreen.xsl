@@ -7,7 +7,7 @@
    exclude-result-prefixes="html"
    extension-element-prefixes="date">
 
-  <rdf:Description about="$Id: html2isite.xsl 104 2007-09-10 12:30:55Z matthew $"
+  <rdf:Description about="$Id$"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/1.0"
@@ -22,8 +22,8 @@
       </foaf:Person>
     </dc:creator>
     <dct:created>2005-06-05</dct:created>
-    <dct:modified>$Date: 2007-09-10 08:30:55 -0400 (Mon, 10 Sep 2007) $</dct:modified>
-    <dc:identifier>$HeadURL: file:///Users/matthew/Library/svnroot/courses/1a/2008Spring/docs/build/trunk/html2isite.xsl $</dc:identifier>
+    <dct:modified>$Date$</dct:modified>
+    <dc:identifier>$HeadURL$</dc:identifier>
   </rdf:Description>
 
 <xsl:output 
@@ -45,13 +45,30 @@
 
 <xsl:template name="htmlhead">
   <xsl:apply-templates select="html:head" />
-  <link rel="stylesheet" type="text/css" media="all" href="/style/math.css" />
-  <link rel="stylesheet" type="text/css" media="print" href="/style/print.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="http://www.math.nyu.edu/style/math.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="http://www.math.nyu.edu/style/print.css" />
+  <xsl:call-template name="stylesheet" />
   <link rel="icon" href="/images/favicon.gif" type="image/x-icon" />
   <link rel="shortcut icon" href="/images/favicon.gif" type="image/x-icon" />
   <script type="text/javascript" src="/scripts/EventHandler.js"></script>
   <script type="text/javascript" src="/scripts/ClearSearch.js"></script>
   <script type="text/javascript" src="/scripts/drop_down.js"></script>
+</xsl:template>
+
+<xsl:template name="stylesheet">
+  <style type="text/css">
+    #primary table { font-size: 12px; }
+    #primary ul {
+      list-style-type: disc;
+    }
+    #primary ul ul {
+      list-style-type: circle;
+    } 
+    #secondary li {
+      list-style-type: none;
+      list-style-image: none;
+    }
+  </style>
 </xsl:template>
 
 <xsl:template name="htmlbody"> 
@@ -143,6 +160,17 @@
 <xsl:template name="content">
   <xsl:comment>Begin Content Box</xsl:comment>
      <div id="primary" class="C1">
+       <xsl:if test="//html:h1[@class='title']" >
+	 <h1 class="bar">
+	   <xsl:value-of select="//html:h1[@class='title'][1]" />
+	 </h1>
+       </xsl:if>
+       <xsl:if test="//html:div[@id='contents']">
+	 <div id="secondary">
+	   <h1 class="bar">Contents</h1>
+	   <xsl:apply-templates select="//html:div[@id='contents']/html:ul" />
+	 </div>
+       </xsl:if>
        <xsl:apply-templates select="html:body" />
      </div>
      <div class="clear"></div><xsl:comment>Box Height Hack</xsl:comment>
@@ -158,10 +186,6 @@
   <xsl:comment>End Footer</xsl:comment>
 </xsl:template>
 
-<!-- strip these elements, copying their content only -->
-<xsl:template match="html:head|html:body" >
-  <xsl:apply-templates />
-</xsl:template>
 
 
 <!-- prepend CIMS to html title -->
@@ -169,12 +193,19 @@
   <title>CIMS > <xsl:value-of select="."/></title>
 </xsl:template>
 
-<!-- change class of page title -->
-<xsl:template match="html:h1[@class='title']">
-  <h1 class="bar">
-    <xsl:apply-templates />
-  </h1>
+
+  <!-- skip these elements and attributes (often included elsewhere in the stream ) -->
+  <xsl:template 
+     match="html:style[@type='text/css']
+	  | html:h1[@class='title']
+          | html:div[@id='contents']"
+     />
+
+<!-- strip these elements, copying their content only -->
+<xsl:template match="html:head|html:body" >
+  <xsl:apply-templates />
 </xsl:template>
+
 
   <!-- Default BEHAVIOR: identity transformation -->
   <xsl:template match="@*|node()">
