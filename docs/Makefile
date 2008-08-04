@@ -16,9 +16,9 @@ include $(LIBDIR)/isites.mk
 # Use txt files as source
 TXTSRC=$(shell ls *.txt)
 HTML=$(TXTSRC:%.txt=%.html)
-ISITES=$(TXTSRC:%.txt=%-isites.html)
+HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 
-ALLFILES=$(HTML) $(ISITES)
+ALLFILES=$(HTML) $(HTML_SCREEN)
 
 DIRTY+= $(TRG:%.dvi=%.idv) $(TRG:%.dvi=%.4tc) $(TRG:%.dvi=%.4ct) $(TRG:%.dvi=%.tmp) $(TRG:%.dvi=%.lg) $(TRG:%.dvi=%.xref)   
 
