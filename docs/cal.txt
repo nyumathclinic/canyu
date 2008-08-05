@@ -54,7 +54,7 @@ Classes begin Tuesday, September 2.
 | 7  | 10/15-10/17 | 3.3     | Derivatives of logarithmic and              |             |
 |    |             |         | exponential functions                       | [#wk7]_     |
 +----+-------------+---------+---------------------------------------------+-------------+
-| 8  | 10/20-10/24 | 3.4     | Exponential growth and decay                |             |
+| 8  | 10/20-10/24 | 3.4     | Exponential growth and decay                | [#mt]_      |
 |    |             +---------+---------------------------------------------+-------------+
 |    |             | 3.5     | Inverse trigonometric functions             |             |
 |    |             +---------+---------------------------------------------+-------------+
@@ -111,6 +111,8 @@ Notes
    different.
 
 .. [#bdr] This is the power rule and the "derivative is linear" rules
+
+.. [#mt] This might be a good week for the midterm.
 
 .. [#rr] I'm ambivalent about related rates problems since they seem
    to exist only for their own self-justification.  But they do help
