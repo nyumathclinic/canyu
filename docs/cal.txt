@@ -16,8 +16,7 @@ Calendar for Math 121, Fall 2008
 Classes begin Tuesday, September 2.
 
 +----+-------------+---------+---------------------------------------------+-------------+
-|Week| Dates       | Book    | Topics                                      | Notes       |
-|    |             |Section  |                                             |             |
+|Week| Dates       | Section | Topics                                      | Notes       |
 +====+=============+=========+=============================================+=============+
 | 1  | 9/2-9/5     | 1.1     | Functions and their Representations         | [#bcp]_     |
 |    |             +---------+---------------------------------------------+-------------+

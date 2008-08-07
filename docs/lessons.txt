@@ -10,11 +10,1382 @@
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
 
+
 Lesson Outline for Math 121, Fall 2008
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Lesson 25: Approximate Integration
+.. contents::
+   :depth: 1
+   :backlinks: none
+
+Lesson 1: Functions and their Representations
+=============================================
+
+:MW Date: September 3
+:TR Date: September 2
+:Duration: varies
+:See Also: Stewart_, Section 1.1
+
+Learning Objectives
+-------------------
+
+* Understand the definition of *function*.
+
+* Work with functions represented in different ways:
+
+  - symbolically, or algebraically, i.e., by an explicit formula;
+
+  - numerically, i.e., by a table of values;
+
+  - graphically, i.e., by a picture of its graph;
+
+  - verbally, i.e., a description of the function in natural language.
+
+* Work with functions defined *piecewise* over several intervals.
+
+* Understand and apply the definition of *increasing function*.
+
+* Understand and apply the definition of *decreasing function*.
+
+* Understand and apply the definition of *even function*.
+
+* Understand and apply the definition of *odd function*.
+
+Notes
+-----
+
+September 1 is a holiday and no classes will meet.  This means that MW
+sections will only meet Wednesday, and Lessons 1 and 2 will have to be
+compressed into one class period.  Worse, there should be some kind of
+icebreaker on the first day of class, meaning even more material must
+be compressed.  Luckily, this is foundational material and pretty
+easily digested.
+
+Lesson 2: A Catalog of Essential Functions
+==========================================
+
+:MW Date: September 3
+:TR Date: September 4
+:Duration: varies
+:See Also: Stewart_, Section 1.2
+
+Learning Objectives
+-------------------
+
+* Identify different classes of algebraic functions, including:
+
+  - *polynomial* (especially *linear*, *quadratic*, and *cubic*);
+
+  - *rational*;
+
+  - *power*;
+
+  - *trigonometric*;
+
+  - *exponential*.
+
+* Understand the effect of algebraic transformations on the graph of a
+  function, for instance:
+
+  - the graph of :latex:`$y=f(x) + c$` is the graph of $y=f(x)$ moved
+    up by *c*;
+
+  - the graph of :latex:`$y=f(x) - c$` is the graph of $y=f(x)$ moved
+    down by *c*;
+
+  - the graph of :latex:`$y=f(x+c)$` is the graph of $y=f(x)$ moved
+    to the left by *c*;
+
+  - the graph of :latex:`$y=f(x-c)$` is the graph of $y=f(x)$ moved
+    to the right by *c*;
+
+  - the graph of :latex:`$y=c f(x)$` is the graph of $y=f(x)$ scaled
+    vertically by a factor of *c*;
+
+  - the graph of :latex:`$y= f(cx)$` is the graph of $y=f(x)$ scaled
+    horizontally by a factor of *1/c*.
+
+* Understand and compute the *composition* of two functions.
+
+Notes
+-----
+
+See the note above for MW sections about timing.  TR sections shoud
+have plenty of time to complete a worksheet about the geometric
+effects.  Students will probably find this part difficult.
+
+Lesson 3: The Limit of a Function
+=================================
+
+
+:MW Date: September 8
+:TR Date: September 9
+:Duration: one class period
+:See Also: Stewart_, Section 1.3
+
+Learning Objectives
+-------------------
+
+* Understand and state the informal definition of a limit.
+
+* Observe limits on a graph.
+
+* Guess limits by algebraic manipulation.
+
+* Guess limits by numerical information.
+
+Notes
+-----
+
+The informal definition (if that's not a contadiction in terms) in
+Stewart is something like ":latex:`$\lim_{x\to a} f(x) = L$` if values
+of *f(x)* can be made arbitrarily close to *L* by taking *x* to be
+sufficiently close to *a* (and not equal to *a*)."  The adverbs
+"arbitrarily" and "sufficiently" translate into the ":latex:`$\forall\
+\epsilon > 0$`" and ":latex:`$\exists\ \delta > 0$`" statements, but
+don't tell them that.  We are not going to do the precise definition
+of a limit.
+
+I like to frame this as a game between the students and me.  One team
+sets the maximum error allowed---how close do you need *f(x)* to be to
+*L*?  The other shows a "tolerance" interval around *a* such that if
+*x* is within that interval then *f(x)* is within the error interval
+around *L*.  This can all be done on a graph without any arithmetic or
+inequalities discussed.  In the next round, the error player reduces
+the allowable error, and the tolerance player adjusts his interval to
+get *f(x)* within the error.
+
+The number *L* is the limit if no matter what error is a small enough
+tolerance can be found.
+
+You can discuss the ways a limit can fail to exist also in terms of
+the error-tolerance game.
+
+* You can have an ambivalence of limits.  This is a good time to
+  introduce the concept of one-sided limits.  They will probably have
+  this terminology; show how to adjust the definition.  In the game,
+  either one of the one-sided limits could be the limit, but if
+  they're different, it's impossible to get arbitrarily close to both
+  of them.
+
+A limit will fail to exist if the one-sided limits exist and disagree.
+
+* You can have unboundedness.  If values of *f(x)* get arbitrarily
+  large near *a* they can't get arbitrarily "close" to anything.
+
+* Finally, you can whip out :latex:`$f(x) = \sin(\pi/x)$` near 0.  This is an
+  advanced example, to be sure; you can use it to challenge those who
+  really know what's going on.  The point of this example is that it
+  hits every value between -1 and 1 infinitely many times in any
+  neighborhood of 0.  Oy!
+
+
+
+Lesson 4: Calculating Limits
+============================
+
+:MW Date: September 10
+:TR Date: September 11
+:Duration: one class period
+:See Also: Stewart_, Section 1.4
+
+Learning Objectives
+-------------------
+
+* Know basic limits like :latex:`$\lim_{x\to a} x = a$` and
+  :latex:`$\lim_{x\to a} c = c$`.
+
+* Use the limit laws to compute elementary limits.
+
+* Use algebra to simplify limits.
+
+* Understand and state the Squeeze Theorem.
+
+* Use the Squeeze Theorem to demonstrate a limit.
+
+Notes
+-----
+
+The basic limits should be easy.  Then state the limit laws, hand-wave
+through justifying them, emphasizing their simplicity.  The only
+exception is the quotient rule, which has the caveat that the limit of
+the denominator can't be zero.  Of course, that's where all the fun
+is!
+
+The big result here is that polynomials are continuous, and rational
+functions are continuous wherever there's defined (denominator is not
+zero).  You can say *polynomial*, but don't say *continuous*.  That's
+for the next time.
+
+The Squeeze theorem is also a pretty fundamental result.  You can use
+it to show the existence of certain limits, and we will use it later
+on when we prove the Fundamental Theorem of Calculus.  Students will
+wonder how to come up with the magic bounds; this is a good time to
+remind them that :latex:`$|\sin x|\leq 1$` for all *x*. [#]_
+
+.. [#] My experience is that calculus students get nervous the exact
+       minute the < sign goes on the board.  When you start thinking
+       of inequalities, you introduce nonlinear thinking and more than
+       one correct answer.  This can be unsettling to novices.  So be
+       aware of that.
+
+The Squeeze Theorem is used here to prove that :latex:`$\lim_{x\to
+0}\frac{\sin x}{x} = 1$`.  The fundamental inequality here is that
+for :latex:`$x<\pi/2$`, :latex:`$\sin x < x < \tan x$`.  Show the
+picture (Figure 8 on page 42) to justify that.
+
+
+Lesson 5: Continuity
+====================
+
+:MW Date: September 15
+:TR Date: September 16
+:Duration: one class period
+:See Also: Stewart_, Section 1.5
+
+Learning Objectives
+-------------------
+
+* Understand and apply the definition of *continuity* for a function
+  at a point or on an interval.
+
+* Given a piecewise defined function, decide where it is continuous or
+  discontinuous.
+
+* State and understand the Intermediate Value Theorem.
+
+* Use the Intermediate Value Theorem to show that a function takes a
+  certain value.
+
+* Use the Intermediate Value Theorem to show that an equation has a
+  solution.
+
+* Use the Intermediate Value Theorem on conceptual functions.
+
+
+Notes
+-----
+
+Definition
+~~~~~~~~~~
+
+Students have an intuitive concept of continuity: you can draw the
+graph "without picking up your pencil." See if you can move them
+towards a definition involving limits.
+
+We've already determined that rational functions are continuous (on
+their dowmains); go over the other elementary functions: other powers,
+roots, trigonometric functions, inverse trigonometric function,
+exponential functions, and logarithmic functions.  All of these are
+continuous on their domains.
+
+So what functions aren't continuous?  You either need the limit to not
+exist at a point, or the limit exists but is different from the
+function value.  The last is called a *removable discontinuity*;
+the more interesting continuity failures are the asymptotes and jump
+discontinuities.
+
+You can go over some of the famous functions with discontinuities: the
+greatest integer function, the Heaviside function, or the signum
+function.
+
+Intermediate Value Theorem
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here are some discussion questions to get started:
+
+* Were you ever exactly three feet tall?
+
+* Was your height (in inches) every equal to your weight (in pounds)?
+
+* Is there a pair of points on opposite sides of the world at the same
+  temperature at the same time?
+
+
+The IVT is one of the most important "topological" theorems in
+calculus.  We can't prove it (it relies on the fact that closed
+intervals are connected), but you can justify it kind of like this: if
+the function is continuous on *[a,b]*, the the graph connects
+*(a,f(a))* and *(b,f(b))* by a "string." A horizontal line between
+*f(a)* and *f(b)* must be crossed by this string, unless you cut it
+which breaks continuity.
+
+Once you've established that, you can prove that :latex:`$\sqrt{2}$`
+is a real number by applying the IVT to :latex:`$f(x) = x^2$` on
+*[1,2]*.  Notice that applying the IVT to :latex:`$f(x) = \sqrt{x}$`
+is putting the cart before the horse: we can't say that's continuous
+without knowing if it has values at non-square integers.
+
+Now ask again: were you ever exactly three feet tall?
+
+Then give them an equation and show how to construct a function so
+that the function takes a specific value at a solution of the
+equation.  If the equation is :latex:`$f(x) = g(x)$`, try the function
+:latex:$h(x) =f(x) - g(x)$`.  That's obvious to you and me but it
+probably wasn't until the first time we saw it.  Now you can tackle
+the height vs. weight question.
+
+Now ponder the last question if you have time...
+
+
+Lesson 6: Limits Involving Infinity
+===================================
+
+:MW Date: September 17
+:TR Date: September 18
+:Duration: one class period
+:See Also: Stewart_, Section 1.6
+
+Learning Objectives
+-------------------
+
+* "Intuit" limits involving infinity by eyeballing the expression.
+
+* Show limits involving infinity by algebraic manipulation and
+  conceptual argument.
+
+Notes
+-----
+
+Limits at infinity
+~~~~~~~~~~~~~~~~~~
+
+I think our students should have a facility and familiarity with
+algebraic expressions, knowing which are the most important (i.e.,
+dominant).  For instance, given a limit like
+:latex:`$$\lim_{x\to\infty}\frac{3x^2 + 17x -12}{12x^2 + 3x - 17}$$`,
+the student should be able to quickly decide that the limit is 1/4 by
+looking at the coefficients of the highest order terms.  They should
+also be able to algebraically manipulate this expression by factoring
+out :latex:`$x^2$` from the numerator and denominator, canceling, and
+using the fact that :latex:`$\lim_{x\to\infty}\frac{1}{x} = 0$`.  We
+want to them to both know the answer and be able to demonstrate it.
+
+Here's a good time to talk about my favorite horizontal asymptote:
+:latex:`$\lim_{x\to\infty}\arctan x = \frac{\pi}{2}$`.
+
+Infinite Limits
+~~~~~~~~~~~~~~~
+
+It's pretty clear that :latex:`$\lim_{x\to 0^+} \frac{1}{x}$` does not exist.
+As *x* gets smaller, :latex:`$\frac{1}{x}$` gets larger.  In fact, no matter
+how large we want :latex:`$\frac{1}{x}$` to be, we can make *x* small enough to
+guarantee :latex:`\frac{1}{x}` is larger.  You can tell them that this
+fundamental concept of real numbers is due to Archimedes.
+
+This leads to an extension of the definition of limit to include the
+possibility of an infinite limit.  A vertical asymptote is the
+graphical manifestation of an infinite limit.
+
+Now go over the functions which have infinite limits at limit points
+of their domain: rational functions, sec, tan, csc, cot, and so on.
+Also make sure you help them discover that :latex:`$\lim_{x\to 0^+}
+\ln x = -\infty$`.  They never remember that one.
+
+Finally, you can go over the limit laws again but warn them that some
+of them apply when the limits are infinite, and some do not.  For
+instance, what should :latex:`$\lim_{x\to 0^+} \left(\frac{1}{x} -
+\frac{1}{x^2}\right)$` be?  Infinite limits are a special case of a
+limit failing to exist, rather than an extension of the concept of a
+limit succeeding in existing.  Otherwise, we'd have to go back and
+rewrite the limit laws to exclude all the bad arithmetic with
+|infinity|.
+
+
+Lesson 7: Derivatives and Rates of Change
+=========================================
+
+:MW Date: September 22
+:TR Date: September 23
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 2.1
+
+
+Learning Objectives
+-------------------
+
+* Understand and state the definition of the derivative of a function
+  at a point.
+
+* Given a function and a point in its domain, decide if the function
+  is differentiable at the point and find the value of the derivative
+  at that point.
+
+* Understand and give several examples of derivatives modeling rates
+  of change in science.
+
+Notes
+-----
+
+Walk them through the limit-of-difference-quotients computation for
+some function, then give them one to try on their own.
+
+You will have students who know the "shortcuts" for calculating
+derivatives, and will have trouble understanding the point of
+calculations like these when they know all the secrets already.  Try
+not to give them the impression that what you're asking them to do is
+a slower version of what they know.  Instead, it's a deeper
+understanding of what a derivative actually *is*.  Before they
+learned to drive the car.  Now they will learn to fix the car.
+
+It might help to have the class work on different examples based on
+their ability and experience here.
+
+
+Lesson 8: The Derivative as a Function
+======================================
+
+:MW Date: September 22-4
+:TR Date: September 23-5
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 2.2
+
+Learning Objectives
+-------------------
+
+* Given a function *f*, use the definition of the derivative to find the
+  derivative function *f'*.
+
+* Given a function, find its *second derivative.*
+
+* Given the graph of a function, sketch the graph of its derivative.
+
+Notes
+-----
+
+The previous section is about the derivative at a point.  This section
+is about the \emph{derived function} of *f*, the function *f'*.
+
+An important theorem is *f* is continuous at *a* when it's
+differentiable at *a*. The proof is probably accessible by them, but
+may not be so well appreciated, so you can skip it if you feel it.
+Merely impressing upon them that differentiability is "super"
+continuity is enough.
+
+Second and higher derivatives are in this section, too.  You can also
+talk about Newtonian and Leibnizian notation for derivatives.
+
+Lesson 9: Basic Differentiation Rules
+=====================================
+
+:MW Date: September 24
+:TR Date: September 25
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 2.3
+
+
+Learning Objectives
+-------------------
+
+* Understand and use these differentiation rules:
+
+  - the derivative of a constant function (zero);
+
+  - the Constant Multiple Rule;
+
+  - the Sum Rule;
+
+  - the Difference Rule;
+
+  - the derivatives of sine and cosine.
+
+
+Notes
+-----
+
+Here we start on "the calculus of derivatives," from which the entire
+subject gets its name (and perhaps leading to the misconception that
+calculus is all about taking derivatives!)
+
+The first is the power rule.  Stewart shows it for positive integers
+then declares it for all other real powers.  We'll allow it but I
+still want to emphasize the different proofs for the different powers
+(using the quotient rule for negative integers, using implicit
+differentiation for rational numbers, and finally logarithmic
+differentiation for irrational numbers.
+
+Do the sum and constant multiple rules, pointing out that this is
+really just the limit laws applied the the difference quotients.
+
+The hard work for the derivative of sine (i.e., the fact that
+:latex:`$\lim_{x\to 0}\frac{\sin x}{x}=1$` is done in Section 1.3.
+
+
+Lesson 10: The Product and Quotient Rules
+=========================================
+
+:MW Date: September 29
+:TR Date: September 30
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 2.4
+
+Learning Objective
+------------------
+
+* Understand and be able to use the *Product Rule* for the
+  derivative of the product of two functions.
+
+* Understand and be able to use the *Quotient Rule* for the
+  derivative of the quotient of two functions.
+
+
+Notes
+-----
+
+You want to help them understand why the product rule is what it
+should be, rather than a magic formula.  When teaching the product
+rule, I use an economic example: Say you're working at McDonald's and
+you want to make more money.  You can either get a raise or work more
+hours.  If you do both, how does your income change?
+
+
+Lesson 11: The Chain Rule
+=========================
+
+:MW Date: September 29-October 1
+:TR Date: September 30-October 2 
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 2.5
+
+Learning Objectives
+-------------------
+
+* Given a compound expression, write it as a composotion of functions.
+
+* Understand and apply the *Chain Rule* for the derivative of a
+  composition of functions.
+
+* Understand and use Newtonian and Leibnizian notations for the Chain Rule.
+
+Notes
+-----
+
+My metaphor here isn't as good as that for the product rule, but it
+goes like this.  If you're riding a multi-speed bicycle, the speed of
+the rear wheel depends on how fast you're pedaling as well as the gear
+you're in.  Now if you can imagine a front sprocket which is not round
+you can see how the angular velocity of the rear wheel depends on the
+rate of change of the radius of the front sprocket.  No matter what
+speed you're in, pedaling twice as fast will double your speed, so
+that explains the product of the two.
+
+Part of the task is going to be recognizing a function as a
+composition of simpler functions.  I use machines as a metaphor, where
+the output of one feeds into the input of another.  Once you have this
+decomposition, the derivative of the composition is the product of the
+derivatives, and it's also clear here where these derivatives are
+evaluated: at the point that's being input to the original function.
+
+
+
+Lesson 12: Implicit Differentiation
+===================================
+
+:MW Date: October 1
+:TR Date: October 2 
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 2.6
+
+Learning Objectives
+-------------------
+
+* Use *implicit differentation* to find the derivative of a function
+  defined implicitly.
+
+Notes
+-----
+
+Implicit differentation can be used to find derivatives of the
+elementary inverse functions (e.g., log, arcsin, etc.), but that's
+done in later sections.  So in this section you can talk a little bit
+about how to visualize or graph curves defined implicitly.
+
+
+
+Lesson 13: Related Rates
+========================
+
+:MW Date: October 6
+:TR Date: October 7 
+:Duration: one-half of one class period
+:See Also: Stewart_, Section 2.7
+
+Learning Objectives
+-------------------
+
+* Model word problems with mathematical relations
+
+* Apply the chain rule to mathematical models.
+
+Notes
+-----
+
+Some people I know hate related rates problems.  Perhaps because they
+are known simply as a class of problems with no extrinsic motivation
+for them.  But they are another chance to practice modeling
+problems--that is, drawing the picture and setting up the variables
+for a problem written out in words.  Since students have difficulty
+with this, it's not a bad idea to give them this opportunity.  I hope
+it will make Section 4.5 (Optimization Problems) go better.
+
+Note to self
+------------
+
+We might drop this after all.  It is a packed week already.
+
+Lesson 14: Linear Approximations and Differentials
+==================================================
+
+:MW Date: October 6
+:TR Date: October 7 
+:Duration: one-half of one class period
+:See Also: Stewart_, Section 2.8
+
+Learning Objectives
+-------------------
+
+* Use tangent lines to make linear approximations to a function.
+
+  * Given a function and a point in the domain, compute the
+    linearization of the function at that point.
+
+  * Use linearization to approximate values of functions
+
+* Given a function, compute the differential of that function
+
+* Use the differential notation to estimate error in linear
+  approximations.
+
+Notes
+-----
+
+Linear approximation is basically equivalent to differentiation.  The
+line that intersects a graph at a point and best approximates the
+function near that point is exactly the tangent line.  But sometimes
+students miss that connection and think of linear approximation as a
+completely different thing.
+
+Linear approximation is useful in estimating values of functions at
+inconvenient points near convenient points.  For instance, :latex:`$\sqrt{5}$`
+is hard but :latex:`$\sqrt{4}$` is easy.  So linearly approximate at 4.
+
+Differentials are used here as an alternate notation for linear
+approximations.  If *$y=f(x)* is evaluated at *x* and *x+dx*, then
+:latex:`$\Delta y = f(x+dx) - f(x)$` is approximately equal to
+:latex:`$dy = f'(x) dx$` So if you need to bound *Δy* you can find a
+suitable *dx*.
+
+
+Lesson 13: Exponential Functions
+================================
+
+:MW Date: October 8
+:TR Date: October 9 
+:Duration: one-half of one class period
+:See Also: Stewart_, Section 3.1
+
+Learning Objectives
+-------------------
+
+* Know the definition of an exponential function
+
+* Know the properties of exponential functions
+
+
+Lesson 13: Inverse Functions and Logarithms
+===========================================
+
+:MW Date: October 8
+:TR Date: October 9 
+:Duration: one-half of one class period
+:See Also: Stewart_, Section 3.2
+
+Learning Objectives
+-------------------
+
+* Understand the definition of the *inverse function* to a given
+  function.
+
+* Decide whether a function is *invertible* (has an inverse)
+
+* Understand and apply the laws of logarithms, including the change of
+  base formula.
+
+
+Lesson 14: Derivatives of Logarithmic and Exponential Functions
+===============================================================
+
+:MW Date: October 15
+:TR Date: October 16
+:Duration: one class period
+:See Also: Stewart_, Section 3.3
+
+Learning Objectives
+-------------------
+
+* Know the derivatives of the exponential functions (with any base)
+
+* Know the derivatives of the logarithmic functions (with any base)
+
+* Use the technique of *logarithmic differentiation* to find
+  derivatives of functions involving roducts, quotients, and/or exponentials.
+
+Notes
+-----
+
+You can be dramatic about the derivative of log.  If look at all the
+integer power functions :latex:`$x^n$`, you can see each
+of them is the derivative of something except :latex:`$x^{-1}$`.  This
+is the one that fills in the chain.
+
+Logarithmic differentiation is a useful alternative to the product
+rule.  You can differentiate a very complicated function using both
+regular differentiation and logarithmic differentiation and ask them
+which they prefer.
+
+Lesson 15: Exponential Growth and Decay
+=======================================
+
+:MW Date: October 20
+:TR Date: October 21
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 3.4
+
+Learning Objectives
+-------------------
+
+* Solve any problem modeled by exponential growth or decay, including
+  but not limited to:
+
+  - population growth;
+
+  - radiactive decay;
+
+  - continuously compounded interest;
+
+  - Newton's Law of Cooling
+
+
+Lesson 16: Inverse Trigonometric Functions
+==========================================
+
+:MW Date: October 20-22
+:TR Date: October 21-23
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 3.5
+
+Learning Objectives
+-------------------
+
+* Know the definitions, domains, ranges, and other properties of the
+  inverse trignometric functions: arcsin, arccos, arctan, arcsec,
+  arccsc, arccot.
+
+* Know the derivatives of the inverse trignometric functions.
+
+Notes
+-----
+
+I expect students are going to need to be reminded about the inverse
+trignometric functions.
+
+Arcsine and arctan are the inverse trignometric functions seen most
+often, so one could focus on those.  But in principle, the others are
+just as easy to differentiate: implicitly, with a trigonometric
+identity to make the derivative explicit.
+
+
+Lesson 17: Intederminate forms and L'Hôpital's Rule
+===================================================
+
+:MW Date: October 22
+:TR Date: October 23
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 3.7
+
+Learning Objectives
+-------------------
+
+* Know when a limit is of indeterminate form:
+
+  * indeterminate quotients: 0/0, |infinity|/|infinity|
+
+  * indeterminate products: 0 |times| |infinity|
+
+  * indeterminate differences: |infinity| - |infinity|
+
+  * indeterminate powers: :latex:`$0^0$`, :latex:`$\infty^0$`, and :latex:`$1^\infty$`
+
+* Use L'Hôpital's Rule to evaluate indeterminate limits
+
+Notes
+-----
+
+The "recognizing indeterminate forms" objective is very important.
+The controversy surrounding L'Hôpital's Rule is that it's so often
+misapplied to non-indeterminate forms, which results in garbage.  So
+make sure they know what's indeterminate and what isn't.
+
+I usually demonstrate why we call limits of the form 0/0
+indeterminate.  You can take :latex:`$\frac{\sin^2 x}{x}$`,
+:latex:`$\frac{\sin x}{x}$`, and :latex:`$\frac{\sin x}{x^2}$` as *x*
+tends to zero.  All of these are of the form 0/0 but the
+first limit is zero, the second one, and the last |infinity|. (you can
+show these without L'Hôpital's Rule).
+
+There's a big difference between the limit being of indeterminate form
+and the function failing to have a limit.  Notice in two of the above
+cases, the limit does exist.  Students will also confuse *limits
+of the form* 0/0, which are *indeterminate* with the
+*expression* 0/0 which is *undefined*. That's
+exactly what L'Hôpital's Rule is for. [#]_
+
+.. [#] I saw this comment on the `Wikipedia talk page for L'Hôpital's Rule`__:
+
+     "0/0? You can't divide by zero if you do it gives you all sorts
+     of weird answers.  The preceding unsigned comment was added by
+     71.246.231.88 (talk) 23:04, 2 January 2007 (UTC).
+
+     "Hence L'Hôpital's Rule, my friend. -216.145.255.2 11:32, 5
+     January 2007 (UTC)"
+   
+   __ http://en.wikipedia.org/w/index.php?title=Talk:L%27H%C3%B4pital%27s_rule&oldid=214019846#You_Divided_by_zero
+
+You will probably not have time to do the the indeterminate powers in class.  Tell them to read it in the book.  
+
+Lesson 18: Maximum and Minum Values
+===================================
+
+:MW Date: October 27
+:TR Date: October 28
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 4.1
+
+Learning Objectives
+-------------------
+
+* Understand and be able to explain the statement of the *Extreme Value
+  Theorem*.
+
+* Understand and be able to explain the statement of *Fermat's
+  Theorem*.
+
+* Use the *Closed Interval Method* to find the extreme values of a
+  function defined on a closed interval.
+
+Lesson 19: The Mean Value Theorem
+=================================
+
+:MW Date: October 27-29
+:TR Date: October 28-30
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 4.2
+
+* Understand and be able to explain the statement of *Rolle's Theorem*.
+
+* Understand and be able to explain the statement of the *Mean Value Theorem*.
+
+Lesson 20: Derivatives and the Shapes of Graphs
+===============================================
+
+:MW Date: October 29
+:TR Date: October 30 
+:Duration:  two-thirds of one class period
+:See Also: Stewart_, Section 4.3
+
+Learning Objectives
+-------------------
+
+* Use the derivative of a function to determine the intervals along
+  which the function is increasing or decreasing (The
+  *Increasing/Decreasing Test*)
+
+* Use the *First Derivative Test* to classify critical points of a
+  function as local maxima, local minima, or neither.
+
+* Use the second derivative of a function to determine the intervals
+  along which the graph of the function is concave up or concave down
+  (The *Concavity Test*)
+
+* Use the first and second derivative of a function to classify
+  critical points as local maxima or local minima, when applicable
+  (The *Second Derivative Test*)
+
+
+Lesson 21: Curve Sketching
+==========================
+
+:MW Date: November 3
+:TR Date: November 4
+:Duration: one class period
+:See Also: Stewart_, Section 4.4
+
+Learning Objective
+------------------
+
+* given a function, graph it completely, indicating
+  * zeroes (if easy)
+  * asymptotes if applicable
+  * critical points
+  * local/global max/min
+  * inflection points
+
+Notes
+-----
+
+I really feel that curve sketching is the quintessential calculus
+skill.  If you can take apart a function with calculus and piece it
+all back together then you really know what derivatives are.  It's
+kind of like diagramming sentences, which are also kind of old
+fashioned but very instructive.
+
+
+Lesson 22: Optimization Problems
+================================
+
+:MW Date: November 5
+:TR Date: November 6
+:Duration: one class period
+:See Also: Stewart_, Section 4.5
+
+Learning Objectives
+-------------------
+
+* Given a problem requiring optimization, identify the objective
+  functions, variables, and constraints.
+
+* Solve optimization problems with calculus.
+
+Notes
+-----
+
+One of the toughest parts of optimization problems is the modeling of
+a word problem into a math problem.  So take it slow and emphasize the
+problem-solving process.
+
+The process uses a lot of relations that students know but don't
+remember or think to use, in order to reduce the number of variables
+to one: the Pythagorean theorem and similar triangles among them.  Be
+patient.
+
+Like the related rates sections, I'm inclined to start with simple
+problems, done completely by you, then gradually nudging them towards
+doing their own problems in groups.
+
+In the second half of class, I'm probably going to give them a worksheet with
+two extended optimization problems, one of them being the "Statue of
+Liberty problem": how far away from the statue should you stand to
+maximize the size of the statue in your vision?
+
+
+Lesson 23: Areas and Distances
+==============================
+
+:MW Date: November 10
+:TR Date: November 11
+:Duration: roughly two-thirds of one class period
+:See Also: Stewart_, Section 5.1
+
+Learning Objectives
+-------------------
+
+* Compute the area of a region by approximating it with rectangles and
+  letting the size of the rectangles tend to zero.
+
+* Compute the total distance traveled by a particle by approximating
+  it as distance = (rate)(time) and letting the time intervals over
+  which one approximates tend to zero.
+
+Notes
+-----
+
+The similarity between the two processes is a big idea.  We have
+simple "product" formulas like area = (length)(width) and distance =
+(rate)(time), or mass = (density)(length), and so on.  When the things
+we are trying to multiply are no longer constants but functions, we
+divide and conquer: divide into small intervals along which one of the
+functions can be reasonably approximated by a constant.  Then let the
+intervals tend to zero in width.
+
+Lesson 24: The Definite Integral
+================================
+
+:MW Date: November 10-12
+:TR Date: November 11-13
+:Duration: roughly two-thirds of one class period
+:See Also: Stewart_, Section 5.2
+
+Learning Objectives
+-------------------
+
+* Understand the definition of the *definite integral* of a function
+  function over a closed interval.
+
+* Use the Midpoint Rule to estimate definite integrals.
+
+* Understand and use the linearity and comparison properties of the
+  definite integral.
+
+Notes
+-----
+
+In some sense calculus is all about limits of indeterminate form.
+Derivatives are limits of the form 0/0, while integrals are limits of
+the form 0 |times| |infinity| .
+
+Property 8 for definite integrals is a key step in the proof of the
+First Fundamental Theorem of Calculus.
+
+
+
+Lesson 25: Evaluating Definite Integrals
+========================================
+
+:MW Date: November 12
+:TR Date: November 13
+:Duration: two-thirds of one class period
+:See Also: Stewart_, Section 5.3
+
+Learning Objectives
+-------------------
+
+* Use the Evaluation Theorem to evaluate definite integrals.
+
+* Write antiderivatives as *indefinite integrals*.
+
+* Interpret definite integrals as "net change" of a function over an
+  interval.
+
+Notes
+-----
+
+Two things I don't like about this section: the second Fundamental
+Theorem of Calculus comes first, and Stewart gives it a new name.
+
+But that doesn't mean it's not important.  You might motivate this by
+using distance and velocity instead of area: We know the derivative of
+distance is velocity, so the antiderivative of velocity is distance,
+but the integral of velocity is distance as well.  So integration and
+antidifferentiation are somehow related.
+
+This is the climax of Calc I in some sense, so it's reasonable to
+prove this.
+
+There are two proofs of FTCII.  The weaker version comes
+from the first Fundamental Theorem of Calculus, namely that
+:latex:`$\frac{d}{dx} \int_a^x f(t)\,dt = f(x)$`.  If *F* is another
+antiderivative of *f*, then :latex:`$F(x) = \int_a^x f(t)\,dt + C$`. 
+Since :latex:`$\int_a^af(t)\,dt = 0$`, we have *C=F(a)* and we're done.
+
+This proof requires *f* to be continuous, which isn't so bad because
+most of the functions we discuss will be continuous.  The more general
+proof using very well chosen Riemann sums is in the book.  If you can
+show both, do so.
+
+The big point is that antidifferentiation has another use, now for
+computing areas.  Which means we had better get more serious about
+collecting antiderivatives.  So start writing up a simple integration
+table.
+
+Then there are all the other interpretations of "Net Change:" If *f*
+is velocity it's distance.  If *f* is density it's mass.  If *f* is
+marginal cost it's total cost.  And so on.
+
+
+Lesson 26: The Fundamental Theorem of Calculus
+==============================================
+
+:MW Date: November 17
+:TR Date: November 18
+:Duration: one class period
+:See Also: Stewart_, Section 5.4
+
+
+Learning objectives
+-------------------
+
+* State and explain the Fundemental Theorems of Calculus
+
+* Use the first fundamental theorem of calculus to find derivatives of
+  functions defined as integrals.
+
+* Compute the average value of an integrable function over a closed interval.
+
+Notes
+-----
+
+This is the other fundamental theorem of calculus, of course.  To
+motivate it, consider a given function's *area function* :latex:`$F(x)
+= \int_a^x f(t)\,dt$`.  What does the graph of *F(x)* look like for
+various *f*?  Students should be able to figure out that when *f* is
+positive, *F* is increasing, and when *f* is negative, *F* is
+decreasing, and so on.  So *F* starts to "look like" an antiderivative
+for *F*.
+
+Now you can state and prove the theorem.  Emphasize that we have do
+back to the definition of derivative for $F$, that is, take the limit
+of difference quotients.  We have 
+
+.. latex::
+
+  \frac{F(a+h)-F(a)}{h} = \frac{1}{h} \int_a^{x+h} f(t)\,dt
+
+By Property 8 above, :latex:`$\int_a^{a+h} f(t)\,dt$` is bounded above
+by the maximum of *f* on [*a*,*a+h*] times *h*, and bounded below by
+the minimum of *f* on [*a*,*a+h*] times *h*.  So the difference
+quotient itself if bounded between the max and min of *f* on
+[*a*,*a+h*].  So *F'(a)*, if it exists, is between the lim sup and lim
+inf of *f* as *x* approaches *a*. But since *f* is continuous at *a*,
+the limit does exist and is *f(a)*.  (Squeeze Theorem!)
+
+Now we get to one of the most confusing simple tasks in calculus:
+differentiating a function expressed as an integral.  It shouldn't be,
+but it is.  You can get them to repeat that
+:latex:`$\frac{d}{dx}\int_a^x f(t)\,dt = f(x)$`, but they will get
+completely confused with :latex:`$\frac{d}{dx}\int_a^{x^2} f(t)\,dt =
+f(x^2)(2x)$`.  Perhaps try to hide the integral and call the area
+function *F*; then it's clear that :latex:`$\frac{d}{dx}F(x^2) = F'(x^2)(2x)$`.
+Students also will try to work :latex:`$f'$` in here, but point out that the
+FTC never involves the derivative of the integrand.
+
+This seems like a pointless task, but there are functions which are
+defined in terms of an integral, such as the error function
+:latex:`$\int_{0}^x e^{-x^2}\,dx$`, the sine integral function 
+:latex:`$\int_0^x\frac{\sin x}{x}\,dx$`, and the Fresnel function.
+
+
+Lesson 27: The Substitution Rule
+================================
+
+:MW Date: November 19
+:TR Date: November 20
+:Duration: one class period
+:See Also: Stewart_, Section 5.5
+
+Prequisites
+-----------
+
+* The Fundamental Theorem of Calculus
+
+* Even and odd functions
+
+
+Learning Objectives
+-------------------
+
+* Given an integral and a substitution, transform the integral into an
+  equivalent one using a substitution
+
+* Evaluate indefinite integrals using the method of substitution.
+
+* Evaluate definite integrals using the method of substitution.
+
+* Use symmetry to simplify integrals of even and odd functions.
+
+Notes
+-----
+
+Students are going to get caught in many tiny traps the first time
+around.
+
+You should do both the substitution rule for indefinite and definite
+integrals.  Many will not like the definite integral version; they are
+content to do the indefinite integral version then plug in.  But
+emphasize that the definite integral version allows them to totally
+simplify the integral then move on without going back to the original
+one.
+
+The way I explain how the the limits change in 
+
+.. latex:: 
+   :class: displayed-equation
+
+   \int_a^b f(g(x))g'(x) = \int_{g(a)}^{g(b)} f(u)\,du 
+
+is that the integral on the left happens in "*x*-land."  The
+variable is *x* and the limits are an interval in *x*.  The integral
+on the right is in "*u*-land," so the limits should be values of *u*
+as well.  How do you get from *x* to *u*?  Well, the substitution was
+*u=g(x)*.  So the *u*-values corresponding to *x=a* and *x=b* are
+*u=g(a)* and *u=g(b)*.
+
+Students will trip up themselves when making the substitution.  They
+will forget to take care of the *dx* and still have it in the
+substituted integral.
+
+Finally, this is a nonlinear problem so students aren't going to know
+right away what makes a good $u$ in substitution.  Remind them that
+whatever you make *u*, you need to "see" *u'* in the integrand, in the
+numerator of the integrand if it's a fraction, in order for the
+substitution to even work.  So see if you can get them to think about
+function/derivative pairs, the obvious ones being :latex:`$x^n$` with
+:latex:`$x^{n-1}$` (modulo constants), or sin with cos, and the non-obvious
+ones being :latex:`$e^x$` with  :latex:`$e^x$`, :latex:`$\sqrt{x}$` with
+:latex:`$\frac{1}{\sqrt x}$`, and :latex:`$\ln x$` with :latex:`$\frac{1}{x}$`.
+
+Substitution applied to symmetric (even or odd) functions gives nice
+simplification for definite integrals over intervals which are
+symmetric about zero.  The integral of an odd function over such an
+interval is zero; while the integral of an even function over such an
+interval is twice the integral over the second half.  A picture is
+most convincing here, the substitution *u=-x* makes it rigorous.
+
+
+Lesson 28: Integration by Parts
+===============================
+
+:MW Date: November 24
+:TR Date: November 25
+:Duration: one class period
+:See Also: Stewart_, Section 6.1
+
+Learning Objectives
+-------------------
+
+* Understand and be able to explain the *integration by parts* formula
+
+  .. latex::
+
+     \int u\,dv = uv - \int v\,du
+
+* Evaluate antiderivatives using integration by parts.
+
+* Evaluate definite integrals using integration by parts.
+
+* Evaluate integrals using integration by parts more than once.
+
+* Evaluate integrals using a substitution followed by integration by
+  parts.
+
+Notes
+-----
+
+This is a really short week, because Thursday is Thanksgiving.  It's
+pretty common for students to travel this week, either home or the
+home of a friend if their home is far away.  They will often be
+traveling the day before (Wednesday), even though that's officially a
+school day.
+
+Wednesday is "officially" a Monday as far as which classes meet.  That
+doesn't effect MW sections; they would meet on Wednesday anyway.  TR
+sections will obviously not meet on Thursday.  Thus, MW sections will
+have an extra class period, which many students will not attend.
+
+I've learned it's expedient to go with the flow of traditions like
+these.  So whatever happens on Wednesday shouldn't be new material
+from Monday, but should be useful for understanding integration by
+parts or substitution.  A good worksheet would make this time
+worthwhile without penalizing those who miss it.
+
+
+Lesson 29: Integration by partial fraction decomposition
+========================================================
+
+:MW Date: December 1
+:TR Date: December 2
+:Duration: one class period
+:See Also: Stewart_, Section 6.3
+
+Prerequisites
+-------------
+
+* Given a polynomial, factor it into a product of polynomials which
+  are either *linear* of the form :latex:`$x-a$` or *irreducible
+  quadratic* of the form :latex:`$x^2 + bx + c$`, where
+  :latex:`$b^2-4c < 0$`
+
+* Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
+  write it in the form :latex:`$u^2 + c$` (in other words, *complete
+  the square*) 
+
+Learning Objectives
+-------------------
+
+* Given a rational function, write the form of its *partial fraction
+  decomposition* into a sum of simpler rational functions, in the case
+  that the denominator has
+
+  - only linear factors, each of which is unique;
+  - linear factors with repetition;
+  - quadratic factors, each of which is unique;
+  - quadratic factors with repetition.
+
+* Given a rational function and the form of its partial fraction
+  decomposition, find the explicit decomposition.
+
+* Given a rational function, use its partial fraction decomposition to
+  find its antiderivative.
+
+
+Lesson 30: Approximate Integration
 ==================================
 
-:seeAlso: |Stewart| Section 6.5
+:MW Date: December 3
+:TR Date: December 4
+:Duration: one class period
+:See Also: Stewart_, Section 6.5
 
+Learning Objectives
+-------------------
+
+* Given an integrable function on a closed interval, compute estimates
+  for the definite integral of the function using
+
+  - the Trapezoidal Rule;
+  - the Midpoint Rule;
+  - Simpson's Rule.
+
+* Given a list of data interpolated to a functions, compute estimates
+  for the definite integral of the function as above.
+
+* Given a definite integral and one of the above approximations to it,
+  estimate the error in the approximation.  Compare and contrast the
+  magnitude of the error bounds among the different methods.
+
+* Given an integrable function on a closed interval and a desired
+  tolerance level, approximate the definite integral within the
+  prescribed tolerance using one of the above methods.
+
+Lesson 31: Improper Integrals
+=============================
+
+:MW Date: December 8
+:TR Date: December 9
+:Duration: one class period
+:See Also: Stewart_, Section 6.6
+
+* Given a function defined on a closed, unbounded interval, understand
+  and be able to explain the definition of the **improper integral**
+  of the function over the interval in terms of a limit of "proper"
+  integrals over closed, bounded intervals.  In the book, these are
+  called improper integrals of **Type I**.
+
+* Given a function defined on a closed, unbounded interval, use the
+  definition of improper integral to either evaluate the integral or
+  decide that it does not converge.
+
+* Given a power function of the form :latex:`$x^p$`, determine if the
+  improper integral over the interval [1, |infinity| ) converges
+
+* Given a function defined on a closed, unbounded interval, use the
+  Comparison Test to decide if the integral converges or diverges
+
+* Repeat all of the above with functions which are continuous on an
+  interval (*a*,*b*] but which have an asymptote at *a* (the so-called
+  improper integrals of **Type II**).
+
+
+Details
+=======
+
+Textbook
+--------
+
+.. _Stewart: 
+
+:title-reference:`Essential Calculus, Early Transcendentals` by James
+ Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
+
+.. |infinity| unicode:: U+221E
+
+.. |times| unicode:: U+2A09
