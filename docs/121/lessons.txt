@@ -10,6 +10,8 @@
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
 
+.. default-role:: latex
+
 
 Lesson Outline for Math 121, Fall 2008
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1202,20 +1204,20 @@ The way I explain how the the limits change in
 
    \int_a^b f(g(x))g'(x) = \int_{g(a)}^{g(b)} f(u)\,du 
 
-is that the integral on the left happens in "*x*-land."  The
-variable is *x* and the limits are an interval in *x*.  The integral
-on the right is in "*u*-land," so the limits should be values of *u*
-as well.  How do you get from *x* to *u*?  Well, the substitution was
-*u=g(x)*.  So the *u*-values corresponding to *x=a* and *x=b* are
-*u=g(a)* and *u=g(b)*.
+is that the integral on the left happens in ":latex:`$x$`-land."  The
+variable is `$x$` and the limits are an interval in `$x$`.  The integral
+on the right is in "`$u$`-land," so the limits should be values of `$u$`
+as well.  How do you get from `$x$` to `$u$`?  Well, the substitution was
+`$u=g(x)$`.  So the `$u$`-values corresponding to `$x=a$` and `$x=b$` are
+`$u=g(a)$` and `$u=g(b)$`.
 
 Students will trip up themselves when making the substitution.  They
-will forget to take care of the *dx* and still have it in the
+will forget to take care of the `$dx$` and still have it in the
 substituted integral.
 
 Finally, this is a nonlinear problem so students aren't going to know
-right away what makes a good $u$ in substitution.  Remind them that
-whatever you make *u*, you need to "see" *u'* in the integrand, in the
+right away what makes a good `$u$` in substitution.  Remind them that
+whatever you make `$u$`, you need to "see" `$u'$` in the integrand, in the
 numerator of the integrand if it's a fraction, in order for the
 substitution to even work.  So see if you can get them to think about
 function/derivative pairs, the obvious ones being :latex:`$x^n$` with
@@ -1228,7 +1230,7 @@ simplification for definite integrals over intervals which are
 symmetric about zero.  The integral of an odd function over such an
 interval is zero; while the integral of an even function over such an
 interval is twice the integral over the second half.  A picture is
-most convincing here, the substitution *u=-x* makes it rigorous.
+most convincing here, the substitution `$u=-x$` makes it rigorous.
 
 
 Lesson 28: Integration by Parts
