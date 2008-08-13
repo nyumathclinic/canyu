@@ -4,7 +4,7 @@
 # $Date: 2007-09-18 22:20:03 -0400 (Tue, 18 Sep 2007) $
 # $Revision: 95 $
 
-TOPDIR=$(shell cd .. && pwd)
+TOPDIR=$(shell cd ../.. && pwd)
 LIBDIR=$(TOPDIR)/lib
 
 PDFLATEX=pdflatex
