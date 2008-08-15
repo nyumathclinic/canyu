@@ -1,0 +1,354 @@
+.. -*- mode: rst; coding: utf-8 -*-
+.. meta:: 
+   :description: Lesson Outline for Math 121, Fall 2008
+   :keywords: Math 121, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id$
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2008-07-31
+   :DCT.Modified scheme=subversion: $Date$
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+
+.. default-role:: latex
+
+Lesson Outline for Math 122, Fall 2008
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.. contents::
+   :depth: 1
+   :backlinks: none
+
+Lesson 1: The definite integral and the Fundamental Theorem of Calculus
+=======================================================================
+
+:MW Date: September 3
+:TR Date: September 2
+:Duration: one "week" of class, whatever that is.
+:See Also: Stewart_, Section 5.1, 5.2., 5.3
+
+Learning Objectives
+-------------------
+
+* Understand the definition of the *definite integral* of a function
+  function over a closed interval.
+
+* Understand and use the linearity and comparison properties of the
+  definite integral.
+
+* Use the Evaluation Theorem to evaluate definite integrals.
+
+* Write antiderivatives as *indefinite integrals*.
+
+* Interpret definite integrals as "net change" of a function over an
+  interval.
+
+
+Notes
+-----
+
+September 1 is a holiday and no classes will meet.  This means that MW
+sections will only meet Wednesday, and this material will have to be
+covered in one class period.  Worse, there should be some kind of
+icebreaker on the first day of class, meaning even more material must
+be compressed.  Luckily, this is foundational material and should be a
+review.
+
+In this book The Second Fundamental Theorem of Calculus is called the
+*Evaluation Theorem* and comes in Section 5.3.  The first FTC is
+covered in Section 5.4.
+
+
+Lesson 2: The Substitution Rule
+===============================
+
+:MW Date: September 8
+:TR Date: September 9
+:Duration: one half of one class period
+:See Also: Stewart_, Section 5.5
+
+Learning Objectives
+-------------------
+
+* Given an integral and a substitution, transform the integral into an
+  equivalent one using a substitution
+
+* Evaluate indefinite integrals using the method of substitution.
+
+* Evaluate definite integrals using the method of substitution.
+
+* Use symmetry to simplify integrals of even and odd functions.
+
+Notes
+-----
+
+Students should have seen this before in a previous calculus class, so
+this is a review.  But do not assume they have it down cold, otherwise
+you will defeat the purpose of "review."
+
+You should do both the substitution rule for indefinite and definite
+integrals.  Many will not like the definite integral version; they are
+content to do the indefinite integral version then plug in.  But
+emphasize that the definite integral version allows them to totally
+simplify the integral then move on without going back to the original
+one.
+
+The way I explain how the the limits change in 
+
+.. latex:: 
+
+   \int_a^b f(g(x))g'(x) = \int_{g(a)}^{g(b)} f(u)\,du 
+
+is that the integral on the left happens in ":latex:`$x$`-land."  The
+variable is `$x$` and the limits are an interval in `$x$`.  The integral
+on the right is in "`$u$`-land," so the limits should be values of `$u$`
+as well.  How do you get from `$x$` to `$u$`?  Well, the substitution was
+`$u=g(x)$`.  So the `$u$`-values corresponding to `$x=a$` and `$x=b$` are
+`$u=g(a)$` and `$u=g(b)$`.
+
+Students will trip up themselves when making the substitution.  They
+will forget to take care of the `$dx$` and still have it in the
+substituted integral.
+
+Finally, this is a nonlinear problem so students aren't going to know
+right away what makes a good `$u$` in substitution.  Remind them that
+whatever you make `$u$`, you need to "see" `$u'$` in the integrand, in the
+numerator of the integrand if it's a fraction, in order for the
+substitution to even work.  So see if you can get them to think about
+function/derivative pairs, the obvious ones being :latex:`$x^n$` with
+:latex:`$x^{n-1}$` (modulo constants), or sin with cos, and the non-obvious
+ones being :latex:`$e^x$` with  :latex:`$e^x$`, :latex:`$\sqrt{x}$` with
+:latex:`$\frac{1}{\sqrt x}$`, and :latex:`$\ln x$` with :latex:`$\frac{1}{x}$`.
+
+Substitution applied to symmetric (even or odd) functions gives nice
+simplification for definite integrals over intervals which are
+symmetric about zero.  The integral of an odd function over such an
+interval is zero; while the integral of an even function over such an
+interval is twice the integral over the second half.  A picture is
+most convincing here, the substitution `$u=-x$` makes it rigorous.
+
+
+Lesson 3: Integration by Parts
+==============================
+
+:MW Date: September 8
+:TR Date: September 9
+:Duration: one half of one class period
+:See Also: Stewart_, Section 6.1
+
+Lesson 4: Trigonometric Integrals and Substitution
+==================================================
+
+:MW Date: September 10
+:TR Date: September 11
+:Duration: one class period
+:See Also: Stewart_, Section 6.2
+
+Lesson 5: Integration by Partial Fraction Decomposition
+=======================================================
+
+:MW Date: September 15
+:TR Date: September 16
+:Duration: one class period
+:See Also: Stewart_, Section 6.3
+
+Lesson 6: Integration with Tables and Computer Algebra Systems
+==============================================================
+
+:MW Date: September 17
+:TR Date: September 18
+:Duration: one class period
+:See Also: Stewart_, Section 6.4
+
+Notes
+-----
+
+You might want to conclude with a section about strategies for
+integration in general.  It's harder to choose a technique for
+integration when you're not doing a problem out of a particular
+section.
+
+Lesson 7: Approximate Integration
+=================================
+
+:MW Date: September 22
+:TR Date: September 23
+:Duration: one class period
+:See Also: Stewart_, Section 6.5
+
+Lesson 8: Improper Integrals
+============================
+
+:MW Date: September 24
+:TR Date: September 25
+:Duration: one class period
+:See Also: Stewart_, Section 6.6
+
+Lesson 9: Areas between curves
+==============================
+
+:MW Date: September 29
+:TR Date: September 30
+:Duration: one half of one class period
+:See Also: Stewart_, Section 7.1
+
+Lesson 10: Volumes
+==================
+
+:MW Date: September 29-October 1
+:TR Date: September 30-October 2
+:Duration: 3/4 of one class period
+:See Also: Stewart_, Section 7.2
+
+Lesson 11: Volumes by cylindrical shells
+========================================
+
+:MW Date: October 1
+:TR Date: October 2
+:Duration: 3/4 of one class period
+:See Also: Stewart_, Section 7.3
+
+Lesson 12: Arc length
+=====================
+
+:MW Date: October 6
+:TR Date: October 7
+:Duration: one half of one class period
+:See Also: Stewart_, Section 7.4
+
+Lesson 13: Applications of Integration
+======================================
+
+:MW Date: October 8
+:TR Date: October 9
+:Duration: 1 1/2 class periods
+:See Also: Stewart_, Section 7.3
+
+Lesson 14: Differential Equations
+=================================
+
+:MW Date: October 20-22
+:TR Date: October 21-23
+:Duration: 2 class periods
+:See Also: Stewart_, Section 7.6
+
+Lesson 15: Sequences
+====================
+
+:MW Date: October 27
+:TR Date: October 28
+:Duration: one class period
+:See Also: Stewart_, Section 8.1
+
+Lesson 16: Series
+=================
+
+:MW Date: October 29
+:TR Date: October 30
+:Duration: one class period
+:See Also: Stewart_, Section 8.2
+
+Lesson 17: The Integral and Comparison Tests
+============================================
+
+:MW Date: November 3
+:TR Date: November 4
+:Duration: one class period
+:See Also: Stewart_, Section 8.3
+
+Lesson 18: More Convergence Tests
+=================================
+
+:MW Date: November 5
+:TR Date: November 6
+:Duration: one class period
+:See Also: Stewart_, Section 8.4
+
+Lesson 19: Power Series
+=======================
+
+:MW Date: November 10
+:TR Date: November 11
+:Duration: one class period
+:See Also: Stewart_, Section 8.5
+
+Lesson 20: Representing Functions as Power Series
+=================================================
+
+:MW Date: November 12
+:TR Date: November 13
+:Duration: one class period
+:See Also: Stewart_, Section 8.6
+
+Lesson 21: Taylor and Maclaurin Series
+======================================
+
+:MW Date: November 17
+:TR Date: November 18
+:Duration: one class period
+:See Also: Stewart_, Section 8.7
+
+Lesson 22: Applications of Taylor Polynomials
+=============================================
+
+:MW Date: November 19
+:TR Date: November 20
+:Duration: one class period
+:See Also: Stewart_, Section 8.8
+
+Lesson 24: Parametric Curves
+============================
+
+:MW Date: November 24
+:TR Date: November 25
+:Duration: one half of one class period
+:See Also: Stewart_, Section 9.1
+
+
+Lesson 25: Calculus with Parametric Curves
+==========================================
+
+:MW Date: November 24
+:TR Date: November 25
+:Duration: one half of one class period
+:See Also: Stewart_, Section 9.2
+
+Lesson 26: Polar Coordinates
+============================
+
+:MW Date: December 1
+:TR Date: December 2
+:Duration: one class period
+:See Also: Stewart_, Section 9.3
+
+Lesson 27: Areas and Lengths in Polar Coordinates
+=================================================
+
+:MW Date: December 3
+:TR Date: December 4
+:Duration: one class period
+:See Also: Stewart_, Section 9.4
+
+Lesson 28: Conic Sections in Polar Coordinates
+==============================================
+
+:MW Date: December 8
+:TR Date: December 9
+:Duration: one class period
+:See Also: Stewart_, Section 9.5
+
+
+Details
+=======
+
+Textbook
+--------
+
+.. _Stewart: 
+
+:title-reference:`Essential Calculus, Early Transcendentals` by James
+ Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
+
+.. |infinity| unicode:: U+221E
+
+.. |times| unicode:: U+2A09
