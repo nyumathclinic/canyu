@@ -68,6 +68,18 @@
       list-style-type: none;
       list-style-image: none;
     }
+
+
+    # demote all regular header elements by a size
+
+   h1 { font-size: 16px; }
+
+   h2 { font-size: 14px; }
+
+   h3 { font-size: 12px; }
+
+   h4 { font-size: 10px; }
+
   </style>
 </xsl:template>
 
@@ -187,7 +199,6 @@
 </xsl:template>
 
 
-
 <!-- prepend CIMS to html title -->
 <xsl:template match="html:title">
   <title>CIMS > <xsl:value-of select="."/></title>
@@ -201,11 +212,16 @@
           | html:div[@id='contents']"
      />
 
-<!-- strip these elements, copying their content only -->
-<xsl:template match="html:head|html:body" >
-  <xsl:apply-templates />
-</xsl:template>
-
+  <!-- strip these elements, copying their content only -->
+  <xsl:template match="html:head|html:body" >
+    <xsl:apply-templates />
+  </xsl:template>
+  
+  <!-- workaround to keep empty br elements from being duplicated -->
+  <xsl:template match="html:br">
+    <br/>
+  </xsl:template>
+      
 
   <!-- Default BEHAVIOR: identity transformation -->
   <xsl:template match="@*|node()">
