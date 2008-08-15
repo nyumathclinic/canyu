@@ -22,8 +22,8 @@ except:
 
 from docutils.core import publish_cmdline, Publisher, default_description
 
-import latex_directive
-latex_directive.register()  # Enable the ABC directive
+import latex_tth_directive
+latex_tth_directive.register()  # Enable the ABC directive
 
 description = ('Generates (X)HTML documents from standalone reStructuredText '
                'sources.  ' + default_description)

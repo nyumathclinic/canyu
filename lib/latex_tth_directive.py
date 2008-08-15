@@ -12,23 +12,34 @@ from docutils import nodes
 from docutils.parsers.rst.directives import register_directive, flag
 from docutils.parsers.rst.roles import register_canonical_role
 
+class displayed_equation(nodes.General,nodes.Element): pass
+class inline_equation(nodes.inline): pass
+
 def latex_math(tex):
     """ Process `tex` and produce raw nodes. """
     html = latex_snippet_to_html(tex)
     the_nodes = []
-    the_nodes.append(nodes.raw(tex,html,format='html'))
+    new_node=nodes.inline(classes=['docutils-tth'])
+    new_node.append(nodes.raw(tex,html,format='html'))
+    the_nodes.append(new_node)
     return the_nodes
     
 
 def latex_directive(name, arguments, options, content, lineno,
                     content_offset, block_text, state, state_machine):
     """ Latex directive. """
-    tex = '\n'.join(content)
+    tex = '$$' + '\n'.join(content) + '$$'
 
-    return latex_math(tex)
+    html = latex_snippet_to_html(tex)
+    the_nodes = []
+    new_node=nodes.line(classes=['docutils-tth-display'])
+    new_node.append(nodes.raw(tex,html,format='html'))
+    the_nodes.append(new_node)
+    
+    return the_nodes
+
 
 latex_directive.content = True
-
 
 def latex_role(role, rawtext, text, lineno, inliner,
                options={}, content=[]):
@@ -49,8 +60,6 @@ def call_command_in_dir(app, args, targetdir):
     cwd = os.getcwd()
     try:
         os.chdir(targetdir)
-        print args
-        print ' '.join(args)
         p = subprocess.Popen(app + ' ' + ' '.join(args), shell=True)
         sts = os.waitpid(p.pid, 0)
 
@@ -61,7 +70,7 @@ def call_command_in_dir(app, args, targetdir):
         os.chdir(cwd)
 
 MAX_RUN_TIME = 5 # seconds
-latex_name_template = 'latex2png_%s'
+latex_name_template = 'tth_%s'
 latex = "tth"
 latex_args = ("-L","-i","-u2","-r", "%s.tex")
 
@@ -90,3 +99,5 @@ def latex_snippet_to_html(inputtex,prologue=''):
     return html
 
 
+# Local variables:
+# coding: utf-8
