@@ -15,7 +15,7 @@ RST2LATEX=$(PYTHON) $(DUDIR)/bin/rst2latex.py
 XSLTPROC=xsltproc
 XSLTPROC_ISITES_FLAGS=
 
-$(RST2HTML): $(DUDIR)/tools/rst2html.py
+$(RST2HTML): $(LIBDIR)/rst2html.py
 	cd $(DUDIR) && $(PYTHON) setup.py install --home=$(DUDIR);\
 	echo "#!/usr/bin/env python\n\
 import sys\n\
