@@ -31,7 +31,7 @@ OUTDATED = echo "EPS-file is out-of-date!" && false
 
 # These are OK
 
-SRC	:= $(shell egrep -l '^[^%]*\\begin\{document\}' *.tex)
+SRC	:= $(shell find . -depth 1 -name \*.txt | xargs egrep -l '^[^%]*\\begin\{document\}')
 TRG	= $(SRC:%.tex=%.dvi)
 PSF	= $(SRC:%.tex=%.ps)
 PDF	= $(SRC:%.tex=%.pdf)
