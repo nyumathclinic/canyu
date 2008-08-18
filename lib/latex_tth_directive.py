@@ -75,10 +75,31 @@ latex = "tth"
 latex_args = ("-L","-i","-u2","-r", "%s.tex")
 
 def latex_snippet_to_html(inputtex,prologue=''):
+    """ Convert a latex snippet into a snippet of HTML 
+        (non-tempfile version). """
+    tex=inputtex.replace('\\','\\\\').replace("'","'\\''")
+    cmd = "echo '%s' | tth -L -i -u2 -r 2>1" % tex
+    try:
+        html = os.popen(cmd).read().replace('\n','').strip()
+    except:
+        print "something's wrong: %s" % cmd
+        raise    
+    return html
+
+
+def latex_snippet_to_html_tempfile(inputtex,prologue=''):
     """ Convert a latex snippet into a snippet of HTML. """
 
     tex = inputtex
-    namebase = latex_name_template % sha.new(tex).hexdigest()
+    try:
+        namebase = latex_name_template % sha.new(tex).hexdigest()
+    except UnicodeEncodeError:
+        # non-ASCII characters in latex snippets are trouble and this
+        # is one place where we see that.  Raise the exception because
+        # it probably has to be fixed.
+        print "latex_snippet_to_html error: '%s' is not digestable" % inputtex
+        raise
+
     dst = namebase + '%d.html'
     
     tmpdir = tempfile.mkdtemp()
