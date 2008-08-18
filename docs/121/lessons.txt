@@ -16,6 +16,15 @@
 Lesson Outline for Math 121, Fall 2008
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Date: |date|
+
+This is a topic-by-topic checklist for Calculus I.  I've included
+specific *learning objectives* for each section---things that students
+should be capable of after completing the topic.  I've also written
+notes on each topic to help with planning a lecture, and to explain
+calendar quirks.
+
 .. contents::
    :depth: 1
    :backlinks: none
@@ -63,6 +72,15 @@ icebreaker on the first day of class, meaning even more material must
 be compressed.  Luckily, this is foundational material and pretty
 easily digested.
 
+I have a worksheet called the *Bottle Calibration Problem* (written
+originally by the Shell Centre at the University of Nottingham).  The
+goal is associate to the shape of a bottle the graph of its height
+function versus volume while filling it with water.  It's actually
+quite challenging (for instructors as well as students!) and levels
+the playing fields, gets students talking, and helps them get a
+different idea of college math.  I can give you this worksheet if
+you're interested.
+
 Lesson 2: A Catalog of Essential Functions
 ==========================================
 
@@ -89,23 +107,23 @@ Learning Objectives
 * Understand the effect of algebraic transformations on the graph of a
   function, for instance:
 
-  - the graph of :latex:`$y=f(x) + c$` is the graph of $y=f(x)$ moved
-    up by *c*;
+  - the graph of :latex:`$y=f(x) + c$` is the graph of `$y=f(x)$` moved
+    up by `$c$`;
 
-  - the graph of :latex:`$y=f(x) - c$` is the graph of $y=f(x)$ moved
-    down by *c*;
+  - the graph of :latex:`$y=f(x) - c$` is the graph of `$y=f(x)$` moved
+    down by `$c$`;
 
-  - the graph of :latex:`$y=f(x+c)$` is the graph of $y=f(x)$ moved
-    to the left by *c*;
+  - the graph of :latex:`$y=f(x+c)$` is the graph of `$y=f(x)$` moved
+    to the left by `$c$`;
 
-  - the graph of :latex:`$y=f(x-c)$` is the graph of $y=f(x)$ moved
-    to the right by *c*;
+  - the graph of :latex:`$y=f(x-c)$` is the graph of `$y=f(x)$` moved
+    to the right by `$c$`;
 
-  - the graph of :latex:`$y=c f(x)$` is the graph of $y=f(x)$ scaled
-    vertically by a factor of *c*;
+  - the graph of :latex:`$y=c f(x)$` is the graph of `$y=f(x)$` scaled
+    vertically by a factor of `$c$`;
 
-  - the graph of :latex:`$y= f(cx)$` is the graph of $y=f(x)$ scaled
-    horizontally by a factor of *1/c*.
+  - the graph of :latex:`$y= f(cx)$` is the graph of `$y=f(x)$` scaled
+    horizontally by a factor of `$1/c$`.
 
 * Understand and compute the *composition* of two functions.
 
@@ -114,7 +132,10 @@ Notes
 
 See the note above for MW sections about timing.  TR sections shoud
 have plenty of time to complete a worksheet about the geometric
-effects.  Students will probably find this part difficult.
+effects.  Students who have been conditioned to reach first for their
+calculator when graphing will find it hard to think flexibly about how
+graphs change when the function is changed.  Still, this is the kind
+of familiarity needed to think conceptually about functions.
 
 Lesson 3: The Limit of a Function
 =================================
@@ -141,23 +162,23 @@ Notes
 
 The informal definition (if that's not a contadiction in terms) in
 Stewart is something like ":latex:`$\lim_{x\to a} f(x) = L$` if values
-of *f(x)* can be made arbitrarily close to *L* by taking *x* to be
-sufficiently close to *a* (and not equal to *a*)."  The adverbs
+of `$f(x)$` can be made arbitrarily close to `$L$` by taking `$x$` to be
+sufficiently close to `$a$` (and not equal to `$a$`)."  The adverbs
 "arbitrarily" and "sufficiently" translate into the ":latex:`$\forall\
 \epsilon > 0$`" and ":latex:`$\exists\ \delta > 0$`" statements, but
 don't tell them that.  We are not going to do the precise definition
 of a limit.
 
 I like to frame this as a game between the students and me.  One team
-sets the maximum error allowed---how close do you need *f(x)* to be to
-*L*?  The other shows a "tolerance" interval around *a* such that if
-*x* is within that interval then *f(x)* is within the error interval
-around *L*.  This can all be done on a graph without any arithmetic or
+sets the maximum error allowed---how close do you need `$f(x)$` to be to
+`$L$`?  The other shows a "tolerance" interval around `$a$` such that if
+`$x$` is within that interval then `$f(x)$` is within the error interval
+around `$L$`.  This can all be done on a graph without any arithmetic or
 inequalities discussed.  In the next round, the error player reduces
 the allowable error, and the tolerance player adjusts his interval to
-get *f(x)* within the error.
+get `$f(x)$` within the error.
 
-The number *L* is the limit if no matter what error is a small enough
+The number `$L$` is the limit if no matter what error is a small enough
 tolerance can be found.
 
 You can discuss the ways a limit can fail to exist also in terms of
@@ -172,8 +193,8 @@ the error-tolerance game.
 
 A limit will fail to exist if the one-sided limits exist and disagree.
 
-* You can have unboundedness.  If values of *f(x)* get arbitrarily
-  large near *a* they can't get arbitrarily "close" to anything.
+* You can have unboundedness.  If values of `$f(x)$` get arbitrarily
+  large near `$a$` they can't get arbitrarily "close" to anything.
 
 * Finally, you can whip out :latex:`$f(x) = \sin(\pi/x)$` near 0.  This is an
   advanced example, to be sure; you can use it to challenge those who
@@ -223,7 +244,7 @@ The Squeeze theorem is also a pretty fundamental result.  You can use
 it to show the existence of certain limits, and we will use it later
 on when we prove the Fundamental Theorem of Calculus.  Students will
 wonder how to come up with the magic bounds; this is a good time to
-remind them that :latex:`$|\sin x|\leq 1$` for all *x*. [#]_
+remind them that :latex:`$|\sin x|\leq 1$` for all `$x$`. [#]_
 
 .. [#] My experience is that calculus students get nervous the exact
        minute the < sign goes on the board.  When you start thinking
@@ -307,14 +328,14 @@ Here are some discussion questions to get started:
 The IVT is one of the most important "topological" theorems in
 calculus.  We can't prove it (it relies on the fact that closed
 intervals are connected), but you can justify it kind of like this: if
-the function is continuous on *[a,b]*, the the graph connects
-*(a,f(a))* and *(b,f(b))* by a "string." A horizontal line between
-*f(a)* and *f(b)* must be crossed by this string, unless you cut it
+the function is continuous on `$[a,b]$`, the the graph connects
+`$(a,f(a))$` and `$(b,f(b))$` by a "string." A horizontal line between
+`$f(a)$` and `$f(b)$` must be crossed by this string, unless you cut it
 which breaks continuity.
 
 Once you've established that, you can prove that :latex:`$\sqrt{2}$`
 is a real number by applying the IVT to :latex:`$f(x) = x^2$` on
-*[1,2]*.  Notice that applying the IVT to :latex:`$f(x) = \sqrt{x}$`
+`$[1,2]$`.  Notice that applying the IVT to :latex:`$f(x) = \sqrt{x}$`
 is putting the cart before the horse: we can't say that's continuous
 without knowing if it has values at non-square integers.
 
@@ -370,8 +391,8 @@ Infinite Limits
 ~~~~~~~~~~~~~~~
 
 It's pretty clear that :latex:`$\lim_{x\to 0^+} \frac{1}{x}$` does not exist.
-As *x* gets smaller, :latex:`$\frac{1}{x}$` gets larger.  In fact, no matter
-how large we want :latex:`$\frac{1}{x}$` to be, we can make *x* small enough to
+As `$x$` gets smaller, :latex:`$\frac{1}{x}$` gets larger.  In fact, no matter
+how large we want :latex:`$\frac{1}{x}$` to be, we can make `$x$` small enough to
 guarantee :latex:`\frac{1}{x}` is larger.  You can tell them that this
 fundamental concept of real numbers is due to Archimedes.
 
@@ -445,7 +466,7 @@ Lesson 8: The Derivative as a Function
 Learning Objectives
 -------------------
 
-* Given a function *f*, use the definition of the derivative to find the
+* Given a function `$f$`, use the definition of the derivative to find the
   derivative function *f'*.
 
 * Given a function, find its *second derivative.*
@@ -456,10 +477,10 @@ Notes
 -----
 
 The previous section is about the derivative at a point.  This section
-is about the \emph{derived function} of *f*, the function *f'*.
+is about the \emph{derived function} of `$f$`, the function `$f'$`.
 
-An important theorem is *f* is continuous at *a* when it's
-differentiable at *a*. The proof is probably accessible by them, but
+An important theorem is `$f$` is continuous at `$a$` when it's
+differentiable at `$a$`. The proof is probably accessible by them, but
 may not be so well appreciated, so you can skip it if you feel it.
 Merely impressing upon them that differentiability is "super"
 continuity is enough.
@@ -602,45 +623,12 @@ elementary inverse functions (e.g., log, arcsin, etc.), but that's
 done in later sections.  So in this section you can talk a little bit
 about how to visualize or graph curves defined implicitly.
 
-
-
-Lesson 13: Related Rates
-========================
-
-:MW Date: October 6
-:TR Date: October 7 
-:Duration: one-half of one class period
-:See Also: Stewart_, Section 2.7
-
-Learning Objectives
--------------------
-
-* Model word problems with mathematical relations
-
-* Apply the chain rule to mathematical models.
-
-Notes
------
-
-Some people I know hate related rates problems.  Perhaps because they
-are known simply as a class of problems with no extrinsic motivation
-for them.  But they are another chance to practice modeling
-problems--that is, drawing the picture and setting up the variables
-for a problem written out in words.  Since students have difficulty
-with this, it's not a bad idea to give them this opportunity.  I hope
-it will make Section 4.5 (Optimization Problems) go better.
-
-Note to self
-------------
-
-We might drop this after all.  It is a packed week already.
-
-Lesson 14: Linear Approximations and Differentials
+Lesson 13: Linear Approximations and Differentials
 ==================================================
 
 :MW Date: October 6
 :TR Date: October 7 
-:Duration: one-half of one class period
+:Duration: one class period
 :See Also: Stewart_, Section 2.8
 
 Learning Objectives
@@ -668,17 +656,18 @@ students miss that connection and think of linear approximation as a
 completely different thing.
 
 Linear approximation is useful in estimating values of functions at
-inconvenient points near convenient points.  For instance, :latex:`$\sqrt{5}$`
-is hard but :latex:`$\sqrt{4}$` is easy.  So linearly approximate at 4.
+inconvenient points near convenient points.  For instance,
+:latex:`$\sqrt{5}$` is hard but :latex:`$\sqrt{4}$` is easy.  So
+linearly approximate at 4.
 
 Differentials are used here as an alternate notation for linear
-approximations.  If *$y=f(x)* is evaluated at *x* and *x+dx*, then
-:latex:`$\Delta y = f(x+dx) - f(x)$` is approximately equal to
-:latex:`$dy = f'(x) dx$` So if you need to bound *Δy* you can find a
-suitable *dx*.
+approximations.  If `$y=f(x)$` is evaluated at `$x$` and `$x+dx$`,
+then :latex:`$\Delta y = f(x+dx) - f(x)$` is approximately equal to
+:latex:`$dy = f'(x) dx$` So if you need to bound `$\Delta y$` you can find a
+suitable `$dx$`.
 
 
-Lesson 13: Exponential Functions
+Lesson 14: Exponential Functions
 ================================
 
 :MW Date: October 8
@@ -694,7 +683,7 @@ Learning Objectives
 * Know the properties of exponential functions
 
 
-Lesson 13: Inverse Functions and Logarithms
+Lesson 15: Inverse Functions and Logarithms
 ===========================================
 
 :MW Date: October 8
@@ -714,11 +703,11 @@ Learning Objectives
   base formula.
 
 
-Lesson 14: Derivatives of Logarithmic and Exponential Functions
+Lesson 16: Derivatives of Logarithmic and Exponential Functions
 ===============================================================
 
-:MW Date: October 15
-:TR Date: October 16
+:MW Date: October 20
+:TR Date: October 21
 :Duration: one class period
 :See Also: Stewart_, Section 3.3
 
@@ -745,12 +734,12 @@ rule.  You can differentiate a very complicated function using both
 regular differentiation and logarithmic differentiation and ask them
 which they prefer.
 
-Lesson 15: Exponential Growth and Decay
+Lesson 17: Exponential Growth and Decay
 =======================================
 
-:MW Date: October 20
-:TR Date: October 21
-:Duration: two-thirds of one class period
+:MW Date: October 22
+:TR Date: October 23
+:Duration: one half of one class period
 :See Also: Stewart_, Section 3.4
 
 Learning Objectives
@@ -768,12 +757,12 @@ Learning Objectives
   - Newton's Law of Cooling
 
 
-Lesson 16: Inverse Trigonometric Functions
+Lesson 18: Inverse Trigonometric Functions
 ==========================================
 
-:MW Date: October 20-22
-:TR Date: October 21-23
-:Duration: two-thirds of one class period
+:MW Date: October 22
+:TR Date: October 23
+:Duration: one half of one class period
 :See Also: Stewart_, Section 3.5
 
 Learning Objectives
@@ -797,12 +786,12 @@ just as easy to differentiate: implicitly, with a trigonometric
 identity to make the derivative explicit.
 
 
-Lesson 17: Intederminate forms and L'Hôpital's Rule
+Lesson 19: Intederminate forms and L'Hôpital's Rule
 ===================================================
 
-:MW Date: October 22
-:TR Date: October 23
-:Duration: two-thirds of one class period
+:MW Date: October 27
+:TR Date: October 28
+:Duration: one class period
 :See Also: Stewart_, Section 3.7
 
 Learning Objectives
@@ -810,13 +799,14 @@ Learning Objectives
 
 * Know when a limit is of indeterminate form:
 
-  * indeterminate quotients: 0/0, |infinity|/|infinity|
+  * indeterminate quotients: `$0/0$`, `$\infty/\infty$`
 
-  * indeterminate products: 0 |times| |infinity|
+  * indeterminate products: `$0 \times \infty$`
 
-  * indeterminate differences: |infinity| - |infinity|
+  * indeterminate differences: `$\infty-\infty$`
 
-  * indeterminate powers: :latex:`$0^0$`, :latex:`$\infty^0$`, and :latex:`$1^\infty$`
+  * indeterminate powers: :latex:`$0^0$`, :latex:`$\infty^0$`, and
+    :latex:`$1^\infty$`
 
 * Use L'Hôpital's Rule to evaluate indeterminate limits
 
@@ -828,19 +818,19 @@ The controversy surrounding L'Hôpital's Rule is that it's so often
 misapplied to non-indeterminate forms, which results in garbage.  So
 make sure they know what's indeterminate and what isn't.
 
-I usually demonstrate why we call limits of the form 0/0
+I usually demonstrate why we call limits of the form `$0/0$`
 indeterminate.  You can take :latex:`$\frac{\sin^2 x}{x}$`,
-:latex:`$\frac{\sin x}{x}$`, and :latex:`$\frac{\sin x}{x^2}$` as *x*
-tends to zero.  All of these are of the form 0/0 but the
-first limit is zero, the second one, and the last |infinity|. (you can
-show these without L'Hôpital's Rule).
+:latex:`$\frac{\sin x}{x}$`, and :latex:`$\frac{\sin x}{x^2}$` as
+`$x$` tends to zero.  All of these are of the form 0/0 but the first
+limit is zero, the second one, and the last |infinity|. (you can show
+these without L'Hôpital's Rule).
 
 There's a big difference between the limit being of indeterminate form
 and the function failing to have a limit.  Notice in two of the above
-cases, the limit does exist.  Students will also confuse *limits
-of the form* 0/0, which are *indeterminate* with the
-*expression* 0/0 which is *undefined*. That's
-exactly what L'Hôpital's Rule is for. [#]_
+cases, the limit does exist.  Students will also confuse *limits of
+the form* 0/0, which are *indeterminate* with the *expression* 0/0
+which is *undefined*. That's exactly what L'Hôpital's Rule is
+for. [#]_
 
 .. [#] I saw this comment on the `Wikipedia talk page for L'Hôpital's Rule`__:
 
@@ -853,14 +843,15 @@ exactly what L'Hôpital's Rule is for. [#]_
    
    __ http://en.wikipedia.org/w/index.php?title=Talk:L%27H%C3%B4pital%27s_rule&oldid=214019846#You_Divided_by_zero
 
-You will probably not have time to do the the indeterminate powers in class.  Tell them to read it in the book.  
+You may not have time to do all the indeterminate powers in
+class.  Tell them to read it in the book.
 
-Lesson 18: Maximum and Minum Values
+Lesson 20: Maximum and Minum Values
 ===================================
 
-:MW Date: October 27
-:TR Date: October 28
-:Duration: two-thirds of one class period
+:MW Date: October 29
+:TR Date: October 30
+:Duration: one class period
 :See Also: Stewart_, Section 4.1
 
 Learning Objectives
@@ -875,23 +866,38 @@ Learning Objectives
 * Use the *Closed Interval Method* to find the extreme values of a
   function defined on a closed interval.
 
-Lesson 19: The Mean Value Theorem
+Lesson 21: The Mean Value Theorem
 =================================
 
-:MW Date: October 27-29
-:TR Date: October 28-30
+:MW Date: November 3
+:TR Date: November 4
 :Duration: two-thirds of one class period
 :See Also: Stewart_, Section 4.2
 
 * Understand and be able to explain the statement of *Rolle's Theorem*.
 
-* Understand and be able to explain the statement of the *Mean Value Theorem*.
+* Understand and be able to explain the statement of the *Mean Value
+  Theorem*.
 
-Lesson 20: Derivatives and the Shapes of Graphs
+Notes
+-----
+
+Rolle's Theorem is simply an application of Fermat's Theorem.  The
+Mean Value Theorem comes from Rolle's Theorem applied to a jury-rigged
+function.
+
+*The Mean Value Theorem is the most important theorem in calculus.* It
+is the theorem which ties derivative information to information about
+the original function.  From the MVT we prove that a function with
+zero derivative (on an interval) must be a constant, or that two
+functions with the same derivative (again, on an interval), differ by
+a constant.  The MVT is used in the proof of the FTC.  
+
+Lesson 22: Derivatives and the Shapes of Graphs
 ===============================================
 
-:MW Date: October 29
-:TR Date: October 30 
+:MW Date: November 3-5
+:TR Date: November 4-6
 :Duration:  two-thirds of one class period
 :See Also: Stewart_, Section 4.3
 
@@ -914,11 +920,11 @@ Learning Objectives
   (The *Second Derivative Test*)
 
 
-Lesson 21: Curve Sketching
+Lesson 23: Curve Sketching
 ==========================
 
-:MW Date: November 3
-:TR Date: November 4
+:MW Date: November 5
+:TR Date: November 6
 :Duration: one class period
 :See Also: Stewart_, Section 4.4
 
@@ -942,11 +948,11 @@ kind of like diagramming sentences, which are also kind of old
 fashioned but very instructive.
 
 
-Lesson 22: Optimization Problems
+Lesson 24: Optimization Problems
 ================================
 
-:MW Date: November 5
-:TR Date: November 6
+:MW Date: November 10
+:TR Date: November 11
 :Duration: one class period
 :See Also: Stewart_, Section 4.5
 
@@ -979,8 +985,24 @@ two extended optimization problems, one of them being the "Statue of
 Liberty problem": how far away from the statue should you stand to
 maximize the size of the statue in your vision?
 
+Lesson 25: Newton's Method
+==========================
 
-Lesson 23: Areas and Distances
+:MW Date: November 10-12
+:TR Date: November 11-13
+:Duration: one half of one class period
+:See Also: Stewart_, Section 4.6
+
+Lesson 26: Antiderivatives
+==========================
+
+:MW Date: November 12
+:TR Date: November 13
+:Duration: one half of one class period
+:See Also: Stewart_, Section 4.7
+
+
+Lesson 27: Areas and Distances
 ==============================
 
 :MW Date: November 10
@@ -1009,7 +1031,7 @@ divide and conquer: divide into small intervals along which one of the
 functions can be reasonably approximated by a constant.  Then let the
 intervals tend to zero in width.
 
-Lesson 24: The Definite Integral
+Lesson 28: The Definite Integral
 ================================
 
 :MW Date: November 10-12
@@ -1040,7 +1062,7 @@ First Fundamental Theorem of Calculus.
 
 
 
-Lesson 25: Evaluating Definite Integrals
+Lesson 29: Evaluating Definite Integrals
 ========================================
 
 :MW Date: November 12
@@ -1075,11 +1097,11 @@ prove this.
 
 There are two proofs of FTCII.  The weaker version comes
 from the first Fundamental Theorem of Calculus, namely that
-:latex:`$\frac{d}{dx} \int_a^x f(t)\,dt = f(x)$`.  If *F* is another
-antiderivative of *f*, then :latex:`$F(x) = \int_a^x f(t)\,dt + C$`. 
-Since :latex:`$\int_a^af(t)\,dt = 0$`, we have *C=F(a)* and we're done.
+:latex:`$\frac{d}{dx} \int_a^x f(t)\,dt = f(x)$`.  If `$F$` is another
+antiderivative of `$f$`, then :latex:`$F(x) = \int_a^x f(t)\,dt + C$`. 
+Since :latex:`$\int_a^af(t)\,dt = 0$`, we have `$C=F(a)$` and we're done.
 
-This proof requires *f* to be continuous, which isn't so bad because
+This proof requires `$f$` to be continuous, which isn't so bad because
 most of the functions we discuss will be continuous.  The more general
 proof using very well chosen Riemann sums is in the book.  If you can
 show both, do so.
@@ -1089,12 +1111,12 @@ computing areas.  Which means we had better get more serious about
 collecting antiderivatives.  So start writing up a simple integration
 table.
 
-Then there are all the other interpretations of "Net Change:" If *f*
-is velocity it's distance.  If *f* is density it's mass.  If *f* is
+Then there are all the other interpretations of "Net Change:" If `$f$`
+is velocity it's distance.  If `$f$` is density it's mass.  If `$f$` is
 marginal cost it's total cost.  And so on.
 
 
-Lesson 26: The Fundamental Theorem of Calculus
+Lesson 30: The Fundamental Theorem of Calculus
 ==============================================
 
 :MW Date: November 17
@@ -1118,14 +1140,14 @@ Notes
 
 This is the other fundamental theorem of calculus, of course.  To
 motivate it, consider a given function's *area function* :latex:`$F(x)
-= \int_a^x f(t)\,dt$`.  What does the graph of *F(x)* look like for
-various *f*?  Students should be able to figure out that when *f* is
-positive, *F* is increasing, and when *f* is negative, *F* is
-decreasing, and so on.  So *F* starts to "look like" an antiderivative
-for *F*.
+= \int_a^x f(t)\,dt$`.  What does the graph of `$F(x)$` look like for
+various `$f$`?  Students should be able to figure out that when `$f$` is
+positive, `$F$` is increasing, and when `$f$` is negative, `$F$` is
+decreasing, and so on.  So `$F$` starts to "look like" an antiderivative
+for `$F$`.
 
 Now you can state and prove the theorem.  Emphasize that we have do
-back to the definition of derivative for $F$, that is, take the limit
+back to the definition of derivative for `$F$`, that is, take the limit
 of difference quotients.  We have 
 
 .. latex::
@@ -1133,12 +1155,12 @@ of difference quotients.  We have
   \frac{F(a+h)-F(a)}{h} = \frac{1}{h} \int_a^{x+h} f(t)\,dt
 
 By Property 8 above, :latex:`$\int_a^{a+h} f(t)\,dt$` is bounded above
-by the maximum of *f* on [*a*,*a+h*] times *h*, and bounded below by
-the minimum of *f* on [*a*,*a+h*] times *h*.  So the difference
-quotient itself if bounded between the max and min of *f* on
-[*a*,*a+h*].  So *F'(a)*, if it exists, is between the lim sup and lim
-inf of *f* as *x* approaches *a*. But since *f* is continuous at *a*,
-the limit does exist and is *f(a)*.  (Squeeze Theorem!)
+by the maximum of `$f$` on `$[a,a+h]$` times `$h$`, and bounded below by
+the minimum of `$f$` on `$[a,a+h]$` times `$h$`.  So the difference
+quotient itself if bounded between the max and min of `$f$` on
+`$[a,a+h]$`.  So `$F'(a)$`, if it exists, is between the lim sup and lim
+inf of `$f$` as `$x$` approaches `$a$`. But since `$f$` is continuous at `$a$`,
+the limit does exist and is `$f(a)$`.  (Squeeze Theorem!)
 
 Now we get to one of the most confusing simple tasks in calculus:
 differentiating a function expressed as an integral.  It shouldn't be,
@@ -1146,17 +1168,17 @@ but it is.  You can get them to repeat that
 :latex:`$\frac{d}{dx}\int_a^x f(t)\,dt = f(x)$`, but they will get
 completely confused with :latex:`$\frac{d}{dx}\int_a^{x^2} f(t)\,dt =
 f(x^2)(2x)$`.  Perhaps try to hide the integral and call the area
-function *F*; then it's clear that :latex:`$\frac{d}{dx}F(x^2) = F'(x^2)(2x)$`.
+function `$F$`; then it's clear that :latex:`$\frac{d}{dx}F(x^2) = F'(x^2)(2x)$`.
 Students also will try to work :latex:`$f'$` in here, but point out that the
 FTC never involves the derivative of the integrand.
 
 This seems like a pointless task, but there are functions which are
 defined in terms of an integral, such as the error function
-:latex:`$\int_{0}^x e^{-x^2}\,dx$`, the sine integral function 
-:latex:`$\int_0^x\frac{\sin x}{x}\,dx$`, and the Fresnel function.
+:latex:`$\int_{0}^x e^{-t^2}\,dt$`, the sine integral function 
+:latex:`$\int_0^x\frac{\sin t}{t}\,dt$`, and the Fresnel function.
 
 
-Lesson 27: The Substitution Rule
+Lesson 31: The Substitution Rule
 ================================
 
 :MW Date: November 19
@@ -1200,16 +1222,15 @@ one.
 The way I explain how the the limits change in 
 
 .. latex:: 
-   :class: displayed-equation
 
    \int_a^b f(g(x))g'(x) = \int_{g(a)}^{g(b)} f(u)\,du 
 
-is that the integral on the left happens in ":latex:`$x$`-land."  The
-variable is `$x$` and the limits are an interval in `$x$`.  The integral
-on the right is in "`$u$`-land," so the limits should be values of `$u$`
-as well.  How do you get from `$x$` to `$u$`?  Well, the substitution was
-`$u=g(x)$`.  So the `$u$`-values corresponding to `$x=a$` and `$x=b$` are
-`$u=g(a)$` and `$u=g(b)$`.
+is that the integral on the left happens in ":latex:`$x$`\ -land."  The
+variable is `$x$` and the limits are an interval in `$x$`.  The
+integral on the right is in "`$u$`\ -land," so the limits should be
+values of `$u$` as well.  How do you get from `$x$` to `$u$`?  Well,
+the substitution was `$u=g(x)$`.  So the `$u$`-values corresponding to
+`$x=a$` and `$x=b$` are `$u=g(a)$` and `$u=g(b)$`.
 
 Students will trip up themselves when making the substitution.  They
 will forget to take care of the `$dx$` and still have it in the
@@ -1233,7 +1254,7 @@ interval is twice the integral over the second half.  A picture is
 most convincing here, the substitution `$u=-x$` makes it rigorous.
 
 
-Lesson 28: Integration by Parts
+Lesson 32: Integration by Parts
 ===============================
 
 :MW Date: November 24
@@ -1280,7 +1301,7 @@ parts or substitution.  A good worksheet would make this time
 worthwhile without penalizing those who miss it.
 
 
-Lesson 29: Integration by partial fraction decomposition
+Lesson 33: Integration by partial fraction decomposition
 ========================================================
 
 :MW Date: December 1
@@ -1319,7 +1340,7 @@ Learning Objectives
   find its antiderivative.
 
 
-Lesson 30: Approximate Integration
+Lesson 34: Approximate Integration
 ==================================
 
 :MW Date: December 3
@@ -1348,34 +1369,6 @@ Learning Objectives
   tolerance level, approximate the definite integral within the
   prescribed tolerance using one of the above methods.
 
-Lesson 31: Improper Integrals
-=============================
-
-:MW Date: December 8
-:TR Date: December 9
-:Duration: one class period
-:See Also: Stewart_, Section 6.6
-
-* Given a function defined on a closed, unbounded interval, understand
-  and be able to explain the definition of the **improper integral**
-  of the function over the interval in terms of a limit of "proper"
-  integrals over closed, bounded intervals.  In the book, these are
-  called improper integrals of **Type I**.
-
-* Given a function defined on a closed, unbounded interval, use the
-  definition of improper integral to either evaluate the integral or
-  decide that it does not converge.
-
-* Given a power function of the form :latex:`$x^p$`, determine if the
-  improper integral over the interval [1, |infinity| ) converges
-
-* Given a function defined on a closed, unbounded interval, use the
-  Comparison Test to decide if the integral converges or diverges
-
-* Repeat all of the above with functions which are continuous on an
-  interval (*a*,*b*] but which have an asymptote at *a* (the so-called
-  improper integrals of **Type II**).
-
 
 Details
 =======
@@ -1385,9 +1378,10 @@ Textbook
 
 .. _Stewart: 
 
-:title-reference:`Essential Calculus, Early Transcendentals` by James
- Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
+:title-reference:`Essential Calculus, Early Transcendentals` by James Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
 
 .. |infinity| unicode:: U+221E
 
 .. |times| unicode:: U+2A09
+
+.. |date| date::
