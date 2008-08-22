@@ -12,7 +12,9 @@ RST2HTML_FLAGS=--embed-stylesheet \
 PYTHON=python
 DUDIR=$(LIBDIR)/docutils-0.5
 RST2LATEX=$(TOPDIR)/bin/rst2latex.py
-RST2LATEX_FLAGS=
+RST2LATEX_FLAGS=--use-latex-toc \
+        --use-latex-docinfo
+	--stylesheet=$(LIBDIR)/rst2latex.tex 
 XSLTPROC=xsltproc
 XSLTPROC_ISITES_FLAGS=
 

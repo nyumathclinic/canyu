@@ -66,8 +66,9 @@ endef
 #endef
 run-pdflatex=$(run-latex:latex=pdflatex)
 
+# MPL 2008-08-22 If include'd or input file has an extension, do not tack on ".tex"
 define get_dependencies
-	deps=`perl -ne '($$_)=/^[^%]*\\\(?:include|input)\{(.*?)\}/;@_=split /,/;foreach $$t (@_) {print "$$t.tex "}' $<`
+	deps=`perl -ne '($$_)=/^[^%]*\\\(?:include|input)\{(.*?)\}/;@_=split /,/;foreach $$t (@_) {print ($$t =~ m/\./ ? $$t . " " : "$$t.tex " )}' $<`
 endef
 
 define getbibs
@@ -81,6 +82,7 @@ endef
 define manconf
 	mandeps=`if test -r $(basename $@).cnf ; then cat $(basename $@).cnf |tr -d '\n\r' ; fi`
 endef
+
 
 all 	: $(TRG)
 
