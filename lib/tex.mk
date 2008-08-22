@@ -31,7 +31,8 @@ OUTDATED = echo "EPS-file is out-of-date!" && false
 
 # These are OK
 
-SRC	:= $(shell find . -depth 1 -name \*.txt | xargs egrep -l '^[^%]*\\begin\{document\}')
+SRC	:= $(shell find . -type f -depth 1 -name \*.tex \
+                   | xargs egrep -l '^[^%]*\\begin\{document\}')
 TRG	= $(SRC:%.tex=%.dvi)
 PSF	= $(SRC:%.tex=%.ps)
 PDF	= $(SRC:%.tex=%.pdf)
@@ -53,10 +54,17 @@ define run-latex
 	egrep -i "(Reference|Citation).*undefined" $(<:%.tex=%.log) ; true
 endef
 
-define run-pdflatex
-	LATEX=pdflatex
-	@$(run-latex)
-endef
+# MPL 2008-08-21.  The idea is to change the variable LATEX to have
+# the value pdflatex, then run the above script, but some scoping
+# subtlety doesn't allow that to work.  My workaround does a simple
+# subsitution, which would be bad if you have filenames with "latex"
+# in them!
+
+#define run-pdflatex
+#	LATEX=pdflatex
+#	@$(run-latex)
+#endef
+run-pdflatex=$(run-latex:latex=pdflatex)
 
 define get_dependencies
 	deps=`perl -ne '($$_)=/^[^%]*\\\(?:include|input)\{(.*?)\}/;@_=split /,/;foreach $$t (@_) {print "$$t.tex "}' $<`

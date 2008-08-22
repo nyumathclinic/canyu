@@ -11,7 +11,8 @@ RST2HTML_FLAGS=--embed-stylesheet \
 	--cloak-email-addresses
 PYTHON=python
 DUDIR=$(LIBDIR)/docutils-0.5
-RST2LATEX=$(PYTHON) $(DUDIR)/bin/rst2latex.py
+RST2LATEX=$(TOPDIR)/bin/rst2latex.py
+RST2LATEX_FLAGS=
 XSLTPROC=xsltproc
 XSLTPROC_ISITES_FLAGS=
 
@@ -24,6 +25,16 @@ sys.path.append('$(shell cd $(DUDIR) && pwd)/lib/python')" > $(RST2HTML); \
 	cat $(LIBDIR)/rst2html.py >> $(RST2HTML)
 	chmod 701 $(RST2HTML)
 
+$(RST2LATEX): $(LIBDIR)/rst2latex.py
+	cd $(DUDIR) && $(PYTHON) setup.py install --home=$(DUDIR);\
+	echo "#!/usr/bin/env python\n\
+import sys\n\
+sys.path.append('$(shell cd $(LIBDIR) && pwd)')\n\
+sys.path.append('$(shell cd $(DUDIR) && pwd)/lib/python')" > $(RST2LATEX); \
+	cat $(LIBDIR)/rst2latex.py >> $(RST2LATEX)
+	chmod 701 $(RST2LATEX)
+
+
 %.html: %.txt $(RST2HTML)
 	$(RST2HTML) $(RST2HTML_FLAGS) $< $@
 
@@ -33,5 +44,5 @@ sys.path.append('$(shell cd $(DUDIR) && pwd)/lib/python')" > $(RST2HTML); \
 %-screen.html: %.html $(LIBDIR)/htmlscreen.xsl 
 	$(XSLTPROC) $(LIBDIR)/htmlscreen.xsl $< > $@
 
-%.pdf: %.html
-	wkpdf --source $< --output $@
+%.tex: %.txt $(RST2LATEX)
+	$(RST2LATEX) $(RST2LATEX_FLAGS) $< $@
