@@ -20,7 +20,7 @@ Lesson Outline for Math 121, Fall 2008
 :Date: |date|
 
 This is a topic-by-topic checklist for Calculus I.  I've included
-specific *learning objectives* for each section---things that students
+specific *learning objectives* for each section—things that students
 should be capable of after completing the topic.  I've also written
 notes on each topic to help with planning a lecture, and to explain
 calendar quirks.
@@ -170,7 +170,7 @@ don't tell them that.  We are not going to do the precise definition
 of a limit.
 
 I like to frame this as a game between the students and me.  One team
-sets the maximum error allowed---how close do you need `$f(x)$` to be to
+sets the maximum error allowed—how close do you need `$f(x)$` to be to
 `$L$`?  The other shows a "tolerance" interval around `$a$` such that if
 `$x$` is within that interval then `$f(x)$` is within the error interval
 around `$L$`.  This can all be done on a graph without any arithmetic or
@@ -390,11 +390,12 @@ Here's a good time to talk about my favorite horizontal asymptote:
 Infinite Limits
 ~~~~~~~~~~~~~~~
 
-It's pretty clear that :latex:`$\lim_{x\to 0^+} \frac{1}{x}$` does not exist.
-As `$x$` gets smaller, :latex:`$\frac{1}{x}$` gets larger.  In fact, no matter
-how large we want :latex:`$\frac{1}{x}$` to be, we can make `$x$` small enough to
-guarantee :latex:`\frac{1}{x}` is larger.  You can tell them that this
-fundamental concept of real numbers is due to Archimedes.
+It's pretty clear that :latex:`$\lim_{x\to 0^+} \frac{1}{x}$` does not
+exist.  As `$x$` gets smaller, :latex:`$\frac{1}{x}$` gets larger.  In
+fact, no matter how large we want :latex:`$\frac{1}{x}$` to be, we can
+make `$x$` small enough to guarantee :latex:`$\frac{1}{x}$` is larger.
+You can tell them that this fundamental concept of real numbers is due
+to Archimedes.
 
 This leads to an extension of the definition of limit to include the
 possibility of an infinite limit.  A vertical asymptote is the
@@ -412,7 +413,7 @@ instance, what should :latex:`$\lim_{x\to 0^+} \left(\frac{1}{x} -
 limit failing to exist, rather than an extension of the concept of a
 limit succeeding in existing.  Otherwise, we'd have to go back and
 rewrite the limit laws to exclude all the bad arithmetic with
-|infinity|.
+`$\infty$`.
 
 
 Lesson 7: Derivatives and Rates of Change
@@ -786,8 +787,8 @@ just as easy to differentiate: implicitly, with a trigonometric
 identity to make the derivative explicit.
 
 
-Lesson 19: Intederminate forms and L'Hôpital's Rule
-===================================================
+Lesson 19: Intederminate forms and |LHopital|'s Rule
+====================================================
 
 :MW Date: October 27
 :TR Date: October 28
@@ -808,13 +809,13 @@ Learning Objectives
   * indeterminate powers: :latex:`$0^0$`, :latex:`$\infty^0$`, and
     :latex:`$1^\infty$`
 
-* Use L'Hôpital's Rule to evaluate indeterminate limits
+* Use |LHopital|'s Rule to evaluate indeterminate limits
 
 Notes
 -----
 
 The "recognizing indeterminate forms" objective is very important.
-The controversy surrounding L'Hôpital's Rule is that it's so often
+The controversy surrounding |LHopital|'s Rule is that it's so often
 misapplied to non-indeterminate forms, which results in garbage.  So
 make sure they know what's indeterminate and what isn't.
 
@@ -823,22 +824,22 @@ indeterminate.  You can take :latex:`$\frac{\sin^2 x}{x}$`,
 :latex:`$\frac{\sin x}{x}$`, and :latex:`$\frac{\sin x}{x^2}$` as
 `$x$` tends to zero.  All of these are of the form 0/0 but the first
 limit is zero, the second one, and the last |infinity|. (you can show
-these without L'Hôpital's Rule).
+these without |LHopital|'s Rule).
 
 There's a big difference between the limit being of indeterminate form
 and the function failing to have a limit.  Notice in two of the above
 cases, the limit does exist.  Students will also confuse *limits of
 the form* 0/0, which are *indeterminate* with the *expression* 0/0
-which is *undefined*. That's exactly what L'Hôpital's Rule is
+which is *undefined*. That's exactly what |LHopital|'s Rule is
 for. [#]_
 
-.. [#] I saw this comment on the `Wikipedia talk page for L'Hôpital's Rule`__:
+.. [#] I saw this comment on the `Wikipedia talk page`__ for |LHopital|'s Rule:
 
      "0/0? You can't divide by zero if you do it gives you all sorts
      of weird answers.  The preceding unsigned comment was added by
      71.246.231.88 (talk) 23:04, 2 January 2007 (UTC).
 
-     "Hence L'Hôpital's Rule, my friend. -216.145.255.2 11:32, 5
+     "Hence |LHopital|'s Rule, my friend. -216.145.255.2 11:32, 5
      January 2007 (UTC)"
    
    __ http://en.wikipedia.org/w/index.php?title=Talk:L%27H%C3%B4pital%27s_rule&oldid=214019846#You_Divided_by_zero
@@ -1380,8 +1381,16 @@ Textbook
 
 :title-reference:`Essential Calculus, Early Transcendentals` by James Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
 
-.. |infinity| unicode:: U+221E
+.. |infinity| replace::
+   :latex:`$\infty$`
 
-.. |times| unicode:: U+2A09
+.. |ocirc|  unicode:: U+000F4 .. LATIN SMALL LETTER O WITH CIRCUMFLEX
 
-.. |date| date::
+.. |LHopital| replace::
+   L'H\ |ocirc|\ pital 
+
+.. |times| replace::
+   :latex:`$times$`
+
+.. |date| date:: %B %d, %Y
+
