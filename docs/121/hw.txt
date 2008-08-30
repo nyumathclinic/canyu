@@ -1,6 +1,6 @@
 .. -*- mode: rst; coding: utf-8; fill-column: 90 -*-
 .. meta:: 
-   :description: Lesson Outline for Math 121, Fall 2008
+   :description: Homework Assignments for Math 121, Fall 2008
    :keywords: Math 121, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
@@ -9,11 +9,20 @@
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
+   :Schema.link: http://www.w3.org/1999/xhtml/link/
+   :link.previous scheme=rel: cal.html
+   :link.start scheme=rel: syllabus.html
+   :short-title: Homework
+   :link.contents scheme=rel: contents.html
+   :link.alternate scheme=rel media=print type=application/pdf: hw.pdf
+   :link.alternate scheme=rel media=print type=text/html: hw-print.html
+   :link.alternate scheme=rel media=print type=application/x-latex: hw.tex
+
 
 .. |date| date::
 
-Homework Asignments for Math 121, Fall 2008
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Homework Assignments for Math 121, Fall 2008
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date: |date|
@@ -111,3 +120,13 @@ and graded.
 
 .. [#] October 13 and 14 are the Columbus Day holiday.  The midterm will be given October
    15 and 16 in class.
+
+Grading of Homework
+-------------------
+
+.. include:: ../common/hw_grading.txt
+
+Exceptions
+----------
+
+.. include:: ../common/hw_exceptions.txt
