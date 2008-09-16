@@ -13,8 +13,8 @@
     xmlns:foaf="http://xmlns.com/foaf/1.0"
     xmlns:dct="http://purl.org/dc/terms/"> 
     <dc:description>Stylesheet to take docutils-generated html and
-      outbout a fragment suitable for submission to
-      CIMS websites.</dc:description>
+      output an html page suitable for CIMS websites.
+    </dc:description>
     <dc:creator>
       <foaf:Person>
 	<foaf:name>Matthew Leingang</foaf:name>
@@ -30,7 +30,7 @@
    method="html" 
    omit-xml-declaration="yes"
    indent="yes"
-   />  
+   />
 
 <xsl:template match="html:html">
   <html>
@@ -54,6 +54,8 @@
   <script type="text/javascript" src="/scripts/ClearSearch.js"></script>
   <script type="text/javascript" src="/scripts/drop_down.js"></script>
 </xsl:template>
+
+
 
 <xsl:template name="stylesheet">
   <style type="text/css">
@@ -84,7 +86,7 @@
 </xsl:template>
 
 <xsl:template name="htmlbody"> 
-    <xsl:comment>Begin Containg Box</xsl:comment>
+    <xsl:comment>Begin Containg Box</xsl:comment><!-- preserve spelling error in CIMS template :-) -->
     <div id="container">
       <xsl:call-template name="pagehead" />
       <xsl:call-template name="schoolnav" />
@@ -149,20 +151,16 @@
   <xsl:comment>Begin Navigation Box</xsl:comment>
     <div id="nav">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/people/">People</a></li>
-        <li><a href="/staff_contact_information.html">Administration</a></li>
-        <li><a href="/research/">Research</a></li>
-        <li><a href="/courses/">Courses</a></li>
-        <li><a href="/degree/phd/">Ph.D. Programs</a></li>
-        <li><a href="/degree/ms/">M.S. Programs</a></li>
+        <li><a href="/">Math Department Home</a></li>
+	<li><a href="/courses/Calculus/2008/Fall/121/">Calculus I</a></li>
+	<li><a href="/courses/Calculus/2008/Fall/122/">Calculus II</a></li>
+        <li><a href="/courses/ug_course_descriptions.html">Undergraduate Courses</a></li>
         <li><a href="/degree/undergrad/">Undergraduate Program</a></li>
-        <li><a href="http://cims.nyu.edu/library/">Courant Library</a></li>
-	<li><a href="/visiting_faculty/">Visiting Member Program</a></li>
+	<li><a href="/degree/undergrad/calculus.html">Placement</a></li>
+	<li><a href="/degree/undergrad/tutor_schedule.html">Tutoring</a></li>
+        <li><a href="/people/">People</a></li>
         <li><a href="/events/">Weekly Bulletin</a></li>
         <li><a href="/links/">Useful Links</a></li>
-        <li><a href="/jobs/">Job Openings</a></li>
-        <li><a href="https://www.cims.nyu.edu/directory/">Directory</a></li>
         <li><a href="/outreach/">Outreach</a></li>
       </ul>
     </div>
@@ -177,9 +175,74 @@
 	   <xsl:value-of select="//html:h1[@class='title'][1]" />
 	 </h1>
        </xsl:if>
-       <xsl:if test="//html:div[@id='contents']">
+
+       <!-- links to alternate media (old syntax) -->
+       <xsl:if test="//html:meta[@name='link.alternate']">
+	 <div id="alternates">
+	   Alternate forms of this document:
+	   <xsl:if test="//html:meta[@name='link.alternate' and @type='application/pdf']">
+	     <a>
+	       <xsl:attribute name="href">
+		 <xsl:value-of select="//html:meta[@name='link.alternate' and @type='application/pdf']/@content"/>
+	     </xsl:attribute>PDF</a>
+	   </xsl:if>
+	   <xsl:if test="//html:meta[@name='link.alternate' and @type='application/x-latex']">
+	     <xsl:text> </xsl:text>
+	     <a>
+	       <xsl:attribute name="href">
+		 <xsl:value-of select="//html:meta[@name='link.alternate' and @type='application/x-latex']/@content"/>
+	     </xsl:attribute>TeX</a>
+	   </xsl:if>
+	 </div>
+       </xsl:if>
+	 
+       <!-- links to alternate media (new syntax) -->
+       <xsl:if test="//html:meta[@name='link' and @rel='alternate']">
+	 <div id="alternates">
+	   Alternate forms of this document:
+	   <xsl:if test="//html:meta[@name='link' and @rel='alternate' and @type='application/pdf']">
+	     <a>
+	       <xsl:attribute name="href">
+		 <xsl:value-of select="//html:meta[@name='link' and @rel='alternate' and @type='application/pdf']/@content"/>
+	     </xsl:attribute>PDF</a>
+	   </xsl:if>
+	   <xsl:if test="//html:meta[@name='link' and @rel='alternate' and @type='application/x-latex']">
+	     <xsl:text> </xsl:text>
+	     <a>
+	       <xsl:attribute name="href">
+		 <xsl:value-of select="//html:meta[@name='link' and @rel='alternate' and @type='application/x-latex']/@content"/>
+	     </xsl:attribute>TeX</a>
+	   </xsl:if>
+	 </div>
+       </xsl:if>
+
+       <!-- links to alternate media (conforming syntax) -->
+       <xsl:if test="//html:link[@rel='alternate']">
+	 <div id="alternates">
+	   Alternate forms of this document:
+	   <xsl:if test="//html:link[@rel='alternate' and @type='application/pdf']">
+	     <a>
+	       <xsl:attribute name="href">
+		 <xsl:value-of select="//html:link[@rel='alternate' and @type='application/pdf']/@href"/>
+	     </xsl:attribute>PDF</a>
+	   </xsl:if>
+	   <xsl:if test="//html:link[@rel='alternate' and @type='application/x-latex']">
+	     <xsl:text> </xsl:text>
+	     <a>
+	       <xsl:attribute name="href">
+		 <xsl:value-of select="//html:link[@rel='alternate' and @type='application/x-latex']/@content"/>
+	     </xsl:attribute>TeX</a>
+	   </xsl:if>
+	 </div>	 
+       </xsl:if>
+
+
+
+       <!-- contents box floating to the right  -->
+       <xsl:if test="document('contents.html') or //html:div[@id='contents']">
 	 <div id="secondary">
 	   <h1 class="bar">Contents</h1>
+	   <xsl:copy-of select="document('contents.html')/html:html/html:body//html:ul" />
 	   <xsl:apply-templates select="//html:div[@id='contents']/html:ul" />
 	 </div>
        </xsl:if>
