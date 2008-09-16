@@ -128,4 +128,13 @@ ps	: $(PSF)
 
 pdf	: $(PDF) 
 
-include $(LIBDIR)/tex4ht.mk
+# MPL 2008-08-22: don't need this now.  Maybe include it from some other Makefile if you need it.
+# include $(LIBDIR)/tex4ht.mk
+
+BUNDLEDOC=$(BINDIR)/bundledoc $(BUNDLEDOC_FLAGS)
+BUNDLEDOC_FLAGS=--verbose
+%.dep   : %.tex
+	$(LATEX) $<
+%.tar.Z : %.dep Makefile
+	$(BUNDLEDOC) $<
+
