@@ -13,7 +13,10 @@
     xmlns:foaf="http://xmlns.com/foaf/1.0"
     xmlns:dct="http://purl.org/dc/terms/"> 
     <dc:description>Stylesheet to take docutils-generated html and
-      fix a few html issues</dc:description>
+      fix a few html issues.
+
+      Could also be used to add rdfa information.
+    </dc:description>
     <dc:creator>
       <foaf:Person>
 	<foaf:name>Matthew Leingang</foaf:name>
@@ -25,40 +28,50 @@
     <dc:identifier>$HeadURL$</dc:identifier>
   </rdf:Description>
 
-<xsl:output 
-   method="html" 
-   omit-xml-declaration="yes"
-   indent="yes"
-   />  
+  <xsl:output 
+      method="xml" 
+      omit-xml-declaration="yes"
+      indent="yes"
+      />  
+  
+  <!-- convert meta links to html links (hack since rst2html doesn't support this) -->
+  <xsl:template match="html:meta[substring(@name,1,5)='link.']">
+    <link xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:choose>
+	<xsl:when test="@scheme='rev'">
+	  <xsl:attribute name="rev">
+	    <xsl:value-of select="substring(@name,6)"/>
+	  </xsl:attribute>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:attribute name="rel">
+	    <xsl:value-of select="substring(@name,6)"/>
+	  </xsl:attribute>
+	</xsl:otherwise>
+      </xsl:choose>
+      <xsl:attribute name="href">
+	<xsl:value-of select="@content" />
+      </xsl:attribute>
+      <xsl:apply-templates select="@type|@media"/>
+    </link>
+  </xsl:template>
+  
+  <!-- convert meta links to html links (new syntax) -->
+  <xsl:template match="html:meta[@name='link']"> 
+    <link xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="href">
+	<xsl:value-of select="@content" />
+      </xsl:attribute>  
+      <xsl:apply-templates select="@rel|@rev|@type|@media"/>
+    </link>
+  </xsl:template>
+  
+  <!-- Default BEHAVIOR: identity transformation -->
+  <xsl:template match="@*|node()">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+  </xsl:template>
 
-<!-- convert meta links to html links (hack since rst2html doesn't support this) -->
-<xsl:template match="html:meta[substring(@name,1,5)='link.']">
-  <link>
-    <xsl:choose>
-      <xsl:when test="@scheme='rev'">
-	<xsl:attribute name="rev">
-	  <xsl:value-of select="substring(@name,6)"/>
-	</xsl:attribute>
-      </xsl:when>
-      <xsl:otherwise>
-	<xsl:attribute name="rel">
-	  <xsl:value-of select="substring(@name,6)"/>
-	</xsl:attribute>
-      </xsl:otherwise>
-    </xsl:choose>
-    <xsl:attribute name="href">
-      <xsl:value-of select="@content" />
-    </xsl:attribute>
-    <xsl:apply-templates select="@type|@media"/>
-  </link>
-</xsl:template>
 
-<!-- convert meta links to html links (new syntax) -->
-<xsl:template match="html:meta[@name='link']"> 
-  <link>
-    <xsl:apply-templates select="@rel|@rev|@type|@media"/>
-    <xsl:attribute name="href">
-      <xsl:value-of select="@content" />
-    </xsl:attribute>  
-  </link>
-</xsl:template>
+</xsl:stylesheet>
