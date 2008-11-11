@@ -478,7 +478,7 @@ Notes
 -----
 
 The previous section is about the derivative at a point.  This section
-is about the \emph{derived function} of `$f$`, the function `$f'$`.
+is about the *derived function* of `$f$`, the function `$f'$`.
 
 An important theorem is `$f$` is continuous at `$a$` when it's
 differentiable at `$a$`. The proof is probably accessible by them, but
@@ -933,6 +933,7 @@ Learning Objective
 ------------------
 
 * given a function, graph it completely, indicating
+
   * zeroes (if easy)
   * asymptotes if applicable
   * critical points
@@ -994,6 +995,55 @@ Lesson 25: Newton's Method
 :Duration: one half of one class period
 :See Also: Stewart_, Section 4.6
 
+Learning Objectives
+-------------------
+
+* Understand and apply *Newton's Method* for finding zeroes of
+  functions
+
+.. latex::
+
+   x_{x+1} = x_n - \frac{f(x_n)}{f'(x_n)}
+
+* Given the problem of numerically solving an equation, transform it
+  into a problem of numerically finding a zero for a function.
+
+* Understand and appreciate the speed of convergence of Newton's
+  method to a zero, but also the anomolies and chaos that can arrive.
+
+Notes
+-----
+
+This section is optional if you need to skip it to maintain pace with
+the other sections.
+
+What's beautiful about Newton's method is the graphical simplicity of
+the argument.  So you can start with that and derive the formula for
+the algorithm from that.  You can show computer implementations of it
+(graphically and numerically) as well if you're so inclined.
+
+If you think about Newton's method as iterating the function `$N_f(x)
+= x-f(x)/f'(x)$`, then zeros of `$f$` are *superstable* fixed points
+of `$N_f$`.  This means that the convergence to the zero goes like the
+square of the distance from the zero.  Less precisely, the "number of
+decimal points" of accuracy doubles easy time.  Compared to other
+methods for finding zeros that they know of, (like the
+"Bolzano–Weierstrass" method using the Intermediate Value Theorem and
+dividing the interval in half each time), this works pretty well.
+
+Except when it doesn't.  Take for instance a cubic function with three
+zeroes.  Does iterating Newton's method always converge to the
+nearest root?  What if you start near one of the critical points?
+Carrying this into complex maps gives us a fractal, which I'm sure
+students would love to see.
+
+There is a conceptual sticking point here.  If you ask students to use
+Newton's Method to numerically solve an equation (e.g., `$x^3+x=100$`,
+they will initially have trouble connecting that to a zero of the function
+`$f(x) = x^3 - x - 100$`.  Show them that once and they should be able
+to make the leap to "creating" functions to solve problems.
+
+
 Lesson 26: Antiderivatives
 ==========================
 
@@ -1001,6 +1051,37 @@ Lesson 26: Antiderivatives
 :TR Date: November 13
 :Duration: one half of one class period
 :See Also: Stewart_, Section 4.7
+
+Learning Objectives
+-------------------
+
+* Given a "simple" elementary function, find a function whose
+  derivative is that function. 
+
+* Remember that a function whose derivative is zero along an interval
+  *must* be zero along that interval.
+
+* Solve problems involving rectilinear motion.
+
+Notes
+-----
+
+I used to hate this section, but I think it makes some sense.
+
+The fact that `$f'=0$` means that `$f$` is constant on intervals is
+due to the Mean Value Theorem.  It tells us that any two
+antiderivatives are only different by a constant.
+
+From this we can derive the equations of rectilinear motion under
+constant acceleration: If `$a(t) = c$`, then `$ct$` would be an
+antiderivative and so the most general antiderivative is `$v(t)
+=ct+C$`.  By plugging in, `$C=v_0$` and so `$v(t) = ct +v_0$`.
+Likewise the position function is seen to be `$s(t) = s_0 + v_0 t+
+\frac12 ct^2$`.
+
+There is some stuff involving baby differential equations—the ones of
+the form `$y' = f(x)$`, which are directly integrable already.  Don't
+worry about them.
 
 
 Lesson 27: Areas and Distances
@@ -1313,32 +1394,38 @@ Lesson 33: Integration by partial fraction decomposition
 Prerequisites
 -------------
 
-* Given a polynomial, factor it into a product of polynomials which
+1. Given a polynomial, factor it into a product of polynomials which
   are either *linear* of the form :latex:`$x-a$` or *irreducible
   quadratic* of the form :latex:`$x^2 + bx + c$`, where
   :latex:`$b^2-4c < 0$`
 
-* Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
+2. Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
   write it in the form :latex:`$u^2 + c$` (in other words, *complete
   the square*) 
 
 Learning Objectives
 -------------------
 
-* Given a rational function, write the form of its *partial fraction
+3. Given a rational function, write the form of its *partial fraction
   decomposition* into a sum of simpler rational functions, in the case
   that the denominator has
 
-  - only linear factors, each of which is unique;
-  - linear factors with repetition;
-  - quadratic factors, each of which is unique;
-  - quadratic factors with repetition.
+  4. only linear factors, each of which is unique;
+  5. linear factors with repetition;
+  6. quadratic factors, each of which is unique;
+  7. quadratic factors with repetition.
 
-* Given a rational function and the form of its partial fraction
+8. Given a rational function and the form of its partial fraction
   decomposition, find the explicit decomposition.
 
-* Given a rational function, use its partial fraction decomposition to
+9. Given a rational function, use its partial fraction decomposition to
   find its antiderivative.
+
+Notes
+-----
+
+This section is optional if you need to skip it to maintain pace with
+the other sections.
 
 
 Lesson 34: Approximate Integration
@@ -1352,12 +1439,12 @@ Lesson 34: Approximate Integration
 Learning Objectives
 -------------------
 
-* Given an integrable function on a closed interval, compute estimates
+10. Given an integrable function on a closed interval, compute estimates
   for the definite integral of the function using
 
-  - the Trapezoidal Rule;
-  - the Midpoint Rule;
-  - Simpson's Rule.
+  11. the Trapezoidal Rule;
+  12. the Midpoint Rule;
+  13. Simpson's Rule.
 
 * Given a list of data interpolated to a functions, compute estimates
   for the definite integral of the function as above.
