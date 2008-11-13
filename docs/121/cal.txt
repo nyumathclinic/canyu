@@ -15,7 +15,7 @@
    :link.start scheme=rel: syllabus.html
    :short-title: Calendar
    :link.alternate scheme=rel media=print type=application/pdf: cal.pdf
-   :link.alternate scheme=rel media=print type=application/x-latex: syllabus.tex
+   :link.alternate scheme=rel media=print type=application/x-latex: calv.tex
 
 
 .. |date| date::
@@ -38,62 +38,62 @@ This is a week-by-week calendar of topics covered in Calculus I.
 +----+-------------+---------+---------------------------------------------+
 |Week| Dates       | Section | Topics                                      |
 +====+=============+=========+=============================================+
-| 1  | 9/2-9/5     | 1.1     | Functions and their Representations         |
+| 1  | 9/2–9/5     | 1.1     | Functions and their Representations         |
 |    |             +---------+---------------------------------------------+
 |    |             | 1.2     | A catalog of essential functions            |
 +----+-------------+---------+---------------------------------------------+
-| 2  | 9/8-9/12    | 1.3     | The limit of a function                     |
+| 2  | 9/8–9/12    | 1.3     | The limit of a function                     |
 |    |             +---------+---------------------------------------------+
 |    |             | 1.4     | Calculating Limits                          |
 +----+-------------+---------+---------------------------------------------+
-| 3  | 9/15-9/19   | 1.5     | Continuity                                  |
+| 3  | 9/15–9/19   | 1.5     | Continuity                                  |
 |    |             +---------+---------------------------------------------+
 |    |             | 1.6     | Limits involving Infinity                   |
 +----+-------------+---------+---------------------------------------------+
-| 4  | 9/22-9/26   | 2.1     | Derivatives and rates of change             |
+| 4  | 9/22–9/26   | 2.1     | Derivatives and rates of change             |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.2     | The derivative as a function                |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.3     | Basic differentiation rules                 |
 +----+-------------+---------+---------------------------------------------+
-| 5  | 9/29-10/3   | 2.4     | The product and quotient rules              |
+| 5  | 9/29–10/3   | 2.4     | The product and quotient rules              |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.5     | The chain rule                              |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.6     | Implicit differentiation                    |
 +----+-------------+---------+---------------------------------------------+
-| 6  | 10/6-10/10  | 2.8     | Linear approximations and differentials     |
+| 6  | 10/6–10/10  | 2.8     | Linear approximations and differentials     |
 |    |             +---------+---------------------------------------------+
 |    |             | 3.1     | Exponential functions                       |
 |    |             +---------+---------------------------------------------+
 |    |             | 3.2     | Inverse functions and logarithms            |
 +----+-------------+---------+---------------------------------------------+
-| 7  | 10/15-10/17 |           Midterm                                     |
+| 7  | 10/15–10/17 |           Midterm                                     |
 +----+-------------+---------+---------------------------------------------+
-| 8  | 10/20-10/24 | 3.3     | Derivatives of Logarithmic and Exponential  |
+| 8  | 10/20–10/24 | 3.3     | Derivatives of Logarithmic and Exponential  |
 |    |             |         | Functions                                   |
 |    |             +---------+---------------------------------------------+
 |    |             | 3.4     | Exponential growth and decay                |
 |    |             +---------+---------------------------------------------+
 |    |             | 3.5     | Inverse trigonometric functions             |
 +----+-------------+---------+---------------------------------------------+
-| 9  | 10/27-10/31 | 3.7     | Indeterminate forms and L'Hôpital's Rule    |
+| 9  | 10/27–10/31 | 3.7     | Indeterminate forms and L'Hôpital's Rule    |
 |    |             +---------+---------------------------------------------+
 |    |             | 4.1     | Maximum and minimum values                  |
 +----+-------------+---------+---------------------------------------------+
-| 10 | 11/3-11/7   | 4.2     | The Mean Value Theorem                      |
+| 10 | 11/3–11/7   | 4.2     | The Mean Value Theorem                      |
 |    |             +---------+---------------------------------------------+
 |    |             | 4.3     | Derivatives and the shapes of curves        |
 |    |             +---------+---------------------------------------------+
 |    |             | 4.4     | Curve sketching                             |
 +----+-------------+---------+---------------------------------------------+
-| 11 | 11/10-11/14 | 4.5     | Optimization problems                       |
+| 11 | 11/10–11/14 | 4.5     | Optimization problems                       |
 |    |             +---------+---------------------------------------------+
 |    |             | 4.6     | Newton's Method                             |
 |    |             +---------+---------------------------------------------+
 |    |             | 4.7     | Antiderivatives                             |
 +----+-------------+---------+---------------------------------------------+
-| 12 | 11/17-11/21 | 5.1     | Areas and distances                         |
+| 12 | 11/17–11/21 | 5.1     | Areas and distances                         |
 |    |             +---------+---------------------------------------------+
 |    |             | 5.2     | The definite integral                       |
 |    |             +---------+---------------------------------------------+
@@ -101,12 +101,12 @@ This is a week-by-week calendar of topics covered in Calculus I.
 |    |             +---------+---------------------------------------------+
 |    |             | 5.4     | The Fundamental Theorem of Calculus         |
 +----+-------------+---------+---------------------------------------------+
-| 13 | 11/24-11/26 | 5.5     | The Substitution Rule                       |
+| 13 | 11/24–11/26 | 5.5     | The Substitution Rule                       |
 +----+-------------+---------+---------------------------------------------+
-| 14 | 12/1-12/5   | 6.1     | Integration by Parts                        |
+| 14 | 12/1–12/5   | 6.1     | Integration by Parts                        |
 |    |             +---------+---------------------------------------------+
 |    |             | 6.3     | Integration by partial fraction             |
 |    |             |         | decomposition                               |
 +----+-------------+---------+---------------------------------------------+
-| 15 | 12/8-12/12  | 6.5     | Approximate Integration                     |
+| 15 | 12/8–12/12  | 6.5     | Approximate Integration                     |
 +----+-------------+---------+---------------------------------------------+
