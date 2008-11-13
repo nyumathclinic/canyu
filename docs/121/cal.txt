@@ -15,7 +15,7 @@
    :link.start scheme=rel: syllabus.html
    :short-title: Calendar
    :link.alternate scheme=rel media=print type=application/pdf: cal.pdf
-   :link.alternate scheme=rel media=print type=application/x-latex: calv.tex
+   :link.alternate scheme=rel media=print type=application/x-latex: cal.tex
 
 
 .. |date| date::
