@@ -9,6 +9,8 @@
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
+   :link.alternate scheme=rel media=print type=application/pdf: lessons.pdf
+
 
 .. default-role:: latex
 
@@ -872,7 +874,7 @@ Lesson 21: The Mean Value Theorem
 
 :MW Date: November 3
 :TR Date: November 4
-:Duration: two-thirds of one class period
+:Duration: one-half of one class period
 :See Also: Stewart_, Section 4.2
 
 * Understand and be able to explain the statement of *Rolle's Theorem*.
@@ -899,7 +901,7 @@ Lesson 22: Derivatives and the Shapes of Graphs
 
 :MW Date: November 3-5
 :TR Date: November 4-6
-:Duration:  two-thirds of one class period
+:Duration:  one-half of one class period
 :See Also: Stewart_, Section 4.3
 
 Learning Objectives
@@ -1087,9 +1089,9 @@ worry about them.
 Lesson 27: Areas and Distances
 ==============================
 
-:MW Date: November 10
-:TR Date: November 11
-:Duration: roughly two-thirds of one class period
+:MW Date: November 17
+:TR Date: November 18
+:Duration: roughly one-half of one class period
 :See Also: Stewart_, Section 5.1
 
 Learning Objectives
@@ -1116,9 +1118,9 @@ intervals tend to zero in width.
 Lesson 28: The Definite Integral
 ================================
 
-:MW Date: November 10-12
-:TR Date: November 11-13
-:Duration: roughly two-thirds of one class period
+:MW Date: November 17
+:TR Date: November 18
+:Duration: roughly one-half of one class period
 :See Also: Stewart_, Section 5.2
 
 Learning Objectives
@@ -1147,9 +1149,9 @@ First Fundamental Theorem of Calculus.
 Lesson 29: Evaluating Definite Integrals
 ========================================
 
-:MW Date: November 12
-:TR Date: November 13
-:Duration: two-thirds of one class period
+:MW Date: November 19
+:TR Date: November 20
+:Duration: one-half of one class period
 :See Also: Stewart_, Section 5.3
 
 Learning Objectives
@@ -1201,9 +1203,9 @@ marginal cost it's total cost.  And so on.
 Lesson 30: The Fundamental Theorem of Calculus
 ==============================================
 
-:MW Date: November 17
-:TR Date: November 18
-:Duration: one class period
+:MW Date: November 19
+:TR Date: November 20
+:Duration: one-half of one class period
 :See Also: Stewart_, Section 5.4
 
 
@@ -1239,8 +1241,7 @@ of difference quotients.  We have
 By Property 8 above, :latex:`$\int_a^{a+h} f(t)\,dt$` is bounded above
 by the maximum of `$f$` on `$[a,a+h]$` times `$h$`, and bounded below by
 the minimum of `$f$` on `$[a,a+h]$` times `$h$`.  So the difference
-quotient itself if bounded between the max and min of `$f$` on
-`$[a,a+h]$`.  So `$F'(a)$`, if it exists, is between the lim sup and lim
+quotient itself if bounded between the max and min of `$f$` on`$[a,a+h]$`.  So `$F'(a)$`, if it exists, is between the lim sup and lim
 inf of `$f$` as `$x$` approaches `$a$`. But since `$f$` is continuous at `$a$`,
 the limit does exist and is `$f(a)$`.  (Squeeze Theorem!)
 
@@ -1263,9 +1264,9 @@ defined in terms of an integral, such as the error function
 Lesson 31: The Substitution Rule
 ================================
 
-:MW Date: November 19
-:TR Date: November 20
-:Duration: one class period
+:MW Date: November 24-26
+:TR Date: November 25
+:Duration: varies (see notes)
 :See Also: Stewart_, Section 5.5
 
 Prequisites
@@ -1335,12 +1336,33 @@ interval is zero; while the integral of an even function over such an
 interval is twice the integral over the second half.  A picture is
 most convincing here, the substitution `$u=-x$` makes it rigorous.
 
+Wednesday, November 26
+----------------------
+
+This is a really short week, because Thursday is Thanksgiving.  It's
+pretty common for students to travel this week, either home or the
+home of a friend if their home is far away.  They will often be
+traveling the day before (Wednesday), even though that's officially a
+school day.
+
+Wednesday is "officially" a Monday as far as which classes meet (this
+makes up for Labor Day, theoretically).  That doesn't effect MW
+sections; they would meet on Wednesday anyway.  TR sections will
+obviously not meet on Thursday.  Thus, MW sections will have an extra
+class period, which many students will not attend.
+
+I've learned it's expedient to go with the flow of traditions like
+these.  So whatever happens on Wednesday shouldn't be new material
+from Monday, but should be useful for understanding the method of
+substitution.  A good worksheet would make this time worthwhile
+without penalizing those who miss it.
+
 
 Lesson 32: Integration by Parts
 ===============================
 
-:MW Date: November 24
-:TR Date: November 25
+:MW Date: December 1
+:TR Date: December 2
 :Duration: one class period
 :See Also: Stewart_, Section 6.1
 
@@ -1362,63 +1384,48 @@ Learning Objectives
 * Evaluate integrals using a substitution followed by integration by
   parts.
 
-Notes
------
 
-This is a really short week, because Thursday is Thanksgiving.  It's
-pretty common for students to travel this week, either home or the
-home of a friend if their home is far away.  They will often be
-traveling the day before (Wednesday), even though that's officially a
-school day.
-
-Wednesday is "officially" a Monday as far as which classes meet.  That
-doesn't effect MW sections; they would meet on Wednesday anyway.  TR
-sections will obviously not meet on Thursday.  Thus, MW sections will
-have an extra class period, which many students will not attend.
-
-I've learned it's expedient to go with the flow of traditions like
-these.  So whatever happens on Wednesday shouldn't be new material
-from Monday, but should be useful for understanding integration by
-parts or substitution.  A good worksheet would make this time
-worthwhile without penalizing those who miss it.
 
 
 Lesson 33: Integration by partial fraction decomposition
 ========================================================
 
-:MW Date: December 1
-:TR Date: December 2
+:MW Date: December 3
+:TR Date: December 4
 :Duration: one class period
 :See Also: Stewart_, Section 6.3
 
 Prerequisites
 -------------
 
-1. Given a polynomial, factor it into a product of polynomials which
+* Given a polynomial, factor it into a product of polynomials which
   are either *linear* of the form :latex:`$x-a$` or *irreducible
   quadratic* of the form :latex:`$x^2 + bx + c$`, where
   :latex:`$b^2-4c < 0$`
 
-2. Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
+* Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
   write it in the form :latex:`$u^2 + c$` (in other words, *complete
   the square*) 
 
 Learning Objectives
 -------------------
 
-3. Given a rational function, write the form of its *partial fraction
+* Given a rational function, write the form of its *partial fraction
   decomposition* into a sum of simpler rational functions, in the case
   that the denominator has
 
-  4. only linear factors, each of which is unique;
-  5. linear factors with repetition;
-  6. quadratic factors, each of which is unique;
-  7. quadratic factors with repetition.
+  - only linear factors, each of which is unique;
 
-8. Given a rational function and the form of its partial fraction
+  - linear factors with repetition;
+
+  - quadratic factors, each of which is unique;
+
+  - quadratic factors with repetition.
+
+* Given a rational function and the form of its partial fraction
   decomposition, find the explicit decomposition.
 
-9. Given a rational function, use its partial fraction decomposition to
+* Given a rational function, use its partial fraction decomposition to
   find its antiderivative.
 
 Notes
@@ -1431,20 +1438,22 @@ the other sections.
 Lesson 34: Approximate Integration
 ==================================
 
-:MW Date: December 3
-:TR Date: December 4
+:MW Date: December 8
+:TR Date: December 9
 :Duration: one class period
 :See Also: Stewart_, Section 6.5
 
 Learning Objectives
 -------------------
 
-10. Given an integrable function on a closed interval, compute estimates
+* Given an integrable function on a closed interval, compute estimates
   for the definite integral of the function using
 
-  11. the Trapezoidal Rule;
-  12. the Midpoint Rule;
-  13. Simpson's Rule.
+  - the Trapezoidal Rule;
+
+  - the Midpoint Rule;
+
+  - Simpson's Rule.
 
 * Given a list of data interpolated to a functions, compute estimates
   for the definite integral of the function as above.
@@ -1456,6 +1465,28 @@ Learning Objectives
 * Given an integrable function on a closed interval and a desired
   tolerance level, approximate the definite integral within the
   prescribed tolerance using one of the above methods.
+
+
+Finale
+======
+
+:MW Date: December 10
+:TR Date: December 11
+:Duration: One class period
+
+Here you can do whatever you want, except cancel class.  Some
+suggestions.
+
+* Review the course.  If there were problems you teased at the
+  beginning of the term you can solve them now.
+
+* Talk about something more advanced.  You can connect Calc I to Calc
+  II, or to Calc III, or to something else, even approaching your own
+  research.
+
+* Do something entertaining.  I show a number of clips from movies
+  about mathematics such as :title:`(pi)` and :title:`Good Will Hunting`,
+  and then the Disney short :title:`Donald [Duck] in Mathmagic-land`.
 
 
 Details
@@ -1472,6 +1503,8 @@ Textbook
    :latex:`$\infty$`
 
 .. |ocirc|  unicode:: U+000F4 .. LATIN SMALL LETTER O WITH CIRCUMFLEX
+
+.. |pi| unicode:: U+003C0 .. π
 
 .. |LHopital| replace::
    L'H\ |ocirc|\ pital 
