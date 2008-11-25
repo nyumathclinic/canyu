@@ -9,6 +9,9 @@
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
+   :link rel=alternate type=text/html: instructor_info.html
+   :link rel=alternate type=application/pdf: instructor_info.pdf
+   :link rel=alternate type=text/x-rst: instructor_info.txt
 
 
 Instructor's Guide to Calculus I and II
@@ -17,11 +20,13 @@ Instructor's Guide to Calculus I and II
 :Author: Matthew Leingang
 :Date: |date|
 
-Welcome to Courant's calculus program.  This is a work-in-progress
-guide to the nuts and bolts of the course and its organization.  For
-the week-by-week list of topics, see the calendar.  For information
-and tips on teaching, see the lesson guide.  See also the list of
-homework problems to be assigned.
+Welcome to Courant's calculus program.  This document is a
+work-in-progress guide to the nuts and bolts of the course and its
+organization.  For the week-by-week list of topics, see the calendar.
+For information and tips on teaching, see the lesson guide.  See also
+the list of homework problems to be assigned.
+
+.. contents::
 
 
 Topics and Goals
@@ -455,4 +460,4 @@ the students and teaching them well.
 And in that I wish you luck!  Please talk to me if you have any
 questions.
 
-.. |date| date::
+.. |date| date:: %B %d, %Y
