@@ -1,31 +1,41 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Lesson Outline for Math 121, Fall 2008
-   :keywords: Math 121, NYU, Math, Calculus
+   :description: Lesson Outline for Math 122, Fall 2008
+   :keywords: Math 122, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2008-07-31
+   :DCT.Created scheme=W3CDTF: 2008-08-20
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
 
 .. default-role:: latex
 
+
 Lesson Outline for Math 122, Fall 2008
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Date: |date|
+
+This is a topic-by-topic checklist for Calculus II.  I've included
+specific *learning objectives* for each section—things that students
+should be capable of after completing the topic.  I've also written
+notes on each topic to help with planning a lecture, and to explain
+calendar quirks.
 
 .. contents::
    :depth: 1
    :backlinks: none
 
-Lesson 1: The definite integral and the Fundamental Theorem of Calculus
-=======================================================================
+Lesson 1: The Definite Integral
+===============================
 
 :MW Date: September 3
 :TR Date: September 2
-:Duration: one "week" of class, whatever that is.
-:See Also: Stewart_, Section 5.1, 5.2., 5.3
+:Duration: varies
+:See Also: Stewart_, Section 5.1, 5.2, 5.3, 5.5
 
 Learning Objectives
 -------------------
@@ -43,33 +53,6 @@ Learning Objectives
 * Interpret definite integrals as "net change" of a function over an
   interval.
 
-
-Notes
------
-
-September 1 is a holiday and no classes will meet.  This means that MW
-sections will only meet Wednesday, and this material will have to be
-covered in one class period.  Worse, there should be some kind of
-icebreaker on the first day of class, meaning even more material must
-be compressed.  Luckily, this is foundational material and should be a
-review.
-
-In this book The Second Fundamental Theorem of Calculus is called the
-*Evaluation Theorem* and comes in Section 5.3.  The first FTC is
-covered in Section 5.4.
-
-
-Lesson 2: The Substitution Rule
-===============================
-
-:MW Date: September 8
-:TR Date: September 9
-:Duration: one half of one class period
-:See Also: Stewart_, Section 5.5
-
-Learning Objectives
--------------------
-
 * Given an integral and a substitution, transform the integral into an
   equivalent one using a substitution
 
@@ -79,64 +62,64 @@ Learning Objectives
 
 * Use symmetry to simplify integrals of even and odd functions.
 
+
 Notes
 -----
 
-Students should have seen this before in a previous calculus class, so
-this is a review.  But do not assume they have it down cold, otherwise
-you will defeat the purpose of "review."
+All students will have seen this in a previous class, be it their high
+school calculus class or our Calc I.  So don't worry about it being a
+rather fast review of a very important concept.
 
-You should do both the substitution rule for indefinite and definite
-integrals.  Many will not like the definite integral version; they are
-content to do the indefinite integral version then plug in.  But
-emphasize that the definite integral version allows them to totally
-simplify the integral then move on without going back to the original
-one.
+A big important idea about the integral is that it generalizes any computation
+that involves multiplication.  Area is length times width when those
+are constants, but when one isn't you divide into small pieces,
+approximate by assuming the pieces are constant, and then take the
+limit over smaller and smaller pieces.  Distance traveled is speed
+times time, when speed is constant; if not, the same
+divide-and-conquer process leads to an integral.  Population is
+population density times area; Mass is mass density times
+length/area/volume; Total cost is marginal cost times quantity, etc.
+If students only think about the integral as area it will be hard for
+them to compose one that computes work (force times distance).
 
-The way I explain how the the limits change in 
+TR sections will have one extra class period for this material.  You
+could spend extra time on the even and odd functions part of
+substitution, or go over definite integral substitution some more.
 
-.. latex:: 
-
-   \int_a^b f(g(x))g'(x) = \int_{g(a)}^{g(b)} f(u)\,du 
-
-is that the integral on the left happens in ":latex:`$x$`-land."  The
-variable is `$x$` and the limits are an interval in `$x$`.  The integral
-on the right is in "`$u$`-land," so the limits should be values of `$u$`
-as well.  How do you get from `$x$` to `$u$`?  Well, the substitution was
-`$u=g(x)$`.  So the `$u$`-values corresponding to `$x=a$` and `$x=b$` are
-`$u=g(a)$` and `$u=g(b)$`.
-
-Students will trip up themselves when making the substitution.  They
-will forget to take care of the `$dx$` and still have it in the
-substituted integral.
-
-Finally, this is a nonlinear problem so students aren't going to know
-right away what makes a good `$u$` in substitution.  Remind them that
-whatever you make `$u$`, you need to "see" `$u'$` in the integrand, in the
-numerator of the integrand if it's a fraction, in order for the
-substitution to even work.  So see if you can get them to think about
-function/derivative pairs, the obvious ones being :latex:`$x^n$` with
-:latex:`$x^{n-1}$` (modulo constants), or sin with cos, and the non-obvious
-ones being :latex:`$e^x$` with  :latex:`$e^x$`, :latex:`$\sqrt{x}$` with
-:latex:`$\frac{1}{\sqrt x}$`, and :latex:`$\ln x$` with :latex:`$\frac{1}{x}$`.
-
-Substitution applied to symmetric (even or odd) functions gives nice
-simplification for definite integrals over intervals which are
-symmetric about zero.  The integral of an odd function over such an
-interval is zero; while the integral of an even function over such an
-interval is twice the integral over the second half.  A picture is
-most convincing here, the substitution `$u=-x$` makes it rigorous.
-
-
-Lesson 3: Integration by Parts
+Lesson 2: Integration by Parts
 ==============================
 
 :MW Date: September 8
 :TR Date: September 9
-:Duration: one half of one class period
+:Duration: one class period
 :See Also: Stewart_, Section 6.1
 
-Lesson 4: Trigonometric Integrals and Substitution
+Learning Objectives
+-------------------
+
+* Understand and be able to explain the *integration by parts* formula
+
+  .. latex::
+
+     \int u\,dv = uv - \int v\,du
+
+* Evaluate antiderivatives using integration by parts.
+
+* Evaluate definite integrals using integration by parts.
+
+* Evaluate integrals using integration by parts more than once.
+
+* Evaluate integrals using a substitution followed by integration by
+  parts.
+
+Notes
+-----
+
+Many students will have seen this before, whether in their Calculus I
+class here or if they took AP Calculus BC in high school.  But please
+do not teach this as a review because not all Calculus I courses teach it.
+
+Lesson 3: Trigonometric Integrals and Substitution
 ==================================================
 
 :MW Date: September 10
@@ -144,7 +127,47 @@ Lesson 4: Trigonometric Integrals and Substitution
 :Duration: one class period
 :See Also: Stewart_, Section 6.2
 
-Lesson 5: Integration by Partial Fraction Decomposition
+Learning Objectives
+-------------------
+
+* Evaluate integrals of the form `$\int \sin^n x\cos^m x\,dx$`
+
+* Evaluate integrals of the form `$\int \tan^n x \sec^m x\,dx$`
+
+* Use the substitution `$x=a \sin \theta$` to evaluate integrals
+  involving the quadratic form `$a^2-x^2$`
+
+* Use the substitution `$x=a \tan \theta$` to evaluate integrals
+  involving the quadratic form `$a^2+x^2$`
+
+* Use the substitution `$x=a \sec \theta$` to evaluate integrals
+  involving the quadratic form `$x^2-a^2$`
+
+Notes
+-----
+
+This is hard stuff on both major topics:
+
+The trigonometric integrals material involves a lot of trigonometric
+identities, inevitably prompting the "will we need to know
+trigonometric identities for the test?" question.  The answer is that
+they will be required to use them, and they can either memorize them
+or the key ones and derive the rest.  There is a list of trig
+identities in the endpapers of the book (opposite the title page).
+
+Trigonometric substitution is a completely different animal from the
+substitution found in 5.6 (often called "`$u$`\ -substitution" in the
+USA because the new variable is often named `$u$`).
+
+Luckily, each item has their cases, so it shouldn't be too hard to
+give them a box to study.  Do lots of examples and they should get
+more and more comfortable.
+
+Incidentally, this is where we can prove the area of a circle of
+radius 1 is `$\pi$`.
+
+
+Lesson 4: Integration by Partial Fraction Decomposition
 =======================================================
 
 :MW Date: September 15
@@ -152,23 +175,115 @@ Lesson 5: Integration by Partial Fraction Decomposition
 :Duration: one class period
 :See Also: Stewart_, Section 6.3
 
-Lesson 6: Integration with Tables and Computer Algebra Systems
-==============================================================
+Prerequisites
+-------------
+
+* Given a polynomial, factor it into a product of polynomials which
+  are either *linear* of the form :latex:`$x-a$` or *irreducible
+  quadratic* of the form :latex:`$x^2 + bx + c$`, where
+  :latex:`$b^2-4c < 0$`
+
+* Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
+  write it in the form :latex:`$u^2 + c$` (in other words, *complete
+  the square*) 
+
+Learning Objectives
+-------------------
+
+* Given a rational function, write the form of its *partial fraction
+  decomposition* into a sum of simpler rational functions, in the case
+  that the denominator has
+
+  - only linear factors, each of which is unique;
+  - linear factors with repetition;
+  - quadratic factors, each of which is unique;
+  - quadratic factors with repetition.
+
+* Given a rational function and the form of its partial fraction
+  decomposition, find the explicit decomposition.
+
+* Given a rational function, use its partial fraction decomposition to
+  find its antiderivative.
+
+Notes
+-----
+
+The Partial Fraction Decomposition is related to the decomposition of
+an ideal in a Noetherian ring into prime ideals.  You might also want
+to talk about `Egyptian fractions`_, which is a method of representing
+rational numbers as sums of unit fractions: e.g., `$\frac{2}{3} =
+\frac{1}{2} + \frac{1}{6}$`.
+
+.. _`Egyptian fractions`: http://en.wikipedia.org/wiki/Egyptian_fraction
+
+There will be algebraic barriers; students will not always be
+confident with factoring polynomials  Teach them whatever tricks you
+can.  Here's one: if the coefficients of a polynomial are integers,
+and the roots are integers (obviously, you don't know this
+immediately, but it's a good guess in a calculus course), the roots
+divide the constant term.  So look at the factors `$d$` of the
+constant term and try to divide by `$x-d$`.  Students may not know how
+to do long division of polynomials, either.
+
+Once you have the form of the PFD set up, there are some tricks to
+finding the partial fraction numerators.  First you collect the terms
+of the PFD together to a single fraction, and you equate the numerator
+polynomials of each side.  This is an equation of polynomials, so two
+things are true:
+
+* The equation is true for all values of the variable `$x$`;
+
+* All coefficients of the polynomials must be equal.
+
+So one technique is to substitute for `$x$` various values that make
+the equations for the partial fraction numerators just pop out.  Like
+the the roots themselves.  This will in fact give you all you need if
+there are no repeated roots.  If you really like this techniques, and
+the roots are repeated, you can *differentiate* and apply it again.
+
+The other technique to find the numerators is to take this equation of
+polynomials and multiply it all out.  It leaves `$n$` independent equations in
+`$n$` unknowns, so you can solve them.
+
+
+Lesson 5: Integration with Tables; Strategies for Integration
+=============================================================
 
 :MW Date: September 17
 :TR Date: September 18
 :Duration: one class period
 :See Also: Stewart_, Section 6.4
 
+Learning Objectives
+-------------------
+
+* Find antiderivatives using a table and recognizing patterns
+
+* Employ strategies for integration.
+
 Notes
 -----
 
-You might want to conclude with a section about strategies for
-integration in general.  It's harder to choose a technique for
-integration when you're not doing a problem out of a particular
-section.
+Mathematicians are well-trained at recognizing the "form" of an
+expression, and can find it in an table.  For instance, if we had to
+evaluate `$\int x^3 \sin 4x\,dx$`, we would be happy if we found
+`$\int u^m \sin au \,du$` in the table.  But students need a little
+help in this kind of pattern-recognition.
 
-Lesson 7: Approximate Integration
+The rest of the time, see if you can give them some guidelines on how
+to attack an integral when you're not doing problems from the section
+on a particular integration technique.  When should one try
+integration by parts?  Trig substitution? and so on.
+
+It's been said that there are really only two techniques of
+integration: parts and substitution (partial fractions is *algebra*
+followed by substitution).  Parts is particularly useful when you have
+factors which get simpler upon differentiation or
+anti-differentiation.  Trig substitution is the only way out of
+quadratic forms.  Give them a worksheet of different integrals and
+work in groups.
+
+Lesson 6: Approximate Integration
 =================================
 
 :MW Date: September 22
@@ -176,7 +291,53 @@ Lesson 7: Approximate Integration
 :Duration: one class period
 :See Also: Stewart_, Section 6.5
 
-Lesson 8: Improper Integrals
+Learning Objectives
+-------------------
+
+* Use the *Trapezoidal Rule* to estimate the integral of a function.
+
+* Use the *Midpoint Rule* to estimate the integral of a function.
+
+* Use *Simpson's Rule* to estimate the integral of a function.
+
+* Estimate the error in the integral approximations.
+
+* Estimate an integral within a prescribed error.
+
+Notes
+-----
+
+One of the more startling results about approximate integration is how
+well the Midpoint Rule works, compared to the Trapezoidal Rule.  This
+is basically because the endpoints aren't so far away from the
+midpoint as they are from each other, and so the variation is bounded
+by a smaller amount.  Morever, if a function is monotone on a
+subinterval, you can see that the midpoint rule undercounts one one
+side and overcounts on the other, so there's some nice cancellation.
+
+The other startling results is how well Simpson's Rule.  By
+approximating a function with a piecewise *quadratic*, we get
+exactness for *cubics*.  So the error is `$O(\Delta x^4)$`, very nice
+indeed.  
+
+I like to approximate integrals that come out to nice things, such as
+`$\int_0^1 \frac{4}{1+x^2}\,dx = \pi$`.  If you're technology-prone,
+you can demonstrate with calculator or computer that the various
+numerical algorithms do converge, and how quickly they do so.
+
+There exist some "pure calculus" proofs of the error estimates that
+are accessible to the students, but only barely.  If you're
+interested, let me know, but proving the estimates is not the point.
+
+I like to say that calculus students get nervous the moment the `$<$` sign
+goes on the board.  This introduces a bit of ambivalence, nonlinear
+thinking, and more than one way to the "correct" answer.  The process
+of controlling the error by bounding it above with something that can
+be controlled is a technique you had to learn as well.  So try to
+think of the process and articulate it clearly.
+
+
+Lesson 7: Improper Integrals
 ============================
 
 :MW Date: September 24
@@ -184,55 +345,258 @@ Lesson 8: Improper Integrals
 :Duration: one class period
 :See Also: Stewart_, Section 6.6
 
-Lesson 9: Areas between curves
+Learning Objectives
+-------------------
+
+* Use the definition of convergence to determine whether an improper integral converges.
+
+* Use the `$p$`-test to determine whether an improper integral
+  converges.
+
+* Use the comparison test to decide whether an improper integral converges
+
+Notes
+-----
+
+I often start the discussion of improper integrals with the thought
+experiment of kicking the Earth into Mars's orbit, then into in
+Jupiter's, etc.  In fact, you can imagine being able to kick Earth
+completely out of solar orbit with a finite amount of energy (at some
+point it would be far enough away to not be attracted to the sun any
+more).  Each of these energies is expressed as the integral of the
+gravitational force, so you have to accept that the total amount of
+energy to move Earth anywhere is finite.
+
+It will take a full class period to do both "types" of improper
+integrals: Integrals over infinite intervals ("Type I") and integrals
+up to an asymptote ("Type II").  
+
+As you do the comparison test, advise students on how to pick out the
+most important term in an expression.  For instance, if the integral
+is `$\int_1^infty \frac{\sin^2x}{x^2+3x+4}$`, the `$x^2$` in the
+denominator is what tells you to compare with
+`$\int_1^\infty\frac{1}{x^2}$` (they will always forget the easiest
+bound ever: that `$|\sin x| \leq 1$`.)
+
+
+Lesson 8: Areas between Curves
 ==============================
 
 :MW Date: September 29
 :TR Date: September 30
-:Duration: one half of one class period
+:Duration: two-thirds of one class period
 :See Also: Stewart_, Section 7.1
 
-Lesson 10: Volumes
-==================
+Learning Objectives
+-------------------
+
+* Find the area of a region by representing it as a sum of one or more
+  integrals.
+
+Notes
+-----
+
+Students latch on to the notion that the integral "is" "area under a
+curve", or area between the graph and the `$x$`\ -axis.  It's often
+easier to integrate the difference between functions and let go of the
+axis altogether.  After all, translating the region may move it in
+relation to the axis, but doesn't change its area.  
+
+Get them to think about integrating in the vertical direction as well
+as horizontally.  Find an example where computing the area with
+horizontal integrations takes two integrals but only one vertically.
+
+Lesson 9: Volumes
+=================
 
 :MW Date: September 29-October 1
 :TR Date: September 30-October 2
-:Duration: 3/4 of one class period
+:Duration: two-thirds of one class period
 :See Also: Stewart_, Section 7.2
 
-Lesson 11: Volumes by cylindrical shells
+Learning Objectives
+-------------------
+
+* Find the volume of a solid by slicing.
+
+* Find the volume of a solid of revolution using the disc or washer
+  method.
+
+Notes
+-----
+
+It seems that AP Calculus emphasizes more the solids of revolution
+than general solids, for which the volume can be computed by slicing.
+So students who had been comfortable up to now might suddenly feel
+lost.  
+
+But finding volumes by slicing is an important skill because students
+will have to "invent" an integral each time rather than simply
+remember a formula and plug it in.  Deriving the integrand is also
+going to take some work because it often depends on some geometry
+techqniques (similar triangles, the pythagorean theorem, etc.) that
+they learned a long time ago.
+
+Do a pyramid first, I'd say.  You illustrate the technique, and
+reinforce faith in it by deriving a recognizable formula.  Here's a
+good place to praise calculus: as far as I know, in contrast to plane
+polygons, there is no finite-dissection argument which will derive the
+formula for the volume of a tetrahedron or pyramid.  You have to
+integrate something.  
+
+
+Lesson 10: Volumes by Cylindrical Shells
 ========================================
 
 :MW Date: October 1
 :TR Date: October 2
-:Duration: 3/4 of one class period
+:Duration: two-thirds of one class period
 :See Also: Stewart_, Section 7.3
 
-Lesson 12: Arc length
+Learning Objective
+------------------
+
+* Find the volume of a solid of revolution using the shell method.
+
+Notes
+-----
+
+When finding the volume of a solid of revolution, students who want to
+latch onto a formula will find it hard to do so.  There are many
+parameters to take into account—the functions involved, the axis
+direction, the axis position, the method chosen (washer or shell).
+Try to discourage formula memorization and encourage the process,
+which is actually quite easy when you get the hang of it.
+
+Students who have had a light version of calculus will be comfortable
+with revolutions about either axis but not around a different
+horizontal or vertical line.  Do a few examples of these to make sure
+they see when and why `$x$` needs to be changed to `$x-a$` (or whatever).
+
+3D models would be great here.
+  
+Lesson 10: Arc length
 =====================
 
 :MW Date: October 6
 :TR Date: October 7
-:Duration: one half of one class period
+:Duration: one-half of one class period
 :See Also: Stewart_, Section 7.4
 
-Lesson 13: Applications of Integration
-======================================
+Learning Objectives
+-------------------
+
+* find the length of the graph of a function.
+
+
+Notes
+-----
+
+The derivation is the more important thing here, because it's another
+example of an integral which does not represent plain/plane area.
+Moreover, once you have the formula, there are not too many functions
+whose graphs you can find the length of by elemetary integration.  You
+could, however, refer back to numerical techniques if you wanted.
+
+Do not use this formula to "prove" that the circumference of a unit
+circle is `$2\pi$`; this is circular (no pun intended) because it's
+basically our definition of $\pi$.
+
+
+Lesson 11: Applications to Physics
+==================================
 
 :MW Date: October 8
 :TR Date: October 9
-:Duration: 1 1/2 class periods
-:See Also: Stewart_, Section 7.3
+:Duration: 1.5 class periods
+:See Also: Stewart_, Section 7.5
 
-Lesson 14: Differential Equations
+Learning Objectives
+-------------------
+
+* Use Riemann sums to derive integrals from problems.
+
+* Compute the work needed to move a particle against a varying force field.
+
+* Compute the work needed to move a body of solid/fluid in irregular
+  shape and or density a certain distance.
+
+* Compute the center of mass of a planar lamina of uniform density.
+
+
+Notes
+-----
+
+Here are two more applications of integration in which an integral is
+derived that does not measure area (or volume, for that matter).  I
+have found that students need more than one class period (i.e., some
+time to think) to "get" the idea of work and computing it by an
+integral.  
+
+Do not assume that your students are all aware or comfortable with
+physics.  Explain the concept of work for constant forces, like
+gravity.  Lifting up an object to a table takes work, dropping it down
+to the ground is work done by the Earth, and sliding it along the top
+of a frictionless table takes no work.  
+
+The center of mass of a planar lamina (or the centroid of a region,
+which is the same thing assuming the region has uniform density), is
+another nice application.  The COM is the place where the region will
+"balance" if you stick it on the point of a pencil; a demonstration
+would be effective here.
+
+Hydrostatic force is also in this section; let's skip it.
+
+
+Lesson 12: Differential Equations
 =================================
 
-:MW Date: October 20-22
-:TR Date: October 21-23
-:Duration: 2 class periods
+:MW Date: October 20
+:TR Date: October 21
+:Duration: two class periods
 :See Also: Stewart_, Section 7.6
 
-Lesson 15: Sequences
+Learning Objectives
+-------------------
+
+* Understand and recognize a *differential equation* and *initial
+  value problem*.
+
+* Construct an ODE from a word problem.
+
+* Solve separable differential equations exactly.
+
+* Sketch the *slope field* of an ordinary differential equation.
+
+* Use the slope field of an ODE to sketch solution curves to initial
+  value problems.
+
+Notes
+-----
+
+There is a lot one could do with differential equations!  A major goal
+should be to understand how various "natural" laws manifest themselves
+as differential equations.  For instance, the mixing problems
+described in this section are all examples of the rule that "(net
+change of stuff) is (rate of stuff in) minus (rate of stuff out)".
+Another very common example of a scientific law begetting a
+differential equation is Newton's Second Law `$F=ma$`.  In fact,
+Newton actually wrote it in :title-reference:`Principia` as a
+first-order ODE by saying Force was the change in *momentum.*  
+
+Another important point, I think, is that "most" differential
+equations are not solvable exactly.  We have graphical techniques to
+analyze solutions, and numerical techniques to find the solutions to
+arbitrary accuracy, but in the universe of ODEs only a set of measure
+zero are integrable in elementary terms.  This is why I tend to
+emphasize the non-analytic techniques on the first day, then get back
+to the separation-of-variables trick later.  
+
+You can talk about equilibrium solutions to homogeneous ODEs if you
+like, but there are no problems on that in the book so we won't test them.
+
+
+Lesson 13: Sequences
 ====================
 
 :MW Date: October 27
@@ -240,7 +604,44 @@ Lesson 15: Sequences
 :Duration: one class period
 :See Also: Stewart_, Section 8.1
 
-Lesson 16: Series
+Learning Objectives
+-------------------
+
+* Understand the definition and recognize a *sequence*.
+
+* Use algebraic simplification to find the limit of a sequence.
+
+* Use calculus to find the limit of a sequence.
+
+Notes
+-----
+
+You will discover that students are conditioned to be afraid of this
+chapter.  All their friends (who are not math majors, and maybe even
+some who are) who have passed through calculus have told them this is
+hard stuff.  And, I think that the way the curriculum is designed,
+with this front-loading of the concepts, students are drowning in new
+ideas by the time they get to Taylor Series.
+
+Try to reframe the chapter in the same way as some of the other
+chapters.  The derivative is an invention to solve the *tangent
+problem*.  The integral in an invention to solve the *area problem*.
+The big tool in this chapter, as far as the study of functions goes,
+is the *power series*, and the problem we are trying to solve is
+approximating complicated functions by simple ones (polynomials).  It
+will take us a while to get there, but if you choose examples that
+foreshadow this major concept ahead, you can keep them focused on the
+big picture.
+
+For this section, the big idea is the definition of sequence, finding
+limits of a sequence, and the theorem that a bounded monotone sequence
+converges.  You can emote (but don't give the details) that this is a
+fundamental property of *real* numbers. There are lots of bounded
+increasing sequences of rational numbers that don't converge to
+rational numbers.  
+
+
+Lesson 14: Series
 =================
 
 :MW Date: October 29
@@ -248,7 +649,47 @@ Lesson 16: Series
 :Duration: one class period
 :See Also: Stewart_, Section 8.2
 
-Lesson 17: The Integral and Comparison Tests
+Learning Objectives
+-------------------
+
+*  Understand that an infinite sum can converge to a finite value.
+
+*  Know the definition of a convergent series.
+
+*  Know or be able to derive the formulae
+
+   .. latex::
+    \sum_{k=0}^{n-1}ar^k=a\frac{1-r^n}{1-r}
+   
+   and
+
+   .. latex::
+
+    \sum_{k=0}^\infty ar^k=\frac{a}{1-r}
+
+   when `$|r|<1$`.
+
+* Be able to use the above formulae in calculations.
+
+
+Notes
+-----
+
+We tend to make a big deal that it's counterintuitive that an infinite
+set of positive numbers can add up to something finite.  I think
+students actually want to believe this.  So make sure you present both
+sides of the argument.
+
+But a nice proof that infinite sums are possible is cutting a cake.
+Give half to the first person in the class, a fourth to the second
+person, an eighth to the third, and so on.  You can give everyone a
+slice no matter how many people you have in the class, and you will
+always have some left over.  However, the amount left over approaches
+zero (that is, the amount distributed approaches the full cake), so
+for an infinite class you will serve the entire cake. 
+
+
+Lesson 15: The Integral and Comparison Tests
 ============================================
 
 :MW Date: November 3
@@ -256,15 +697,123 @@ Lesson 17: The Integral and Comparison Tests
 :Duration: one class period
 :See Also: Stewart_, Section 8.3
 
-Lesson 18: More Convergence Tests
-=================================
+Learning Objectives
+-------------------
+
+* Use the *integral test* to decide if a series converges.
+
+* Use the *comparison test* to decide if a series converges.
+
+* Use the *limit comparison test* to decide if a series converges.
+
+
+Notes
+-----
+
+Election Day is November 4, so students will certainly be excited
+about that.  Bonus points from them if you can work in any
+election-related examples.
+
+Students will like the integral test because it's conclusive.
+Integrate it and if the improper integral converges, the so does the
+series, and if the integral diverges, so does the series.
+
+But emphasize that the integral test doesn't give you any idea what
+the series converges *to*, so you've done a lot of work to integrate
+something then thrown away the product.  The comparison test allows to
+you to do *easy* integrals, like `$p$`-integrals, instead if all you want
+to do is decide convergence or divergence.
+
+Remind them how in the section on improper integrals we "eyeballed"
+the integrand to pull out the dominant term and decide convergence; we
+then used that term to construct something against which to compare.
+So it is with series.  When deciding the convergence of `$\sum
+\frac{1}{n^2+2}$`, sure, you could integrate `$\int_0^\infty
+\frac{dx}{x^2+2}$`, but the comparison test gets the answer faster.
+
+It's worth pointing out that we've subtly changed the acceptable
+answers to the problem we're doing here.  For derivatives, integrals,
+etc., we've usually wanted a number for an answer.  That's often too
+hard for series, so we just ask a simpler equation: finite or
+infinite?  When your standards are so low, there's more than way to
+get there.
+
+The limit comparison test is there because sometimes the obvious
+comparisons don't go in the right direction.  For instance, consider
+`$\sum \frac{1}{n+2}$`.  You'd like to compare it to
+`$\sum\frac{1}{n}$` which we know diverges, but
+`$\frac{1}{n+2}<\frac{1}{n}$` for `$n >0$`.  In effect, we'd be saying
+that `$\sum \frac{1}{n+2}$`, if it exists, is less than or equal to
+`$\infty$`.  A standard trick out of this is to scale: while
+`$\frac{1}{n+2}<\frac{1}{n}$`, we have that
+`$\frac{1}{2n}<\frac{1}{n+2}$` eventually, and this inquality goes in
+the right direction to apply the Comparison Test.  The LCT is just the
+formalization of this trick.
+
+Make sure you keep your language clean, too.  Students have trouble
+distinguishing between sequences and series.  It doesn't help when we
+speak of the general term of a series as representing the series
+itself.  We might say "`$\frac{1}{n}$` diverges" when we mean "the
+*series* `$\sum\frac{1}{n}$` diverges".  An expert would be able to
+discern that from the context, but not calculus learners, who might
+respond with "I thought you said last time that `$\frac{1}{n}$`
+converges to zero?"  (She's thinking of the sequence whose `$n$`\ th
+term is `$\frac{1}{n}$`, which does converge to zero.)  If you train
+yourself to say "the *sequence* of `$\frac{1}{n}$` converges", but
+"the *series* on `$\sum\frac{1}{n}$` diverges," you will help them
+keep track.  They might even learn to ask, "Do you mean the sequence
+or the series?" when presented with a "bald" expression like `$\frac{1}{n}$`.
+
+
+Lesson 16: Other convergence tests
+==================================
 
 :MW Date: November 5
 :TR Date: November 6
 :Duration: one class period
 :See Also: Stewart_, Section 8.4
 
-Lesson 19: Power Series
+Learning Objectives
+-------------------
+
+* Understand the definition of and recognize an *alternating series*
+
+* Use the *Alternating Series Test* to decide the convergence of an
+  alternating series.
+
+* Estimate the remainder of a partial sum of an alternating series.
+
+* Estimate the sum of an alternating series to a prescribed accuracy
+  by bounding the remainder.
+
+* Understand and apply the definition of *absolute convergence* for a series
+  having negative and positive terms.
+
+* Use the *Ratio Test* to decide if a series converges (absolutely)
+
+Notes
+-----
+
+I think we can skip the Root Test.
+
+Tell students that the dichotomy (convergent or divergent) for series
+containing only positive terms is really a trichotomy for series with
+terms of both signs.  A series can converge absolutely, converge
+conditionally, or diverge.  Make sure they know of at least one
+conditionally convergent series (e.g., the alternating harmonic
+series).
+
+They will also get tripped up on the logic behind the Ratio Test.
+They might get the idea that if the absolute value of the ratio of
+consecutive terms has a limit of one, then one cannot decide if the
+series converges.  We very likely *can* decide; we just can't use the
+Ratio Test to decide.  Show them that for any `$p$`-series, the ratio
+always approaches one, but the convergence is well-understood by the
+`$p$`-test.  This demonstrates why the Ratio Test is inconclusive, as
+well as what inconclusive means.
+
+
+Lesson 17: Power Series
 =======================
 
 :MW Date: November 10
@@ -272,15 +821,82 @@ Lesson 19: Power Series
 :Duration: one class period
 :See Also: Stewart_, Section 8.5
 
-Lesson 20: Representing Functions as Power Series
+Learning Objectives
+-------------------
+
+* Understand the definition of and recognize a *power series*.
+
+* Find the *radius of convergence* and *integral of convergence* of a
+  power series.
+
+Notes
+-----
+
+Power series are series on steroids.  You can test the convergence or
+divergence at any value of the variable.  And it's really
+remarkable—or at least it should be—that the set of numbers for
+which the series converges is an interval.  
+
+Demonstrate this with some indirect reasoning about power series.  If
+the power series is centered at 1 and converges at 3 but diverges at
+-3, we can conclude it converges at 0 and diverges at 6, for instance.
+
+Some numerical demonstration helps here, too.  Consider the power
+series `$\sum_{n=1}^\infty \frac{(-1)^{n+1}x^n}{n}$`.  Plug in `$x=1$`
+and you get the alternating harmonic series, which converges very
+slowly to `$\ln 2$`.  Plug in `$x=-\frac{1}{2}$` and you get
+convergence to `$-\ln 2$`, but much more quickly.  Plug in `$x=-1$` and
+you get the harmonic series, for which the terms do tend to zero but
+which doesn't converge.  Plug in `$x=2$` and you get a series where
+the terms start to blow up.  So it's all there.
+
+
+Lesson 18: Representing Functions as Power Series
 =================================================
 
 :MW Date: November 12
 :TR Date: November 13
 :Duration: one class period
-:See Also: Stewart_, Section 8.6
+:See Also: Stewart_, Section 8.5
 
-Lesson 21: Taylor and Maclaurin Series
+Learning Objectives
+-------------------
+
+* Given a function and a point inside its domain, find a power series
+  which converges to the given function on an open interval centered at
+  the given point.  This is called briefly a *power series
+  representation* of the function at the point.
+
+* Integrate and differentiate power series.
+
+Notes
+-----
+
+The really big idea here is that if a function has a power series
+representation, its derivatives and antiderivatives do, too, and they
+are arrived at the in the obvious way, by differentiating or
+antidifferentiating term-by-term.  This is not true for every series
+of functions, so make sure your students appreciate the depth of this
+theorem (not that you have to prove it or anything).
+
+This is where you can start to have fun with convergent series.  It's
+now possible to show, for instance, that the alternating harmonic
+series converges to `$\ln 2$`.  Can they find one that converges to
+`$\ln 3$`? Or you can show them `Euler-Machin formulas`_ and derive
+series of rational numbers which converge to `$\pi$`.  They all come
+out of this process of taking a "geometric" power series, and
+integrating or differentating it to arrive at power series
+representation for something else.
+
+.. _`Euler-Machin formulas`: http://mathworld.wolfram.com/EulersMachin-LikeFormula.html
+
+If you haven't told them yet, tell them that `$\sum_{n=1}^\infty
+\frac{1}{n^2}=\frac{\pi^2}{6}$`.  So this technique, while powerful,
+won't sum every series.  That should blow their mind.  You can go on
+about the zeta function if you want, too.
+
+
+Lesson 19: Taylor and Maclaurin Series
 ======================================
 
 :MW Date: November 17
@@ -288,55 +904,233 @@ Lesson 21: Taylor and Maclaurin Series
 :Duration: one class period
 :See Also: Stewart_, Section 8.7
 
-Lesson 22: Applications of Taylor Polynomials
+Learning Objectives
+-------------------
+
+* Compute the Taylor series of a function at a point.  
+
+* Compute derivatives at a point using a Taylor series.
+
+Notes
+-----
+
+There is an pseudo-algorithm for computing the Taylor series of a function.
+You take repeated derivatives, evaluate them at the point you want to
+center the series, and use those derivatives to build a series.  If
+you are lucky, you recognize a pattern and you can write down the
+general term in the series in some closed form.  
+
+But that really only works for since, cosine, and the exponential
+function.  In all the rest, the relevant theorem is that *if a
+function has a power series representation near a point, it is*
+**equal** *to the Taylor series at that point.*  So one can look at
+the power series and read off the derivatives.  
+
+I am always frustrated by students who one day can find a series which
+converges to the actan function but the next day, when asked to find
+the Taylor series for arctan, will start to make a table of
+derivatives and give up around the point they have to start using the
+Quotient Rule.  That's the whole point; there are better ways to do it.
+
+
+Lesson 20: Applications of Taylor Polynomials
 =============================================
 
 :MW Date: November 19
 :TR Date: November 20
 :Duration: one class period
-:See Also: Stewart_, Section 8.8
+:See Also: Stewart_, Section 8.7
 
-Lesson 24: Parametric Curves
+Learning Objectives
+-------------------
+
+* Estimate functions using a Taylor series.
+
+* Solve differential equations using power series.
+
+Notes
+-----
+
+Don't do the relativity stuff here.  Focus on using Taylor polynomials to
+estimate values of functions and talk about expressing solutions to an
+ODE as power series.  
+
+This brings up an answer to the question "What is this good for?"  You
+can ask them about the sine function, and how they think their
+calculator comes up with an answer when you ask it to find the sine of
+some angle.  We know that the sine of an angle `$x$` a "the ratio of the
+opposite side to the hypotenuse, when one angle of a right triangle is
+`$x$`."  But calculators don't draw little right
+triangles and measure them.  Or we can think about the sine of `$x$`
+as "the vertical coordinate of a point on the unit circle, for which
+the arc from (1,0) to the given point is `$x$` long."  But does the
+calculator draw a little unit circle?  
+
+No, a calculator computes the value of sine by evaluating some
+convergent series.  It's a limit of polynomials, in other words,
+approximated by sums and products, which calculators definitely can do!
+
+
+Lesson 21: Parametric Curves
 ============================
 
-:MW Date: November 24
-:TR Date: November 25
-:Duration: one half of one class period
-:See Also: Stewart_, Section 9.1
+:MW Date: November 21–23
+:TR Date: November 22
+:Duration: varies
+:See Also: Stewart_, Section 9.1–2
+
+Learning Objectives
+-------------------
+
+* Given parametric equations for `$x$` and `$y$`, find and sketch the
+  parametric curve they represent.
+
+* Given a curve in the plane, find a pair of parametric equations for
+  it.
+
+* Find tangent lines to parametric curves.
+
+* Find areas enclosed by parametric curves.
+
+* Find lengths of parametric curves.
+
+Calendar Notes
+--------------
+
+This is a really short week, because Thursday is Thanksgiving.  It's
+pretty common for students to travel this week, either home or the
+home of a friend if their home is far away.  They will often be
+traveling the day before (Wednesday), even though that's officially a
+school day.
+
+Wednesday is "officially" a Monday as far as which classes meet.  That
+doesn't effect MW sections; they would meet on Wednesday anyway.  TR
+sections will obviously not meet on Thursday.  Thus, MW sections will
+have an extra class period, which many students will not attend.
+
+I've learned it's expedient to go with the flow of traditions like
+these.  So whatever happens on Wednesday shouldn't be new material
+from Monday, but should be useful for understanding integration by
+parts or substitution.  A good worksheet would make this time
+worthwhile without penalizing those who miss it.
+
+Mathematical Notes
+------------------
+
+Students will find this harder than you think.  Maybe you found it
+hard the first time around.
+
+I spend a lot of time drawing a nodal cubic based on its
+parametrization: `$x=t^2-1$`, `$y=t^2-t$`.  This shows how different
+parametric curves can be from graphs of functions.  Or you could do
+Lissajous figures.  Help them eliminate the parameter as a means for
+recognizing the curve by its equations.
+
+For going the other way (from the curve to the equations), they should
+know how to parametrize circles and ellipses, lines, and other graphs
+of functions.  That's about it, I'd say.
+
+An `Etch A Sketch`_ might make a good demo here.  
+
+.. _`Etch A Sketch`: http://en.wikipedia.org/wiki/Etch_A_Sketch
 
 
-Lesson 25: Calculus with Parametric Curves
-==========================================
+Tangents to parametric curves come from the Chain Rule.  They may have
+seen that in a previous class.  Make sure they know that you can use
+it to find *vertical* tangents as well as horizontal ones.  
 
-:MW Date: November 24
-:TR Date: November 25
-:Duration: one half of one class period
-:See Also: Stewart_, Section 9.2
+For areas enclosed by parametric curves, see the book for the cases in
+which this is possible.  The general case is saved for Calc III—you
+can tell them that.  
 
-Lesson 26: Polar Coordinates
+For lengths of parametric curves, this might actually be more
+intiutive than the old (`$y=f(x)$`) way.  So it's worth doing again,
+and emphasizing how it's more symmetric than the first way.
+
+
+Lesson 22: Polar Coordinates
 ============================
 
-:MW Date: December 1
-:TR Date: December 2
+:MW Date: November 28
+:TR Date: November 29
 :Duration: one class period
 :See Also: Stewart_, Section 9.3
 
-Lesson 27: Areas and Lengths in Polar Coordinates
+Learning Objectives
+-------------------
+
+* Convert the coordinates of a point in the plane from cartesian to
+  polar and *vice versa*
+
+* Draw plane curves described in polar coordinates.
+
+* Find tangent lines to plane curves described in polar coordinates.
+
+Notes
+-----
+
+Students don't seem to be able to concieve a pre-cartesian plane.  Try
+to point out that there is more than one way to do things, and even
+though we are more familiar with cartesian coordinates, they are no
+more natural than others.  In fact, all coordinates are human
+invention.  Point to the blackboard, and say, "If this is a plane,
+where is the `$x$`-axis?"  Of course, there isn't one until you say
+so.
+
+Anyway, polar coordinates used to be taught more in high school than
+they are now.  So students won't be as familiar with them as you might
+think (or as the book might assume). 
+
+Notice that we are going to allow the value of the axial (`$r$`) coordinate
+to be negative.  This is more to give a meaning to it when it comes
+out of polar equations than to find the coordinates of a specific point.
+
+
+Lesson 22: Areas and Lengths in Polar Coordinates
 =================================================
 
-:MW Date: December 3
-:TR Date: December 4
+:MW Date: November 28
+:TR Date: November 29
 :Duration: one class period
 :See Also: Stewart_, Section 9.4
 
-Lesson 28: Conic Sections in Polar Coordinates
+Learning Objectives
+-------------------
+
+* Find the area of a curve described by a polar equation.
+
+* Find the length of a curve described by a polar equation.
+
+Notes
+-----
+
+Make sure the formula for the area of a sector of a circle
+`$A=\frac{1}{2}r^2\theta$` is well-understood.  Otherwise the integral
+formula won't make sense. 
+
+Notice again that the arc length formula doesn't usually give an
+integral which can be found in elementary terms.  Oh, well.
+
+
+Lesson 23: Conic Sections in Polar Coordinates
 ==============================================
 
-:MW Date: December 8
-:TR Date: December 9
+:MW Date: November 28
+:TR Date: November 29
 :Duration: one class period
-:See Also: Stewart_, Section 9.5
+:See Also: Stewart_, Section 9.4
 
+Learning Objectives
+-------------------
+
+* Find and interpret polar equations for conic sections.
+
+Notes
+-----
+
+You will probably need to review conic sections in cartesian
+coordinates as well.  Students will need help completing the square or
+shifting a conic to recognize its shape from the equation.
 
 Details
 =======
@@ -346,9 +1140,10 @@ Textbook
 
 .. _Stewart: 
 
-:title-reference:`Essential Calculus, Early Transcendentals` by James
- Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
+:title-reference:`Essential Calculus, Early Transcendentals` by James Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
 
 .. |infinity| unicode:: U+221E
 
 .. |times| unicode:: U+2A09
+
+.. |date| date::
