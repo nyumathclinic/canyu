@@ -1151,7 +1151,7 @@ Lesson 29: Evaluating Definite Integrals
 
 :MW Date: November 19
 :TR Date: November 20
-:Duration: one-half of one class period
+:Duration: one class period
 :See Also: Stewart_, Section 5.3
 
 Learning Objectives
@@ -1203,9 +1203,9 @@ marginal cost it's total cost.  And so on.
 Lesson 30: The Fundamental Theorem of Calculus
 ==============================================
 
-:MW Date: November 19
-:TR Date: November 20
-:Duration: one-half of one class period
+:MW Date: November 24
+:TR Date: November 25
+:Duration: one class period
 :See Also: Stewart_, Section 5.4
 
 
@@ -1238,12 +1238,14 @@ of difference quotients.  We have
 
   \frac{F(a+h)-F(a)}{h} = \frac{1}{h} \int_a^{x+h} f(t)\,dt
 
-By Property 8 above, :latex:`$\int_a^{a+h} f(t)\,dt$` is bounded above
-by the maximum of `$f$` on `$[a,a+h]$` times `$h$`, and bounded below by
-the minimum of `$f$` on `$[a,a+h]$` times `$h$`.  So the difference
-quotient itself if bounded between the max and min of `$f$` on`$[a,a+h]$`.  So `$F'(a)$`, if it exists, is between the lim sup and lim
-inf of `$f$` as `$x$` approaches `$a$`. But since `$f$` is continuous at `$a$`,
-the limit does exist and is `$f(a)$`.  (Squeeze Theorem!)
+By Property 8 in Section 5.2, :latex:`$\int_a^{a+h} f(t)\,dt$` is
+bounded above by the maximum of `$f$` on `$[a,a+h]$` times `$h$`, and
+bounded below by the minimum of `$f$` on `$[a,a+h]$` times `$h$`.  So
+the difference quotient itself if bounded between the max and min of
+`$f$` on`$[a,a+h]$`.  So `$F'(a)$`, if it exists, is between the lim
+sup and lim inf of `$f$` as `$x$` approaches `$a$`. But since `$f$` is
+continuous at `$a$`, the limit does exist and is `$f(a)$`.  (Squeeze
+Theorem!)
 
 Now we get to one of the most confusing simple tasks in calculus:
 differentiating a function expressed as an integral.  It shouldn't be,
@@ -1251,9 +1253,10 @@ but it is.  You can get them to repeat that
 :latex:`$\frac{d}{dx}\int_a^x f(t)\,dt = f(x)$`, but they will get
 completely confused with :latex:`$\frac{d}{dx}\int_a^{x^2} f(t)\,dt =
 f(x^2)(2x)$`.  Perhaps try to hide the integral and call the area
-function `$F$`; then it's clear that :latex:`$\frac{d}{dx}F(x^2) = F'(x^2)(2x)$`.
-Students also will try to work :latex:`$f'$` in here, but point out that the
-FTC never involves the derivative of the integrand.
+function `$F$`; then it's clear that :latex:`$\frac{d}{dx}F(x^2) =
+F'(x^2)(2x)$`.  Students also will try to work :latex:`$f'$` in here,
+but point out that the FTC never involves the derivative of the
+integrand.
 
 This seems like a pointless task, but there are functions which are
 defined in terms of an integral, such as the error function
@@ -1261,12 +1264,35 @@ defined in terms of an integral, such as the error function
 :latex:`$\int_0^x\frac{\sin t}{t}\,dt$`, and the Fresnel function.
 
 
+
+Wednesday, November 26
+----------------------
+
+This is a really short week, because Thursday is Thanksgiving.  It's
+pretty common for students to travel this week, either home or the
+home of a friend if their home is far away.  They will often be
+traveling the day before (Wednesday), even though that's officially a
+school day.
+
+Wednesday is "officially" a Monday as far as which classes meet (this
+makes up for Labor Day, theoretically).  That doesn't effect MW
+sections; they would meet on Wednesday anyway.  TR sections will
+obviously not meet on Thursday.  Thus, MW sections will have an extra
+class period, which many students will not attend.
+
+I've learned it's expedient to go with the flow of traditions like
+these.  So whatever happens on Wednesday shouldn't be new material
+from Monday, but should be useful for understanding the first four
+sections.  A good worksheet would make this time worthwhile without
+penalizing those who miss it.
+
+
 Lesson 31: The Substitution Rule
 ================================
 
-:MW Date: November 24-26
-:TR Date: November 25
-:Duration: varies (see notes)
+:MW Date: December 1
+:TR Date: December 2
+:Duration: one class period
 :See Also: Stewart_, Section 5.5
 
 Prequisites
@@ -1336,33 +1362,12 @@ interval is zero; while the integral of an even function over such an
 interval is twice the integral over the second half.  A picture is
 most convincing here, the substitution `$u=-x$` makes it rigorous.
 
-Wednesday, November 26
-----------------------
-
-This is a really short week, because Thursday is Thanksgiving.  It's
-pretty common for students to travel this week, either home or the
-home of a friend if their home is far away.  They will often be
-traveling the day before (Wednesday), even though that's officially a
-school day.
-
-Wednesday is "officially" a Monday as far as which classes meet (this
-makes up for Labor Day, theoretically).  That doesn't effect MW
-sections; they would meet on Wednesday anyway.  TR sections will
-obviously not meet on Thursday.  Thus, MW sections will have an extra
-class period, which many students will not attend.
-
-I've learned it's expedient to go with the flow of traditions like
-these.  So whatever happens on Wednesday shouldn't be new material
-from Monday, but should be useful for understanding the method of
-substitution.  A good worksheet would make this time worthwhile
-without penalizing those who miss it.
-
 
 Lesson 32: Integration by Parts
 ===============================
 
-:MW Date: December 1
-:TR Date: December 2
+:MW Date: December 3
+:TR Date: December 4
 :Duration: one class period
 :See Also: Stewart_, Section 6.1
 
@@ -1384,55 +1389,111 @@ Learning Objectives
 * Evaluate integrals using a substitution followed by integration by
   parts.
 
-
-
-
-Lesson 33: Integration by partial fraction decomposition
-========================================================
-
-:MW Date: December 3
-:TR Date: December 4
-:Duration: one class period
-:See Also: Stewart_, Section 6.3
-
-Prerequisites
--------------
-
-* Given a polynomial, factor it into a product of polynomials which
-  are either *linear* of the form :latex:`$x-a$` or *irreducible
-  quadratic* of the form :latex:`$x^2 + bx + c$`, where
-  :latex:`$b^2-4c < 0$`
-
-* Given an irreducible quadratic polynomial :latex:`$x^2 + bx+c$`,
-  write it in the form :latex:`$u^2 + c$` (in other words, *complete
-  the square*) 
-
-Learning Objectives
--------------------
-
-* Given a rational function, write the form of its *partial fraction
-  decomposition* into a sum of simpler rational functions, in the case
-  that the denominator has
-
-  - only linear factors, each of which is unique;
-
-  - linear factors with repetition;
-
-  - quadratic factors, each of which is unique;
-
-  - quadratic factors with repetition.
-
-* Given a rational function and the form of its partial fraction
-  decomposition, find the explicit decomposition.
-
-* Given a rational function, use its partial fraction decomposition to
-  find its antiderivative.
-
 Notes
 -----
 
-This section is optional if you need to skip it to maintain pace with
-the other sections.
+Every rule of antidifferentiation is a rule of differentiation in
+reverse.  First, we did integration by substitution, which is the
+reverse of the chain rule.  Next we do integration by parts, which is
+the reverse of the product rule.
+
+[In fact, it's been said that these are the only real "techniques of
+integration."  Trigonometric substitution is just another kind of
+substitution, and integration by partial fractions is just algebra.]
+
+The standard way to derive integration by parts is to take the product
+rule and integrate it:
+
+  .. latex::
+
+     uv = \int (uv)'\,dx = \int u'v \,dx + \int uv'\,dx
+
+Then you solve for `$\int uv'\,dx$`.  At some point, maybe not right
+away, you can show them the `$\int u\,dv = uv - \int v\,du$` form of
+the equation.
+
+The first example should be simple, for instance `$\int xe^x
+\,dx$`. As you progress, try to get them thinking about how to decide
+which factor should be `$u$`.  Do an example such as `$\int x^2
+e^x\,dx$` where they have to integrate by parts twice, an example such
+as `$\int e^x \sin x\,dx$` where they have to integrate by parts twice
+then solve for the original integral, and an example where `$dv = dx$`
+works.
+
+Some students are going to know an acronym like **LIPET**.  It's
+supposed to order functions by their usefulness as `$u$` when
+integrating by parts.  Viz.:
+
+* Logarithmic functions
+
+* Inverse trigonometric functions
+
+* Polynomial functions
+
+* Exponential functions
+
+* Trigonometric functions
+
+For instance, an inverse trig function becomes an algebraic function
+after differentiating, which we would hope would be simpler to
+integrate once multiplied by `$v$`.  Exponential and trig functions
+remain exponential and trig functions after differentiating, so they
+don't get any simpler.
+
+I don't much care for mnemonics like these; I just try to get them to
+think about the choice between differentiating and antidifferentiating a
+factor.  If differentiating is much easier than antidifferentiating,
+than make it `$u$`.  But if they know it you can at least acknowledge
+that it's useful.
+
+Another trick some of them will know is sometimes called |tabular
+integration by parts|_.  With this, you form a two-column table with your
+original factors `$u$` and `$dv$` in the first row.  For each
+successive row, you differentiate the first column of the previous row
+and antidifferentiate the second column.  For instance:
+
++---------+-----------------------+
+| `$u$`   | `$dv$`                |
++=========+=======================+
+| `$x^2$` | `$\sin 3x$`           |
++---------+-----------------------+
+| `$2x$`  | `$-\frac13 \cos 3x$`  |
++---------+-----------------------+
+| `$2$`   | `$-\frac19 \sin 3x$`  |
++---------+-----------------------+
+| `$0$`   | `$\frac1{27}\cos 3x$` |
++---------+-----------------------+
+
+From this point onward the first column is going to be zero.  Then you
+take the alternating sum of the products of each entry in the first
+column with the entry one row below in the second column.  Thus:
+
+.. latex::
+
+   \int x^2 \sin 3x\,dx = x^2\left(-\frac13\right)\cos3x
+   -(2x)\left(-\frac19\right)\sin3x
+   +2\left(\frac1{27}\right) \cos 3x
+   = -\frac13 x^2 \cos 3x + \frac29 \sin 3x + \frac{2}{27} \cos 3x
+
+This technique was popularized from the movie |Stand and Deliver|_. It
+isn't anything more than iterated integration by parts, just arranged
+in columns.  And it's not as useful as it seems.  For instance, it
+won't work with integrals like `$\int e^{ax} \sin bx \,dx$`, since the
+first column never becomes zero. 
+
+[Actually, it kind of works; the alternating sum turns into a
+geometric series.  The series probably diverges, but if it did converge (that
+is, if you do the regular thing with geometric series), it converges to
+the right answer.]
+
+.. |Stand and Deliver| replace:: :title-reference:`Stand and Deliver`
+.. _Stand and Deliver: http://en.wikipedia.org/wiki/Stand_and_Deliver
+
+.. |tabular integration by parts| 
+   replace:: *tabular integration by parts*
+
+.. _tabular integration by parts: http://marauder.millersville.edu/~bikenaga/calc/parts/partspf.html
+
 
 
 Lesson 34: Approximate Integration
@@ -1455,7 +1516,7 @@ Learning Objectives
 
   - Simpson's Rule.
 
-* Given a list of data interpolated to a functions, compute estimates
+* Given a list of data interpolated to a function, compute estimates
   for the definite integral of the function as above.
 
 * Given a definite integral and one of the above approximations to it,
@@ -1487,6 +1548,8 @@ suggestions.
 * Do something entertaining.  I show a number of clips from movies
   about mathematics such as :title:`(pi)` and :title:`Good Will Hunting`,
   and then the Disney short :title:`Donald [Duck] in Mathmagic-land`.
+
+.. _(pi): http://www.imdb.com/title/tt0138704/
 
 
 Details
