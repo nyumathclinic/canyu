@@ -9,114 +9,90 @@
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
+   :Schema.link: http://www.w3.org/1999/xhtml/link/
+   :link.next scheme=rel: hw.html
+   :link.previous scheme=rel: syllabus.html
+   :link.start scheme=rel: syllabus.html
+   :short-title: Calendar
+   :link.alternate scheme=rel media=print type=application/pdf: cal.pdf
+
+.. |date| date::
 
 Calendar for Math 122, Fall 2008
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Classes begin Tuesday, September 2.
+:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Date:   |date|
 
-+----+-------------+---------+---------------------------------------------+-------------+
-|Week| Dates       | Section | Topics                                      | Notes       |
-+====+=============+=========+=============================================+=============+   
-| 1  | 9/2-9/5     | 5.1     | Areas and Distances                         | [#ws]_      |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 5.2     | The definite integral                       | [#wk1]_     |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 5.3     | Evaluating definite integrals               | [#ftc]_     |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 2  | 9/8-9/12    | 5.5     | The Substitution Rule                       |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 6.1     | Integration by parts                        |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 6.2     | Trigonometric Integrals and Substitution    | [#trig]_    |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 3  | 9/15-9/19   | 6.3     | Integration by Partial Fraction             |             |
-|    |             |         | Decomposition                               |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 6.4     | Integration with tables and                 | [#int]_     |
-|    |             |         | Computer Algebra Systems                    |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 4  | 9/22-9/26   | 6.5     | Approximate Integration                     |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 6.6     | Improper Integrals                          |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 5  | 9/29-10/3   | 7.1     | Areas between Curves                        |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 7.2     | Volumes                                     | [#vol]_     |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 7.3     | Volumes by Cylindrical Shells               |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 6  | 10/06-10/10 | 7.4     | Arc length                                  |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 7.5     | Applications of Integration                 |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 7  | 10/15-10/17 |           Midterm                                     | [#wk7]_     |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 8  | 10/20-10/24 | 7.6     | Differential Equations                      | [#de]_      |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 9  | 10/27-10/31 | 8.1     | Sequences                                   |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 8.2     | Series                                      |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 10 | 11/3-11/7   | 8.3     | The integral and comparison tests           |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 8.4     | Other convergence tests                     |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 11 | 11/10-11/14 | 8.5     | Power Series                                |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 8.6     | Representing Functions as Power Series      |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 12 | 11/17-11/21 | 8.7     | Taylor and Maclaurin series                 |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 8.8     | Applications of Taylor Polynomials          |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 13 | 11/24-11/26 | 9.1     | Parametric Curves                           | [#wk13]_    |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 9.2     | Calculus with parametric curves             |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 14 | 12/1-12/5   | 9.3     | Polar Coordinates                           |             |
-|    |             +---------+---------------------------------------------+-------------+
-|    |             | 9.4     | Areas and lengths in Polar Coordinates      |             |
-+----+-------------+---------+---------------------------------------------+-------------+
-| 15 | 12/8-12/12  | 9.5     | Conic Sections in Polar Coordinates         |             |
-+----+-------------+---------+---------------------------------------------+-------------+
+This is a week-by-week calendar of topics covered in Calculus II.  More details, including
+specific learning objectives and the amount of time to spend on each section, can be found
+in the lesson guide.  As a rule of thumb, the topics are generally to be spread out
+equally during the week, so if there are two topics, each one takes one class period,
+while if there are three, each should take two-thirds of a class period.
 
 
-
-Notes
------
-
-
-.. [#ws] The first week is a good time to do something interactive like a worksheet.  This
-   would fill extra time in the case of TR classes
-
-.. [#wk1] Monday classes do not meet this week.  So MW sections will
-   only meet Wednesday.  TR sections can do more from Section 1.2
-   about how changes in the function are shown in the graph.
-
-.. [#ftc] This section covers the second Fundamental theorem of Calculus.  We review it
-   because it's critical to Calc II.  The first FTC, not used in Calc II, will not be
-   covered.
-
-.. [#trig] This section is a double-length section.
-
-.. [#int] There should be enough time left here to go over some strategies for integration
-   in general.  That is, what do you do when faced with an integral and you don't know
-   what to do?
-
-.. [#vol] This section includes both "slicing" and "the disc or washer method."
-
-.. [#de] We'll do this week out of order because differential equations need a full week.
-
-.. [#wk7] Monday and Tuesday are holidays (Colubmus Day) here so each
-   section will only meet once.  Some big sections won't have
-   recitation either.  Still it's a good week for the midterm.
-
-
-
-.. [#wk13] This is Thanksgiving week.  Wednesday is declared a Monday
-   (why it's not declared a Friday I don't understand).  This doesn't
-   have too much effect on MW sections, but we should be aware that
-   attendance will be light on Wednesday.  TR classes will officially
-   only meet once this week.
-
++----+-------------+---------+---------------------------------------------+
+|Week| Dates       | Section | Topics                                      |
++====+=============+=========+=============================================+   
+| 1  | 9/2-9/5     | 5.1     | Areas and Distances                         |
+|    |             +---------+---------------------------------------------+
+|    |             | 5.2     | The definite integral                       |
+|    |             +---------+---------------------------------------------+
+|    |             | 5.3     | Evaluating definite integrals               |
+|    |             +---------+---------------------------------------------+
+|    |             | 5.5     | The Substitution Rule                       |
++----+-------------+---------+---------------------------------------------+
+| 2  | 9/8-9/12    | 6.1     | Integration by parts                        |
+|    |             +---------+---------------------------------------------+
+|    |             | 6.2     | Trigonometric Integrals and Substitution    |
++----+-------------+---------+---------------------------------------------+
+| 3  | 9/15-9/19   | 6.3     | Integration by Partial Fraction             |
+|    |             |         | Decomposition                               |
+|    |             +---------+---------------------------------------------+
+|    |             | 6.4     | Integration with tables and                 |
+|    |             |         | Computer Algebra Systems                    |
++----+-------------+---------+---------------------------------------------+
+| 4  | 9/22-9/26   | 6.5     | Approximate Integration                     |
+|    |             +---------+---------------------------------------------+
+|    |             | 6.6     | Improper Integrals                          |
++----+-------------+---------+---------------------------------------------+
+| 5  | 9/29-10/3   | 7.1     | Areas between Curves                        |
+|    |             +---------+---------------------------------------------+
+|    |             | 7.2     | Volumes                                     |
+|    |             +---------+---------------------------------------------+
+|    |             | 7.3     | Volumes by Cylindrical Shells               |
++----+-------------+---------+---------------------------------------------+
+| 6  | 10/06-10/10 | 7.4     | Arc length                                  |
+|    |             +---------+---------------------------------------------+
+|    |             | 7.5     | Applications of Integration                 |
++----+-------------+---------+---------------------------------------------+
+| 7  | 10/15-10/17 |           Midterm                                     |
++----+-------------+---------+---------------------------------------------+
+| 8  | 10/20-10/24 | 7.6     | Differential Equations                      |
++----+-------------+---------+---------------------------------------------+
+| 9  | 10/27-10/31 | 8.1     | Sequences                                   |
+|    |             +---------+---------------------------------------------+
+|    |             | 8.2     | Series                                      |
++----+-------------+---------+---------------------------------------------+
+| 10 | 11/3-11/7   | 8.3     | The integral and comparison tests           |
+|    |             +---------+---------------------------------------------+
+|    |             | 8.4     | Other convergence tests                     |
++----+-------------+---------+---------------------------------------------+
+| 11 | 11/10-11/14 | 8.5     | Power Series                                |
+|    |             +---------+---------------------------------------------+
+|    |             | 8.6     | Representing Functions as Power Series      |
++----+-------------+---------+---------------------------------------------+
+| 12 | 11/17-11/21 | 8.7     | Taylor and Maclaurin series                 |
+|    |             +---------+---------------------------------------------+
+|    |             | 8.8     | Applications of Taylor Polynomials          |
++----+-------------+---------+---------------------------------------------+
+| 13 | 11/24-11/26 | 9.1     | Parametric Curves                           |
+|    |             +---------+---------------------------------------------+
+|    |             | 9.2     | Calculus with parametric curves             |
++----+-------------+---------+---------------------------------------------+
+| 14 | 12/1-12/5   | 9.3     | Polar Coordinates                           |
+|    |             +---------+---------------------------------------------+
+|    |             | 9.4     | Areas and lengths in Polar Coordinates      |
++----+-------------+---------+---------------------------------------------+
+| 15 | 12/8-12/12  | 9.5     | Conic Sections in Polar Coordinates         |
++----+-------------+---------+---------------------------------------------+
