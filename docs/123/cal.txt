@@ -1,4 +1,4 @@
-.. -*- mode: rst; coding: utf-8 -*-
+.. -*- mode: rst; coding: utf-8; fill-column: 90 -*-
 .. meta:: 
    :description: Calendar for Math 123, Fall 2008
    :keywords: Math 121, NYU, Math, Calculus
@@ -10,10 +10,21 @@
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
 
+.. |date| date::
+
 Calendar for Math 123, Fall 2008
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Classes begin Tuesday, September 2.
+:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Date:   |date|
+
+This is a week-by-week calendar of topics covered in Calculus III.  As a rule of thumb,
+the topics are generally to be spread out equally during the week, so if there are two
+topics, each one takes one class period, while if there are three, each should take
+two-thirds of a class period.
+
+.. More details, including specific learning objectives and the amount of time to spend on
+   each section, can be found in the lesson guide. [NOT YET!]
 
 +----+-------------+---------+---------------------------------------------+-------------+
 |Week| Dates       | Section | Topics                                      | Notes       |
@@ -31,11 +42,11 @@ Classes begin Tuesday, September 2.
 |    |             +---------+---------------------------------------------+-------------+
 |    |             | 10.6    | Cylinders and Quadric Surfaces              |             |
 +----+-------------+---------+---------------------------------------------+-------------+
-| 4  | 9/22-9/26   | 10.7    | Approximate Integration                     |             |
+| 4  | 9/22-9/26   | 10.7    | Vector functions and space curves           |             |
 |    |             +---------+---------------------------------------------+-------------+
-|    |             | 10.8    | Improper Integrals                          |             |
+|    |             | 10.8    | Arc length and Curvature                    | [#s108]_    |
 |    |             +---------+---------------------------------------------+-------------+
-|    |             | 10.9    | Motion in Space: Velocity and Acceleration  |             |
+|    |             | 10.9    | Motion in Space: Velocity and Acceleration  | [#s109]_    |
 +----+-------------+---------+---------------------------------------------+-------------+
 | 5  | 9/29-10/3   | 11.1    | Functions of Several Variables              |             |
 |    |             +---------+---------------------------------------------+-------------+
@@ -70,9 +81,11 @@ Classes begin Tuesday, September 2.
 |    |             +---------+---------------------------------------------+-------------+
 |    |             | 12.7    | Triple Integrals in Spherical Coordinates   |             |
 +----+-------------+---------+---------------------------------------------+-------------+
-| 11 | 11/10-11/14 | 13.1    | Vector Fields                               |             |
+| 11 | 11/10-11/14 | 13.1,   | Vector Fields                               | [#dgc]_     |
+|    |             | DGC 2-4 |                                             |             |
 |    |             +---------+---------------------------------------------+-------------+
-|    |             | 13.2    | Line Integrals                              |             |
+|    |             | 13.2,   | Line Integrals                              |             |
+|    |             | DGC63-74|                                             |             |
 |    |             +---------+---------------------------------------------+-------------+
 |    |             | 13.3    | The Fundamental Theorem of Line Integrals   |             |
 +----+-------------+---------+---------------------------------------------+-------------+
@@ -84,9 +97,13 @@ Classes begin Tuesday, September 2.
 +----+-------------+---------+---------------------------------------------+-------------+
 | 14 | 12/1-12/5   | 13.7    | Surface Integrals                           |             |
 |    |             +---------+---------------------------------------------+-------------+
-|    |             | 13.8    | Stokes's Theorem                            |             |
+|    |             | 13.8,   | Stokes's Theorem                            |             |
+|    |             | DGC     |                                             |             |
+|    |             | 93-104  |                                             |             |
 +----+-------------+---------+---------------------------------------------+-------------+
 | 15 | 12/8-12/12  | 13.9    | The Divergence Theorem                      |             |
+|    |             | DGC     |                                             |             |
+|    |             | 11-52   |                                             |             |
 +----+-------------+---------+---------------------------------------------+-------------+
 
 
@@ -101,9 +118,17 @@ Notes
 .. [#wk1] Monday classes do not meet this week.  So MW sections will
    only meet Wednesday.  TR sections can do more from Section 10.1.
 
+.. [#s108] Don't worry about the normal and binormal vector fields.  
+
+.. [#s109] 
+
 .. [#wk7] Monday and Tuesday are holidays (Columbus Day) here so each
    section will only meet once.  Some big sections won't have
    recitation either.  Still it's a good week for the midterm.
+
+.. [#dgc] "DGC" stands for `Div, Grad, Curl and all that`, by H.M. Schey, 4th ed., Norton.
+   This is a nice monograph on the physical reasons behind the vector calculus theorems.
+   We will stick with Stewart for the guiding theme.
 
 .. [#wk13] This is Thanksgiving week.  Wednesday is declared a Monday
    (why it's not declared a Friday I don't understand).  This doesn't

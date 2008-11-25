@@ -1,0 +1,23 @@
+.. -*- mode: rst -*-
+.. meta::
+   :description: Contents of Math 123 website
+   :keywords: Calculus III, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id: stsyllabus.txt 233 2008-01-30 14:34:56Z matthew $
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2007-01-29
+   :DCT.Modified scheme=W3CDTF: 2007-01-29
+   :DCT.Modified lang=en-US: August 27, 2008
+   :DCT.Modified scheme=subversion: $Date: 2008-01-30 09:34:56 -0500 (Wed, 30 Jan 2008) $
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+   :Schema.link: http://www.w3.org/1999/xhtml/link/
+   :link.contents scheme=rev: syllabus.html
+   :link.contents scheme=rev: hw.html
+   :link.contents scheme=rev: cal.html
+
+
+* Calendar_
+
+.. _Calendar: cal.html
+
