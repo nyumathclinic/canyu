@@ -119,13 +119,16 @@ be chosen *at random* and graded.
 |        |            | 9.4      | 3, 7, 9, 17, 31,   | 4, 8, 12, 16, 34           |
 |        |            |          | 35                 |                            |
 +--------+------------+----------+--------------------+----------------------------+
-| 14     | 12/15      | 9.5      | 3, 13, 19, 25      | 2, 4, 14, 20, 24           |
+| 14     | 12/15 [#]_ | 9.5      | 3, 13, 19, 25      | 2, 4, 14, 20, 24           |
 +--------+------------+----------+--------------------+----------------------------+
 
 .. [#] October 13 and 14 are the Columbus Day holiday.  The midterm will be given October
    15 or 16 in class.
-
+xsheel
 .. [#] All parts involving a graphing calculator are optional and will not be graded.
+
+.. [#] The final problem set will not be collected or graded.  Solutions will be published
+       on the websites, however.
 
 .. |ch6rev| replace::
    Ch. 6 review
