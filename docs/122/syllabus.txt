@@ -6,8 +6,6 @@
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2007-01-29
-   :DCT.Modified scheme=W3CDTF: 2007-01-29
-   :DCT.Modified lang=en-US: August 19, 2008
    :DCT.Modified scheme=subversion: $Date: 2008-01-30 09:34:56 -0500 (Wed, 30 Jan 2008) $
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
@@ -24,7 +22,7 @@ Math 122: Calculus II
 !!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
-:Date: Fall 2008
+:Date: Spring 2009
 
 
 Goals and Topics
@@ -90,7 +88,7 @@ that you understand the basic techniques.  They are all odd-numbered
 problems, and the answers are in the back of the book.
 
 Each week a problem set of about ten problems will be collected.
-Three problems will be chosen at random and graded.  
+*Four* problems will be chosen *at random* and graded.  
 
 Some of the problems will be rather straightforward.  These are to
 test the basic techniques.  Often there is a practice or odd-numbered
@@ -135,8 +133,8 @@ Exams
 There will be one midterm exam, held in class on October 15 (for MW
 sections) and 16 (for TR sections).
 
-**The final exam for all sections will be Friday, December 19, from
-12:00-1:50pm. Please make a note of it and plan your travel schedule
+**The final exam for all sections will be Friday, May 8, from
+2:00-3:50pm. Please make a note of it and plan your travel schedule
 accordingly.**
 
 Exams will contain a mixture of computational and conceptual problems.
@@ -168,10 +166,9 @@ reason, we may approve out-of-sequence exams in the following cases:
 
 4.  Extreme hardship such as a family emergency. 
 
-We must give priority to these students.  If there is space  
-available, we will consider other requests.  Everyone feels that  
-their request is the most important and pressing, so we consider  
-these requests on a first-come, first-served basis.
+**We will not be able to accommodate out-of-sequence exams, quizzes,
+and finals for purposes of more convenient travel, including already
+purchased plane tickets.**
 
 Scheduled out-of-sequence exams and quizzes (those not arising from
 emergencies) must be taken *before* the actual exam.  Otherwise,
