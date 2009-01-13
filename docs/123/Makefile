@@ -10,7 +10,7 @@ BINDIR=$(TOPDIR)/bin
 BUILDDIR=$(TOPDIR)/build
 
 include $(LIBDIR)/config.mk # sets year and term
-coursenum=122
+coursenum=123
 
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
