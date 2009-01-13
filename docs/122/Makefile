@@ -1,4 +1,4 @@
-# Makefile for Math 1a docs
+# Makefile for Math 121 docs
 # Matthew Leingang
 # $HeadURL: file:///Users/matthew/Library/svnroot/courses/1a/2008Spring/docs/hw/trunk/Makefile $
 # $Date: 2007-09-18 22:20:03 -0400 (Tue, 18 Sep 2007) $
@@ -7,19 +7,20 @@
 TOPDIR=$(shell cd ../.. && pwd)
 LIBDIR=$(TOPDIR)/lib
 BINDIR=$(TOPDIR)/bin
-
 BUILDDIR=$(TOPDIR)/build
-BUILDDIR_HTML=$(BUILDDIR)/public_html/2008/Fall/122
 
-INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/2008/Fall/122
+include $(LIBDIR)/config.mk
+coursenum=122
+
+BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
+INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
 
 INSTALL=install -m644
-
 PDFLATEX=pdflatex
 
 
 # Use txt files as source
-TXTSRC=$(shell ls *.txt)
+TXTSRC=syllabus.txt cal.txt #$(shell ls *.txt)
 HTML=$(TXTSRC:%.txt=%.html)
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)
@@ -57,7 +58,7 @@ test-makefile:
 	@echo "PSHTML: " $(PSHTML)
 	@echo "ALLFILES: " $(ALLFILES)
 
-cal.pdf: cal.html
-	$(WKPDF) --source $< --output $@
+#cal.pdf: cal.html
+#	$(WKPDF) --source $< --output $@
 
 lessons.tex: RST2LATEX_FLAGS+=--use-latex-toc
