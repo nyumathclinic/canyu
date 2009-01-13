@@ -154,8 +154,9 @@
     <div id="nav">
       <ul>
         <li><a href="/">Math Department Home</a></li>
-	<li><a href="/courses/Calculus/2008/Fall/121/">Calculus I</a></li>
-	<li><a href="/courses/Calculus/2008/Fall/122/">Calculus II</a></li>
+	<li><a><xsl:attribute name="href">/courses/Calculus/<xsl:value-of select="$year"/>/<xsl:value-of select="$term" />/121/</xsl:attribute>Calculus I</a></li>
+	<li><a><xsl:attribute name="href">/courses/Calculus/<xsl:value-of select="$year"/>/<xsl:value-of select="$term" />/122/</xsl:attribute>Calculus II</a></li>
+	<li><a><xsl:attribute name="href">/courses/Calculus/<xsl:value-of select="$year"/>/<xsl:value-of select="$term" />/123/</xsl:attribute>Calculus III</a></li>
         <li><a href="/courses/ug_course_descriptions.html">Undergraduate Courses</a></li>
         <li><a href="/degree/undergrad/">Undergraduate Program</a></li>
 	<li><a href="/degree/undergrad/calculus.html">Placement</a></li>
