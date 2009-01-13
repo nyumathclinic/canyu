@@ -1,0 +1,589 @@
+#! /usr/bin/env perl
+
+##########################################################
+# Bundle all the files needed to build a LaTeX document. #
+# By Scott Pakin <pakin@uiuc.edu>			 #
+##########################################################
+
+########################################################################
+# bundledoc							       #
+# Copyright (C) 2001 Scott Pakin				       #
+#								       #
+# This program may be distributed and/or modified under the conditions #
+# of the LaTeX Project Public License, either version 1.2 of this      #
+# license or (at your option) any later version.		       #
+#								       #
+# The latest version of this license is in:			       #
+#								       #
+#    http://www.latex-project.org/lppl.txt			       #
+#								       #
+# and version 1.2 or later is part of all distributions of LaTeX       #
+# version 1999/12/01 or later.					       #
+#								       #
+# This program consists of the file bundledoc and all the files listed #
+# in the Files section of the associated README file.		       #
+########################################################################
+
+use 5.006;	       # Fail gracefully if we're not using Perl v5.6.0.
+our $VERSION = "2.02"; # Specify the version of bundledoc.
+use File::Basename;
+use File::Copy;
+use File::Spec::Functions qw(catfile devnull rel2abs rootdir updir);
+use File::Path;
+use Getopt::Long;
+use Pod::Usage;
+use POSIX;
+use strict;
+
+######################################################################
+
+# Variables the user can override with a configuration file
+# DEFAULTS: Unix + kpathsea
+my %uservariable;
+$uservariable{"bundle"} = '(tar -cvf - $BDINPUTS | compress > $BDBASE.tar.Z)';
+$uservariable{"find"}	= 'kpsewhich -progname=latex $BDINPUTS';
+$uservariable{"sink"}	= '> ' . devnull() . ' 2>&1';
+
+# OS path separator (Is there a better way to get this?)
+my $pathsep = catfile ("", "");
+
+# File that lists original directory names
+my $manifest = "MANIFEST";
+
+# Cleaned-up name of this Perl script
+my $progname = basename($0);
+
+# Other global variables
+my ($verbose, $keepdirs, $depfile);	  # Taken from the command line
+my ($texfile, $docdirname);		  # Derived from $depfile
+
+######################################################################
+
+# Find a file in the LaTeX hierarchy and fully qualify it,
+# or abort if we can't.
+sub qualifyname ($)
+{
+    $ENV{"BDINPUTS"} = $_[0];
+    my $qualified = `$uservariable{find}` ||
+	die "${progname}: \"$uservariable{find}\" (BDINPUTS=\"$_[0]\") failed to find $_[0]\n";
+    chomp $qualified;
+    $qualified = rel2abs ($qualified);
+    return $qualified;
+}
+
+# Execute a command, and return an error message if it fails.
+sub executecmd ($)
+{
+    my $command = ($verbose ? $_[0] : "$_[0] $uservariable{sink}");
+    my $retval;
+
+    if ($verbose) {
+	print "EXECUTING: $command\n";
+	print "		  (BDINPUTS = \"$ENV{BDINPUTS}\")\n";
+    }
+    if ($pathsep eq "\\") {
+	# Dirty trick to work around idiotic "\" --> "/" conversion
+	$retval = system qq("$command");
+    }
+    else {
+	$retval = system $command;
+    }
+    die "${progname}: $!.  Failing command was:\n\t$command\n" if $retval;
+}
+
+# Read a configuration file, and set %uservariable accordingly.
+sub process_config_file ($)
+{
+    my $configfile = $_[0];
+    my $prevline = "";
+    open (CONFIGFILE, "<$configfile") || die "${progname}: $! ($configfile)\n";
+    while (my $oneline=<CONFIGFILE>) {
+	# Read a line and trim it.
+	chomp $oneline;
+	$oneline =~ s/^\s+//;
+	$oneline =~ s/\s+$//;
+
+	# Determine if we should process the line now, later, or never.
+	next if $oneline =~ /^\#.*$/;	   # Discard comments.
+	if ($oneline =~ m|^(.*)\\$|) {	   # Handle line continuations.
+	    $prevline .= $1;
+	    next;
+	}
+	$oneline = $prevline . $oneline;
+	$prevline = "";
+	next if $oneline =~ /^\s*$/;	   # Discard blank lines.
+
+	# Parse the line.
+	$oneline =~ /^(\w+)\s*:\s*(.*)$/;
+	$uservariable{lc($1)} = $2;
+    }
+    close CONFIGFILE;
+}
+
+######################################################################
+
+# Parse and process the command-line options.
+my $showhelp = "";
+$keepdirs = 0;
+$verbose = 0;
+GetOptions ('texfile=s' => \$texfile,
+	    'directory=s' => \$docdirname,
+	    'manifest:s' => \$manifest,
+	    'keepdirs!' => \$keepdirs,
+	    'config=s' => sub { process_config_file($_[1]) },
+	    'verbose!' => \$verbose,
+	    'version' => sub { print "$VERSION\n"; exit -1 },
+	    'help'=> \$showhelp) || pod2usage (-exitval => -1, -verbose => 0);
+pod2usage (-exitval => 0,
+	   -verbose => 1) if $showhelp && $verbose;
+pod2usage (-message => "(For more detailed help, enter \"$0 --help --verbose\".)",
+	   -exitval => 0,
+	   -verbose => 0) if $showhelp;
+pod2usage (-message => "${progname}: Too few arguments",
+	   -exitval => -1,
+	   -verbose => 0) if $#ARGV==-1;
+$depfile = shift;		 # Dependencies from snapshot.sty
+($texfile = $depfile) =~ s/\.[^.]*$/.tex/ if !$texfile;	  # Main LaTeX source file
+($docdirname = basename($depfile)) =~ s/\.[^.]*$// if !$docdirname;	# Name to use for the document directory
+($ENV{"BDBASE"} = rel2abs($depfile)) =~ s/\.[^.]*$//;	# May be needed by user-defined variables
+print "BDBASE = \"$ENV{BDBASE}\"\n" if $verbose;
+
+# Find all dependencies listed in the input file.
+open (DEPFILE, "<$depfile") || die "${progname}: $! ($depfile)\n";
+my $braced = "{([^\}]*)}";	 # Regular expression for a braced name.
+my @dependencies;		 # List of fully-qualified filenames.
+@dependencies = qualifyname ($texfile);
+while (my $oneline=<DEPFILE>) {
+    # Parse an input line into its component fields.
+    next if !($oneline =~ /^\s*\*$braced\s*$braced\s*$braced\s*$/);
+    my $filetype = $1;
+    my $filename = $2;
+    my $versioninfo = $3;
+
+    # Determine what to do based on the file type.
+    # NOTE: The PROCESSDEP block currently ignores the following file types:
+    #	 * application
+    #	 * tfm
+    #	 * format
+  PROCESSDEP:
+    {
+	$filetype eq "package" && do {
+	    push @dependencies, qualifyname ("$filename.sty");
+	    last PROCESSDEP;
+	};
+	$filetype eq "class" && do {
+	    push @dependencies, qualifyname ("$filename.cls");
+	    last PROCESSDEP;
+	};
+	$filetype eq "file" && do {
+	    push @dependencies, qualifyname ("$filename");
+	    last PROCESSDEP;
+	};
+    }
+}
+close DEPFILE;
+@dependencies = sort @dependencies;
+
+if ($keepdirs) {
+    # Put absolute pathnames in the tar file.
+    # QUESTIONS: Does this work with multiple drive letters in Windows?
+    #		 What about UNC names?
+    chdir rootdir() || die "${progname}: $! (".rootdir().")\n";
+    $ENV{"BDINPUTS"} = join (" ", map {s|^/+||; $_} @dependencies);
+    executecmd $uservariable{"bundle"};
+}
+else {
+    # Copy each of the dependencies to a temporary directory and tar it up.
+    my $tempdir = tmpnam();
+    my $tempdir2 = catfile $tempdir, $docdirname;
+    print "CREATING $tempdir\n" if $verbose;
+    mkdir ($tempdir, 0777)  || die "${progname}: $! ($tempdir)\n";
+    print "CREATING $tempdir2\n" if $verbose;
+    mkdir ($tempdir2, 0777) || die "${progname}: $! ($tempdir2)\n";
+    foreach my $dep (@dependencies) {
+	copy ($dep, $tempdir2) || die "${progname}: $! ($tempdir2)\n";
+    }
+    if ($manifest ne "") {
+	my $manifest = catfile $tempdir2, $manifest;
+	print "WRITING $manifest\n" if $verbose;
+	open (MANIFEST, ">$manifest") || die "${progname}: $! ($manifest)\n";
+	print MANIFEST join ("\n", @dependencies), "\n";
+	close MANIFEST;
+    }
+    chdir $tempdir || die "${progname}: $! ($tempdir)\n";
+    $ENV{"BDINPUTS"} = $docdirname;
+    executecmd $uservariable{"bundle"};
+
+    # Clean up our mess.
+    # NOTE: We rmtree $tempdir2 and rmdir $tempdir because rmtree
+    #	    complained on WinNT when trying to remove a top-level
+    #	    directory (e.g., "\s4r.").
+    print "REMOVING $tempdir2\n" if $verbose;
+    rmtree $tempdir2, 0, 1;
+    chdir (updir());
+    print "REMOVING $tempdir\n" if $verbose;
+    rmdir $tempdir || die "${progname}: $! ($tempdir)\n";
+}
+print "FINISHED.\n" if $verbose;
+exit 0;
+
+__END__
+
+######################################################################
+
+=head1 NAME
+
+bundledoc - bundle all the files needed by a LaTeX document
+
+
+=head1 SYNOPSIS
+
+bundledoc
+[B<--version>]
+[B<--help>]
+[B<-->[B<no>]B<verbose>]
+[B<--texfile>=I<file>]
+[B<--directory>=I<directory>]
+[B<--manifest>=I<file>]
+[B<-->[B<no>]B<keepdirs>]
+[B<--config>=I<file>]
+I<.dep file>
+
+
+=head1 DESCRIPTION
+
+B<bundledoc> is a post-processor for the B<snapshot> package that
+bundles together all the classes, packages, and files needed to build
+a given LaTeX document.	 It reads the F<.dep> file that B<snapshot>
+produces, finds each of the files mentioned therein, and packages them
+into a single archive file (e.g., a F<.tar.gz> file), suitable for
+moving across systems, transmitting to a colleague, etc.
+
+As the simplest example possible, consider a LaTeX file called, say,
+F<hello.tex>:
+
+    \RequirePackage{snapshot}	    % Needed by bundledoc
+    \documentclass[11pt]{article}
+
+    \begin{document}
+    Hello, world!
+    \end{document}
+
+The C<\RequirePackage{snapshot}> causes a F<hello.dep> file to be produced.
+When B<bundledoc> is then given C<hello.dep> as an argument, it locates the
+dependent files -- F<snapshot.sty>, F<article.cls>, and F<size11.clo> --
+and bundles them into a single archive file, along with F<hello.tex> and a
+F<MANIFEST> file (described in L<"OPTIONS">, below).
+
+
+=head1 OPTIONS
+
+In the following descriptions, I<somefile> refers to the name of your
+main LaTeX document (no extension).
+
+B<bundledoc> requires the name of the dependency file produced by
+B<snapshot> (normally I<somefile>F<.dep>).  The following options may
+also be given:
+
+=over 4
+
+=item B<--version>
+
+Output the B<bundledoc> script's version number.  This overrides all the
+remaining options.
+
+=item B<--help>
+
+Give a brief usage message.  This overrides all of the remaining options.
+
+=item B<-->[B<no>]B<verbose>			(default: C<noverbose>)
+
+B<bundledoc> normally does not output anything except error messages.
+With C<--verbose>, it outputs copious status messages.
+
+
+=item B<--texfile>=I<main .tex file>		(default: I<somefile>F<.tex>)
+
+B<snapshot>'s dependency file does not list the main LaTeX file (the one
+that gets passed to B<latex>).	In order for B<bundledoc> to find and
+bundle that file, B<bundledoc> assumes it has the same name as the
+B<snapshot> dependency file but with a F<.tex> extension.  If this is
+not the case, then use C<--texfile> to specify the correct filename.
+
+=item B<--directory>=I<directory within the tar file> (default: I<somefile>)
+
+When B<bundledoc> creates an archive (e.g., a F<.tar> or F<.zip> file)
+containing the document's files, it puts all of them in a directory, to
+avoid cluttering the current directory with files.  If the given
+dependency file is called I<somefile>F<.dep>, then the resulting archive
+will, by default, store all the dependent files in a I<somefile>
+directory.  To change the directory name, use the C<--directory> option.
+
+=item B<--manifest>=I<manifest file>		(default: F<MANIFEST>)
+
+In addition to the dependent files, B<bundledoc> includes in the tar
+file one extra file called, by default, ``F<MANIFEST>''.  F<MANIFEST> is
+a text file that lists the keepdirs filenames of all the dependencies.
+To change the filename from ``F<MANIFEST>'' to something else, use the
+C<--manifest> option.  As a special case, C<--manifest=""> tells
+B<bundledoc> not to include a manifest file at all.
+
+=item B<-->[B<no>]B<keepdirs>			(default: C<nokeepdirs>)
+
+Normally, the tar file B<bundledoc> produces contains a single
+directory, in which all the dependent files lie.  If C<--keepdirs> is
+specified, all the dependent files are stored with their keepdirs
+pathnames.  For example, if the I<somefile> document depends on
+I<somefile>F<.tex>, F<article.cls>, and F<snapshot.sty>,
+I<somefile>F<.tar.gz> will normally contain the following files:
+
+=over 4
+
+=item *
+
+I<somefile>F</>I<somefile>F<.tex>
+
+=item *
+
+I<somefile>F</article.cls>
+
+=item *
+
+I<somefile>F</snapshot.sty>
+
+=item *
+
+I<somefile>F</MANIFEST>
+
+=back
+
+However, C<--keepdirs> will cause I<somefile>F<.tar.gz> to contain the
+following sorts of filenames instead:
+
+=over 4
+
+=item *
+
+F<home/me/mydocs/>I<somefile>F<.tex>
+
+=item *
+
+F<usr/share/localtexmf/tex/latex/base/article.cls>
+
+=item *
+
+F<usr/share/localtexmf/tex/latex/snapshot/snapshot.sty>
+
+=back
+
+C<--directory> is not used when C<--keepdirs> is in effect.  In
+addition, no manifest file is written to the tar file, as it contains
+redundant information.
+
+=item B<--config>=I<configuration file>		(default: E<lt>noneE<gt>)
+
+The C<--config> option is used to point B<bundledoc> to the appropriate
+configuration (F<.cfg>) file for your TeX distribution and operating
+system.	 B<bundledoc> comes with a few configuration files, and it's
+easy to write more.  See L<"CONFIGURATION FILES"> (below) for a
+description of the configuration file format.
+
+=back
+
+
+=head1 CONFIGURATION FILES
+
+=head2 Format
+
+Configuration files follow a fairly simple format.  Lines beginning with
+C<#> are comments.  Blank lines are ignored.  All other lines are of the
+form:
+
+    variable: value
+
+The current version of B<bundledoc> recognizes the following variables:
+
+=over 4
+
+=item B<bundle>
+
+The command to use to bundle a set of files into a single archive file
+
+=item B<sink>
+
+The affix to a command to discard its output
+
+=item B<find>
+
+The command to find a file within the TeX tree(s).
+
+=back
+
+Values that are too long for one line can be split across multiple lines
+by using C<\> as the line-continuation symbol.
+
+There are two environment variables that B<bundledoc> makes available
+for use by configuration-file commands: C<BDBASE>, which is set to
+I<somefile> (as in L<"OPTIONS">), and C<BDINPUTS>, which is set to a
+space-separated list of files that a command is to operate upon.  That
+is, when the command associated with C<bundle> is running, C<BDINPUTS>
+contains the list of all the files that are to be archived.  In
+contrast, when the command associated with C<find> is running,
+C<BDINPUTS> contains the name of the file to search for.
+
+=head2 Examples
+
+The following configuration file parallels B<bundledoc>'s default
+values of the various configuration-file variables, which represents a
+kpathsea-based TeX distribution running on a generic Unix system,
+which doesn't necessarily have any of the GNU tools, such as B<gzip>
+or GNU B<tar>:
+
+    # "Default" configuration file
+    # By Scott Pakin <pakin@uiuc.edu>
+
+    bundle: (tar -cvf - $BDINPUTS | compress > $BDBASE.tar.Z)
+    sink:   > /dev/null 2>&1
+    find:   kpsewhich -progname=latex $BDINPUTS
+
+The parentheses in the C<bundle:> line tell the Unix shell to run the
+command in a subshell.	This is to make the C<sink:> affix work
+properly (i.e., so there aren't two C<E<gt>>'s in the same command).
+
+Notice how the commands treat C<BDBASE> and C<BDINPUTS> like any other
+environment variables in a Unix shell, using C<$> to take their value.
+Other operating systems use different conventions for referring to
+environment variables.	For instance, a configuration file for a
+Windows-based TeX distribution would use C<%BDBASE%> and C<%BDINPUTS%>
+instead.
+
+The value for C<sink:> is specific to an operating system.  The value
+for C<find:> is specific to a TeX distribution.	 C<bundle:> is where
+the most opportunity for customization lies.  You can use C<bundle:>
+to specify your favorite archive format.  For example, you can produce
+a shar file on Unix with something like:
+
+    bundle: (shar --archive-name="$BDBASE" $BDINPUTS > $BDBASE.sh)
+
+or a CAB file on Microsoft Windows with something like:
+
+    bundle: cabarc -r -p N %BDBASE%.cab %BDINPUTS%
+
+=head1 FILES
+
+The user must have previously installed F<snapshot.sty> and used it to
+produce a dependency file for his document.  Besides that, the set of
+external files needed by B<bundledoc> is system-specific and depends on the
+configuration file used.  (See L<"CONFIGURATION FILES">, above.)
+
+B<bundledoc> currently comes with two configuration files:
+
+=over 4
+
+=item F<tetex.cfg>
+
+Configuration file for teTeX systems.  teTeX is a kpathsea-based TeX
+distribution that runs under Unix.  F<tetex.cfg> assumes you have
+B<gzip> and uses it to produce a F<.tar.gz> archive file.  The
+configuration file has B<bundledoc> use B<kpsewhich> to find LaTeX
+files.
+
+=item F<miktex.cfg>
+
+Configuration file for MikTeX systems.	MikTeX is a popular TeX
+distribution for Microsoft Windows.  F<miktex.cfg> assumes you have B<zip>
+and uses it to produce a F<.zip> archive file.	The configuration file has
+B<bundledoc> use the rather nonstandard B<initexmf> to find LaTeX files.
+
+=back
+
+
+=head1 NOTES
+
+=head2 Issues When Running Under Microsoft Windows
+
+First, because B<bundledoc> is a Perl script, you should do one of the
+following to run it under Windows:
+
+=over 4
+
+=item *
+
+C<perl bundledoc>
+
+=item *
+
+Rename F<bundledoc> to F<bundledoc.pl> and run C<bundledoc.pl>.	 (This
+is assuming you have a file association set up for F<.pl>.)
+
+=item *
+
+Run the B<pl2bat> script (if you have it) to convert F<bundledoc> to
+F<bundledoc.bat>, then run C<bundledoc>.
+
+=back
+
+Second, Windows uses a multi-rooted filesystem (i.e., multiple drive
+letters).  I wouldn't be surprised if bad things were to happen if the
+files to be bundled are scattered across drives.  In addition, Windows
+supports ``UNC'' filenames, which have no drive letter at all, just a
+machine and share name.	 UNC filenames are also untested waters for
+B<bundledoc>.  Be careful!
+
+
+=head2 Testing Status
+
+I have tested B<bundledoc> only with Perl v5.6.0 and only on the
+following platforms:
+
+=over 4
+
+=item *
+
+Linux + teTeX
+
+=item *
+
+Windows NT + MiKTeX
+
+=item *
+
+Solaris + ??? (something kpathsea-based)
+
+=back
+
+It is my hope that B<bundledoc> works on many more platforms than
+those.	I tried to make the program itself fairly independent of the
+operating system; only the configuration files should have to change
+to run B<bundledoc> on a different system.
+
+=head2 Future Work
+
+I'd like B<bundledoc> to work on as wide a variety of TeX
+distributions as possible.  If your platform is significantly
+different from the ones listed in L<"Testing Status"> (e.g., if you're
+running MacOS) and you need to create a substantially different
+configuration file from F<tetex.cfg> and F<miktex.cfg>, please send it
+to me at the address listed in L<"AUTHOR"> so I can include it in a
+future version of B<bundledoc>.	 (I make no promises, though).
+
+Once B<bundledoc> works on all the major operating systems and TeX
+distributions, it would be really convenient if I could get
+B<bundledoc> to detect the platform it's running on and automatically
+select an appropriate configuration file.
+
+Finally, it would be handy for B<bundledoc> to include fonts in the
+archive file.  At a minimum, it should include F<.tfm> files, but it
+would be even better if it included F<.mf>, F<.pfb>, F<.ttf>, and
+other common font formats, as well.
+
+
+=head1 SEE ALSO
+
+gzip(1), kpsewhich(1), latex(1), perl(1), zip(1), the B<snapshot>
+documentation
+
+
+=head1 AUTHOR
+
+Scott Pakin, I<pakin@uiuc.edu>
