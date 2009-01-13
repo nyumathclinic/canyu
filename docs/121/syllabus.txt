@@ -5,9 +5,8 @@
    :DC.Identifier scheme=subversion: $Id: stsyllabus.txt 233 2008-01-30 14:34:56Z matthew $
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2007-01-29
-   :DCT.Modified scheme=W3CDTF: 2007-01-29
-   :DCT.Modified lang=en-US: August 19, 2008
+   :DCT.Created scheme=W3CDTF: 2009-01-12
+   :DCT.Created lang=en-US: January 12, 2009
    :DCT.Modified scheme=subversion: $Date: 2008-01-30 09:34:56 -0500 (Wed, 30 Jan 2008) $
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
