@@ -22,7 +22,7 @@ PDFLATEX=pdflatex
 include $(LIBDIR)/tex.mk
 
 # Use txt files as source
-TXTSRC=cal.txt #$(shell ls *.txt)
+TXTSRC=cal.txt syllabus.txt #$(shell ls *.txt)
 HTML+=$(TXTSRC:%.txt=%.html)
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)

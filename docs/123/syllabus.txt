@@ -1,0 +1,252 @@
+.. -*- mode: rst -*-
+.. meta:: 
+   :description: Syllabus
+   :keywords: Calculus III, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id: syllabus.txt 112 2009-01-13 15:02:53Z matthew $
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2009-01-13
+   :DCT.Created language=en-US: January 13, 2009
+   :DCT.Modified scheme=subversion: $Date: 2009-01-13 10:02:53 -0500 (Tue, 13 Jan 2009) $
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+   :Schema.link: http://www.w3.org/1999/xhtml/link/
+   :link.next scheme=rel: cal.html
+   :link.start scheme=rel: syllabus.html
+   :short-title: Syllabus
+   :link.contents scheme=rel: contents.html
+   :link.alternate scheme=rel media=print type=application/pdf: syllabus.pdf
+   :link.alternate scheme=rel media=print type=text/html: syllabus-print.html
+   :link.alternate scheme=rel media=print type=application/x-latex: syllabus.tex
+
+Math 122: Calculus III
+!!!!!!!!!!!!!!!!!!!!!!
+
+:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Date: Spring 2009
+
+
+Goals and Topics
+================
+
+Welcome to Calc III!  In this course we will take the concepts of single-variable calculus (Calc I and II) and look at their generalizations to functions of two or three variables.  
+
+
+Course Details 
+==============
+
+
+Class Meetings 
+---------------
+
+Courses meet in sections.  A list of sections, their meeting times and
+locations, and their instructors can be found on through the
+Registrar's `Class Schedule Search`__.  If you enter "Calculus III" in
+the course name search field, the current term's listings will
+automatically come up.
+
+__ http://www.nyu.edu/registrar/listings/
+
+ 
+Homework 
+--------
+
+There will be a list of homework problems on the course website.  The
+homework list includes "practice" problems.  These are neither
+collected nor graded.  Rather, they are listed as a resource to help
+you study.  Do as many of those as you need to make yourself confident
+that you understand the basic techniques.  They are all odd-numbered
+problems, and the answers are in the back of the book.
+
+Each week a problem set of about ten problems will be collected.
+*Four* problems will be chosen *at random* and graded.  
+
+Some of the problems will be rather straightforward.  These are to
+test the basic techniques.  Often there is a practice or odd-numbered
+problem that is very similar to help with these.  But others will
+require a little more thought.  One of the major goals of
+college-level mathematics education is to move students from
+computational processes to conceptual thinking and communication.
+That is the biggest difference between this course and a high school
+course, even an Advanced Placement course.  Mathematics is more than a
+bag of tricks and there are not a limited number of "types" of
+problems that can be asked.  The goal in class is to *prepare* you to
+do the homework and not necessarily to *show you* how to do your
+homework.  The learning occurs when you can move yourself into the
+unknown territory.
+
+Graders will grade the homework promptly, and solutions will be made
+available on the course website.  Graders will be expecting you to
+express your ideas clearly, legibly, and completely, often requiring
+complete English sentences rather than merely just a long string of
+equations.  This means you could lose points for unexplained answers.
+See the homework_ page for a more detailed rubric.
+
+.. _homework: hw.html
+
+In fairness to fellow students and to graders, late homework will
+generally not be accepted.  Because sometimes things more important
+than math homework come up, you have some free passes: Your lowest
+problem set score will be dropped in the final grade calculation.
+
+By all means you may work in groups on the homework assignments.
+Collaboration is a big part of learning and of scholarship in general.
+However, each student must turn in his or her *own* write-up of the
+solutions, with an acknowledgment of collaborators.  
+
+There is free math tutoring sponsored by the math department, meeting
+in room 620 of Warren Weaver Hall.  The times are to be determined by
+the schedules of the tutors.  Check the signs posted throughout WWH.
+
+Exams 
+------
+ 
+There will be one midterm exam, held in class, during the seventh week
+of the term (March 2–March 6).
+
+**Final exams are already scheduled.**
+
+.. csv-table:: 
+   :header: Section,Class Days,Class Time,Class Location,Final Date,Final Time
+
+   1,MWF,09:30am–10:45am,SILV 512,5/6/09,8:00am–9:50am
+   2,MW,02:00pm–03:50pm,48CS 113,5/11/09,10:00am–11:50am
+   3,TRF,09:30am–10:45am,GODD A,5/12/09,8:00am–9:50am
+   4,TR,06:20pm–08:10pm,SILV 501,5/7/09,8:00pm–9:50pm
+   5,MWF,09:30am–10:45am,SILV 701,5/6/09,8:00am–9:50am
+
+**Please make a note of your final exam time and plan your travel
+schedule accordingly.**
+
+Exams will contain a mixture of computational and conceptual problems.
+Some of them will resemble homework problems, while some will be brand
+new to you.  
+
+Quizzes will also be given during class or recitation.  The schedule
+will be determined by your teaching team and published in advance
+(i.e., no pop quizzes).  Quiz scores will be averaged together, again
+dropping the lowest, and constituting one grade equal in weight to the
+midterm grade.
+
+Policy on out-of-sequence exams and missed quizzes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We are only able to accommodate a limited number of out-of-sequence
+exams due to limited availability of rooms and proctors.  For this
+reason, we may approve out-of-sequence exams in the following cases:
+
+1.  A documented medical excuse.
+
+2.  A University sponsored event such as an athletic tournament, a
+    play, or a musical performance.  *Athletic practices and
+    rehearsals do not fall into this category.* Please have your
+    coach, conductor, or other faculty advisor contact your
+    instructor.
+
+3.  A religious holiday.
+
+4.  Extreme hardship such as a family emergency. 
+
+**We will not be able to accommodate out-of-sequence exams, quizzes,
+and finals for purposes of more convenient travel, including already
+purchased plane tickets.**
+
+Scheduled out-of-sequence exams and quizzes (those not arising from
+emergencies) must be taken *before* the actual exam.  Otherwise,
+please talk to your insructor before you return to class.
+
+If you require additional accommodations as determined by the
+Center for Student Disabilities, please let your instructor know as soon
+as possible.
+
+
+Prerequisites
+-------------
+ 
+Students who wish to enroll in Calculus II must meet *one* of the
+following prerequisites:
+
+    * Calculus II (V63.0121) with a C or higher.
+    * Our department's Calculus III placement test.
+
+See the math deparment's `placement`__ web page for more information.
+
+__ http://math.nyu.edu/degree/undergrad/calculus.html
+ 
+
+Grades
+------
+
+Your course score will be determined as the following weighted average: 
+ 
++--------------+--------+
+| Item         | Weight |
++==============+========+
+| Midterm      | 25%    |
++--------------+--------+
+| Homework     | 10%    |
++--------------+--------+
+| Quizzes      | 25%    |
++--------------+--------+
+| Final        | 40%    |
++--------------+--------+
+| **Total**    | 100%   |
++--------------+--------+
+
+We will convert this score to a letter grade beginning with these
+values as cutoffs:
+
++---------+--------------+
+| Cutoff  | Letter Grade |
++=========+==============+
+| 93      | A            |
++---------+--------------+
+| 90      | A-           |
++---------+--------------+
+| 87      | B+           |
++---------+--------------+
+| 83      | B            |
++---------+--------------+
+| 80      | B-           |
++---------+--------------+
+| 75      | C+           |
++---------+--------------+
+| 70      | C            |
++---------+--------------+
+| 65      | C-           |
++---------+--------------+
+| 50      | D            |
++---------+--------------+
+
+These cutoffs might be adjusted, but only in the downward direction
+(to make letter grades higher).  
+
+
+Text(s)
+-------
+
+`Essential Calculus: Early Transcendentals` by James
+Stewart. Thomson/Brooks Cole, `ISBN-10 0495014281`_.  It's available
+at the NYU bookstore and countless online bookstores, and will be on
+reserve in the library.
+
+Please note that if you buy the book online and have it shipped, you
+are still responsible for doing the homework while your book is in
+transit.  Note also that different editions of the book may have
+different problem sequences (unfortunately, this is to make sure you
+buy the most current edition); if you buy another edition you are
+still responsible for doing the correct problems.
+
+.. _`ISBN-10 0495014281`: http://en.wikipedia.org/w/index.php?title=Special%3ABooksources&isbn=0495014281
+
+Calendar 
+--------
+
+The day-by-day `calendar`_ is also available.
+
+.. _calendar: cal.html
+ 
+Conclusion 
+----------
+
+We look forward to seeing you in Calculus II!
