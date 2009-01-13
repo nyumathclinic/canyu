@@ -25,6 +25,6 @@
 
 .. _Calendar: cal.html
 
-* Homework_
+.. * Homework_
 
 .. _Homework: hw.html 
