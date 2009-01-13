@@ -17,7 +17,14 @@
    :link.contents scheme=rev: cal.html
 
 
+* Syllabus_
+
+.. _Syllabus: syllabus.html
+ 
 * Calendar_
 
 .. _Calendar: cal.html
 
+* Homework_
+
+.. _Homework: hw.html 

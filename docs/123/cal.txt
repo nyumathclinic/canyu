@@ -13,6 +13,7 @@
    :Schema.DCT: http://purl.org/dc/terms/
    :Schema.link: http://www.w3.org/1999/xhtml/link/
    :short-title: Calendar
+   :link.next scheme=rel: hw.html
    :link.alternate scheme=rel media=print type=application/pdf: cal.pdf
    :link.alternate scheme=rel media=print type=text/html: cal-print.html
    :link.alternate scheme=rel media=print type=application/x-latex: cal.tex
