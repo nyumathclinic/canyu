@@ -18,49 +18,26 @@ INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(course
 INSTALL=install -m644
 PDFLATEX=pdflatex
 
+
+include $(LIBDIR)/tex.mk
+
 # Use txt files as source
-TXTSRC=cal.txt syllabus.txt # will be $(shell ls *.txt)
-HTML=$(TXTSRC:%.txt=%.html)
+TXTSRC= syllabus.txt cal.txt #$(shell ls *.txt)
+HTML+=$(TXTSRC:%.txt=%.html) contents.html
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)
 TEXFILES=$(TXTSRC:%.txt=%.tex)
-
 ALLFILES=$(HTML) $(HTML_SCREEN) $(TEXFILES) $(PDF)
 
 DIRTY+= $(TRG:%.dvi=%.idv) $(TRG:%.dvi=%.4tc) $(TRG:%.dvi=%.4ct) $(TRG:%.dvi=%.tmp) $(TRG:%.dvi=%.lg) $(TRG:%.dvi=%.xref)   
 
+include $(LIBDIR)/rst.mk
+DIRTY+=$(TXTSRC:%.txt=%.html) $(TXTSRC:%.txt=%-screen.html) $(TXTSRC:%.txt=%.pdf) $(TXTSRC:%.txt=%.tex)
+
 all: $(ALLFILES)
 
-include $(LIBDIR)/rst.mk
-include $(LIBDIR)/tex.mk
+include $(LIBDIR)/common.mk
 
-build-html: all
-	$(INSTALL) -d -m755 $(BUILDDIR_HTML)
-	for file in $(HTML); do \
-            $(INSTALL) `basename $$file .html`-screen.html $(BUILDDIR_HTML)/$$file;\
-            $(INSTALL) $$file $(BUILDDIR_HTML)/`basename $$file .html`-print.html; \
-	done
-	$(INSTALL) $(PDF) $(BUILDDIR_HTML)
-	$(INSTALL) $(TEXFILES) $(BUILDDIR_HTML)
-	cd $(BUILDDIR_HTML) && ln -fs syllabus.html index.html
-
-install-html: build-html
-	rsync -lpvz $(BUILDDIR_HTML)/* leingang@access.cims.nyu.edu:$(INSTALLDIR_HTML)
-
-
-dist: all
-	 if test -n "$(shell svn status)"; then echo "please commit first"; else zip upload.zip $(ALLFILES) $(shell ls PS*.{css,png}); fi
-
-test-makefile:
-	@echo "PSSRC: " $(PSSRC)
-	@echo "PSPDF: " $(PSPDF)
-	@echo "PSHTML: " $(PSHTML)
-	@echo "ALLFILES: " $(ALLFILES)
-
-#cal.pdf: cal.html
-#	$(WKPDF) --source $< --output $@
-
-lessons.tex: RST2LATEX_FLAGS+=--use-latex-toc
 
 sections.html:
 	curl -e http://www.nyu.edu/registrar/listings/ -d "schoolFull=College+of+Arts+%26+Science&subjectFull=Math+%28V63.%29&term=Fall+2008&level=U&school=V&subject=V63.&crsName=&showCX=A" -o $@ http://www.nyu.edu/registrar/listings/results.html
