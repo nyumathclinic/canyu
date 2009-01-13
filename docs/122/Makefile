@@ -1,8 +1,8 @@
 # Makefile for Math 121 docs
 # Matthew Leingang
-# $HeadURL: file:///Users/matthew/Library/svnroot/courses/1a/2008Spring/docs/hw/trunk/Makefile $
-# $Date: 2007-09-18 22:20:03 -0400 (Tue, 18 Sep 2007) $
-# $Revision: 95 $
+# $HeadURL$
+# $Date$
+# $Revision$
 
 TOPDIR=$(shell cd ../.. && pwd)
 LIBDIR=$(TOPDIR)/lib
