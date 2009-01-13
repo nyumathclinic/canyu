@@ -1,0 +1,44 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+.. meta:: 
+   :description: Homework grading
+   :DC.Identifier scheme=subversion: $Id$
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2008-07-31
+   :DCT.Modified scheme=subversion: $Date$
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+
+
+One of the goals of this course is for you to learn how to think and communicate
+mathematically.  This means that your homework problems should be written up with
+justification and explanations of your steps in English.  See the examples in the textbook
+for examples of how to write up solutions to a problem well.
+
+Some exam problems will also ask for justifications, so this will be
+good practice.
+
+Each problem will usually be worth 3 points.  Multi-part problems will usually have each
+part graded on the same scale.  Graders will grade each three-point part according to the
+following rubric:
+
+.. list-table::
+   :widths: 5 25
+   :header-rows: 1
+
+   * - Points
+     - Description of Work
+   * - 3
+     - Work is completely accurate and essentially perfect. Work is
+       thoroughly developed, neat, and easy to read. Complete
+       sentences are used. 
+   * - 2
+     - Work is good, but incompletely developed, hard to read,
+       unexplained, or jumbled. *Answers which are not explained, even
+       if correct, will generally receive 2 points.* Work contains
+       “right idea” but is flawed.  
+   * - 1 
+     - Work is sketchy.  There is some correct work, but most of work is incorrect.  
+   * - 0 
+     - Work minimal or non-existent.  Solution is completely incorrect.

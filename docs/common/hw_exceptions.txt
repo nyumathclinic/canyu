@@ -1,0 +1,18 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+.. meta:: 
+   :description: Homework exceptions
+   :DC.Identifier scheme=subversion: $Id$
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2008-07-31
+   :DCT.Modified scheme=subversion: $Date$
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+
+
+Your lowest homework score will be dropped when computing your average
+for the final game.  This means you can take a "free spin" for any
+reason you want, be it time to spend on another class, a family
+emergency, or an unusually packed social calendar. In fairness to the
+graders and other students, *late homeworks will not be accepted.*
