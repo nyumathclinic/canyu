@@ -106,5 +106,3 @@ This is a week-by-week calendar of topics covered in Calculus II.
 | F  | 5/5         | **Final Exam: 2:00-3:50pm**                           |
 +----+-------------+---------+---------------------------------------------+
 
-.. [#] No classes meet on February 16 (Presidents' Day).  So the MW
-       and TR schedules are out of sync for a few weeks.
