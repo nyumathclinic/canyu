@@ -82,6 +82,8 @@
 
    h4 { font-size: 10px; }
 
+   strong.graded { color: #993300; }
+
   </style>
 </xsl:template>
 
@@ -230,7 +232,7 @@
 	     <xsl:text> </xsl:text>
 	     <a>
 	       <xsl:attribute name="href">
-		 <xsl:value-of select="//html:link[@rel='alternate' and @type='application/x-latex']/@content"/>
+		 <xsl:value-of select="//html:link[@rel='alternate' and @type='application/x-latex']/@href"/>
 	     </xsl:attribute>TeX</a>
 	   </xsl:if>
 	 </div>	 
