@@ -22,7 +22,7 @@ RST2XML_FLAGS=
 
 
 
-XSLTPROC=xsltproc
+XSLTPROC=xsltproc --stringparam term $(term) --stringparam year $(year)
 XSLTPROC_SCREEN_FLAGS=--path "."
 
 # this is Mac OS X utility that runs on the command line and converts
