@@ -24,7 +24,7 @@ Math 121: Calculus I
 !!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
-:Date: Fall 2008
+:Date: Spring 2009
 
 
 Goals 
@@ -56,15 +56,14 @@ Class Meetings
 
 Courses meet in one of two varieties.
 
-* One variety (sections 001–019) meets MW or TR for 110 minutes each
+* One variety (sections 001–009 and 15) meets MW or TR for 110 minutes each
   class period.  These sections are further arranged by meeting time
   into teams of three sections.  Each team will collaborate on
   teaching practices and will share a grader.
 
-* The other variety (sections 20, 27, and 34) meets MW or TR for 75
-  minutes each class, along with a 50 minute recitation section
-  (21–26, 28–33, and 35–40).  You must register for lecture and
-  recitation separately.
+* The other variety (section 010) meets MW for 75 minutes each class,
+  along with a 50 minute recitation section (011–014).
+  You must register for lecture and recitation separately.
 
 A list of sections, their meeting times and locations, and their
 instructors can be found on through the Registrar's `Class Schedule
@@ -85,7 +84,7 @@ that you understand the basic techniques.  They are all odd-numbered
 problems, and the answers are in the back of the book.
 
 Each week a problem set of about ten problems will be collected.
-Three problems will be chosen at random and graded.  
+*Four* problems will be chosen *at random* and graded.  
 
 Some of the problems will be rather straightforward.  These are to
 test the basic techniques.  Often there is a practice or odd-numbered
@@ -132,8 +131,8 @@ Exams
 There will be one midterm exam, held in class on October 15 (for MW
 sections) and 16 (for TR sections).
 
-**The final exam for all sections will be Friday, December 19, from
-12:00-1:50pm. Please make a note of it and plan your travel schedule
+**The final exam for all sections will be Friday, May 8, from
+2:00-3:50pm. Please make a note of it and plan your travel schedule
 accordingly.**
 
 Exams will contain a mixture of computational and conceptual problems.
@@ -165,10 +164,9 @@ reason, we may approve out-of-sequence exams in the following cases:
 
 4.  Extreme hardship such as a family emergency. 
 
-We must give priority to these students.  If there is space  
-available, we will consider other requests.  Everyone feels that  
-their request is the most important and pressing, so we consider  
-these requests on a first-come, first-served basis.
+**We will not be able to accommodate out-of-sequence exams, quizzes,
+and finals for purposes of more convenient travel, including already
+purchased plane tickets.**
 
 Scheduled out-of-sequence exams and quizzes (those not arising from
 emergencies) must be taken *before* the actual exam.  Otherwise,
