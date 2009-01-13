@@ -2,11 +2,12 @@
 .. meta:: 
    :description: Syllabus
    :keywords: Calculus II, NYU, Math, Calculus
-   :DC.Identifier scheme=subversion: $Id: stsyllabus.txt 233 2008-01-30 14:34:56Z matthew $
+   :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2007-01-29
-   :DCT.Modified scheme=subversion: $Date: 2008-01-30 09:34:56 -0500 (Wed, 30 Jan 2008) $
+   :DCT.Created scheme=W3CDTF: 2009-01-13
+   :DCT.Created language=en-US: January 13, 2009
+   :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
    :Schema.link: http://www.w3.org/1999/xhtml/link/
