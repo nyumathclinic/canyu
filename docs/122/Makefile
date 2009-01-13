@@ -1,6 +1,6 @@
 # Makefile for Math 121 docs
 # Matthew Leingang
-# $HeadURL$
+# $Id$
 # $Date$
 # $Revision$
 
