@@ -29,3 +29,7 @@ h2 {
 body {
 	padding: 50px;
 }
+
+.graded {
+    color: #850000;
+}
