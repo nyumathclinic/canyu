@@ -1,0 +1,543 @@
+.. -*- mode: rst; coding: utf-8 -*-
+.. meta:: 
+   :description: Lesson Outline for Calculus III, Spring 2009
+   :keywords: Math 122, V63.0122, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id: lessons.txt 154 2009-01-14 18:26:27Z matthew $
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2008-08-20
+   :DCT.Modified scheme=subversion: $Date: 2009-01-14 13:26:27 -0500 (Wed, 14 Jan 2009) $
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+   :link.alternate scheme=rel media=print type=application/pdf: lessons.pdf
+
+.. default-role:: latex
+
+
+Lesson Outline for Calculus III, Spring 2009
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Date: |date|
+
+This is a topic-by-topic checklist for Calculus III.  I've included
+specific *learning objectives* for each section—things that students
+should be capable of after completing the topic.  I've also written
+notes on each topic to help with planning a lecture, and to explain
+calendar quirks.
+
+Unless otherwise noted, a week's worth of topics should be distributed
+evenly across the week.  
+
+.. contents::
+   :depth: 1
+   :backlinks: none
+
+
+Lesson 1: Three-dimensional Coordinate Systems
+==============================================
+
+:MW Date: January 21
+:TR Date: January 20-22
+:See Also: Stewart_, Section 10.1
+
+Learning Objectives
+-------------------
+
+* Draw the axes of three-space
+* distinguish between orientations with the right-hand rule
+* plot points in space
+* find the distance between two points in space
+* draw simple surfaces (coordinates, spheres) in space
+
+Notes
+-----
+
+January 20 and February 16 are Monday holidays, and this wreaks havoc
+on a common schedule.  MW sections will meet for 110 minutes this
+week, MWF sections will meet for 150 minutes, TR sections will meet
+for 220 minutes, and TRF sections will meet for 225 minutes!  So if
+you have extra time, start into Section 10.2 (vectors, below).
+
+Lesson 2: Vectors
+=================
+
+:See Also: Stewart_, Section 10.2
+
+Learning Objectives
+-------------------
+
+* To understand and be able to apply the definition of a *scalar* and a *vector*.
+* To be able to represent vectors geometrically as directed line segments or algebraically as ordered pairs or triples of numbers.
+* To understand and be able to apply the axioms or vector addition and scalar multiplication.
+* To be understand and be able to determine the *length* of a vector.
+* To understand the definitions of *unit vectors*, *standard basis vectors*, and *position vectors* and to be able to apply these definitions.
+
+
+Lesson 3: The Dot Product
+=========================
+
+:See Also: Stewart_, Section 10.3
+
+Learning Objectives
+-------------------
+
+* To understand and be able to use the definitions of the *dot product* to measure the length of a vector and the angle :latex:`$\theta$` between two vectors.  Given two vectors :latex:`${\mathbf a} = \langle a_1, a_2, a_3 \rangle $` and :latex:`${\mathbf b} = \langle b_1, b_2, b_3 \rangle$`,
+
+.. latex::
+
+   {\mathbf a} \cdot {\mathbf b} = |{\mathbf a}| |{\mathbf b}| \cos \theta  
+   = a_1 b_1 + a_2 b_2 + a_3 b_3.
+
+* To understand and be able to apply properties of the dot product.
+* To understand that two vectors are *orthogonal* if their dot product is zero.
+* To understand and be able to determine the *projection* of a vector :latex:`${\mathbf a}$` onto a vector :latex:`${\mathbf b}$`,
+
+.. latex::
+
+   \operatorname{proj}_{\mathbf a }{\mathbf b} = \frac{ {\mathbf a} \cdot {\mathbf
+   b}}{|{\mathbf a}|^2} {\mathbf a}
+
+* To be able to use vectors and the dot product in applications.
+
+
+
+Lesson 4: The Cross Product
+===========================
+
+:See Also: Stewart_, Section 10.4
+
+Learning Objectives
+-------------------
+
+* To understand and be able to use the definitions of the *cross
+  product* to find a vector that is orthogoal two vectors.  Given two
+  vectors :latex:`$\mathbf{a} = \langle a_1, a_2, a_3 \rangle $` and
+  :latex:`$\mathbf{b} = \langle b_1, b_2, b_3 \rangle$`,
+
+.. latex::
+
+   \mathbf{a} \times \mathbf{b} =( |\mathbf{a}| |\mathbf{b}| \sin \theta )   
+   \mathbf{n} = 
+   \langle a_2 b_3 - a_3 b_2, a_3 b_1 - a_1 b_3,  a_1 b_2 - a_2 b_1 \rangle,
+
+
+where :latex:`$\mathbf{n}$` is a unit vector perpendicular to both :latex:`$\mathbf{a}$` and :latex:`$\mathbf{b}$`
+
+* To understand and be able to apply properties of the dot product, especially :latex:`$\mathbf{a} \times \mathbf{b}  = - \mathbf{b} \times \mathbf{a}$`.
+
+* To understand that two vectors are parallel if and only if their cross product is zero.
+
+* To be able to use vectors and the cross product in applications.
+
+
+Lesson 5: Equations of Lines and Planes
+=======================================
+
+:See Also: Stewart_, Section 10.5
+
+
+Learning Objectives
+-------------------
+
+* To understand and be able to represent a line :latex:`$\ell$` in
+  :latex:`${\mathbb R}^3$` using
+
+.. \begin{gather*}
+
+.. {\mathbf r} = {\mathbf r}_0 + t {\mathbf v} \qquad \text{(vector equation)} \\
+.. x = x_0 + at \qquad y = y_0 + bt \qquad z = z_0 + ct \qquad \text{(parametric equations)} \\
+.. \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c} \qquad \text{(symmetric equations)}
+.. \end{gather*}
+
+
+* To be able to represent line segment in :latex:`${\mathbb R}^3$`
+  from :latex:`${\mathbf r}_0$` to :latex:`${\mathbf r}_1$`,
+
+.. latex::
+  
+   {\mathbf r}(t) = (1 - t) {\mathbf r}_0 + t {\mathbf r}_1,
+
+  where :latex:`$0 \leq t \leq 1$`.
+
+
+* To understand and be able to represent a plane in :latex:`${\mathbb
+  R}^3$` given a normal vector :latex:`${\mathbf n} = \langle a, b, c
+  \rangle$` and a point :latex:`$P_0 = (x_0, y_0, z_0)$` in the plane,
+
+.. latex::
+
+   {\mathbf n} \cdot \langle x - x_0, y - y_0, z - z_0 \rangle = 0
+
+
+or 
+
+.. latex::
+
+    a(x - x_0) + b( y - y_0) + c ( z - z_0) = 0.
+
+
+
+
+
+* To understand and be able to calculate the distance :latex:`$D$`
+  from a point :latex:`$P_1 = (x_1, y_1, z_1)$` to the plane
+  :latex:`$ax + by + cz + d = 0$`,
+
+  .. latex::
+
+     D = \frac{|a x_1 + b y_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}.
+
+
+
+
+Lesson 6: Cylinders and Quadric Surfaces
+========================================
+
+:See Also: Stewart_, Section 10.6
+
+Learning Objectives
+-------------------
+
+* To understand and be able to represent a function of two variables,
+  :latex:`$z = f(x, y)$`, graphically.
+
+
+* To understand and be able to use the trace (cross-section) of a
+  function.
+
+* To understand and be able to determine the domain of a function
+  :latex:`$z = f(x, y)$`.
+
+
+* To understand and be able to represent a selection of *quadric
+  surfaces* graphically.
+
+Lesson 7: Vector functions and space curves
+===========================================
+
+:See Also: Stewart_, Section 10.7
+
+Learning Objectives
+-------------------
+
+Lesson 8: Arc length
+====================
+
+:See Also: Stewart_, Section 10.8
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+This section includes curvature, which we will not do.  
+
+Lesson 9: Motion in Space: Velocity and Acceleration
+====================================================
+
+:See Also: Stewart_, Section 10.9
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+This section includes a version of the Fréchet-Serret formulas for the
+derivatives of the tangent, normal, and binormal vectors to a curve.
+Do not cover them.  The major point of the week is to understand the
+velocity and acceleration vectors of a plane or space curve.
+
+
+Lesson 10: Functions of Several Variables
+=========================================
+
+:See Also: Stewart_, Section 11.1
+
+Learning Objectives
+-------------------
+
+Lesson 11: Limits and Continuity
+========================================
+
+:See Also: Stewart_, Section 11.2
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+This is not an analysis course, so go easy on the limits and
+exceptions.  February 16 is a holiday this week so the schedule is
+light.  If you have extra time (MWF, TR, TRF sections), go ahead to
+partial derivatives rather than spend more time on liumits.
+  
+Lesson 12: Partial Derivatives
+==============================
+
+:See Also: Stewart_, Section 11.3
+
+Learning Objectives
+-------------------
+
+
+Notes
+-----
+
+Lesson 13: Tangent Planes and Linear Approximation
+==================================================
+
+:See Also: Stewart_, Section 11.4
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+
+Lesson 14: The Chain Rule
+=========================
+
+:See Also: Stewart_, Section 11.5
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+There is a kind of rhythm to the multivariable chain rule that takes
+some practice.  I use tree diagrams to illustrate the various
+derivatives that should be taken.
+
+Lesson 15: Directional Derivatives and the gradient vector
+==========================================================
+
+:See Also: Stewart_, Section 11.6
+
+Notes
+-----
+
+The midterm is this week.  The midterm should cover all sections up to 11.2.  (so no partial derivatives).  It's probably best to schedule it at the end of the week, so that you can do 11.6 and hopefully some in-class review at the beginning of the week.
+
+Lesson 16: Maximum and Minimum Values
+=====================================
+
+:See Also: Stewart_, Section 11.7
+
+Lesson 17: Lagrange Multipliers
+===============================
+
+:See Also: Stewart_, Section 11.8
+
+Spring Break
+============
+
+Some students will want to travel over the break and maximize their time away.
+They may ask you to take quizzes ahead of time.  Please do not grant these
+requests as then we shall have to honor all of them.
+
+
+Lesson 18: Double Integrals over Rectangles
+===========================================
+
+:See Also: Stewart_, Section 12.1
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 19: Double Integrals over General Regions
+================================================
+
+:See Also: Stewart_, Section 12.2
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 20: Double Integrals in Polar Coordinates
+================================================
+
+:See Also: Stewart_, Section 12.3
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 21: Triple Intgrals
+==========================
+
+:See Also: Stewart_, Section 12.5
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 22: Triple Integrals in Cylindrical Coordinates
+======================================================
+
+:See Also: Stewart_, Section 12.6
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 23: Triple Integrals in Spherical Coordinates
+====================================================
+
+:See Also: Stewart_, Section 12.7
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+
+Lesson 24: Vector Fields
+========================
+
+:See Also: Stewart_, Section 13.1
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 25: Line Integrals
+=========================
+
+:See Also: Stewart_, Section 13.2
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 26: The Fundamental Theorem of Line Integrals
+====================================================
+
+:See Also: Stewart_, Section 13.3
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 27: Green's Theorem
+==========================
+
+:See Also: Stewart_, Section 13.4
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 28: Curl and Divergence
+==============================
+
+:See Also: Stewart_, Section 13.5
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 29: Parametric Surfaces and their Areas
+==============================================
+
+:See Also: Stewart_, Section 13.6
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 30: Surface Integrals
+============================
+
+:See Also: Stewart_, Section 13.7
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 31: Stokes's Theorem
+===========================
+
+:See Also: Stewart_, Section 13.8
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Lesson 32: (Gauss's) Divergence Theorem
+=======================================
+
+:See Also: Stewart_, Section 13.9
+
+Learning Objectives
+-------------------
+
+Notes
+-----
+
+Monday, May 4
+=============
+
+MW and MWF classes should review for the final here.
+
+Tuesday, May 5
+==============
+
+TR and TRF class will not meet this week, but on this "reading day" instructors should schedule a review session if possible.
+
+Final Exam
+==========
+
+**The final exam dates and times are on the syllabus.** There will be many
+technical and logistical questions about the final.  Please check the
+departmental syllabus or with Prof. Leingang if you do not know the answer.
+
+
+Details
+=======
+
+Textbook
+--------
+
+.. _Stewart: 
+
+:title-reference:`Essential Calculus, Early Transcendentals` by James Stewart. Thomson Brooks/Cole, 2008.  ISBN-13 978-495-43047-6
+
+.. |infinity| unicode:: U+221E
+
+.. |times| unicode:: U+2A09
+
+.. |date| date::

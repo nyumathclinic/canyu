@@ -1,7 +1,7 @@
 .. -*- mode: rst -*-
 .. meta::
-   :description: Contents of Math 123 website
-   :keywords: Calculus III, NYU, Math, Calculus
+   :description: Contents of Math 122 website
+   :keywords: Calculus I, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id: stsyllabus.txt 233 2008-01-30 14:34:56Z matthew $
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -16,17 +16,21 @@
    :link.contents scheme=rev: hw.html
    :link.contents scheme=rev: cal.html
 
+* `Public Documents`_
 
-* Syllabus_
+  * Syllabus_
 
+  * Calendar_
+
+  * Homework_
+
+* `Instructor Info`_
  
-* Calendar_
+* `Lesson Guide`_
 
-.. * Homework_
-
-* `Staff only`_
-
-.. _Syllabus: syllabus.html
-.. _Calendar: cal.html
-.. _Homework: hw.html 
-.. _`Staff only`: https://www.math.nyu.edu/courses/Calculus/2009/Spring/122/staff/
+.. _`Public Documents`: ..
+.. _Syllabus: ../syllabus.html
+.. _Calendar: ../cal.html
+.. _Homework: ../hw.html 
+.. _`Instructor Info`: ../../121/staff/instructor_info.html
+.. _`Lesson Guide`: lessons.html
