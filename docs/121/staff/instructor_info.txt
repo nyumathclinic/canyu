@@ -1,0 +1,463 @@
+.. -*- mode: rst; coding: utf-8 -*-
+.. meta:: 
+   :description: Instructor information for Calculus at Courant
+   :keywords: Math 121, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id$
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 3825a5544f5a18755e03ce881a50cc248f1193ca
+   :DCT.Created scheme=W3CDTF: 2008-08-29
+   :DCT.Modified scheme=subversion: $Date$
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+   :link rel=alternate type=text/html: instructor_info.html
+   :link rel=alternate type=application/pdf: instructor_info.pdf
+   :link rel=alternate type=text/x-rst: instructor_info.txt
+
+
+Instructor's Guide to Calculus I and II
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+:Author: Matthew Leingang
+:Date: |date|
+
+Welcome to Courant's calculus program.  This document is a
+work-in-progress guide to the nuts and bolts of the course and its
+organization.  For the week-by-week list of topics, see the calendar.
+For information and tips on teaching, see the lesson guide.  See also
+the list of homework problems to be assigned.
+
+.. contents::
+
+
+Topics and Goals
+================
+
+In Calc I we study functions, limits, derivatives, applications of
+derivatives, the definite integral, the Fundamental Theorem of
+Calculus, and some techniques of integration.  If you are familiar
+with the AP Calculus courses, this is about the same list of topics as
+the AB syllabus, although we will cover them to a far deeper extent
+than in a high school course.  
+
+In Calc II we study techniques of integration in earnest, applications
+of integration (area, volume, mass, and some others), first-order
+differential equations, sequences, series, power series, parametric
+curves, and polar coordinates.  Our Calc I and II covers about the
+same material as the AP Calculus BC syllabus, but again in much more
+depth.  
+
+A major goal of college mathematics (says the MAA) is to move
+students from thinking of mathematics as a set of *procedures* to a
+set of *concepts*.  So in a college course we discuss the concepts and
+encourage a lot of communication.
+
+Course Details 
+==============
+
+
+Class Meetings and Teams
+------------------------
+
+Courses meet in one of two varieties.
+
+* One variety (sections 001–019) meets MW or TR for 110 minutes each
+  class period.  These sections are further arranged by meeting time
+  into teams of three sections.  Each team will collaborate on
+  teaching practices and will share a grader.
+
+* The other variety (sections 20, 27, and 34) meets MW or TR for 75
+  minutes each class, along with a 50 minute recitation section
+  (21–26, 28–33, and 35–40).  Students must register for lecture and
+  recitation separately.
+
+If you are in a team, you should be meeting weekly to share ideas for
+the upcoming classes.  The team model works when the experienced
+teachers can trickle down information to to the less experience.
+Communication among the team members is essential for this.
+
+Each team should write a midterm that will be given to all sections in
+the team.  That way you can share the grading.  Quizzes should also be
+uniform across the team.  The Calculus I final is common--all students
+will take the same one at the same time.  Each team has a grader that
+will grade all the sections.  This way, the only difference two
+students in different sections of a team will see is the actual
+teacher.
+
+Some Calculus I teams will be joined by a teacher at Bard High
+School/Early College.  This is a pilot program designed to allow BHSEC
+students to get a genuine college course in mathematics and to allow
+CIMS to understand high school mathematics students better.  BHSEC
+teachers will observe team meetings and possibly some class meetings.
+There is no other obligation teams have to the BHSEC teachers.
+
+If you are giving one of the big lecturer or a recitation, you should
+also be working together.  Recitation instructors should be aware of
+what topics are being covered, and should prepare recitations finding
+examples fitting those topics.  Lecturers should feel free to assign
+certain examples or topics (provided it's not new material not covered
+in lecture) to recitations.  Keep in mind that some recitations happen
+between the week's two classes and some happen before the week's first
+class, so all recitations can't always be doing the exact same thing.
+
+Homework 
+--------
+
+There is a list of homework problems on the course website.  The
+homework list includes "practice" problems.  These are neither
+collected nor graded.  They are all odd-numbered problems, and the
+answers are in the back of the book.
+
+Each week a problem set of about ten problems will be collected.
+Three problems will be chosen at random and graded.  Graders will
+grade the homework promptly, and solutions will be made available on
+the course website.  Graders will be expecting students to express
+ideas clearly, legibly, and completely, often requiring complete
+English sentences rather than merely just a long string of equations.
+This means points could be taken off for unexplained answers.  See the
+homework page for a more detailed rubric.
+
+In fairness to the rest of the students and to graders, late homework
+will generally not be accepted.  We do drop the lowest grade, which
+you can point out to students who for whatever reason need a pass.
+
+Solutions sets to the problems can be generated with the solution
+builder website.  Since all sections will be having the same problem
+sets, we'll rotate the responsibility of generating solution sets
+among the graders.  They will then circulate the solutions and get
+them onto the blackboard site.
+
+Encourage students to collaborate on homework and studying in
+general.  Many students who would benefit from group studying have not
+been conditioned to do so.  Just require that what they turn in should
+be written up by them in their own words, and that they list their
+collaborators on the paper.
+
+There is free math tutoring sponsored by the math department, meeting
+in room 620 of Warren Weaver Hall.  Check the signs posted throughout WWH
+and the `tutoring web page`__.
+
+__ http://math.nyu.edu/degree/undergrad/tutor_schedule.html
+
+
+Exams 
+------
+ 
+There will be one midterm exam, held in class on October 15 (for MW
+sections) and 16 (for TR sections).
+
+Exams should contain a mixture of computational and conceptual problems.
+Some of them should resemble homework problems.  I am also a fan of at
+least one problem that requires synthesizing multiple concepts.
+Students will resist this but gently remind them that we want them to
+have some problem-solving skills, and that means solving problems that
+haven't been solved before.  This is what happens in the real world
+every day.
+
+**The final exam for all sections will be Friday, December 19, from
+12:00-1:50pm. Say this out loud in class and display it prominently on
+your blackboard site.**  Some students will make plans (e.g., plane
+tickets) that conflict with the final, and we can't reschedule the
+final for them.
+
+The final exam (in Calc I only) will be common.  We'll all get a
+chance to work on it together.
+
+
+Quizzes
+-------
+
+You should have several quizzes to make sure students keep up and get
+some feedback.  The number and schedule is up to you.  You could give
+them every week or after every chapter.  The only thing is that the
+syllabus promises no pop quizzes.  So teams should decide when the
+quizzes will be and publicize this information in advance.
+
+Quiz scores will be averaged together, again dropping the lowest, and
+constituting one grade equal in weight to the midterm grade.
+
+
+Policy on out-of-sequence exams and missed quizzes
+--------------------------------------------------
+
+This is to protect insructors from students who pull heartstrings or
+are trying to work the system.  
+
+We are only able to accommodate a limited number of out-of-sequence
+exams due to limited availability of rooms and proctors.  For this
+reason, you may approve out-of-sequence exams in the following cases:
+
+1.  A documented medical excuse.
+
+2.  A University sponsored event such as an athletic tournament, a
+    play, or a musical performance.  *Athletic practices and
+    rehearsals do not fall into this category.* Please have your
+    coach, conductor, or other faculty advisor contact your
+    instructor.
+
+3.  A religious holiday.
+
+4.  Extreme hardship such as a family emergency. 
+
+We must give priority to these students.  If there is space  
+available, we will consider other requests.  Everyone feels that  
+their request is the most important and pressing, so we consider  
+these requests on a first-come, first-served basis.
+
+Scheduled out-of-sequence exams and quizzes (those not arising from
+emergencies) must be taken *before* the actual exam.  You can swear
+one student to secrecy, but swearing the rest of the class is another thing.
+
+Some students will require extra time for exams because of a learning
+disability, or have other special needs.  If they tell you about this,
+tell them to get in touch with the Moses Center for Student
+Disabilities.  They will help you and the student make arrangements
+for the student's particular needs.
+
+
+Prerequisites
+-------------
+
+We have pretty rigid guidelines on who can take calculus.  For a definitive
+list, see the math deparment's `placement`__ web page.
+
+__ http://math.nyu.edu/degree/undergrad/calculus.html
+
+Students may ask you if there's another way to place into the class.
+Say no.  If they persist, ask them to see the Director of
+Undergraduate Studies.  
+
+
+Grades
+------
+
+
+Course scores will be determined as the following weighted average: 
+ 
++--------------+--------+
+| Item         | Weight |
++==============+========+
+| Midterm      | 25%    |
++--------------+--------+
+| Homework     | 10%    |
++--------------+--------+
+| Quizzes      | 25%    |
++--------------+--------+
+| Final        | 40%    |
++--------------+--------+
+| **Total**    | 100%   |
++--------------+--------+
+
+We should coordinate our efforts in the assignment of letter grades to
+scores.  Much of the grades will be based on the same material (i.e.,
+the common final in Calc I).  The others can be normalized so as to be
+comparable.  It's important that students who score equally in two
+different sections should get comparable grades.
+
+
+We will convert this score to a letter grade *beginning* with these
+values as cutoffs:
+
++---------+--------------+
+| Cutoff  | Letter Grade |
++=========+==============+
+| 93      | A            |
++---------+--------------+
+| 90      | A-           |
++---------+--------------+
+| 87      | B+           |
++---------+--------------+
+| 83      | B            |
++---------+--------------+
+| 80      | B-           |
++---------+--------------+
+| 75      | C+           |
++---------+--------------+
+| 70      | C            |
++---------+--------------+
+| 65      | C-           |
++---------+--------------+
+| 50      | D            |
++---------+--------------+
+
+These cutoffs might be adjusted, but only in the downward direction
+(to make letter grades higher).  
+
+The above table is public record, and I like publicizing it to give
+students something to shoot for.  What's next is **top secret**: I
+end up always moving down at least some of the cutoffs.  Then I keep
+them secret.  That has the appearance of generosity (B+'s magically go
+to A-'s), and the advantage of resumed secrecy (nobody knows the exact
+cutoff so they can't grub for it).  
+
+I rarely feel that I've given a student a grade higher than he or she
+deserved because of a published table.
+
+
+Techniques
+==========
+
+So you know what you have to do and shouldn't do.  But how do you do it?
+
+
+Preparing for class
+-------------------
+
+You will need some time to prepare for your classes.  How much depends
+on your experience.  
+
+For Calc I and II I've put specific *learning objectives* for the
+sections of the book into a big packet.  These are the things you
+should make sure get covered.  (As a side note for when you plan a
+course on your own: these learning objectives become a study guide
+when exam time comes around).  How you get to them is up to you.
+
+Think about the key ideas of the day, and think of key examples that
+will illuminate them.  Make sure your examples are not (all) too
+simple or too difficult.  If you can think a little bit ahead, try to
+find examples to which you can return later on.  
+
+In this sense, teaching a math class is no different from giving a
+talk.  You give the main ideas and the key examples, and you have to
+go slow because nobody knows as much about your topic as you.
+
+When I had them, I also included in the lesson guide my thoughts on
+the topics, the pitfalls I've seen students have, and how I sometimes
+organize my class.  Use it as you see fit.
+
+
+Class choreography
+------------------
+
+
+We like lectures that go definition-theorem-proof-example but we
+didn't when we were learning mathematics for the first time.  Teaching
+mathematics to mathematics learners requires an Aristotelian rather
+than Platonic view of how we understand things.  Students would prefer
+examples which guide the concept or point to the theorem, and a proof
+does not convince them if they don't understand it.  So think instead
+about example-example-definition-example-theorem-example(s) as an outline.
+
+*Studies show that the style of class has a significant effect on
+student learning*.  Some variables which do not have an effect are the
+textbook, the stature (academically) of the teacher, the home country
+of the teacher, or the time of day the course meets.  Students learn
+better in a course which provides *interactive engagement*.  This
+means hands-on work with the concepts and immediate feedback.  
+
+If you are in the lecture/recitation variety, the recitation is the
+prime place for interactivity.  The difficulty will be getting
+students to come to recitation.  Having quizzes there helps, but it
+also has to be demonstrated that recitations will help them learn.
+
+If you are in a team, your class periods are 110 minutes long.  That
+should be plenty of time to involve some interactive components in
+your classes.  Please don't lecture at them for almost two hours in a
+row!
+
+Examples of interactive engagement are:
+
+* worksheets done in class.  Discuss the solutions afterwards.
+
+* problems worked on in groups.  Obviously, the problems could come
+  from a worksheet.  When students are working in class, circulate to
+  keep things moving and answer questions.
+
+* getting students to discuss concepts.  One way to do this is to ask
+  a multiple choice conceptual question, and have them vote.  Then
+  have them discuss their answers, and then vote again.  Then have a
+  "convert" explain why he or she changed his or her mind.
+
+* having students work out problems on the board.  Turn the tables and
+  play the role of a questioning student.
+
+Do this early if you want to do it at all because first impressions
+will count.
+
+Blackboard
+----------
+
+Blackboard_ is a web-based course management system.  You should all
+have course websites, and there's no reason to reinvent the wheel.
+Blackboard is not perfect but it has lots of useful tools.  It also
+handles a few major issues of putting course stuff up on the web:
+access to copyrighted material and protection of students' personal
+information.
+
+.. _Blackboard: http://www.blackboard.com/
+
+Once you get your NYUCard and NetID, you can get onto the University
+intranet, which is http://home.nyu.edu/ .  From there, click the
+"Academics" tab and follow the links to set up your Blackboard "shell"
+(a website for your section).
+
+Sections which are lecture/recitation should probably merge their
+Blackboard sites so that all students have a common site and a
+recitation subsection.  Triplets can do as they please on this.
+
+Blackboard sites should have *at a minimum* contact information and
+office hours for the teaching staff.  There are lots of other
+doohickeys you can put on them, such as:
+
+* online forums where students can discuss topics.  Teachers should
+  keep track of these to answer questions and look out for students
+  sharing answers to homework.
+
+* chat widgets so you can have online office hours.  This might be
+  useful if you want to be at home but available.
+
+* links to other webpages.  There are millions of java and flash
+  applets on the web to illustrate calculus.  If you build a library
+  of links you can get students thinking about using the web
+  themselves for studying.
+
+* a blog where you can write about things tangential to the course,
+  summarize a class, answer a question that got asked, or correct a
+  mistake you made.  Blogging about things which aren't entirely math
+  will help convince students you're human.
+
+Be aware of copyright, a very impoprtant issue at NYU.  If you put
+copyrighted material on your course website, make sure that access to
+it is limited to the NYU community.  This applies to the solutions to
+problem sets that we will be putting up as well.
+
+If you are older than 30, keep in mind that students have a much
+different view of the web than you do.  The web has been a major part
+of communication since before these students learned how to read.  To
+them it is not a new-fangled computer gizmo.  They will expect you to
+have a functioning, useful website.
+
+Facebook
+--------
+
+If you have a Facebook account, you probably will get added by some of
+your students.  You should probably decide ahead of time to accept all
+requests or deny all requests, to avoid the impression of playing
+favorites.  
+
+I recommend you consider the former.  You can create a custom list of
+student "friends" and use it to exclude or include them from seeing
+certain things you post.  Letting your students get to know you a
+little better—and you getting to know them better in return—is a nice
+way to make class more comfortable.  
+
+Facebook is still relatively new and the etiquette on student/teacher
+interaction is not quite worked out yet.  I think students think of
+their facebook pages as their online homes or dorm rooms.  Now that
+you have a job interacting with students, your page functions
+something like an online office.
+
+Conclusions
+===========
+
+The department wants coordinated calculus not to rein you in but to
+give you freedom.  The drudgery, administrivia, and unexpected
+consequences are lessened quite a bit by having a lot of the
+organizational bits done in advance.  This also creates a fair
+environment for the students, who won't get radically different math
+courses only because they have different schedules.  You can focus on
+the students and teaching them well.
+
+And in that I wish you luck!  Please talk to me if you have any
+questions.
+
+.. |date| date:: %B %d, %Y
