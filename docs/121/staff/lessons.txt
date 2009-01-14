@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
    :description: Lesson Outline for Math 121, Fall 2008
-   :keywords: Math 121, NYU, Math, Calculus
+   :keywords: Math 121, V63.0121, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
