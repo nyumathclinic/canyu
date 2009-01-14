@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Lesson Outline for Math 122, Fall 2008
-   :keywords: Math 122, NYU, Math, Calculus
+   :description: Lesson Outline for Calculus II, Spring 2009
+   :keywords: Math 122, V63.0122, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -13,8 +13,8 @@
 .. default-role:: latex
 
 
-Lesson Outline for Math 122, Fall 2008
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Lesson Outline for Calculus II, Spring 2009
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date: |date|
@@ -29,11 +29,11 @@ calendar quirks.
    :depth: 1
    :backlinks: none
 
-Lesson 1: The Definite Integral
-===============================
+Lesson 1: Review of the Definite Integral and the Fundamental Theorem of Calculus
+=================================================================================
 
-:MW Date: September 3
-:TR Date: September 2
+:MW Date: January 21
+:TR Date: January 20-22
 :Duration: varies
 :See Also: Stewart_, Section 5.1, 5.2, 5.3, 5.5
 
@@ -82,15 +82,17 @@ length/area/volume; Total cost is marginal cost times quantity, etc.
 If students only think about the integral as area it will be hard for
 them to compose one that computes work (force times distance).
 
-TR sections will have one extra class period for this material.  You
-could spend extra time on the even and odd functions part of
-substitution, or go over definite integral substitution some more.
+TR sections will have one extra class period for this material (but
+note that January 20 is Inauguration Day, which students will possibly
+be very interested in).  You could spend extra time on the even and
+odd functions part of substitution, or go over definite integral
+substitution some more.
 
 Lesson 2: Integration by Parts
 ==============================
 
-:MW Date: September 8
-:TR Date: September 9
+:MW Date: January 27
+:TR Date: January 28
 :Duration: one class period
 :See Also: Stewart_, Section 6.1
 
@@ -115,15 +117,115 @@ Learning Objectives
 Notes
 -----
 
-Many students will have seen this before, whether in their Calculus I
-class here or if they took AP Calculus BC in high school.  But please
-do not teach this as a review because not all Calculus I courses teach it.
+Every rule of antidifferentiation is a rule of differentiation in
+reverse.  First, we did integration by substitution, which is the
+reverse of the chain rule.  Next we do integration by parts, which is
+the reverse of the product rule.
+
+[In fact, it's been said that these are the only real "techniques of
+integration."  Trigonometric substitution is just another kind of
+substitution, and integration by partial fractions is just algebra.]
+
+The standard way to derive integration by parts is to take the product
+rule and integrate it:
+
+  .. latex::
+
+     uv = \int (uv)'\,dx = \int u'v \,dx + \int uv'\,dx
+
+Then you solve for `$\int uv'\,dx$`.  At some point, maybe not right
+away, you can show them the `$\int u\,dv = uv - \int v\,du$` form of
+the equation.
+
+The first example should be simple, for instance `$\int xe^x
+\,dx$`. As you progress, try to get them thinking about how to decide
+which factor should be `$u$`.  Do an example such as `$\int x^2
+e^x\,dx$` where they have to integrate by parts twice, an example such
+as `$\int e^x \sin x\,dx$` where they have to integrate by parts twice
+then solve for the original integral, and an example where `$dv = dx$`
+works.
+
+Some students are going to know an acronym like **LIPET**.  It's
+supposed to order functions by their usefulness as `$u$` when
+integrating by parts.  Viz.:
+
+* Logarithmic functions
+
+* Inverse trigonometric functions
+
+* Polynomial functions
+
+* Exponential functions
+
+* Trigonometric functions
+
+For instance, an inverse trig function becomes an algebraic function
+after differentiating, which we would hope would be simpler to
+integrate once multiplied by `$v$`.  Exponential and trig functions
+remain exponential and trig functions after differentiating, so they
+don't get any simpler.
+
+I don't much care for mnemonics like these; I just try to get them to
+think about the choice between differentiating and antidifferentiating a
+factor.  If differentiating is much easier than antidifferentiating,
+than make it `$u$`.  But if they know it you can at least acknowledge
+that it's useful.
+
+Another trick some of them will know is sometimes called |tabular
+integration by parts|_.  With this, you form a two-column table with your
+original factors `$u$` and `$dv$` in the first row.  For each
+successive row, you differentiate the first column of the previous row
+and antidifferentiate the second column.  For instance:
+
++---------+-----------------------+
+| `$u$`   | `$dv$`                |
++=========+=======================+
+| `$x^2$` | `$\sin 3x$`           |
++---------+-----------------------+
+| `$2x$`  | `$-\frac13 \cos 3x$`  |
++---------+-----------------------+
+| `$2$`   | `$-\frac19 \sin 3x$`  |
++---------+-----------------------+
+| `$0$`   | `$\frac1{27}\cos 3x$` |
++---------+-----------------------+
+
+From this point onward the first column is going to be zero.  Then you
+take the alternating sum of the products of each entry in the first
+column with the entry one row below in the second column.  Thus:
+
+.. latex::
+
+   \int x^2 \sin 3x\,dx = x^2\left(-\frac13\right)\cos3x
+   -(2x)\left(-\frac19\right)\sin3x
+   +2\left(\frac1{27}\right) \cos 3x
+   = -\frac13 x^2 \cos 3x + \frac29 \sin 3x + \frac{2}{27} \cos 3x
+
+This technique was popularized from the movie |Stand and Deliver|_. It
+isn't anything more than iterated integration by parts, just arranged
+in columns.  And it's not as useful as it seems.  For instance, it
+won't work with integrals like `$\int e^{ax} \sin bx \,dx$`, since the
+first column never becomes zero. 
+
+[Actually, it kind of works; the alternating sum turns into a
+geometric series.  The series probably diverges, but if it did converge (that
+is, if you do the regular thing with geometric series), it converges to
+the right answer.]
+
+.. |Stand and Deliver| replace:: :title-reference:`Stand and Deliver`
+.. _Stand and Deliver: http://en.wikipedia.org/wiki/Stand_and_Deliver
+
+.. |tabular integration by parts| 
+   replace:: *tabular integration by parts*
+
+.. _tabular integration by parts: http://marauder.millersville.edu/~bikenaga/calc/parts/partspf.html
+
+
 
 Lesson 3: Trigonometric Integrals and Substitution
 ==================================================
 
-:MW Date: September 10
-:TR Date: September 11
+:MW Date: January 29
+:TR Date: January 30
 :Duration: one class period
 :See Also: Stewart_, Section 6.2
 
@@ -170,8 +272,8 @@ radius 1 is `$\pi$`.
 Lesson 4: Integration by Partial Fraction Decomposition
 =======================================================
 
-:MW Date: September 15
-:TR Date: September 16
+:MW Date: February 2
+:TR Date: February 3
 :Duration: one class period
 :See Also: Stewart_, Section 6.3
 
@@ -249,8 +351,8 @@ polynomials and multiply it all out.  It leaves `$n$` independent equations in
 Lesson 5: Integration with Tables; Strategies for Integration
 =============================================================
 
-:MW Date: September 17
-:TR Date: September 18
+:MW Date: February 4
+:TR Date: February 5
 :Duration: one class period
 :See Also: Stewart_, Section 6.4
 
@@ -286,8 +388,8 @@ work in groups.
 Lesson 6: Approximate Integration
 =================================
 
-:MW Date: September 22
-:TR Date: September 23
+:MW Date: February 9
+:TR Date: February 10
 :Duration: one class period
 :See Also: Stewart_, Section 6.5
 
@@ -340,8 +442,8 @@ think of the process and articulate it clearly.
 Lesson 7: Improper Integrals
 ============================
 
-:MW Date: September 24
-:TR Date: September 25
+:MW Date: February 11
+:TR Date: February 12
 :Duration: one class period
 :See Also: Stewart_, Section 6.6
 
@@ -382,9 +484,9 @@ bound ever: that `$|\sin x| \leq 1$`.)
 Lesson 8: Areas between Curves
 ==============================
 
-:MW Date: September 29
-:TR Date: September 30
-:Duration: two-thirds of one class period
+:MW Date: February 18
+:TR Date: February 17
+:Duration: varies
 :See Also: Stewart_, Section 7.1
 
 Learning Objectives
@@ -395,6 +497,9 @@ Learning Objectives
 
 Notes
 -----
+
+Monday, February 16 is a holiday (Presidents' Day) throwing the schedule out of
+whack this week.  But this section can be be well done in a half class or a full class.
 
 Students latch on to the notion that the integral "is" "area under a
 curve", or area between the graph and the `$x$`\ -axis.  It's often
@@ -409,9 +514,9 @@ horizontal integrations takes two integrals but only one vertically.
 Lesson 9: Volumes
 =================
 
-:MW Date: September 29-October 1
-:TR Date: September 30-October 2
-:Duration: two-thirds of one class period
+:MW Date: February 18
+:TR Date: Feburary 19
+:Duration: varies
 :See Also: Stewart_, Section 7.2
 
 Learning Objectives
@@ -424,6 +529,8 @@ Learning Objectives
 
 Notes
 -----
+
+Again, you can do this in a half or a full class period.
 
 It seems that AP Calculus emphasizes more the solids of revolution
 than general solids, for which the volume can be computed by slicing.
@@ -448,9 +555,9 @@ integrate something.
 Lesson 10: Volumes by Cylindrical Shells
 ========================================
 
-:MW Date: October 1
-:TR Date: October 2
-:Duration: two-thirds of one class period
+:MW Date: February 23
+:TR Date: February 24
+:Duration: one half of one class period
 :See Also: Stewart_, Section 7.3
 
 Learning Objective
@@ -478,8 +585,8 @@ they see when and why `$x$` needs to be changed to `$x-a$` (or whatever).
 Lesson 10: Arc length
 =====================
 
-:MW Date: October 6
-:TR Date: October 7
+:MW Date: February 23
+:TR Date: February 24
 :Duration: one-half of one class period
 :See Also: Stewart_, Section 7.4
 
@@ -487,7 +594,6 @@ Learning Objectives
 -------------------
 
 * find the length of the graph of a function.
-
 
 Notes
 -----
@@ -499,15 +605,15 @@ whose graphs you can find the length of by elemetary integration.  You
 could, however, refer back to numerical techniques if you wanted.
 
 Do not use this formula to "prove" that the circumference of a unit
-circle is `$2\pi$`; this is circular (no pun intended) because it's
-basically our definition of $\pi$.
+circle is `$2\pi$`; this is circular (no pun intended) because that's
+the definition of `$\pi$`.
 
 
 Lesson 11: Applications to Physics
 ==================================
 
-:MW Date: October 8
-:TR Date: October 9
+:MW Date: February 25–March 2
+:TR Date: February 26–March 3
 :Duration: 1.5 class periods
 :See Also: Stewart_, Section 7.5
 
@@ -546,6 +652,8 @@ another nice application.  The COM is the place where the region will
 would be effective here.
 
 Hydrostatic force is also in this section; let's skip it.
+
+You should also have some time on March 2 or 3 to review for the midterm.
 
 
 Lesson 12: Differential Equations
@@ -595,12 +703,19 @@ to the separation-of-variables trick later.
 You can talk about equilibrium solutions to homogeneous ODEs if you
 like, but there are no problems on that in the book so we won't test them.
 
+Spring Break
+============
+
+Some students will want to travel over the break and maximize their time away.
+They may ask you to take quizzes ahead of time.  Please do not grant these
+requests as then we shall have to honor all of them.
+
 
 Lesson 13: Sequences
 ====================
 
-:MW Date: October 27
-:TR Date: October 28
+:MW Date: March 23
+:TR Date: March 24
 :Duration: one class period
 :See Also: Stewart_, Section 8.1
 
@@ -644,8 +759,8 @@ rational numbers.
 Lesson 14: Series
 =================
 
-:MW Date: October 29
-:TR Date: October 30
+:MW Date: March 25
+:TR Date: March 26
 :Duration: one class period
 :See Also: Stewart_, Section 8.2
 
@@ -692,8 +807,8 @@ for an infinite class you will serve the entire cake.
 Lesson 15: The Integral and Comparison Tests
 ============================================
 
-:MW Date: November 3
-:TR Date: November 4
+:MW Date: March 30
+:TR Date: March 31
 :Duration: one class period
 :See Also: Stewart_, Section 8.3
 
@@ -709,10 +824,6 @@ Learning Objectives
 
 Notes
 -----
-
-Election Day is November 4, so students will certainly be excited
-about that.  Bonus points from them if you can work in any
-election-related examples.
 
 Students will like the integral test because it's conclusive.
 Integrate it and if the improper integral converges, the so does the
@@ -768,8 +879,8 @@ or the series?" when presented with a "bald" expression like `$\frac{1}{n}$`.
 Lesson 16: Other convergence tests
 ==================================
 
-:MW Date: November 5
-:TR Date: November 6
+:MW Date: April 1
+:TR Date: April 2
 :Duration: one class period
 :See Also: Stewart_, Section 8.4
 
@@ -816,8 +927,8 @@ well as what inconclusive means.
 Lesson 17: Power Series
 =======================
 
-:MW Date: November 10
-:TR Date: November 11
+:MW Date: April 6
+:TR Date: April 7
 :Duration: one class period
 :See Also: Stewart_, Section 8.5
 
@@ -854,8 +965,8 @@ the terms start to blow up.  So it's all there.
 Lesson 18: Representing Functions as Power Series
 =================================================
 
-:MW Date: November 12
-:TR Date: November 13
+:MW Date: April 8
+:TR Date: April 9
 :Duration: one class period
 :See Also: Stewart_, Section 8.5
 
@@ -899,8 +1010,8 @@ about the zeta function if you want, too.
 Lesson 19: Taylor and Maclaurin Series
 ======================================
 
-:MW Date: November 17
-:TR Date: November 18
+:MW Date: April 13
+:TR Date: April 14
 :Duration: one class period
 :See Also: Stewart_, Section 8.7
 
@@ -936,8 +1047,8 @@ Quotient Rule.  That's the whole point; there are better ways to do it.
 Lesson 20: Applications of Taylor Polynomials
 =============================================
 
-:MW Date: November 19
-:TR Date: November 20
+:MW Date: April 15
+:TR Date: April 16
 :Duration: one class period
 :See Also: Stewart_, Section 8.7
 
@@ -958,13 +1069,13 @@ ODE as power series.
 This brings up an answer to the question "What is this good for?"  You
 can ask them about the sine function, and how they think their
 calculator comes up with an answer when you ask it to find the sine of
-some angle.  We know that the sine of an angle `$x$` a "the ratio of the
-opposite side to the hypotenuse, when one angle of a right triangle is
-`$x$`."  But calculators don't draw little right
-triangles and measure them.  Or we can think about the sine of `$x$`
-as "the vertical coordinate of a point on the unit circle, for which
-the arc from (1,0) to the given point is `$x$` long."  But does the
-calculator draw a little unit circle?  
+some angle.  We know that the sine of an angle `$x$` a "the ratio of
+the opposite side to the hypotenuse, when one angle of a right
+triangle is `$x$`."  But calculators don't draw little right triangles
+and measure them.  Or we can think about the sine of `$x$` as "the
+vertical coordinate of a point on the unit circle, for which the arc
+from (1,0) to the given point is `$x$` long."  But does the calculator
+draw a little unit circle?
 
 No, a calculator computes the value of sine by evaluating some
 convergent series.  It's a limit of polynomials, in other words,
@@ -974,10 +1085,10 @@ approximated by sums and products, which calculators definitely can do!
 Lesson 21: Parametric Curves
 ============================
 
-:MW Date: November 21–23
-:TR Date: November 22
-:Duration: varies
-:See Also: Stewart_, Section 9.1–2
+:MW Date: April 20
+:TR Date: April 21
+:Duration: one class period
+:See Also: Stewart_, Section 9.1
 
 Learning Objectives
 -------------------
@@ -988,34 +1099,8 @@ Learning Objectives
 * Given a curve in the plane, find a pair of parametric equations for
   it.
 
-* Find tangent lines to parametric curves.
-
-* Find areas enclosed by parametric curves.
-
-* Find lengths of parametric curves.
-
-Calendar Notes
---------------
-
-This is a really short week, because Thursday is Thanksgiving.  It's
-pretty common for students to travel this week, either home or the
-home of a friend if their home is far away.  They will often be
-traveling the day before (Wednesday), even though that's officially a
-school day.
-
-Wednesday is "officially" a Monday as far as which classes meet.  That
-doesn't effect MW sections; they would meet on Wednesday anyway.  TR
-sections will obviously not meet on Thursday.  Thus, MW sections will
-have an extra class period, which many students will not attend.
-
-I've learned it's expedient to go with the flow of traditions like
-these.  So whatever happens on Wednesday shouldn't be new material
-from Monday, but should be useful for understanding integration by
-parts or substitution.  A good worksheet would make this time
-worthwhile without penalizing those who miss it.
-
-Mathematical Notes
-------------------
+Notes
+-----
 
 Students will find this harder than you think.  Maybe you found it
 hard the first time around.
@@ -1035,6 +1120,27 @@ An `Etch A Sketch`_ might make a good demo here.
 .. _`Etch A Sketch`: http://en.wikipedia.org/wiki/Etch_A_Sketch
 
 
+Lesson 22: Calculus with Parametric Curves
+==========================================
+
+:MW Date: April 22
+:TR Date: April 23
+:Duration: one class period
+:See Also: Stewart_, Section 9.3
+
+Learning Objectives
+-------------------
+
+* Find tangent lines to parametric curves.
+
+* Find areas enclosed by parametric curves.
+
+* Find lengths of parametric curves.
+
+
+Notes
+-----
+
 Tangents to parametric curves come from the Chain Rule.  They may have
 seen that in a previous class.  Make sure they know that you can use
 it to find *vertical* tangents as well as horizontal ones.  
@@ -1047,12 +1153,11 @@ For lengths of parametric curves, this might actually be more
 intiutive than the old (`$y=f(x)$`) way.  So it's worth doing again,
 and emphasizing how it's more symmetric than the first way.
 
-
-Lesson 22: Polar Coordinates
+Lesson 23: Polar Coordinates
 ============================
 
-:MW Date: November 28
-:TR Date: November 29
+:MW Date: April 27
+:TR Date: April 28
 :Duration: one class period
 :See Also: Stewart_, Section 9.3
 
@@ -1086,11 +1191,11 @@ to be negative.  This is more to give a meaning to it when it comes
 out of polar equations than to find the coordinates of a specific point.
 
 
-Lesson 22: Areas and Lengths in Polar Coordinates
+Lesson 24: Areas and Lengths in Polar Coordinates
 =================================================
 
-:MW Date: November 28
-:TR Date: November 29
+:MW Date: April 29
+:TR Date: April 30
 :Duration: one class period
 :See Also: Stewart_, Section 9.4
 
@@ -1112,25 +1217,23 @@ Notice again that the arc length formula doesn't usually give an
 integral which can be found in elementary terms.  Oh, well.
 
 
-Lesson 23: Conic Sections in Polar Coordinates
-==============================================
+Monday, May 4
+=============
 
-:MW Date: November 28
-:TR Date: November 29
-:Duration: one class period
-:See Also: Stewart_, Section 9.4
+MW classes should review for the final here.
 
-Learning Objectives
--------------------
+Tuesday, May 5
+==============
 
-* Find and interpret polar equations for conic sections.
+TR class will not meet this week, but on this "reading day" instructors should schedule a review session if possible.
 
-Notes
------
+Final Exam
+==========
 
-You will probably need to review conic sections in cartesian
-coordinates as well.  Students will need help completing the square or
-shifting a conic to recognize its shape from the equation.
+**The final exam will be Friday, May 8, from 2:00–3:50pm.** There will be many
+technical and logistical questions about the final.  Please check the
+departmental syllabus or with Prof. Leingang if you do not know the answer.
+
 
 Details
 =======
