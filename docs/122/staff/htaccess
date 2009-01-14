@@ -1,0 +1,11 @@
+SSLRequireSSL
+SSLOptions +StrictRequire
+ErrorDocument 403 "<H1> Use https to access</H1>"
+Order deny,allow
+AuthType Basic
+AuthName "Authorized CIMS users only!"
+AuthBasicAuthoritative On
+AuthBasicProvider ldap-cims
+require valid-user
+satisfy all
+
