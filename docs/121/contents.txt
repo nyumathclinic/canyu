@@ -19,12 +19,14 @@
 
 * Syllabus_
 
-.. _Syllabus: syllabus.html
  
 * Calendar_
 
-.. _Calendar: cal.html
-
 .. * Homework_
 
+* `Staff only`_
+
+.. _Syllabus: syllabus.html
+.. _Calendar: cal.html
 .. _Homework: hw.html 
+.. _`Staff only`: staff/
