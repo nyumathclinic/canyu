@@ -9,6 +9,7 @@
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
+   :link.alternate scheme=rel media=print type=application/pdf: lessons.pdf
 
 .. default-role:: latex
 
