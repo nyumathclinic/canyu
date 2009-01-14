@@ -1,3 +1,5 @@
+INDEXALIAS?=syllabus.html
+
 build-html: all
 	if test -n "$(shell svn status)"; then echo "Please commit first"; \
 	else \
@@ -8,7 +10,7 @@ build-html: all
 	done; \
 	$(INSTALL) $(PDF) $(BUILDDIR_HTML); \
 	$(INSTALL) $(TEXFILES) $(BUILDDIR_HTML); \
-	cd $(BUILDDIR_HTML) && ln -fs syllabus.html index.html; \
+	cd $(BUILDDIR_HTML) && ln -fs $(INDEXALIAS) index.html; \
 	fi
 
 install-html: build-html
