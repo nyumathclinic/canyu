@@ -26,11 +26,11 @@ include $(LIBDIR)/tex.mk
 
 # Use txt files as source
 TXTSRC= lessons.txt instructor_info.txt #$(shell ls *.txt)
-HTML+=$(TXTSRC:%.txt=%.html) 
+#HTML+=$(TXTSRC:%.txt=%.html) somehow this is already defined
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)
 TEXFILES=$(TXTSRC:%.txt=%.tex)
-ALLFILES=$(HTML) $(HTML_SCREEN) $(TEXFILES) $(PDF)
+ALLFILES=$(TEXFILES) $(PDF) $(HTML) $(HTML_SCREEN) 
 
 DIRTY+= $(TRG:%.dvi=%.idv) $(TRG:%.dvi=%.4tc) $(TRG:%.dvi=%.4ct) $(TRG:%.dvi=%.tmp) $(TRG:%.dvi=%.lg) $(TRG:%.dvi=%.xref) $(TEXFILES:%.tex=%.dep)
 
