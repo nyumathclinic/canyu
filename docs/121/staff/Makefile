@@ -14,6 +14,7 @@ coursenum=121
 
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)/staff
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)/staff
+INDEXALIAS=intructor_info.html
 
 INSTALL=install -m644
 PDFLATEX=pdflatex
@@ -41,3 +42,4 @@ all: $(ALLFILES)
 $(HTML_SCREEN) : contents.html
 
 include $(LIBDIR)/common.mk
+
