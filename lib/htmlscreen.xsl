@@ -245,7 +245,7 @@
        <xsl:if test="document('contents.html') or //html:div[@id='contents']">
 	 <div id="secondary">
 	   <h1 class="bar">Contents</h1>
-	   <xsl:copy-of select="document('contents.html')/html:html/html:body//html:ul" />
+	   <xsl:copy-of select="document('contents.html')/html:html/html:body/html:div[@class='document']/html:ul" />
 	   <xsl:apply-templates select="//html:div[@id='contents']/html:ul" />
 	 </div>
        </xsl:if>
