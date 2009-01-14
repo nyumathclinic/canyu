@@ -23,7 +23,7 @@ include $(LIBDIR)/tex.mk
 
 # Use txt files as source
 TXTSRC= syllabus.txt cal.txt #$(shell ls *.txt)
-HTML+=$(TXTSRC:%.txt=%.html) contents.html
+HTML+=$(TXTSRC:%.txt=%.html) 
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)
 TEXFILES=$(TXTSRC:%.txt=%.tex)
