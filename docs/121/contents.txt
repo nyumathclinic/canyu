@@ -29,4 +29,4 @@
 .. _Syllabus: syllabus.html
 .. _Calendar: cal.html
 .. _Homework: hw.html 
-.. _`Staff only`: staff/
+.. _`Staff only`: https://www.math.nyu.edu/courses/Calculus/2009/Spring/121/staff/
