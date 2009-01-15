@@ -19,7 +19,7 @@
    :link.alternate scheme=rel media=print type=text/html: syllabus-print.html
    :link.alternate scheme=rel media=print type=application/x-latex: syllabus.tex
 
-Math 121: Calculus I
+V63.0121: Calculus I
 !!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
