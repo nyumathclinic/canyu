@@ -21,8 +21,8 @@
 
 .. |date| date::
 
-Calendar for Math 121, Fall 2008
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Calendar for Calculus I, Spring 2009
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date:   |date|
