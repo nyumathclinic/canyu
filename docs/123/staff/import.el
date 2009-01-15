@@ -27,8 +27,8 @@
 (defun fix-inline-math
   ()
   "convert inline math to the latex role"
-  (replace-regexp "\\([^`]\\)\\$\\([^$]\\)\\$"
-		  "\\1:latex:`$\\2$`"))
+  (replace-regexp "\\([^`]\\)\\$\\([^`$]+\\)\\$\\([^`]\\)"
+		  "\\1:latex:`$\\2$`\\3"))
 
 
 (defun fix-vector-abbreviations
