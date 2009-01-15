@@ -68,10 +68,17 @@ Learning Objectives
 -------------------
 
 * To understand and be able to apply the definition of a *scalar* and a *vector*.
-* To be able to represent vectors geometrically as directed line segments or algebraically as ordered pairs or triples of numbers.
+
+* To be able to represent vectors geometrically as directed line
+  segments or algebraically as ordered pairs or triples of numbers.
+
 * To understand and be able to apply the axioms or vector addition and scalar multiplication.
+
 * To be understand and be able to determine the *length* of a vector.
-* To understand the definitions of *unit vectors*, *standard basis vectors*, and *position vectors* and to be able to apply these definitions.
+
+* To understand the definitions of *unit vectors*, *standard basis
+  vectors*, and *position vectors* and to be able to apply these
+  definitions.
 
 
 Lesson 3: The Dot Product
@@ -90,7 +97,9 @@ Learning Objectives
    = a_1 b_1 + a_2 b_2 + a_3 b_3.
 
 * To understand and be able to apply properties of the dot product.
+
 * To understand that two vectors are *orthogonal* if their dot product is zero.
+
 * To understand and be able to determine the *projection* of a vector :latex:`${\mathbf a}$` onto a vector :latex:`${\mathbf b}$`,
 
 .. latex::
@@ -151,10 +160,10 @@ Learning Objectives
 .. \end{gather*}
 
 
-* To be able to represent line segment in :latex:`${\mathbb R}^3$`
+* To be able to represent a line segment in :latex:`${\mathbb R}^3$`
   from :latex:`${\mathbf r}_0$` to :latex:`${\mathbf r}_1$`,
 
-.. latex::
+  .. latex::
   
    {\mathbf r}(t) = (1 - t) {\mathbf r}_0 + t {\mathbf r}_1,
 
@@ -163,22 +172,18 @@ Learning Objectives
 
 * To understand and be able to represent a plane in :latex:`${\mathbb
   R}^3$` given a normal vector :latex:`${\mathbf n} = \langle a, b, c
-  \rangle$` and a point :latex:`$P_0 = (x_0, y_0, z_0)$` in the plane,
+  \rangle$` and a point :latex:`$P_0 = (x_0, y_0, z_0)$` in the
+  plane,
 
-.. latex::
+  .. latex::
 
-   {\mathbf n} \cdot \langle x - x_0, y - y_0, z - z_0 \rangle = 0
+     {\mathbf n} \cdot \langle x - x_0, y - y_0, z - z_0 \rangle = 0
 
+  or 
 
-or 
+  .. latex::
 
-.. latex::
-
-    a(x - x_0) + b( y - y_0) + c ( z - z_0) = 0.
-
-
-
-
+     a(x - x_0) + b( y - y_0) + c ( z - z_0) = 0.
 
 * To understand and be able to calculate the distance :latex:`$D$`
   from a point :latex:`$P_1 = (x_1, y_1, z_1)$` to the plane
@@ -187,8 +192,6 @@ or
   .. latex::
 
      D = \frac{|a x_1 + b y_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}.
-
-
 
 
 Lesson 6: Cylinders and Quadric Surfaces
@@ -221,6 +224,40 @@ Lesson 7: Vector functions and space curves
 Learning Objectives
 -------------------
 
+* To understand and be able to the concept of a vector-valued
+  function,
+
+.. latex::
+
+   {\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)
+   \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k}.
+
+
+* To be able to apply the concepts of limits and continuity to
+  vector-valued functions.
+
+* To understand that a curve in `${\mathbb R}^3$` can be represented
+  *parametrically*
+
+  .. latex::
+
+     x = f(t) \qquad y = g(t) \qquad z = h(t)
+
+  or by a vector-valued function
+
+  .. latex::
+
+     {\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle.
+
+* To understand and be able to calculate the derivative of a
+  vector-valued function.
+
+* To understand and be able to apply the basic rules of
+  differentiation for vector-valued functions.
+
+* To understand and be able to find the definite integral of a
+  vector-valued function.
+
 Lesson 8: Arc length
 ====================
 
@@ -228,6 +265,21 @@ Lesson 8: Arc length
 
 Learning Objectives
 -------------------
+
+* To understand and be able to apply the arc length of a curve, `${\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle$`, over an interval `$a \leq t \leq b$`,
+
+.. latex::
+
+   L = \int_a^b |{\mathbf r}'(t) | \, dt = \int_a^b \sqrt{ [f(t)]^2 + [g(t)]^2 + [h(t)]^2} \, dt.
+
+
+* To understand and be able to apply the arc length function of a curve, `${\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle$`, over an interval `$a \leq t \leq b$`,
+
+.. latex::
+
+   s(t) = \int_a^t |{\mathbf r}'(u) | \, du = \int_a^t \sqrt{ [f(u)]^2 + [g(u)]^2 + [h(u)]^2} \, du.
+
+
 
 Notes
 -----
@@ -241,6 +293,9 @@ Lesson 9: Motion in Space: Velocity and Acceleration
 
 Learning Objectives
 -------------------
+
+* To understand the first derivative as the velocity of a curve and the second derivative as the acceleration of a curve and be able to apply these definitions.
+
 
 Notes
 -----
@@ -259,6 +314,8 @@ Lesson 10: Functions of Several Variables
 Learning Objectives
 -------------------
 
+* To understand functions of several variables and be able to represent these functions using level sets.
+
 Lesson 11: Limits and Continuity
 ========================================
 
@@ -266,6 +323,10 @@ Lesson 11: Limits and Continuity
 
 Learning Objectives
 -------------------
+
+* To understand and be able to apply the concept of a limit of a function of several variables.
+
+* To understand and be able to apply the definition of continuity for a function of several variables.
 
 Notes
 -----
@@ -283,6 +344,19 @@ Lesson 12: Partial Derivatives
 Learning Objectives
 -------------------
 
+* To understand and be able to apply the definition of a partial derivative.
+
+* To be able to compute partial derivatives.
+
+* To understand and be able to apply *Clairaut's Theorem*.  If `$f$`
+  is defined on a disk `$D$` that contains the point `$(a, b)$` and the
+  functions `$f_{xy}$` and `$f_{yx}$` are continuous on `$D$`, then
+
+  .. latex::
+     f_{xy}(a, b) = f_{yx}(a, b).
+
+* To understand the idea of a partial differential equation, and to be able to verify solutions to partial differential equations.
+
 
 Notes
 -----
@@ -295,6 +369,26 @@ Lesson 13: Tangent Planes and Linear Approximation
 Learning Objectives
 -------------------
 
+* To understand the concept of a tangent plane to a surface `$z = f(x, y)$` and to be able to compute the equation of tangent planes
+
+* To understand and be able to find a linear approximation to a function `$z = f(x, y)$`.
+
+* To understand the concept of a tangent plane to a parametrically defined surface
+
+  .. latex::
+
+      \mathbf{r}(u, v) = x(u, v) \, \mathbf{i} + y(u, v) \, \mathbf{j} + z(u, v) \, \mathbf{k}
+
+  and to be able to compute the equation of tangent planes.
+
+* To understand and be able to find the differential to a function `$z = f(x, y)$`,
+
+.. latex::
+
+   dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy
+
+To be able to use the differential to estimate maximum error.
+
 Notes
 -----
 
@@ -303,6 +397,11 @@ Lesson 14: The Chain Rule
 =========================
 
 :See Also: Stewart_, Section 11.5
+
+* To understand and be able to apply the chain rule for functions of
+  several variables.
+
+* To understand and be able to implicitly differentiate functions.
 
 Learning Objectives
 -------------------
@@ -319,6 +418,16 @@ Lesson 15: Directional Derivatives and the gradient vector
 
 :See Also: Stewart_, Section 11.6
 
+
+Learning Objectives
+-------------------
+
+*  Write down the gradient vector field of a function.
+
+*  Plot the GVF of a function.
+
+*  Use the GVF of a function to find its areas of great change and stationary 
+
 Notes
 -----
 
@@ -329,10 +438,24 @@ Lesson 16: Maximum and Minimum Values
 
 :See Also: Stewart_, Section 11.7
 
+Learning Objectives
+-------------------
+
+*  Use the second derivative test to classify critical points of functions
+
 Lesson 17: Lagrange Multipliers
 ===============================
 
 :See Also: Stewart_, Section 11.8
+
+Learning Objectives
+-------------------
+
+*  Use Lagrangian Multipliers to solve constrained optimization problems
+
+*  Understand why Lagrangian Multipliers "work."
+
+*  Solve nonlinear systems of equations.
 
 Spring Break
 ============
@@ -350,6 +473,31 @@ Lesson 18: Double Integrals over Rectangles
 Learning Objectives
 -------------------
 
+* To understand and be able to apply the definition of the double
+  integral of a function `$f$` over a region `$R$`,
+
+  .. latex::
+
+     \iint \limits_{R} f(x, y) \, dA.
+
+* To understand and be able to apply the *midpoint rule* for the
+  double integral of a function `$f$` over a region `$R$`.
+
+* To understand and to be able to compute the value of
+
+  .. latex::
+
+      \iint \limits_R f(x, y) \, dA.
+
+  when `$R$` is a rectangle in the `$xy$`-plane.  In particular, to be
+  able to evaluate the integral as an iterated integral and to be able
+  to apply Fubini's Theorem.
+
+* To understand and be able to apply the properties of double integrals.
+
+* To understand and to be able to compute the average value of a
+  function `$z = f(x, y)$` over a region `$R$` in the `$xy$`-plane.
+
 Notes
 -----
 
@@ -357,6 +505,68 @@ Lesson 19: Double Integrals over General Regions
 ================================================
 
 :See Also: Stewart_, Section 12.2
+
+* To understand and be able to compute the double integral of a
+  function `$f$` over a general region `$D$`,
+
+  .. latex::
+
+     \iint \limits_{d} f(x, y) \, dA.
+
+
+* To understand and be able to compute the double integral of a
+  function `$f$` over a *type I* region `$R$`,
+
+  .. latex::
+
+     \iint \limits_{D} f(x, y) \, dA = \int_a^b \int
+     _{g_1(x)}^{g_2(x)} f(x, y) \, dy \, dx,
+
+  where
+
+  .. latex::
+
+     D = \{ (x, y) | a \leq x \leq b, g_1(x) \leq y \leq g_2(x) \}.
+
+* To understand and be able to compute the double integral of a
+  function `$f$` over a *type II* region `$R$`,
+
+  .. latex::
+
+     \iint \limits_{D} f(x, y) \, dA = \int_c^d \int
+     _{h_1(y)}^{h_2(y)} f(x, y) \, dx \, dy,
+
+  where
+
+  .. latex::
+
+     D = \{ (x, y) | c \leq y \leq d, h_1(y) \leq x \leq h_2(y) \}.
+
+
+* To understand and be able to apply the properties of double integrals.
+
+  - :latex:`$\displaystyle\iint \limits_{D} [f(x, y) + g(x, y)] \, dA = \iint
+    \limits_{D} f(x, y) \, dA + \iint \limits_{D} g(x, y) \, dA$`
+
+  - :latex:`$\displaystyle\iint \limits_{D} c f(x, y) \, dA = c \iint\limits_{D} f(x, y) \, dA$`
+
+  - If `$f( x, y) \geq g(x, y)$` for all `$(x, y) \in D$`, then
+    `$\displaystyle \iint \limits_{D} f(x, y) \, dA \geq \iint
+    \limits_{D} g(x, y) \, dA$`.
+
+  - If `$D = D_1 \cup D_2$`, where `$D_1$` and `$D_2$` do not overlap
+    except possibly on their boundaries, then `$\displaystyle \iint
+    \limits_{D} [f(x, y) ] \, dA = \iint \limits_{D_1} f(x, y) \, dA +
+    \iint \limits_{D_2} f(x, y) \, dA$`
+
+  - `$\displaystyle \iint \limits_{D} dA$` is the area of `$D$`,
+    `$A(D)$`.
+
+  - If `$m \leq f( x, y) \geq M$` for all `$(x, y) \in D$`, then
+    `$\displaystyle m \cdot A(D) \leq \iint \limits_{D} f(x, y) \, dA
+    \leq M \cdot A(D)$`.
+
+
 
 Learning Objectives
 -------------------
@@ -372,6 +582,17 @@ Lesson 20: Double Integrals in Polar Coordinates
 Learning Objectives
 -------------------
 
+* Understand the area element in polar coordinates. `$dA = r\, dr\, d\theta$`.
+
+* To understand and be able to change to polar coordinates in a double integral,
+
+  .. latex::
+
+     \iint \limits_{D} f(x, y) \, dA = \int_\alpha^\beta \int_a^b f(r
+     \cos \theta, r \sin \theta) \, r \, dr \, d\theta.
+
+*  Find integrals of functions over regions described in polar coordinates.
+
 Notes
 -----
 
@@ -382,6 +603,68 @@ Lesson 21: Triple Intgrals
 
 Learning Objectives
 -------------------
+
+* To understand and be able to apply the definition of the triple
+  integral of a function `$f$` over a box `$B$`,
+
+  .. latex::
+
+     \iiint \limits_{B} f(x, y, z) \, dV = \lim_{l, m, n \to \infty}
+     \sum_{i = 1}^{l} \sum_{j = 1}^{m} \sum_{k = 1}^{n} f(x_i, y_j,
+     z_k) \Delta V.
+
+* To understand and to be able to compute the value of
+
+  .. latex::
+
+     \iiint \limits_{B} f(x, y, z) \, dV
+
+  when `$B = [a, b] \times [c, d] \times [r, s]$`.  In particular, to be
+  able to evaluate the integral as an iterated integral and to be able
+  to apply Fubini's Theorem,
+
+  .. latex::
+
+     \iiint \limits_{B} f(x, y, z) \, dV = \int_r^s \int_c^d \int_a^b
+     f(x, y, z) \, dx \, dy \, dz.
+
+* To understand and to be able to compute the value of
+
+  .. latex::
+
+     \iiint \limits_{E} f(x, y, z) \, dV = \int_a^b
+     \int_{g_1(x)}^{g_2(x)} \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z) \,
+     dz \, dy \, dx
+
+  when 
+
+  .. latex::
+
+     E = \{ a \leq x \leq b, g_1(x) \leq y \leq g_2(x), u_1(x, y) \leq
+     z \leq u_2(x, y)\}.
+
+* To understand and to be able to compute the value of
+
+  .. latex::
+
+     \iiint \limits_{E} f(x, y, z) \, dV = \int_c^d
+     \int_{h_1(y)}^{h_2(y)} \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z) \,
+     dz \, dx \, dy
+
+  when 
+
+  .. latex::
+
+     E = \{ c \leq y \leq d, h_1(y) \leq x \leq h_2(y), u_1(x, y) \leq
+     z \leq u_2(x, y)\}.
+
+
+* To be able to compute the volume of a region `$E$` by
+
+  .. latex::
+
+      V(E) = \iiint \limits_{E}  dV.
+
 
 Notes
 -----
@@ -394,6 +677,25 @@ Lesson 22: Triple Integrals in Cylindrical Coordinates
 Learning Objectives
 -------------------
 
+* To understand and be able to change to cylindrical coordinates in a triple integral,
+
+  .. latex::
+  
+     \iiint \limits_{E} f(x, y, z) \, dV = \int_\alpha^\beta
+     \int_{h_1(\theta)}^{h_2(\theta)} \int_{u_1(r \cos \theta, r \sin
+     \theta)}^{u_2(r \cos \theta, r \sin \theta)} f(r \cos \theta, r
+     \sin \theta, z) \, r \, dz \, dr \, d\theta,
+	
+  where `$E$` is the region given by
+
+  .. latex::
+
+      E = \{ (x, y, z) | (x, y) \in D, u_1(x, y) \leq z \leq u_2(x, y)
+      \}
+
+  and `$D = \{ (r, \theta) | \alpha \leq \theta \leq \beta, h_1(\theta)
+  \leq r \leq h_2(\theta) \}$`.
+
 Notes
 -----
 
@@ -404,6 +706,22 @@ Lesson 23: Triple Integrals in Spherical Coordinates
 
 Learning Objectives
 -------------------
+
+* To understand and be able to change to spherical coordinates in a triple integral,
+
+  .. latex::
+
+    \begin{gathered} \iiint \limits_{E} f(x, y, z) \, dV \\ = \int_c^d
+    \int_\alpha^\beta \int_a^b f(\rho \sin \phi \cos \theta, \rho \sin
+    \phi \sin \theta, \rho \cos \phi) \, \rho^2 \sin \phi \, d\rho \,
+    d\theta \, d\phi, \end{gathered} 
+
+  where `$E$` is a spherical wedge given by
+
+.. latex::
+
+   E = \{ (\rho, \theta, \phi ) | a \leq \rho \leq b, \alpha \leq
+   \theta \leq \beta, c \leq \phi \leq d \}
 
 Notes
 -----
@@ -450,6 +768,30 @@ Lesson 27: Green's Theorem
 Learning Objectives
 -------------------
 
+* To understand and be able to apply Green's Theorem: Let `$C$` be a
+  positively oriented, piecewise-smooth, simple closed curve in
+  `${\mathbb R}^2$` and `$D$` be the region bounded by `$C$`.  If `$P$` and
+  `$Q$` have continuous partial derivatives on an open region that
+  contains `$D$`, then
+
+  .. latex::
+
+     \int_C P \, dx + Q \, dy = \iint \limits_D \left( \frac{\partial
+     Q}{\partial x} - \frac{\partial P}{\partial y}\right) \, dA.
+
+* To understand and be able to apply Green's Theorem for a region
+  `$R$` with "holes": Let `$D$` be the region in `${\mathbb R}^2$`
+  bounded by `$C_1$`, a positively oriented, piecewise-smooth, simple
+  closed outer curve, and `$C_2$`, a positively oriented,
+  piecewise-smooth, simple closed inner curve.  Then
+
+  .. latex::
+
+     \int_{C_1} P \, dx + Q \, dy - \int_{C_2} P \, dx + Q \, dy =
+     \iint \limits_D \left( \frac{\partial Q}{\partial x} -
+     \frac{\partial P}{\partial y}\right) \, dA.
+
+
 Notes
 -----
 
@@ -460,6 +802,64 @@ Lesson 28: Curl and Divergence
 
 Learning Objectives
 -------------------
+
+* To understand and be apply the definition of the *curl* of a vector field 
+
+  .. latex::
+
+     {\mathbf F} = P \, \mathbf{i} + Q \, \mathbf{j} + R \, \mathbf{k}
+
+  in `${\mathbb R}^3$`,
+
+  .. latex::
+
+     \mathrm{curl} {\mathbf F} = \left( \frac{\partial R}{\partial y} -
+     \frac{\partial Q}{\partial z} \right) \mathbf{i} + \left( \frac{\partial
+     P}{\partial z} - \frac{\partial R}{\partial x} \right) \mathbf{j} +
+     \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+     y} \right) \mathbf{k}.
+
+  This is most easily remembered as
+
+  .. latex::
+
+     \mathrm{curl} {\mathbf F} = \nabla \times {\mathbf F}.
+
+  One of the main properties of the curl is
+
+  .. latex::
+
+     \mathrm{curl}( \nabla f ) = {\mathbf 0}.
+
+
+* To understand and be apply the definition of the *divergence* of a vector field 
+
+  .. latex::
+
+      {\mathbf F} = P \, \mathbf{i} + Q \, \mathbf{j} + R \, \mathbf{k}
+
+  in `${\mathbb R}^3$`,
+
+  .. latex::
+
+     \operatorname{div} {\mathbf F} = \frac{\partial P}{\partial x} +
+     \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial y}.
+ 
+  This is most easily remembered as
+
+  .. latex::
+
+     \operatorname{div} {\mathbf F} = \nabla \cdot {\mathbf F}.
+
+One of the main properties of the curl is
+
+.. latex::
+
+   \operatorname{div} \mathrm{curl} {\mathbf F} = 0.
+
+
+* To understand when a vector field is *conservative*, *irrotational*,
+  or *incompressible*.
 
 Notes
 -----
@@ -472,6 +872,24 @@ Lesson 29: Parametric Surfaces and their Areas
 Learning Objectives
 -------------------
 
+* To understand and be able to apply the concept of a *parametric surface*.  A parametric surface may be defined by a vector equation,
+
+  .. latex::
+
+     \mathbf{r}(t) = x(u, v) \, \mathbf{i} + y(u, v) \, \mathbf{j} + z(u, v) \, \mathbf{k}
+
+  or by a set of parametric equations
+
+  .. latex::
+
+     x = x(u, v) \qquad y = y(u, v) \qquad z = z(u, v),
+
+  where `$u$` and `$v$` are variables with a domain `$D$` contained in `${\mathbb R}^2$`.
+
+* To understand and be able to represent surfaces of revolutions parametrically.
+
+
+
 Notes
 -----
 
@@ -482,6 +900,49 @@ Lesson 30: Surface Integrals
 
 Learning Objectives
 -------------------
+
+* To understand the definition of and be able to compute surface integrals,
+
+  .. latex::
+
+     \iint \limits_S f(x, y, z) \, dS = \iint \limits_D f(\mathbf{r}(u, v) )
+     | \mathbf{r}_u \times \mathbf{r}_v | \, dA,
+
+  where `$f$` is a function defined on the parametric surface `$\mathbf{r}(u,
+  v)$`.  If `$S$` is defined by `$z = g(x, y)$`, then
+
+  .. latex::
+
+     \iint \limits_S f(x, y, z) \, dS = \iint \limits_D f(x, y,
+     g(x,y)) \sqrt{ \left( \frac{\partial z}{\partial x} \right)^2 +
+     \left( \frac{\partial z}{\partial y} \right)^2+ 1}\, dA.
+
+
+* To understand and be able to apply the concept of an oriented surface.
+
+* To understand and be able to apply the definition of flux integral of a vector field across a surface `$S$`.  Let `${\mathbf F}$` be a continuous vector field on an oriented surface `$S$` with unit normal vector `${\mathbf n}$`.  The surface integral of `${\mathbf F}$` over `$S$` is
+
+  .. latex::
+
+     \iint \limits_S {\mathbf F} \cdot d{\mathbf S} = \iint \limits_S
+     {\mathbf F} \cdot {\mathbf n} \, dS.
+
+  This integral is given by
+
+  .. latex::
+
+     \iint \limits_S {\mathbf F} \cdot d{\mathbf S} = \iint \limits_D
+     {\mathbf F} \cdot (\mathbf{r}_u \times \mathbf{r}_v) \, dA
+
+  for a parametrically defined surface.  If `$S$` is defined by `$z =
+  g(x, y)$` and `${\mathbf F} = P \, \mathbf{i} + Q \, \mathbf{j} + R \, \mathbf{j}$`, then
+
+  .. latex::
+
+     \iint \limits_S {\mathbf F} \cdot d{\mathbf S} = \iint \limits_D
+     \left( -P \frac{\partial g}{\partial x} - Q \frac{\partial
+     g}{\partial y} + R\right)\, dA.
+
 
 Notes
 -----
@@ -494,6 +955,20 @@ Lesson 31: Stokes's Theorem
 Learning Objectives
 -------------------
 
+* To understand and be able to apply Stokes's Theorem.  Let `$S$` be an
+  oriented piecewise-smooth surface that is bounded by a simple,
+  closed piecewise-smooth boundary curve with positive orientation.
+  Let `${\mathbf F}$` be a vector field whose components have continuous
+  partial derivatives on an open region in `${\mathbb R}^3$` that
+  contains `$S$`.  Then
+
+  .. latex::
+
+     \int_C {\mathbf F} \cdot d \mathbf{r} = \iint \limits_S \mathrm{curl} {\mathbf
+     F} \cdot d{\mathbf S}.
+
+
+
 Notes
 -----
 
@@ -504,6 +979,16 @@ Lesson 32: (Gauss's) Divergence Theorem
 
 Learning Objectives
 -------------------
+
+* To understand and be able to apply the Divergence Theorem.  Let `$E$`
+  be a simple solid region and let `$S$` be the boundary surface of `$E$`,
+  given with positive (outward) orientation. Let `$\mathbf F$` be a vector
+  field whose components have continuous partial derivatives on an
+  open region in `${\mathbb R}^3$` that contains `$E$`.  Then
+
+  .. latex::
+
+     \iint \limits_S  \mathbf{F} \cdot d\mathbf{S} = \iiint \limits_E \operatorname{div} \mathbf{F} \, dV.
 
 Notes
 -----
@@ -521,8 +1006,7 @@ TR and TRF class will not meet this week, but on this "reading day" instructors 
 Final Exam
 ==========
 
-**The final exam dates and times are on the syllabus.** There will be many
-technical and logistical questions about the final.  Please check the
+**The final exam dates and times are on the syllabus.** There will be many technical and logistical questions about the final.  Please check the
 departmental syllabus or with Prof. Leingang if you do not know the answer.
 
 

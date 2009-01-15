@@ -13,7 +13,7 @@
 
 
 (defun fix-em () "convert {\em ... } to *...*"
-  (replace-regexp "{\\\\em \\([^}]*\\)\\\\/}" "*\\1*"))
+  (replace-regexp "{\\\\em \\([^}]*\\)\\(\\\\/\\)}" "*\\1*"))
 
 
 (defun fix-display-math
@@ -26,5 +26,8 @@
 (defun fix-vector-abbreviations
   ()
   "undo some of Tom's macros"
-  (replace-regexp "\\\\bf\\([ijk]\\)" "\\\\mathbf{\\1}"))
+  (let ()
+    (replace-regexp "\\\\bf\\([ijk]\\)" "\\\\mathbf{\\1}")
+    (replace-regexp "\\\\v\\([rijkabcFS]\\)" "\\\\mathbf{\\1}")))
+  
 
