@@ -22,9 +22,9 @@ Lesson Outline for Calculus III, Spring 2009
 
 This is a topic-by-topic checklist for Calculus III.  I've included
 specific *learning objectives* for each section—things that students
-should be capable of after completing the topic.  I've also written
-notes on each topic to help with planning a lecture, and to explain
-calendar quirks.
+should be capable of after completing the topic.  When applicable and
+available, I've also written notes on some topics to help with planning
+a lecture, and to explain calendar quirks.
 
 Unless otherwise noted, a week's worth of topics should be distributed
 evenly across the week.  
@@ -37,8 +37,6 @@ evenly across the week.
 Lesson 1: Three-dimensional Coordinate Systems
 ==============================================
 
-:MW Date: January 21
-:TR Date: January 20-22
 :See Also: Stewart_, Section 10.1
 
 Learning Objectives
@@ -52,6 +50,10 @@ Learning Objectives
 
 Notes
 -----
+
+Obviously some students are going to have trouble understanding the
+right-hand rule.  Explain that it's a convention, that we only want
+rotational symmetry and not reflexive.
 
 January 20 and February 16 are Monday holidays, and this wreaks havoc
 on a common schedule.  MW sections will meet for 110 minutes this
@@ -151,14 +153,24 @@ Learning Objectives
 
 * To understand and be able to represent a line :latex:`$\ell$` in
   :latex:`${\mathbb R}^3$` using
+ 
+  - the *vector equation*
+    
+    .. latex::
 
-.. \begin{gather*}
+       {\mathbf r} = {\mathbf r}_0 + t {\mathbf v}
 
-.. {\mathbf r} = {\mathbf r}_0 + t {\mathbf v} \qquad \text{(vector equation)} \\
-.. x = x_0 + at \qquad y = y_0 + bt \qquad z = z_0 + ct \qquad \text{(parametric equations)} \\
-.. \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c} \qquad \text{(symmetric equations)}
-.. \end{gather*}
+  - the *parametric equations*
 
+    .. latex::
+
+       x = x_0 + at \qquad y = y_0 + bt \qquad z = z_0 + ct
+
+  - the *symmetric equations* 
+
+    .. latex::
+
+       \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c} 
 
 * To be able to represent a line segment in :latex:`${\mathbb R}^3$`
   from :latex:`${\mathbf r}_0$` to :latex:`${\mathbf r}_1$`,
@@ -202,19 +214,21 @@ Lesson 6: Cylinders and Quadric Surfaces
 Learning Objectives
 -------------------
 
-* To understand and be able to represent a function of two variables,
-  :latex:`$z = f(x, y)$`, graphically.
+* Use *traces* to visualize a surface in `${\mathbb R}^3$`.
 
+* Understand and be able to represent a selection of *cylinders*
+  and *quadric surfaces* graphically.
 
-* To understand and be able to use the trace (cross-section) of a
-  function.
+Notes
+-----
 
-* To understand and be able to determine the domain of a function
-  :latex:`$z = f(x, y)$`.
+You will probably need to review the conic sections, since that's a
+topic that many students don't see much treatment of these days (a
+casualty of the rush to calculus in high school).  There is a
+`supplement to the textbook`__ online.
 
+__ http://preview.tinyurl.com/ax3zgp
 
-* To understand and be able to represent a selection of *quadric
-  surfaces* graphically.
 
 Lesson 7: Vector functions and space curves
 ===========================================
@@ -266,20 +280,21 @@ Lesson 8: Arc length
 Learning Objectives
 -------------------
 
-* To understand and be able to apply the arc length of a curve, `${\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle$`, over an interval `$a \leq t \leq b$`,
+* To understand and be able to apply the arc length of a curve,
+  `${\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle$`, over an
+  interval `$a \leq t \leq b$`,
 
-.. latex::
+  .. latex::
 
-   L = \int_a^b |{\mathbf r}'(t) | \, dt = \int_a^b \sqrt{ [f(t)]^2 + [g(t)]^2 + [h(t)]^2} \, dt.
+     L = \int_a^b |{\mathbf r}'(t) | \, dt = \int_a^b \sqrt{ [f(t)]^2 + [g(t)]^2 + [h(t)]^2} \, dt.
 
+* To understand and be able to apply the arc length function of a
+  curve, `${\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle$`, over
+  an interval `$a \leq t \leq b$`,
 
-* To understand and be able to apply the arc length function of a curve, `${\mathbf r}(t) = \langle f(t), g(t), h(t) \rangle$`, over an interval `$a \leq t \leq b$`,
+  .. latex::
 
-.. latex::
-
-   s(t) = \int_a^t |{\mathbf r}'(u) | \, du = \int_a^t \sqrt{ [f(u)]^2 + [g(u)]^2 + [h(u)]^2} \, du.
-
-
+     s(t) = \int_a^t |{\mathbf r}'(u) | \, du = \int_a^t \sqrt{ [f(u)]^2 + [g(u)]^2 + [h(u)]^2} \, du.
 
 Notes
 -----
@@ -294,16 +309,20 @@ Lesson 9: Motion in Space: Velocity and Acceleration
 Learning Objectives
 -------------------
 
-* To understand the first derivative as the velocity of a curve and the second derivative as the acceleration of a curve and be able to apply these definitions.
+* To understand the first derivative as the velocity of a curve and
+  the second derivative as the acceleration of a curve and be able to
+  apply these definitions.
 
 
 Notes
 -----
 
-This section includes a version of the Fréchet-Serret formulas for the
-derivatives of the tangent, normal, and binormal vectors to a curve.
-Do not cover them.  The major point of the week is to understand the
-velocity and acceleration vectors of a plane or space curve.
+This section includes a lot about the normal and binormal vector
+fields.  Do not cover them.  The major point of the week is to
+understand the velocity and acceleration vectors of a plane or space
+curve.
+
+.. _`Frenet-Serret formulas`: http://en.wikipedia.org/wiki/Frenet-Serret_formulas
 
 
 Lesson 10: Functions of Several Variables
@@ -314,19 +333,39 @@ Lesson 10: Functions of Several Variables
 Learning Objectives
 -------------------
 
-* To understand functions of several variables and be able to represent these functions using level sets.
+* To understand and be able to represent a function of two variables,
+  :latex:`$z = f(x, y)$`, graphically.
+
+* To understand and be able to use the trace (cross-section) of a
+  function.
+
+* To understand and be able to determine the domain of a function
+  :latex:`$z = f(x, y)$`.
+
+* To understand functions of several variables and be able to
+  represent these functions using level sets.
+
+Notes
+-----
+
+Try to keep in mind that your students are not all future engineers
+and physicists.  A growing number are concentrating in economics.  If
+you can, draw examples from that field as well, for instance
+Cobb-Douglas production functions or utility functions.
 
 Lesson 11: Limits and Continuity
-========================================
+================================
 
 :See Also: Stewart_, Section 11.2
 
 Learning Objectives
 -------------------
 
-* To understand and be able to apply the concept of a limit of a function of several variables.
+* To understand and be able to apply the concept of a limit of a
+  function of several variables.
 
-* To understand and be able to apply the definition of continuity for a function of several variables.
+* To understand and be able to apply the definition of continuity for
+  a function of several variables.
 
 Notes
 -----
@@ -355,7 +394,8 @@ Learning Objectives
   .. latex::
      f_{xy}(a, b) = f_{yx}(a, b).
 
-* To understand the idea of a partial differential equation, and to be able to verify solutions to partial differential equations.
+* To understand the idea of a partial differential equation, and to be
+  able to verify solutions to partial differential equations.
 
 
 Notes
@@ -369,7 +409,8 @@ Lesson 13: Tangent Planes and Linear Approximation
 Learning Objectives
 -------------------
 
-* To understand the concept of a tangent plane to a surface `$z = f(x, y)$` and to be able to compute the equation of tangent planes
+* To understand the concept of a tangent plane to a surface `$z = f(x,
+  y)$` and to be able to compute the equation of tangent planes
 
 * To understand and be able to find a linear approximation to a function `$z = f(x, y)$`.
 
@@ -387,10 +428,11 @@ Learning Objectives
 
    dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy
 
-To be able to use the differential to estimate maximum error.
+* To be able to use the differential to estimate maximum error.
 
 Notes
 -----
+
 
 
 Lesson 14: The Chain Rule
@@ -410,8 +452,9 @@ Notes
 -----
 
 There is a kind of rhythm to the multivariable chain rule that takes
-some practice.  I use tree diagrams to illustrate the various
-derivatives that should be taken.
+some practice.  I use tree diagrams (such as those in Figures 2–5 of
+this section) to illustrate the various derivatives that should be
+taken.
 
 Lesson 15: Directional Derivatives and the gradient vector
 ==========================================================
@@ -431,7 +474,10 @@ Learning Objectives
 Notes
 -----
 
-The midterm is this week.  The midterm should cover all sections up to 11.2.  (so no partial derivatives).  It's probably best to schedule it at the end of the week, so that you can do 11.6 and hopefully some in-class review at the beginning of the week.
+The midterm is this week.  The midterm should cover all sections up to
+11.2.  (so no partial derivatives).  It's probably best to schedule it
+at the end of the week, so that you can do 11.6 and hopefully some
+in-class review at the beginning of the week.
 
 Lesson 16: Maximum and Minimum Values
 =====================================
@@ -442,6 +488,26 @@ Learning Objectives
 -------------------
 
 *  Use the second derivative test to classify critical points of functions
+
+Notes
+-----
+
+When I teach this section, I remind students how we find maximum and
+minimum values of a function of one variable.  We find the critical
+points where the derivative is zero, and the second derivative tells
+us concavity.  A positive second derivative means a concave-up graph
+(looks like an upward-opening parabola), which means a local minimum.
+A negative second derivative means a concave-down graph (looks like a
+downward-opening parabola), which means a local maximum.
+
+In two variables, however, there's more than one second derivative,
+and there's more than one quadratic function.  What combination of the
+second derivatives distinguishes the graphs of `$z=x^2 + y^2$`,
+`$z=-x^2-y^2$`, and `$z=x^2-y^2$`, but classifies `$z=x^2-y^2$` and
+`$z=xy$` similarly?  Unless you complete the square and show them
+explicitly, they are probably not going to figure out that the
+determinant comes into play (and maybe not even then), but I think
+it's important that they see where the magic formulas come from.
 
 Lesson 17: Lagrange Multipliers
 ===============================
@@ -456,6 +522,19 @@ Learning Objectives
 *  Understand why Lagrangian Multipliers "work."
 
 *  Solve nonlinear systems of equations.
+
+Notes
+-----
+
+Economics is all about constrained optimization, so try to do an
+example from that field as well.
+
+Students are going to have major difficulties solving nonlinear
+systems of equations.  Their first strategy is to eliminate a variable
+by isolating it in one of the equations and substituting it back into
+the others.  But this can get kind of messy.  Show them how to take
+combinations of equations that simplify, for instance dividing
+equations when they both have a `$\lambda$` as a factor on one side.
 
 Spring Break
 ============
@@ -735,6 +814,12 @@ Lesson 24: Vector Fields
 Learning Objectives
 -------------------
 
+* To understand and be able to apply the definition of vector field in `${\mathbb R}^2$` and `${\mathbb R}^3$`.
+
+* To understand and be able to apply the definition of gradient field.
+
+* To understand and be able to apply the definition of conservative field.
+
 Notes
 -----
 
@@ -745,6 +830,38 @@ Lesson 25: Line Integrals
 
 Learning Objectives
 -------------------
+
+* To understand and be able to apply the definition of a line integral
+  of a function :latex:`$f$` along a curve :latex:`$C$`,
+
+  .. latex::
+
+     \int_C f(x, y) \, ds = \lim_{n \to \infty} \sum_{i = 1}^n f(x_i^*,
+     y_i^*) \Delta s_i.
+
+
+* To be able to compute a line integral of a function :latex:`$f$`
+  along a curve :latex:`$C$` using the formula
+
+  .. latex::
+
+     \int_C f(x, y) \, ds = \int_a^b f(x(t), y(t)) \sqrt{\left(
+     \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2} \, dt,
+
+  where :latex:`$C$` is parameterized by :latex:`$(x(t), y(t))$` with
+  :latex:`$a \leq t \leq b$`.  To be able to extend this computation
+  to curves in :latex:`${\mathbb R}^3$`.
+
+* To be able to compute the line integral over a vector field
+  :latex:`${\mathbf F}$` along a curve :latex:`$C$` parameterized
+  :latex:`$\mathbf{r}(t)$`,
+
+  .. latex::
+
+     \int_C {\mathbf F} \cdot d\mathbf{r} = \int_a^b {\mathbf F}(\mathbf{r}(t))
+     \cdot \mathbf{r}'(t) \, dt = \int_C P \, dx + Q \, dy + R \, dz,
+
+  where :latex:`${\mathbf F} = P \mathbf{i} + Q \mathbf{j} + R \mathbf{k}$`.
 
 Notes
 -----
@@ -757,6 +874,36 @@ Lesson 26: The Fundamental Theorem of Line Integrals
 Learning Objectives
 -------------------
 
+* If :latex:`$C$` is a smooth curve given by :latex:`$\mathbf{r}(t)$` for :latex:`$a \leq t \leq b$`,
+
+  .. latex::
+
+     \int_C \nabla f \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a)).
+
+  In particular, the line integral of a {\em conservative vector
+  field\/} depends only on the initial and terminal points of :latex:`$C$`.
+
+* The line integral :latex:`$\int_C {\mathbf F} \cdot d\mathbf{r}$` is path
+  independent in :latex:`$D$` if and only if :latex:`$\int_C {\mathbf F} \cdot
+  d\mathbf{r} = 0$` for every closed path in :latex:`$C$`.
+
+* If :latex:`${\mathbf F}$` is a continuous vector field on an open connected
+  region :latex:`$D$` and :latex:`$\int_C {\mathbf F} \cdot d\mathbf{r}$` is path
+  independent in :latex:`$D$`, :latex:`${\mathbf F}$` is a conservative vector field.
+
+* If :latex:`${\mathbf F}(x, y) = P(x, y) \, \mathbf{i} + Q(x, y) \,
+  \mathbf{j}$` is conservative,
+
+  .. latex::
+
+     \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}.
+ 
+* If :latex:`${\mathbf F}(x, y) = P(x, y) \, \mathbf{i} + Q(x, y) \,
+  \mathbf{j}$` is a vector field on an open *simply connected* region
+  :latex:`$D$` and :latex:`$\partial P / \partial y = \partial Q /
+  \partial x$`, then :latex:`${\mathbf F}$` is a conservative vector
+  field.
+
 Notes
 -----
 
@@ -768,7 +915,7 @@ Lesson 27: Green's Theorem
 Learning Objectives
 -------------------
 
-* To understand and be able to apply Green's Theorem: Let `$C$` be a
+* To understand and be able to apply *Green's Theorem*: Let `$C$` be a
   positively oriented, piecewise-smooth, simple closed curve in
   `${\mathbb R}^2$` and `$D$` be the region bounded by `$C$`.  If `$P$` and
   `$Q$` have continuous partial derivatives on an open region that
@@ -872,7 +1019,8 @@ Lesson 29: Parametric Surfaces and their Areas
 Learning Objectives
 -------------------
 
-* To understand and be able to apply the concept of a *parametric surface*.  A parametric surface may be defined by a vector equation,
+* To understand and be able to apply the concept of a *parametric
+  surface*.  A parametric surface may be defined by a vector equation,
 
   .. latex::
 
@@ -888,7 +1036,45 @@ Learning Objectives
 
 * To understand and be able to represent surfaces of revolutions parametrically.
 
+* To understand and be able to compute the surface area of a parameterized surface
 
+  .. latex::
+
+     \mathbf{r}(u, v) = x(u, v) \mathbf{i} + y(u, v) \mathbf{j} + z(u, v) \mathbf{k}
+
+  where :latex:`$(u, v)$` are in a domain :latex:`$D$`.
+
+  .. latex::
+
+     A(S) = \iint \limits_{D} |\mathbf{r}_u \times \mathbf{r}_v| \, dA,
+
+  where
+
+  .. latex::
+
+     \mathbf{r}_u = \frac{\partial x}{\partial u} \mathbf{i} +
+     \frac{\partial y}{\partial u} \mathbf{j} + \frac{\partial
+     z}{\partial u} \mathbf{k} \qquad \mathbf{r}_v = \frac{\partial
+     x}{\partial v} \mathbf{i} + \frac{\partial y}{\partial v}
+     \mathbf{j} + \frac{\partial z}{\partial v} \mathbf{k}
+
+* To understand and be able to compute the surface area of the graph
+  of a function :latex:`$z = f(x, y)$`,
+
+  .. latex::
+
+     A(S) = \iint \limits_{D} \sqrt{1 + \left( \frac{\partial
+     z}{\partial x} \right)^2 + \left( \frac{\partial z}{\partial y}
+     \right)^2} \, dA.
+
+* To understand and be able to compute the surface area of a surface
+  of revolution :latex:`$S$` obtained by rotating a curve :latex:`$y =
+  f(x)$`, :latex:`$a \leq x \leq b$`, about the :latex:`$x$`-axis,
+  where :latex:`$f(x) \geq 0$` and :latex:`$f'$` is continuous,
+
+  .. latex::
+
+     A(S) = 2 \pi \int_a^b f(x) \sqrt{1 + [f'(x)]^2} \, dx.
 
 Notes
 -----
@@ -920,7 +1106,11 @@ Learning Objectives
 
 * To understand and be able to apply the concept of an oriented surface.
 
-* To understand and be able to apply the definition of flux integral of a vector field across a surface `$S$`.  Let `${\mathbf F}$` be a continuous vector field on an oriented surface `$S$` with unit normal vector `${\mathbf n}$`.  The surface integral of `${\mathbf F}$` over `$S$` is
+* To understand and be able to apply the definition of flux integral
+  of a vector field across a surface `$S$`.  Let `${\mathbf F}$` be a
+  continuous vector field on an oriented surface `$S$` with unit
+  normal vector `${\mathbf n}$`.  The surface integral of `${\mathbf
+  F}$` over `$S$` is
 
   .. latex::
 
@@ -967,8 +1157,6 @@ Learning Objectives
      \int_C {\mathbf F} \cdot d \mathbf{r} = \iint \limits_S \mathrm{curl} {\mathbf
      F} \cdot d{\mathbf S}.
 
-
-
 Notes
 -----
 
@@ -988,10 +1176,21 @@ Learning Objectives
 
   .. latex::
 
-     \iint \limits_S  \mathbf{F} \cdot d\mathbf{S} = \iiint \limits_E \operatorname{div} \mathbf{F} \, dV.
+     \iint \limits_S \mathbf{F} \cdot d\mathbf{S} = \iiint \limits_E
+     \operatorname{div} \mathbf{F} \, dV.
 
 Notes
 -----
+
+At some point I like to point out that there's really only one
+Fundamental Theorem of Calculus (which we in the business know as
+Stokes's Theorem).  The one-variable FTC, the Fundamental Theorem of
+Line Integrals, Green, Gauss, and Stokes, are all identities which
+relate the integral of "some kind of derivative" (exact differential)
+over a set (manifold) to the integral of whatever it's the derivative
+of (the coboundary) over the boundary of that set (in the inherited
+orientation).  Once you understand that, there's really only one way
+to line up all these identities.
 
 Monday, May 4
 =============
@@ -1001,13 +1200,16 @@ MW and MWF classes should review for the final here.
 Tuesday, May 5
 ==============
 
-TR and TRF class will not meet this week, but on this "reading day" instructors should schedule a review session if possible.
+TR and TRF class will not meet this week, but on this "reading day"
+instructors should schedule a review session if possible.
 
 Final Exam
 ==========
 
-**The final exam dates and times are on the syllabus.** There will be many technical and logistical questions about the final.  Please check the
-departmental syllabus or with Prof. Leingang if you do not know the answer.
+**The final exam dates and times are on the syllabus.** There will be
+many technical and logistical questions about the final.  Please check
+the departmental syllabus or with Prof. Leingang if you do not know
+the answer.
 
 
 Details
