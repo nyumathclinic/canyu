@@ -5,6 +5,7 @@
 	  (item-to-bullet)
 	  (fix-em)
 	  (fix-display-math)
+	  (fix-inline-math)
 	  (fix-vector-abbreviations)
 	  ))
 
@@ -23,11 +24,18 @@
 		  "\n.. latex::\n\n   \\1\n"
 		  ))
 
+(defun fix-inline-math
+  ()
+  "convert inline math to the latex role"
+  (replace-regexp "\\([^`]\\)\\$\\([^$]\\)\\$"
+		  "\\1:latex:`$\\2$`"))
+
+
 (defun fix-vector-abbreviations
   ()
   "undo some of Tom's macros"
   (let ()
-    (replace-regexp "\\\\bf\\([ijk]\\)" "\\\\mathbf{\\1}")
+    (replace-regexp "\\\\bf\\([rijk]\\)" "\\\\mathbf{\\1}")
     (replace-regexp "\\\\v\\([rijkabcFS]\\)" "\\\\mathbf{\\1}")))
   
 
