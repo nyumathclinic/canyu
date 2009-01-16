@@ -15,7 +15,7 @@ coursenum=122
 # build/install configuration
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)/staff
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)/staff
-INDEXALIAS=instructor_info.html
+INDEXALIAS=lessons.html
 
 INSTALL=install -m644
 PDFLATEX=pdflatex
