@@ -1,44 +1,37 @@
-# Makefile for Math 121 docs
+# Makefile for Calculus docs
 # Matthew Leingang
-# $HeadURL: file:///Users/matthew/Library/svnroot/courses/1a/2008Spring/docs/hw/trunk/Makefile $
-# $Date: 2007-09-18 22:20:03 -0400 (Tue, 18 Sep 2007) $
-# $Revision: 95 $
+# $Id: Makefile 166 2009-01-16 03:42:04Z matthew $
+# $Date: 2009-01-15 22:42:04 -0500 (Thu, 15 Jan 2009) $
+# $Revision: 166 $
 
+# location
 TOPDIR=$(shell cd ../.. && pwd)
 LIBDIR=$(TOPDIR)/lib
-BINDIR=$(TOPDIR)/bin
-BUILDDIR=$(TOPDIR)/build
+include $(LIBDIR)/config.mk 
 
-include $(LIBDIR)/config.mk
+# directory and  string configuration
+coursename=Calculus I
 coursenum=121
 
+# build/install configuration
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
 
-INSTALL=install -m644
-PDFLATEX=pdflatex
-
-
-include $(LIBDIR)/tex.mk
-
 # Use txt files as source
-TXTSRC= syllabus.txt cal.txt hw.txt #$(shell ls *.txt)
-HTML+=$(TXTSRC:%.txt=%.html) 
+TXTSRC=hw.txt syllabus.txt cal.txt
+HTML=$(TXTSRC:%.txt=%.html)
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)
 TEXFILES=$(TXTSRC:%.txt=%.tex)
-ALLFILES=$(TEXFILES) $(PDF) $(HTML) $(HTML_SCREEN) 
+DIRTY+=$(TXTSRC:%.txt=%.html) $(TXTSRC:%.txt=%-screen.html) $(TXTSRC:%.txt=%.pdf) $(TXTSRC:%.txt=%.tex) $(TEXFILES:%.tex=%.dep) 
 
-DIRTY+= $(TRG:%.dvi=%.idv) $(TRG:%.dvi=%.4tc) $(TRG:%.dvi=%.4ct) $(TRG:%.dvi=%.tmp) $(TRG:%.dvi=%.lg) $(TRG:%.dvi=%.xref)   
-
-include $(LIBDIR)/rst.mk
-DIRTY+=$(TXTSRC:%.txt=%.html) $(TXTSRC:%.txt=%-screen.html) $(TXTSRC:%.txt=%.pdf) $(TXTSRC:%.txt=%.tex) $(TEXFILES:%tex=%.dep)
+ALLFILES=$(HTML) $(HTML_SCREEN) $(TEXFILES) $(PDF)
 
 all: $(ALLFILES)
-$(HTML_SCREEN) : contents.html
 
+include $(LIBDIR)/rst.mk
+include $(LIBDIR)/tex.mk
 include $(LIBDIR)/common.mk
 
 
-sections.html:
-	curl -e http://www.nyu.edu/registrar/listings/ -d "schoolFull=College+of+Arts+%26+Science&subjectFull=Math+%28V63.%29&term=Fall+2008&level=U&school=V&subject=V63.&crsName=&showCX=A" -o $@ http://www.nyu.edu/registrar/listings/results.html
+

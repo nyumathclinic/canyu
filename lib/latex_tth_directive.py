@@ -80,7 +80,11 @@ def latex_snippet_to_html(inputtex,prologue=''):
         (non-tempfile version). """
     tex=inputtex.replace('\\','\\\\').replace("'","'\\''")
     # implement \operatorname
-    preamble=r'\def\operatorname{\mathrm}'
+    preamble="""
+\def\operatorname{\mathrm}
+\def\iint{\int\!\!\!\int}
+\def\iiint{\int\!\!\!\int\!\!\!\int}
+"""
     cmd = "echo '%s\n%s' | tth -L -i -u2 -r 2>/dev/null" % (preamble, tex)
     try:
         html = os.popen(cmd).read().replace('\n','').strip()

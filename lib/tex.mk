@@ -8,6 +8,7 @@
 #	Timo Kiravuo
 
 LATEX	= latex
+PDFLATEX=pdflatex
 BIBTEX	= bibtex
 MAKEINDEX = makeindex
 XDVI	= xdvi -gamma 4
@@ -29,17 +30,17 @@ COPY = if test -r $(<:%.tex=%.toc); then cp $(<:%.tex=%.toc) $(<:%.tex=%.toc.bak
 RM = rm -f
 OUTDATED = echo "EPS-file is out-of-date!" && false
 
-# These are OK
+# MPL 2009-01-16  
+# Trying to reorganize and these are causing too many files to be unnecessarily made
+# Maybe if there are tex files which are not derived from txt files we can use $(filter) to make sure they get added.
 
-SRC	:= $(shell find . -type f -depth 1 -name \*.tex \
+#SRC	:= $(shell find . -type f -depth 1 -name \*.tex \
                    | xargs egrep -l '^[^%]*\\begin\{document\}')
-TRG	= $(SRC:%.tex=%.dvi)
-PSF	= $(SRC:%.tex=%.ps)
-PDF	= $(SRC:%.tex=%.pdf)
-HTML	= $(SRC:%.tex=%.html)
+#PSF	= $(SRC:%.tex=%.ps)
+#PDF	= $(SRC:%.tex=%.pdf)
 
 # MPL 2007-09-18: variable in case other files want to add
-DIRTY   = $(TRG) $(PSF) $(PDF) $(TRG:%.dvi=%.aux) $(TRG:%.dvi=%.bbl) $(TRG:%.dvi=%.blg) $(TRG:%.dvi=%.log) $(TRG:%.dvi=%.out) $(TRG:%.dvi=%.idx) $(TRG:%.dvi=%.ilg) $(TRG:%.dvi=%.ind) $(TRG:%.dvi=%.toc) $(TRG:%.dvi=%.d)
+DIRTY+= $(TRG) $(PSF) $(PDF) $(PDF:%.pdf=%.aux) $(PDF:%.pdf=%.bbl) $(PDF:%.pdf=%.blg) $(PDF:%.pdf=%.log) $(PDF:%.pdf=%.out) $(PDF:%.pdf=%.idx) $(PDF:%.pdf=%.ilg) $(PDF:%.pdf=%.ind) $(PDF:%.pdf=%.toc) $(PDF:%.pdf=%.d)
 
 
 define run-latex
@@ -84,7 +85,7 @@ define manconf
 endef
 
 
-all 	: $(TRG)
+# all 	: $(TRG)
 
 .PHONY	: all show clean ps pdf showps veryclean
 

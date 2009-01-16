@@ -1,13 +1,13 @@
 .. -*- mode: rst -*-
 .. meta:: 
    :description: Syllabus
-   :keywords: Calculus III, NYU, Math, Calculus
-   :DC.Identifier scheme=subversion: $Id: syllabus.txt 112 2009-01-13 15:02:53Z matthew $
+   :keywords: |coursename|, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2009-01-13
    :DCT.Created language=en-US: January 13, 2009
-   :DCT.Modified scheme=subversion: $Date: 2009-01-13 10:02:53 -0500 (Tue, 13 Jan 2009) $
+   :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
    :Schema.link: http://www.w3.org/1999/xhtml/link/
@@ -19,12 +19,14 @@
    :link.alternate scheme=rel media=print type=text/html: syllabus-print.html
    :link.alternate scheme=rel media=print type=application/x-latex: syllabus.tex
 
-Math 122: Calculus III
+.. include:: config.txt
+
+|regnum|: |coursename|
 !!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
-:Date: Spring 2009
-
+:Term: |term| |year|
+:Date: |date|
 
 Goals and Topics
 ================
@@ -250,3 +252,5 @@ Conclusion
 ----------
 
 We look forward to seeing you in Calculus II!
+
+.. |date| date:: %B %d, %Y

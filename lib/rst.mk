@@ -20,9 +20,7 @@ RST2LATEX_FLAGS=--use-latex-docinfo \
 RST2XML=$(TOPDIR)/bin/rst2xml.py
 RST2XML_FLAGS=
 
-
-
-XSLTPROC=xsltproc --stringparam term $(term) --stringparam year $(year)
+XSLTPROC=xsltproc
 XSLTPROC_SCREEN_FLAGS=--path "."
 
 # this is Mac OS X utility that runs on the command line and converts
@@ -60,10 +58,11 @@ sys.path.append('$(shell cd $(DUDIR) && pwd)/lib/python')" > $(RST2XML); \
 
 %.html: %.txt $(RST2HTML) $(LIBDIR)/rsthtmlfix.xsl
 	$(RST2HTML) $(RST2HTML_FLAGS) $< \
-	  | $(XSLTPROC) $(LIBDIR)/rsthtmlfix.xsl - > $@
+		| sed $(configsedflags) \
+		| $(XSLTPROC) $(XSLTPROC_FLAGS) $(LIBDIR)/rsthtmlfix.xsl - > $@
 
 %-screen.html: %.html $(LIBDIR)/htmlscreen.xsl 
-	$(XSLTPROC) $(XSLTPROC_SCREEN_FLAGS) $(LIBDIR)/htmlscreen.xsl $< > $@
+	$(XSLTPROC) $(XSLTPROC_FLAGS) $(XSLTPROC_SCREEN_FLAGS) $(LIBDIR)/htmlscreen.xsl $< > $@
 
 %.tex: %.txt $(RST2LATEX)
 	$(RST2LATEX) $(RST2LATEX_FLAGS) $< $@

@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8; fill-column: 90 -*-
 .. meta:: 
-   :description: Lesson Outline for Math 122, Fall 2008
-   :keywords: Math 12c, NYU, Math, Calculus II
+   :description: Homework Assignments for |coursename|, |term| |year|
+   :keywords: |regnum|, NYU, Math, |coursename|, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -24,24 +24,30 @@
 
 .. default-role:: graded
 
-Homework Assignments for Math 122, Fall 2008
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.. include:: config.txt
+
+
+
+
+Homework Assignments for |coursename|, |term| |year|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .. :Author: Matthew Leingang <leingang@cims.nyu.edu>
-   :Date: |date|
+
+:Date: |date|
 
 List of Homework Assignments
 ----------------------------
 
-This is a week-by-week calendar of homework assigned in Calculus II.
+This is a week-by-week calendar of homework assigned in |coursename|.
 
 Dates listed are Mondays.  If you are in a TR section, your assignments are due the day
 *following* the day listed.
 
 Practice problems are neither collected nor graded, but they do cover material that may be
 tested.  Answers to these and all odd-numbered problems are in the back of the textbook.
-Each week three of the problems listed in the "Graded" column (indicated `like this`) will
-be chosen *at random* and graded.
+Each week three of the problems listed in the "Graded" column will be chosen *at random*
+and graded.
 
 +--------+------------+----------+--------------------+----------------------------+
 | Number | Due        | Book     | Practice           | Graded                     |

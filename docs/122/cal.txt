@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Calendar for Math 122, Spring 2009
-   :keywords: Math 121, NYU, Math, Calculus
+   :description: Calendar for |coursename|, |term| |year|
+   :keywords: |regnum|, NYU, Math, |coursename|, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -17,15 +17,17 @@
    :short-title: Calendar
    :link.alternate scheme=rel media=print type=application/pdf: cal.pdf
 
-.. |date| date::
+.. |date| date:: %B %d, %Y
 
-Calendar for Math 122, Spring 2009
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.. include:: config.txt
+
+Calendar for |coursename|, |term| |year|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date:   |date|
 
-This is a week-by-week calendar of topics covered in Calculus II.
+This is a week-by-week calendar of topics covered in |coursename|.
 
 .. More details, including specific learning objectives and the amount
    of time to spend on each section, can be found in the lesson guide.
