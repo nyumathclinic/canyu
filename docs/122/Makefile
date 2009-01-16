@@ -11,7 +11,7 @@ include $(LIBDIR)/config.mk
 
 # directory and  string configuration
 coursename=Calculus II
-coursenum=123
+coursenum=122
 
 # build/install configuration
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
