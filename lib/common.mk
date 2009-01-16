@@ -17,6 +17,7 @@ build-html: all
 		echo "Please commit first"; \
 	else \
 		$(INSTALL) -d -m755 $(BUILDDIR_HTML); \
+		$(RM) $(BUILDDIR_HTML)/*;\
 		for file in $(HTML); do \
             		$(INSTALL) `basename $$file .html`-screen.html $(BUILDDIR_HTML)/$$file;\
             		$(INSTALL) $$file $(BUILDDIR_HTML)/`basename $$file .html`-print.html; \
