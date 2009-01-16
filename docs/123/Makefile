@@ -18,7 +18,7 @@ BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
 
 # Use txt files as source
-TXTSRC=syllabus.txt cal.txt
+TXTSRC=syllabus.txt cal.txt hw.txt
 HTML=$(TXTSRC:%.txt=%.html)
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)

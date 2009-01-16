@@ -22,7 +22,7 @@
  
 * Calendar_
 
-.. * Homework_
+* Homework_
 
 * `Staff only`_
 
