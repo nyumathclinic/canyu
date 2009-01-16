@@ -2,11 +2,11 @@
 .. meta:: 
    :description: Homework Assignments for |coursename|, |term| |year|
    :keywords: |regnum|, NYU, Math, |coursename|, Calculus
-   :DC.Identifier scheme=subversion: $Id: hw.txt 167 2009-01-16 17:25:41Z matthew $
+   :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2009-01-16
-   :DCT.Modified scheme=subversion: $Date: 2009-01-16 12:25:41 -0500 (Fri, 16 Jan 2009) $
+   :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
    :Schema.link: http://www.w3.org/1999/xhtml/link/
