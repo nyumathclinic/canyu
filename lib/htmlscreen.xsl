@@ -154,8 +154,9 @@
     <div id="nav">
       <ul>
         <li><a href="/">Math Department Home</a></li>
-	<li><a href="/courses/Calculus/2008/Fall/121/">Calculus I</a></li>
-	<li><a href="/courses/Calculus/2008/Fall/122/">Calculus II</a></li>
+	<li><a><xsl:attribute name="href">/courses/Calculus/<xsl:value-of select="$year"/>/<xsl:value-of select="$term" />/121/</xsl:attribute>Calculus I</a></li>
+	<li><a><xsl:attribute name="href">/courses/Calculus/<xsl:value-of select="$year"/>/<xsl:value-of select="$term" />/122/</xsl:attribute>Calculus II</a></li>
+	<li><a><xsl:attribute name="href">/courses/Calculus/<xsl:value-of select="$year"/>/<xsl:value-of select="$term" />/123/</xsl:attribute>Calculus III</a></li>
         <li><a href="/courses/ug_course_descriptions.html">Undergraduate Courses</a></li>
         <li><a href="/degree/undergrad/">Undergraduate Program</a></li>
 	<li><a href="/degree/undergrad/calculus.html">Placement</a></li>
@@ -244,7 +245,7 @@
        <xsl:if test="document('contents.html') or //html:div[@id='contents']">
 	 <div id="secondary">
 	   <h1 class="bar">Contents</h1>
-	   <xsl:copy-of select="document('contents.html')/html:html/html:body//html:ul" />
+	   <xsl:copy-of select="document('contents.html')/html:html/html:body/html:div[@class='document']/html:ul" />
 	   <xsl:apply-templates select="//html:div[@id='contents']/html:ul" />
 	 </div>
        </xsl:if>

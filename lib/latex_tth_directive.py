@@ -7,6 +7,7 @@ import shutil
 import sha
 import tempfile
 import subprocess
+import re
 
 from docutils import nodes
 from docutils.parsers.rst.directives import register_directive, flag
@@ -78,9 +79,18 @@ def latex_snippet_to_html(inputtex,prologue=''):
     """ Convert a latex snippet into a snippet of HTML 
         (non-tempfile version). """
     tex=inputtex.replace('\\','\\\\').replace("'","'\\''")
-    cmd = "echo '%s' | tth -L -i -u2 -r 2>1" % tex
+    # implement \operatorname
+    preamble="""
+\def\operatorname{\mathrm}
+\def\iint{\int\!\!\!\int}
+\def\iiint{\int\!\!\!\int\!\!\!\int}
+"""
+    cmd = "echo '%s\n%s' | tth -L -i -u2 -r 2>/dev/null" % (preamble, tex)
     try:
         html = os.popen(cmd).read().replace('\n','').strip()
+        # convert blackboard bold R to unicode
+        # FIXME - could accept more strings to blackboard-bold
+        html = re.sub(r'\\mathbb\s*<i>R</i>',r'&#x211D;',html)
     except:
         print "something's wrong: %s" % cmd
         raise    
