@@ -15,7 +15,7 @@ coursenum=121
 
 # build/install configuration
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
-INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
+INSTALLDIR_HTML=/home/leingang/public_html/$(year)/$(term)/$(coursenum)
 
 # Use txt files as source
 TXTSRC=hw.txt syllabus.txt cal.txt
@@ -32,6 +32,7 @@ all: $(ALLFILES)
 include $(LIBDIR)/rst.mk
 include $(LIBDIR)/tex.mk
 include $(LIBDIR)/common.mk
+
 
 
 

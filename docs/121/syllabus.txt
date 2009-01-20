@@ -124,11 +124,19 @@ and the `tutoring web page`__.
 
 __ http://math.nyu.edu/degree/undergrad/tutor_schedule.html
 
+ALEKS
+-----
+
+We will be using an online diagnostic and learning tool known as ALEKS
+in the early part of the semester.  The goal is to help you brush up
+on the precalculus skills which will be important for doing problems
+in calculus.  You will receive instructions about registering for
+ALEKS through email and Blackboard.  The initial ALEKS assessment will be due January 29 and the program must be complete by February 28.  
+
 Exams 
 ------
  
-There will be one midterm exam, held in class on October 15 (for MW
-sections) and 16 (for TR sections).
+There will be one midterm exam, held in class on March 5.
 
 **The final exam for all sections (including evening sections) will be
 Friday, May 8, from 2:00-3:50pm. Please make a note of it and plan
@@ -203,11 +211,13 @@ Your course score will be determined as the following weighted average:
 +--------------+--------+
 | Item         | Weight |
 +==============+========+
-| Midterm      | 25%    |
+| Midterm      | 20%    |
++--------------+--------+
+| ALEKS        | 10%    |
 +--------------+--------+
 | Homework     | 10%    |
 +--------------+--------+
-| Quizzes      | 25%    |
+| Quizzes      | 20%    |
 +--------------+--------+
 | Final        | 40%    |
 +--------------+--------+
@@ -232,9 +242,7 @@ values as cutoffs:
 +---------+--------------+
 | 75      | C+           |
 +---------+--------------+
-| 70      | C            |
-+---------+--------------+
-| 65      | C-           |
+| 65      | C            |
 +---------+--------------+
 | 50      | D            |
 +---------+--------------+
@@ -263,7 +271,7 @@ still responsible for doing the correct problems.
 Calendar 
 --------
 
-The day-by-day `calendar`_ is also available.
+The day-by-day `calendar`_ will be published on Blackboard.
 
 .. _calendar: cal.html
  
