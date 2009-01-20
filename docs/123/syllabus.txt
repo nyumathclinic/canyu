@@ -1,12 +1,12 @@
 .. -*- mode: rst -*-
 .. meta:: 
    :description: Syllabus
-   :keywords: Calculus I, NYU, Math, Calculus
+   :keywords: |coursename|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2009-01-12
-   :DCT.Created lang=en-US: January 12, 2009
+   :DCT.Created scheme=W3CDTF: 2009-01-13
+   :DCT.Created language=en-US: January 13, 2009
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
@@ -19,32 +19,20 @@
    :link.alternate scheme=rel media=print type=text/html: syllabus-print.html
    :link.alternate scheme=rel media=print type=application/x-latex: syllabus.tex
 
-V63.0121: Calculus I
-!!!!!!!!!!!!!!!!!!!!
+.. include:: config.txt
+
+|regnum|: |coursename|
+!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
-:Date: Spring 2009
+:Term: |term| |year|
+:Date: |date|
 
+Goals and Topics
+================
 
-Goals 
-=====
+Welcome to Calc III!  In this course we will take the concepts of single-variable calculus (Calc I and II) and look at their generalizations to functions of two or three variables.  
 
-Welcome to Calc I!  In this course, we will study the foundations of
-calculus, the study of functions and their rates of change.  We want
-you to learn how to model situations in order to solve problems.  If
-you have already taken calculus before, we want you to gain an even
-deeper understanding of this fascinating subject.
-
-Topics 
-======
-
-The derivative measures the instantaneous rate of change of a
-function.  The definite integral measures the total accumulation of a
-function over an interval.  These two ideas form the basic for nearly
-all mathematical formulas in science.  The rules by which we can
-compute the derivative (respectively, the integral) of any function
-are called a calculus.  The Fundamental Theorem of Calculus links the
-two processes of differentiation and integration in a beautiful way.
 
 Course Details 
 ==============
@@ -53,21 +41,11 @@ Course Details
 Class Meetings 
 ---------------
 
-Courses meet in one of two varieties.
-
-* One variety (sections 001–009 and 15) meets MW or TR for 110 minutes each
-  class period.  These sections are further arranged by meeting time
-  into teams of three sections.  Each team will collaborate on
-  teaching practices and will share a grader.
-
-* The other variety (section 010) meets MW for 75 minutes each class,
-  along with a 50 minute recitation section (011–014).
-  You must register for lecture and recitation separately.
-
-A list of sections, their meeting times and locations, and their
-instructors can be found on through the Registrar's `Class Schedule
-Search`__.  If you enter "Calculus I" in the course name search field,
-the current term's listings will automatically come up.
+Courses meet in sections.  A list of sections, their meeting times and
+locations, and their instructors can be found on through the
+Registrar's `Class Schedule Search`__.  If you enter "Calculus III" in
+the course name search field, the current term's listings will
+automatically come up.
 
 __ http://www.nyu.edu/registrar/listings/
 
@@ -119,20 +97,28 @@ However, each student must turn in his or her *own* write-up of the
 solutions, with an acknowledgment of collaborators.  
 
 There is free math tutoring sponsored by the math department, meeting
-in room 620 of Warren Weaver Hall.  Check the signs posted throughout WWH
-and the `tutoring web page`__.
-
-__ http://math.nyu.edu/degree/undergrad/tutor_schedule.html
+in room 620 of Warren Weaver Hall.  The times are to be determined by
+the schedules of the tutors.  Check the signs posted throughout WWH.
 
 Exams 
 ------
  
-There will be one midterm exam, held in class on October 15 (for MW
-sections) and 16 (for TR sections).
+There will be one midterm exam, held in class, during the seventh week
+of the term (March 2–March 6).
 
-**The final exam for all sections (including evening sections) will be
-Friday, May 8, from 2:00-3:50pm. Please make a note of it and plan
-your travel schedule accordingly.**
+**Final exams are already scheduled.**
+
+.. csv-table:: 
+   :header: Section,Class Days,Class Time,Class Location,Final Date,Final Time
+
+   1,MWF,09:30am–10:45am,SILV 512,5/6/09,8:00am–9:50am
+   2,MW,02:00pm–03:50pm,48CS 113,5/11/09,10:00am–11:50am
+   3,TRF,09:30am–10:45am,GODD A,5/12/09,8:00am–9:50am
+   4,TR,06:20pm–08:10pm,SILV 501,5/7/09,8:00pm–9:50pm
+   5,MWF,09:30am–10:45am,SILV 701,5/6/09,8:00am–9:50am
+
+**Please make a note of your final exam time and plan your travel
+schedule accordingly.**
 
 Exams will contain a mixture of computational and conceptual problems.
 Some of them will resemble homework problems, while some will be brand
@@ -179,21 +165,16 @@ as possible.
 Prerequisites
 -------------
  
-Students who wish to enroll in Calculus I must meet *one* of the
+Students who wish to enroll in Calculus II must meet *one* of the
 following prerequisites:
 
-    * An SAT Math score of 750 or higher.
-    * An ACT/ACTE Math score of 34 or higher.
-    * A score of 4 or higher on the Advanced Placement (AP)
-      Calculus AB test
-    * A score of 3 or higher on the Advanced Placement (AP)
-      Calculus BC test
-    * Completion of Algebra and Calculus (V63.0009) with a grade of C or higher.
-    * Our department's Calculus I placement test.
+    * Calculus II (V63.0121) with a C or higher.
+    * Our department's Calculus III placement test.
 
 See the math deparment's `placement`__ web page for more information.
 
 __ http://math.nyu.edu/degree/undergrad/calculus.html
+ 
 
 Grades
 ------
@@ -270,4 +251,6 @@ The day-by-day `calendar`_ is also available.
 Conclusion 
 ----------
 
-We look forward to seeing you in Calculus I!
+We look forward to seeing you in Calculus II!
+
+.. |date| date:: %B %d, %Y

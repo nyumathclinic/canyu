@@ -1,11 +1,12 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Calendar for Math 122, Fall 2008
-   :keywords: Math 121, NYU, Math, Calculus
+   :description: Calendar for |coursename|, |term| |year|
+   :keywords: |regnum|, NYU, Math, |coursename|, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2008-07-15
+   :DCT.Created scheme=W3CDTF: 2009-01-13
+   :DCT.Created language=en-US: January 13, 2009
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
@@ -16,25 +17,30 @@
    :short-title: Calendar
    :link.alternate scheme=rel media=print type=application/pdf: cal.pdf
 
-.. |date| date::
+.. |date| date:: %B %d, %Y
 
-Calendar for Math 122, Fall 2008
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.. include:: config.txt
+
+Calendar for |coursename|, |term| |year|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date:   |date|
 
-This is a week-by-week calendar of topics covered in Calculus II.  More details, including
-specific learning objectives and the amount of time to spend on each section, can be found
-in the lesson guide.  As a rule of thumb, the topics are generally to be spread out
-equally during the week, so if there are two topics, each one takes one class period,
-while if there are three, each should take two-thirds of a class period.
+This is a week-by-week calendar of topics covered in |coursename|.
+
+.. More details, including specific learning objectives and the amount
+   of time to spend on each section, can be found in the lesson guide.
+   As a rule of thumb, the topics are generally to be spread out
+   equally during the week, so if there are two topics, each one takes
+   one class period, while if there are three, each should take
+   two-thirds of a class period.
 
 
 +----+-------------+---------+---------------------------------------------+
 |Week| Dates       | Section | Topics                                      |
 +====+=============+=========+=============================================+   
-| 1  | 9/2-9/5     | 5.1     | Areas and Distances                         |
+| 1  | 1/20–1/24   | 5.1     | Areas and Distances                         |
 |    |             +---------+---------------------------------------------+
 |    |             | 5.2     | The definite integral                       |
 |    |             +---------+---------------------------------------------+
@@ -42,57 +48,64 @@ while if there are three, each should take two-thirds of a class period.
 |    |             +---------+---------------------------------------------+
 |    |             | 5.5     | The Substitution Rule                       |
 +----+-------------+---------+---------------------------------------------+
-| 2  | 9/8-9/12    | 6.1     | Integration by parts                        |
+| 2  | 1/27–1/31   | 6.1     | Integration by parts                        |
 |    |             +---------+---------------------------------------------+
 |    |             | 6.2     | Trigonometric Integrals and Substitution    |
 +----+-------------+---------+---------------------------------------------+
-| 3  | 9/15-9/19   | 6.3     | Integration by Partial Fraction             |
+| 3  | 2/2–2/6     | 6.3     | Integration by Partial Fraction             |
 |    |             |         | Decomposition                               |
 |    |             +---------+---------------------------------------------+
 |    |             | 6.4     | Integration with tables and                 |
 |    |             |         | Computer Algebra Systems                    |
 +----+-------------+---------+---------------------------------------------+
-| 4  | 9/22-9/26   | 6.5     | Approximate Integration                     |
+| 4  | 2/9–2/13    | 6.5     | Approximate Integration                     |
 |    |             +---------+---------------------------------------------+
 |    |             | 6.6     | Improper Integrals                          |
 +----+-------------+---------+---------------------------------------------+
-| 5  | 9/29-10/3   | 7.1     | Areas between Curves                        |
+| 5  | 2/16–2/20   | 7.1     | Areas between Curves                        |
 |    |             +---------+---------------------------------------------+
 |    |             | 7.2     | Volumes                                     |
-|    |             +---------+---------------------------------------------+
-|    |             | 7.3     | Volumes by Cylindrical Shells               |
 +----+-------------+---------+---------------------------------------------+
-| 6  | 10/06-10/10 | 7.4     | Arc length                                  |
+| 6  | 2/23–2/27   | 7.3     | Volumes by Cylindrical Shells               |
+|    |             +---------+---------------------------------------------+
+|    |             | 7.4     | Arc length                                  |
 |    |             +---------+---------------------------------------------+
 |    |             | 7.5     | Applications of Integration                 |
 +----+-------------+---------+---------------------------------------------+
-| 7  | 10/15-10/17 |           Midterm                                     |
+| 7  | 3/2–3/6     | 7.5     | Applications of Integration                 |
+|    |             +---------+---------------------------------------------+
+|    |             |           Midterm                                     |
 +----+-------------+---------+---------------------------------------------+
-| 8  | 10/20-10/24 | 7.6     | Differential Equations                      |
+| 8  | 3/9–3/13    | 7.6     | Differential Equations                      |
 +----+-------------+---------+---------------------------------------------+
-| 9  | 10/27-10/31 | 8.1     | Sequences                                   |
+| SB | 3/16–3/20   | **Spring Break**                                      |
++----+-------------+---------+---------------------------------------------+
+| 9  | 3/23–3/27   | 8.1     | Sequences                                   |
 |    |             +---------+---------------------------------------------+
 |    |             | 8.2     | Series                                      |
 +----+-------------+---------+---------------------------------------------+
-| 10 | 11/3-11/7   | 8.3     | The integral and comparison tests           |
+| 10 | 3/30–4/3    | 8.3     | The integral and comparison tests           |
 |    |             +---------+---------------------------------------------+
 |    |             | 8.4     | Other convergence tests                     |
 +----+-------------+---------+---------------------------------------------+
-| 11 | 11/10-11/14 | 8.5     | Power Series                                |
+| 11 | 4/6–4/10    | 8.5     | Power Series                                |
 |    |             +---------+---------------------------------------------+
 |    |             | 8.6     | Representing Functions as Power Series      |
 +----+-------------+---------+---------------------------------------------+
-| 12 | 11/17-11/21 | 8.7     | Taylor and Maclaurin series                 |
+| 12 | 4/13–4/17   | 8.7     | Taylor and Maclaurin series                 |
 |    |             +---------+---------------------------------------------+
 |    |             | 8.8     | Applications of Taylor Polynomials          |
 +----+-------------+---------+---------------------------------------------+
-| 13 | 11/24-11/26 | 9.1     | Parametric Curves                           |
+| 13 | 4/20–4/24   | 9.1     | Parametric Curves                           |
 |    |             +---------+---------------------------------------------+
 |    |             | 9.2     | Calculus with parametric curves             |
 +----+-------------+---------+---------------------------------------------+
-| 14 | 12/1-12/5   | 9.3     | Polar Coordinates                           |
+| 14 | 4/27–4/31   | 9.3     | Polar Coordinates                           |
 |    |             +---------+---------------------------------------------+
 |    |             | 9.4     | Areas and lengths in Polar Coordinates      |
 +----+-------------+---------+---------------------------------------------+
-| 15 | 12/8-12/12  | 9.5     | Conic Sections in Polar Coordinates         |
+| 15 | 5/4         | Catch up and Review (MW only)                         |
 +----+-------------+---------+---------------------------------------------+
+| F  | 5/5         | **Final Exam: 2:00-3:50pm**                           |
++----+-------------+---------+---------------------------------------------+
+

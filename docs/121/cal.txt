@@ -1,11 +1,12 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Calendar for Math 121, Fall 2008
+   :description: Calendar for Math 121, Spring 2009
    :keywords: Math 121, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2008-07-15
+   :DCT.Created scheme=W3CDTF: 2009-01-12
+   :DCT.Created language=en-US: January 12, 2009
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
@@ -20,8 +21,8 @@
 
 .. |date| date::
 
-Calendar for Math 121, Fall 2008
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Calendar for Calculus I, Spring 2009
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date:   |date|
@@ -38,72 +39,75 @@ This is a week-by-week calendar of topics covered in Calculus I.
 +----+-------------+---------+---------------------------------------------+
 |Week| Dates       | Section | Topics                                      |
 +====+=============+=========+=============================================+
-| 1  | 9/2–9/5     | 1.1     | Functions and their Representations         |
+| 1  | 1/20-1/23   | 1.1     | Functions and their Representations         |
 |    |             +---------+---------------------------------------------+
 |    |             | 1.2     | A catalog of essential functions            |
 +----+-------------+---------+---------------------------------------------+
-| 2  | 9/8–9/12    | 1.3     | The limit of a function                     |
+| 2  | 1/26-1/30   | 1.3     | The limit of a function                     |
 |    |             +---------+---------------------------------------------+
 |    |             | 1.4     | Calculating Limits                          |
 +----+-------------+---------+---------------------------------------------+
-| 3  | 9/15–9/19   | 1.5     | Continuity                                  |
+| 3  | 2/2-2/6     | 1.5     | Continuity                                  |
 |    |             +---------+---------------------------------------------+
 |    |             | 1.6     | Limits involving Infinity                   |
 +----+-------------+---------+---------------------------------------------+
-| 4  | 9/22–9/26   | 2.1     | Derivatives and rates of change             |
+| 4  | 2/9-2/13    | 2.1     | Derivatives and rates of change             |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.2     | The derivative as a function                |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.3     | Basic differentiation rules                 |
 +----+-------------+---------+---------------------------------------------+
-| 5  | 9/29–10/3   | 2.4     | The product and quotient rules              |
+| 5  | 2/16-2/20   | 2.4     | The product and quotient rules              |
 |    |             +---------+---------------------------------------------+
-|    |             | 2.5     | The chain rule                              |
+|    |             | 2.5     | The chain rule (TR) [#]_                    |
++----+-------------+---------+---------------------------------------------+
+| 6  | 2/23-2/27   | 2.5     | The chain rule (MW)                         |
 |    |             +---------+---------------------------------------------+
 |    |             | 2.6     | Implicit differentiation                    |
-+----+-------------+---------+---------------------------------------------+
-| 6  | 10/6–10/10  | 2.8     | Linear approximations and differentials     |
 |    |             +---------+---------------------------------------------+
-|    |             | 3.1     | Exponential functions                       |
+|    |             | 2.8     | Linear approximations and differentials (TR)|
++----+-------------+---------+---------------------------------------------+
+| 7  | 3/2-3/5     | 2.8     | Linear approximations and differentials (MW)|
+|    |             +---------+---------------------------------------------+
+|    |             | 3.1     | Exponential functions  (TR)                 |
+|    |             +---------+---------------------------------------------+
+|    |             |           Midterm                                     |
++----+-------------+---------+---------------------------------------------+
+| 8  | 3/9-3/13    | 3.1     | Exponential functions  (MW)                 |
 |    |             +---------+---------------------------------------------+
 |    |             | 3.2     | Inverse functions and logarithms            |
-+----+-------------+---------+---------------------------------------------+
-| 7  | 10/15–10/17 |           Midterm                                     |
-+----+-------------+---------+---------------------------------------------+
-| 8  | 10/20–10/24 | 3.3     | Derivatives of Logarithmic and Exponential  |
-|    |             |         | Functions                                   |
 |    |             +---------+---------------------------------------------+
-|    |             | 3.4     | Exponential growth and decay                |
+|    |             | 3.3     | Derivatives of Logarithmic and Exponential  |
+|    |             |         | Functions                                   |
 |    |             +---------+---------------------------------------------+
 |    |             | 3.5     | Inverse trigonometric functions             |
 +----+-------------+---------+---------------------------------------------+
-| 9  | 10/27–10/31 | 3.7     | Indeterminate forms and L'Hôpital's Rule    |
-|    |             +---------+---------------------------------------------+
-|    |             | 4.1     | Maximum and minimum values                  |
+| SB | 3/16-3/20   |  **Spring Break (no classes)**                        |
 +----+-------------+---------+---------------------------------------------+
-| 10 | 11/3–11/7   | 4.2     | The Mean Value Theorem                      |
+|  9 | 3/23-3/27   | 4.1     | Maximum and Minimum Values                  |
+|    |             +---------+---------------------------------------------+
+|    |             | 4.2     | The Mean Value Theorem                      |
 |    |             +---------+---------------------------------------------+
 |    |             | 4.3     | Derivatives and the shapes of curves        |
-|    |             +---------+---------------------------------------------+
-|    |             | 4.4     | Curve sketching                             |
 +----+-------------+---------+---------------------------------------------+
-| 11 | 11/10–11/14 | 4.5     | Optimization problems                       |
-|    |             +---------+---------------------------------------------+
-|    |             | 4.6     | Newton's Method                             |
-|    |             +---------+---------------------------------------------+
-|    |             | 4.7     | Antiderivatives                             |
+| 10 | 3/30-4/3    | 4.4     | Curve sketching                             |
 +----+-------------+---------+---------------------------------------------+
-| 12 | 11/17–11/21 | 5.1     | Areas and distances                         |
+| 11 | 4/6-4/10    | 4.5     | Optimization problems                       |
++----+-------------+---------+---------------------------------------------+
+| 12 | 4/13-4/17   | 5.1     | Areas and distances                         |
 |    |             +---------+---------------------------------------------+
 |    |             | 5.2     | The definite integral                       |
++----+-------------+---------+---------------------------------------------+
+| 13 | 4/20-4/24   | 5.3     | Evaluating definite integrals               |
 |    |             +---------+---------------------------------------------+
-|    |             | 5.3     | Evaluating definite integrals               |
+|    |             | 5.4     | The Fundamental Theorem of Calculus         |
 +----+-------------+---------+---------------------------------------------+
-| 13 | 11/24–11/26 | 5.4     | The Fundamental Theorem of Calculus         |
+| 14 | 4/27-5/1    | 5.5     | The Substitution Rule                       |
 +----+-------------+---------+---------------------------------------------+
-| 14 | 12/1–12/5   | 5.5     | The Substitution Rule                       |
-|    |             +---------+---------------------------------------------+
-|    |             | 6.1     | Integration by Parts                        |
+| 15 | 5/4         | Catch up and Review (MW only)                         |
 +----+-------------+---------+---------------------------------------------+
-| 15 | 12/8–12/12  | 6.5     | Approximate Integration                     |
+| F  | 5/5         | **Final Exam: 2:00-3:50pm**                           |
 +----+-------------+---------+---------------------------------------------+
+
+.. [#] No classes meet on February 16 (Presidents' Day).  So the MW
+       and TR schedules are out of sync for a few weeks.

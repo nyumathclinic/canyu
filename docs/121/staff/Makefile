@@ -1,11 +1,10 @@
-# Makefile for Calculus docs
+# Makefile for Math 121 docs
 # Matthew Leingang
-# $Id: Makefile 166 2009-01-16 03:42:04Z matthew $
-# $Date: 2009-01-15 22:42:04 -0500 (Thu, 15 Jan 2009) $
-# $Revision: 166 $
+# $HeadURL: file:///Users/matthew/Library/svnroot/courses/1a/2008Spring/docs/hw/trunk/Makefile $
+# $Date: 2007-09-18 22:20:03 -0400 (Tue, 18 Sep 2007) $
+# $Revision: 95 $
 
-# location
-TOPDIR=$(shell cd ../.. && pwd)
+TOPDIR=$(shell cd ../../.. && pwd)
 LIBDIR=$(TOPDIR)/lib
 include $(LIBDIR)/config.mk 
 
@@ -14,11 +13,18 @@ coursename=Calculus I
 coursenum=121
 
 # build/install configuration
-BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
-INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
+BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)/staff
+INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)/staff
+INDEXALIAS=instructor_info.html
+
+INSTALL=install -m644
+PDFLATEX=pdflatex
+
+INSTALL=install -m644
+PDFLATEX=pdflatex
 
 # Use txt files as source
-TXTSRC=hw.txt syllabus.txt cal.txt
+TXTSRC= lessons.txt instructor_info.txt #$(shell ls *.txt)
 HTML=$(TXTSRC:%.txt=%.html)
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
 PDF=$(TXTSRC:%.txt=%.pdf)
@@ -32,6 +38,3 @@ all: $(ALLFILES)
 include $(LIBDIR)/rst.mk
 include $(LIBDIR)/tex.mk
 include $(LIBDIR)/common.mk
-
-
-
