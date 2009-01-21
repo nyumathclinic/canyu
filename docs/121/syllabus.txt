@@ -1,7 +1,7 @@
 .. -*- mode: rst -*-
 .. meta:: 
    :description: Syllabus
-   :keywords: Calculus I, NYU, Math, Calculus
+   :keywords: |coursename|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -19,12 +19,14 @@
    :link.alternate scheme=rel media=print type=text/html: syllabus-print.html
    :link.alternate scheme=rel media=print type=application/x-latex: syllabus.tex
 
-V63.0121: Calculus I
-!!!!!!!!!!!!!!!!!!!!
+.. include:: config.txt
+
+|regnum|: |coursename|
+!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
-:Date: Spring 2009
-
+:Term: |term| |year|
+:Date: |date|
 
 Goals 
 =====
@@ -127,8 +129,8 @@ __ http://math.nyu.edu/degree/undergrad/tutor_schedule.html
 Exams 
 ------
  
-There will be one midterm exam, held in class on October 15 (for MW
-sections) and 16 (for TR sections).
+There will be one midterm exam, held in class on March 4 (for MW
+sections) or 5 (for TR sections).
 
 **The final exam for all sections (including evening sections) will be
 Friday, May 8, from 2:00-3:50pm. Please make a note of it and plan
@@ -271,3 +273,5 @@ Conclusion
 ----------
 
 We look forward to seeing you in Calculus I!
+
+.. |date| date:: %B %d, %Y
