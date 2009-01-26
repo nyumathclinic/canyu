@@ -44,7 +44,7 @@ day *following* the day listed.
 
 Practice problems are neither collected nor graded, but they do cover material that may be
 tested.  Answers to these and all odd-numbered problems are in the back of the textbook.
-Each week three of the problems listed in the "Graded" column will be chosen *at random*
+Each week *four* of the problems listed in the "Graded" column will be chosen *at random*
 and graded.
 
 +--------+------------+----------+--------------------+----------------------------+
