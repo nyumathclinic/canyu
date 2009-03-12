@@ -106,7 +106,7 @@ This is a week-by-week calendar of topics covered in Calculus I.
 +----+-------------+---------+---------------------------------------------+
 | 15 | 5/4         | Catch up and Review (MW only)                         |
 +----+-------------+---------+---------------------------------------------+
-| F  | 5/5         | **Final Exam: 2:00-3:50pm**                           |
+| F  | 5/8         | **Final Exam: 2:00-3:50pm**                           |
 +----+-------------+---------+---------------------------------------------+
 
 .. [#] No classes meet on February 16 (Presidents' Day).  So the MW
