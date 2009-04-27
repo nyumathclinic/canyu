@@ -114,8 +114,7 @@ of the term (March 2–March 6).
    1,MWF,09:30am–10:45am,SILV 512,5/6/09,8:00am–9:50am
    2,MW,02:00pm–03:50pm,48CS 113,5/11/09,10:00am–11:50am
    3,TRF,09:30am–10:45am,GODD A,5/12/09,8:00am–9:50am
-   4,TR,06:20pm–08:10pm,SILV 501,5/7/09,8:00pm–9:50pm
-   5,MWF,09:30am–10:45am,SILV 701,5/6/09,8:00am–9:50am
+   4,TR,06:20pm–08:10pm,SILV 806,5/7/09,8:00pm–9:50pm
 
 **Please make a note of your final exam time and plan your travel
 schedule accordingly.**
