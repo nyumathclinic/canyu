@@ -116,8 +116,7 @@ of the term (March 2–March 6).
    3,TRF,09:30am–10:45am,GODD A,5/12/09,8:00am–9:50am
    4,TR,06:20pm–08:10pm,SILV 806,5/7/09,8:00pm–9:50pm
 
-**Note: The section 4 room location has changed and the section 2 time
-  has changed.**
+**Note: The section 4 room location has changed and the section 2 time has changed.**
 
 **Please make a note of your final exam time and plan your travel
 schedule accordingly.**
