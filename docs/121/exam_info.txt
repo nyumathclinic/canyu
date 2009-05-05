@@ -1,0 +1,182 @@
+.. -*- mode: rst; coding: utf-8 -*-
+.. meta:: 
+   :description: Exam information Calculus I, Spring 2009
+   :keywords: NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id: cal.txt 201 2009-03-12 16:48:45Z matthew $
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2009-05-05
+   :DCT.Created language=en-US: May 5, 2009
+   :DCT.Modified scheme=subversion: $Date: 2009-03-12 12:48:45 -0400 (Thu, 12 Mar 2009) $
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+   :Schema.link: http://www.w3.org/1999/xhtml/link/
+   :link.next scheme=rel: hw.html
+   :link.previous scheme=rel: syllabus.html
+   :link.start scheme=rel: syllabus.html
+   :short-title: Calendar
+   :link.alternate scheme=rel media=print type=application/pdf: exam_info.pdf
+..   :link.alternate scheme=rel media=print type=application/x-latex: exam_info.tex
+
+
+.. |date| date::
+
+Exam information for Calculus I, Spring 2009
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Date and Time
+=============
+
+The final exam is Friday, May 8, from 2:00–3:50pm.
+
+Room Locations
+==============
+
+Please report to the following rooms to take the exam:
+
++---------+------+------------------+------------------+--------------+
+| Section | Days | Times            | Instructor       | Location     |
++=========+======+==================+==================+==============+
+| 001     | MW   | 8:55am–10:45am   | Niang Jiang      | 19W4 101/102 |
++---------+------+------------------+------------------+ [#]_         |
+| 003     | MW   | 8:55am–10:45am   | Juliana Dias     |              |
++---------+------+------------------+------------------+              |
+| 004     | TR   | 11:00am–12:50pm  | Matthew Leingang |              |
++---------+------+------------------+------------------+--------------+
+| 005     | TR   | 11:00am–12:50pm  | Zeng Lian        | SILV 703     |
++---------+------+------------------+------------------+              |
+| 006     | TR   | 11:00am–12:50pm  | Jungho Lee       |              |
++---------+------+------------------+------------------+              |
+| 007     | TR   | 2:00pm–3:50pm    | David Cai        |              |
++---------+------+------------------+------------------+--------------+
+| 008     | TR   | 2:00pm–3:50pm    | Dongzhou Zhou    | CANT 101     |
++---------+------+------------------+------------------+              |
+| 009     | TR   | 2:00pm–3:50pm    | Van Molino       |              |
++---------+------+------------------+------------------+--------------+
+| 010     | MW   | 11:00am–12:15pm  | Matthew Leingang | CANT 200     |
++---------+------+------------------+------------------+              |
+| 015     | TR   | 6:20pm–8:10pm    | Michael Damron   |              |
++---------+------+------------------+------------------+--------------+
+
+.. [#] Go to 101 until it is full, then to 102.
+
+Building keys:
+
+  19W4
+    19 W. 4th St.
+
+  SILV
+    Silver Center
+
+  CANT
+    Cantor Film Center, 36 E. 8th St.
+
+Review and Studying
+===================
+
+Here are some things to help your studying.
+
+Practice Exams
+--------------
+
+Five exams with solutions are posted on the Calculus I Common
+Blackboard site.  They will be most beneficial if you take the exams
+under exam conditions then check against the solutions.
+
+
+Other Review Materials
+----------------------
+
+Carina Curto will be giving two review sessions (time and place TBD,
+mostly likely May 5 and 6) and will generate a review document.
+
+Solutions to the Chapter Review problems for Chapters 1-5 are on the
+common blackboard, too.
+
+FAQ
+===
+
+Q: Where is the exam?
+
+A: See above.
+
+Q: What sections are represented on the test?  Are more recent sections represented more?
+
+A: The exam is cumulative so all sections except those explicitly excluded are fair game.  More recent material is *slightly* more represented.
+
+Q: What format will the test take?
+
+A: Mostly free-response, but there could also be some multiple-choice, matching, or true/false questions.  
+
+Q: Will calculators be allowed?
+
+A: No.  The problems are constructed to be doable without a calculator.
+
+Q: Will we be allowed a formula sheet?
+
+A: No.  If there is a formula we think you need and we're not trying to test you on that formula (for instance, the volume of a cylinder), we will give it to you.
+
+Q: How well do I need to do on the final to get (some grade)?
+
+A: The way we compute your course score is on the syllabus.  If you don't know things like your homework average you can estimate them.  The cutoffs for how these scores are converted to letter grades is also on the syllabus, although they may be lowered in order to produce more of the higher letter grades.  So you have pretty much all the information you need to answer this question yourself.
+
+However, no matter what score you need, your letter grade will be maximized by doing the best possible job on the final you can.  So concentrate on studying for the final rather than the possible implications of possible scores on the final.
+
+Q: Can I take the final some other time?
+
+A: We can accommodate certain academic conflicts and emergencies only.
+In case of academic conflict, talk your instructor about taking an
+alternate final. In case of emergency, have your academic advisor
+contact Prof. Leingang
+
+Q: How should we study?
+
+A: Good question!
+
+Exams in college-level math courses are different from those in high
+school courses, even Advanced Placement courses.  One of our course
+goals is a *deeper* understanding of the concepts of calculus, and
+that means going beyond template problems that have been modeled for
+you in class.
+
+There will be problems on the exam that will resemble those on the
+homework.  But some problems will be brand new.  That's intentional,
+and it's not your instructor's fault for not showing you how to do those
+problems.  In life you'll be expected to solve new problems that
+nobody's solved before, and even though those problems may not
+necessarily involve calculus, problem solving is a skill you can
+develop in this course.
+
+So the strategy of guessing which problems will be on the exam and
+practicing those won't completely work.  How do you prepare for
+problems you won't know in advance?  *Do as many problems as you can
+find.*  Pick a topic from class or a section from the book.  The
+practice problems from the homework page are a good place to start.
+Keep going; the answers to all the odd problems are in the back of the
+book.  There are also lots of other calculus books in Bobst
+Library; look through them if you're in need of more problems.
+
+Don't just practice the problems which look easy or obvious.  Not
+every problem is going to be solved in 15 minutes.  Some will take
+some thinking.  You will get the most benefit by starting with easy
+problems and working up to harder problems.  Don't forget that
+calculators will not be allowed on exams, so make sure you practice at
+least some of the time without using it.
+
+*Metacognition* or "thinking about thinking" is an important study
+skill.  After you solve a problem, think about it: what was hard about
+the problem?  When did you realize you had solved it?  If you changed
+the problem slightly, how would the solution change?  What connection
+did you make that you could use for other problems?
+
+*You will know that you really know a topic when you can do the
+problems correctly, the first time, without peeking at the solutions.*
+
+Consider reading the book.  This doesn't mean scanning the page,
+absorbing only the boxed information.  Read the prose--the author
+wrote it for a reason!
+
+When taking practice or old exams, try to recreate exam conditions.  Take
+them in a quiet location, without books or notes or calculators, and
+within the scheduled time.  Do the whole exam, then check against the
+solutions.
