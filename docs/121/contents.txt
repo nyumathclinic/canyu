@@ -18,11 +18,12 @@
 
 
 * Syllabus_
-
  
 * Calendar_
 
 * Homework_
+
+* `Exam Information`_
 
 * `Staff only`_
 
@@ -30,3 +31,4 @@
 .. _Calendar: cal.html
 .. _Homework: hw.html 
 .. _`Staff only`: https://www.math.nyu.edu/courses/Calculus/2009/Spring/121/staff/
+.. _`Exam Information`: exam_info.html
