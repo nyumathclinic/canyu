@@ -1,0 +1,15 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+Text
+----
+
+`Essential Calculus: Early Transcendentals` by James
+Stewart. Thomson/Brooks Cole, NYU has a custom version of this text
+which is sold bundled with the WebAssign access card.  There are three
+formats of the text at different price levels: hardcover, looseleaf,
+and electronic.  We cannot endorse any other version, edition, or
+imprint of this book other than those sold in the bookstore.  If you
+want to find a similar book used and buy it, you may, but you will
+still need to purchase WebAssign access and you will still be
+responsible for doing the problems as written and labeled in the
+departmental version.

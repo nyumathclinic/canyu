@@ -1,0 +1,22 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+Exams 
+------
+
+There will be one midterm exam, held in class on October 14 (for MW
+sections) or 15 (for TR sections).
+
+**The final exam for all sections (including evening sections) will be
+Friday, December 18, from 2:00-3:50pm. Please make a note of it and plan
+your winter travel schedule accordingly.**
+
+Exams will contain a mixture of computational and conceptual problems.
+Some of them will resemble homework problems, while some will be brand
+new to you.  
+
+Quizzes will also be given during class or recitation.  The schedule
+will be determined by your teaching team and published in advance
+(i.e., no pop quizzes).  Quiz scores will be averaged together, again
+dropping the lowest.
+
+.. include:: syllabus_policy_oos.txt

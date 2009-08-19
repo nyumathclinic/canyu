@@ -1,0 +1,34 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+.. meta:: 
+   :description: Homework grading
+   :DC.Identifier scheme=subversion: $Id$
+   :DC.Creator: Matthew Leingang
+   :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
+   :DCT.Created scheme=W3CDTF: 2009-08-12
+   :DCT.Modified scheme=subversion: $Date$
+   :Schema.DC: http://purl.org/dc/elements/1.1/
+   :Schema.DCT: http://purl.org/dc/terms/
+
+There are two media for homework in  |coursename|. 
+
+There will be weekly online assignments administered through WebAssign_, WebAssign
+problems are computational in nature and assess the techniques introduced in class.  You
+will get immediate feedback on your progress and will get several chances to ensure it.
+
+Because one of the course goals is fluency in mathematical expression, there will also be
+problems to write up on paper each week and turn in.  These problems will require more
+than just procedure, might connect two more more things together, and will more closely
+resemble the harder exam problems.  They will normally also require written explanations
+in English sentences for full credit.
+
+.. _WebAssign: http://www.webassign.net/
+
+Normally WebAssign problems will be due the first class day of the week (Monday or Tuesday
+depending on your section), and written problems will be due on the last class day of the
+week (Wednesday or Thursday).  
+
+Once you are enrolled in your WebAssign section, you will see the list of assignments and their due dates.  
+
+Here is the list and schedule of the written problems.  Dates listed are *Wednesdays*.  If
+you are in a TR section, your assignments are due the day *following* the day listed.

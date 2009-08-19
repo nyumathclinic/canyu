@@ -1,0 +1,57 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+Homework 
+--------
+
+There are two media for homework in  |coursename|. 
+
+There will be weekly online assignments administered through
+WebAssign_ (This is why a WebAssign software license is one of the
+required course materials), WebAssign problems are computational in
+nature and assess the techniques introduced in class.  Many of these
+problems will resemble examples in the textbook or from class.  You
+will get immediate feedback on your progress and will get several
+chances to ensure it.
+
+There will also be problems to write up on paper each week and turn
+in.  These problems will require more than just procedure, might
+connect two more more things together, and will more closely resemble
+the harder exam problems. 
+
+.. _WebAssign: http://www.webassign.net/
+
+One of the major goals of college-level mathematics education is to
+move students from computational processes to conceptual thinking and
+communication.  That is the biggest difference between this course and
+a high school course, even an Advanced Placement course.  Mathematics
+is more than a bag of tricks and there are not a limited number of
+"types" of problems that can be asked.  The goal in class is to
+*prepare* you to do the homework and not necessarily to *show you* how
+to do your homework.  The learning occurs when you can move yourself
+into the unknown territory.
+
+Graders will grade the written homework promptly, and solutions will
+be made available on the course website.  Graders will be expecting
+you to express your ideas clearly, legibly, and completely, often
+requiring complete English sentences rather than merely just a long
+string of equations or unconnected mathematical expressions.  This
+means you could lose points for unexplained answers.  See the
+homework_ page for a more detailed rubric.
+
+.. _homework: hw.html
+
+In fairness to fellow students and to graders, late homework will
+generally not be accepted.  Because sometimes things more important
+than math homework come up, you have some free passes: Your lowest
+problem set score will be dropped in the final grade calculation.
+
+By all means you may work in groups on the homework assignments.
+Collaboration is a big part of learning and of scholarship in general.
+However, each student must turn in his or her *own* write-up of the
+solutions, with an acknowledgment of collaborators.  
+
+There is free math tutoring sponsored by the math department, meeting
+in room 524 of Warren Weaver Hall.  Check the signs posted throughout WWH
+and the `tutoring web page`__.
+
+__ http://math.nyu.edu/degree/undergrad/tutor_schedule.html

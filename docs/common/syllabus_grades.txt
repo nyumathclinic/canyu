@@ -1,0 +1,46 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+Grades
+------
+
+Your course score will be determined as the following weighted average: 
+ 
++--------------+--------+
+| Item         | Weight |
++==============+========+
+| Midterm      | 25%    |
++--------------+--------+
+| Homework     | 20%    |
++--------------+--------+
+| Quizzes      | 15%    |
++--------------+--------+
+| Final        | 40%    |
++--------------+--------+
+| **Total**    | 100%   |
++--------------+--------+
+
+We will convert this score to a letter grade beginning with these
+values as cutoffs:
+
++---------+--------------+
+| Cutoff  | Letter Grade |
++=========+==============+
+| 93      | A            |
++---------+--------------+
+| 90      | A-           |
++---------+--------------+
+| 87      | B+           |
++---------+--------------+
+| 83      | B            |
++---------+--------------+
+| 80      | B-           |
++---------+--------------+
+| 75      | C+           |
++---------+--------------+
+| 65      | C            |
++---------+--------------+
+| 50      | D            |
++---------+--------------+
+
+These cutoffs might be adjusted, but only in the downward direction
+(to make letter grades higher).  
