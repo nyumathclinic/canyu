@@ -1,12 +1,12 @@
-.. -*- mode: rst -*-
+.. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
    :description: Syllabus for |coursename|, |term| |year|
    :keywords: |coursename|, |regnum|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
-   :DCT.Created scheme=W3CDTF: 2009-01-13
-   :DCT.Created language=en-US: January 13, 2009
+   :DCT.Created scheme=W3CDTF: 2009-08-19
+   :DCT.Created language=en-US: August 19, 2009
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
@@ -54,7 +54,6 @@ science:
 
 * infinite series and the representation of functions by power series.
 
-
 The material we take up in this course has applications in physics,
 chemistry, biology, environmental science, astronomy, economics,
 statistics, and just about everything else.  We want you to leave the
@@ -77,112 +76,15 @@ share a grader.
 
 A list of sections, their meeting times and locations, and their
 instructors can be found on through the Registrar's `Class Schedule
-Search`__.  If you enter "Calculus II" in the course name search field,
+Search`__.  If you enter "|coursename|" in the course name search field,
 the current term's listings will automatically come up.
 
 __ http://www.nyu.edu/registrar/listings/
 
  
-Homework 
---------
-
-There will be a list of homework problems on the course website.  The
-homework list includes "practice" problems.  These are neither
-collected nor graded.  Rather, they are listed as a resource to help
-you study.  Do as many of those as you need to make yourself confident
-that you understand the basic techniques.  They are all odd-numbered
-problems, and the answers are in the back of the book.
-
-Each week a problem set of about ten problems will be collected.
-*Four* problems will be chosen *at random* and graded.  
-
-Some of the problems will be rather straightforward.  These are to
-test the basic techniques.  Often there is a practice or odd-numbered
-problem that is very similar to help with these.  But others will
-require a little more thought.  One of the major goals of
-college-level mathematics education is to move students from
-computational processes to conceptual thinking and communication.
-That is the biggest difference between this course and a high school
-course, even an Advanced Placement course.  Mathematics is more than a
-bag of tricks and there are not a limited number of "types" of
-problems that can be asked.  The goal in class is to *prepare* you to
-do the homework and not necessarily to *show you* how to do your
-homework.  The learning occurs when you can move yourself into the
-unknown territory.
-
-Graders will grade the homework promptly, and solutions will be made
-available on the course website.  Graders will be expecting you to
-express your ideas clearly, legibly, and completely, often requiring
-complete English sentences rather than merely just a long string of
-equations.  This means you could lose points for unexplained answers.
-See the homework_ page for a more detailed rubric.
-
-.. _homework: hw.html
-
-In fairness to fellow students and to graders, late homework will
-generally not be accepted.  Because sometimes things more important
-than math homework come up, you have some free passes: Your lowest
-problem set score will be dropped in the final grade calculation.
-
-By all means you may work in groups on the homework assignments.
-Collaboration is a big part of learning and of scholarship in general.
-However, each student must turn in his or her *own* write-up of the
-solutions, with an acknowledgment of collaborators.  
-
-There is free math tutoring sponsored by the math department, meeting
-in room 620 of Warren Weaver Hall.  The times are to be determined by
-the schedules of the tutors.  Check the signs posted throughout WWH.
-
-Exams 
-------
+.. include:: ../common/syllabus_hw.txt
  
-There will be one midterm exam, held in class on March 4 (for MW
-sections) or 5 (for TR sections).
-
-**The final exam for all sections (including evening sections) will be
-Friday, May 8, from 2:00-3:50pm. Please make a note of it and plan
-your travel schedule accordingly.**
-
-Exams will contain a mixture of computational and conceptual problems.
-Some of them will resemble homework problems, while some will be brand
-new to you.  
-
-Quizzes will also be given during class or recitation.  The schedule
-will be determined by your teaching team and published in advance
-(i.e., no pop quizzes).  Quiz scores will be averaged together, again
-dropping the lowest, and constituting one grade equal in weight to the
-midterm grade.
-
-Policy on out-of-sequence exams and missed quizzes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We are only able to accommodate a limited number of out-of-sequence
-exams due to limited availability of rooms and proctors.  For this
-reason, we may approve out-of-sequence exams in the following cases:
-
-1.  A documented medical excuse.
-
-2.  A University sponsored event such as an athletic tournament, a
-    play, or a musical performance.  *Athletic practices and
-    rehearsals do not fall into this category.* Please have your
-    coach, conductor, or other faculty advisor contact your
-    instructor.
-
-3.  A religious holiday.
-
-4.  Extreme hardship such as a family emergency. 
-
-**We will not be able to accommodate out-of-sequence exams, quizzes,
-and finals for purposes of more convenient travel, including already
-purchased plane tickets.**
-
-Scheduled out-of-sequence exams and quizzes (those not arising from
-emergencies) must be taken *before* the actual exam.  Otherwise,
-please talk to your insructor before you return to class.
-
-If you require additional accommodations as determined by the
-Center for Student Disabilities, please let your instructor know as soon
-as possible.
+.. include:: ../common/syllabus_exams.txt
 
 
 Prerequisites
@@ -203,68 +105,10 @@ See the math deparment's `placement`__ web page for more information.
 __ http://math.nyu.edu/degree/undergrad/calculus.html
  
 
-Grades
-------
+.. include:: ../common/syllabus_grades.txt
 
-Your course score will be determined as the following weighted average: 
- 
-+--------------+--------+
-| Item         | Weight |
-+==============+========+
-| Midterm      | 25%    |
-+--------------+--------+
-| Homework     | 10%    |
-+--------------+--------+
-| Quizzes      | 25%    |
-+--------------+--------+
-| Final        | 40%    |
-+--------------+--------+
-| **Total**    | 100%   |
-+--------------+--------+
+.. include:: ../common/syllabus_text.txt
 
-We will convert this score to a letter grade beginning with these
-values as cutoffs:
-
-+---------+--------------+
-| Cutoff  | Letter Grade |
-+=========+==============+
-| 93      | A            |
-+---------+--------------+
-| 90      | A-           |
-+---------+--------------+
-| 87      | B+           |
-+---------+--------------+
-| 83      | B            |
-+---------+--------------+
-| 80      | B-           |
-+---------+--------------+
-| 75      | C+           |
-+---------+--------------+
-| 65      | C            |
-+---------+--------------+
-| 50      | D            |
-+---------+--------------+
-
-These cutoffs might be adjusted, but only in the downward direction
-(to make letter grades higher).  
-
-
-Text(s)
--------
-
-`Essential Calculus: Early Transcendentals` by James
-Stewart. Thomson/Brooks Cole, `ISBN-10 0495014281`_.  It's available
-at the NYU bookstore and countless online bookstores, and will be on
-reserve in the library.
-
-Please note that if you buy the book online and have it shipped, you
-are still responsible for doing the homework while your book is in
-transit.  Note also that different editions of the book may have
-different problem sequences (unfortunately, this is to make sure you
-buy the most current edition); if you buy another edition you are
-still responsible for doing the correct problems.
-
-.. _`ISBN-10 0495014281`: http://en.wikipedia.org/w/index.php?title=Special%3ABooksources&isbn=0495014281
 
 Calendar 
 --------
@@ -276,4 +120,5 @@ The day-by-day `calendar`_ is also available.
 Conclusion 
 ----------
 
-We look forward to seeing you in Calculus II!
+We look forward to seeing you in |coursename|!
+
