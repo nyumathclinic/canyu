@@ -20,6 +20,8 @@ Instructor's Guide to Calculus I and II
 :Author: Matthew Leingang
 :Date: |date|
 
+**Spring 2009 version.  Some of the details may be changing in Fall 2009.**
+
 Welcome to Courant's calculus program.  This document is a
 work-in-progress guide to the nuts and bolts of the course and its
 organization.  For the week-by-week list of topics, see the calendar.

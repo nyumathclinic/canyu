@@ -23,6 +23,8 @@ Lesson Outline for Calculus I, Spring 2009
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date: |date|
 
+**Spring 2009 version.  Some details and dates will change for Fall 2009.**
+
 This is a topic-by-topic checklist for Calculus I.  I've included
 specific *learning objectives* for each section—things that students
 should be capable of after completing the topic.  I've also written
