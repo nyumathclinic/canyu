@@ -1,11 +1,10 @@
 .. -*- mode: rst; coding: utf-8; fill-column: 90 -*-
-.. include:: config.txt
 .. meta:: 
    :description: Calendar for |coursename|, |term| |year|
    :keywords: Math 123, NYU, Math, |coursename|
    :DC.Identifier scheme=subversion: $Id$
-   :DCT.Created scheme=W3CDTF: 2009-01-13
-   :DCT.Created language=en-US: January 13, 2009
+   :DCT.Created scheme=W3CDTF: 2009-08-11
+   :DCT.Created language=en-US: August 11, 2009
    :DCT.Modified scheme=subversion: $Date$
    :Schema.DC: http://purl.org/dc/elements/1.1/
    :Schema.DCT: http://purl.org/dc/terms/
@@ -18,10 +17,12 @@
 
 .. |date| date:: %B %d, %Y
 
+.. include:: config.txt
+
 Calendar for |coursename|, |term| |year|
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Author: Matthew Leingang <leingang@courant.nyu.edu>
 :Date:   |date|
 
 .. This is a week-by-week calendar of topics covered in |coursename|.  As a rule of thumb,
@@ -38,88 +39,82 @@ Course topics by week
 +----+-------------+---------+---------------------------------------------+
 |Week| Dates       | Section | Topics                                      |
 +====+=============+=========+=============================================+
-| 1  | 1/20–1/24   | 10.1    | Three-dimensional Coordinate Systems        |
+| 1  | 9/8–9/10    | 10.1    | Three-dimensional Coordinate Systems        |
 |    |             |         |                                             |
+|    |             +---------+---------------------------------------------+
+|    |             | 10.2    | Vectors (TR only)                           |
 +----+-------------+---------+---------------------------------------------+
-| 2  | 1/27–1/31   | 10.2    | Vectors                                     |
+| 2  | 9/14–9/17   | 10.2    | Vectors                                     |
 |    |             +---------+---------------------------------------------+
 |    |             | 10.3    | The Dot Product                             |
 |    |             +---------+---------------------------------------------+
 |    |             | 10.4    | The Cross Product                           |
 +----+-------------+---------+---------------------------------------------+
-| 3  | 2/2–2/6     | 10.5    | Equations of Lines and Planes               |
+| 3  | 9/21–9/24   | 10.5    | Equations of Lines and Planes               |
 |    |             +---------+---------------------------------------------+
 |    |             | 10.6    | Cylinders and Quadric Surfaces              |
 +----+-------------+---------+---------------------------------------------+
-| 4  | 2/9–2/13    | 10.7    | Vector functions and space curves           |
+| 4  | 9/28–10/1   | 10.7    | Vector functions and space curves           |
 |    |             +---------+---------------------------------------------+
 |    |             | 10.8    | Arc length and Curvature                    |
 |    |             +---------+---------------------------------------------+
 |    |             | 10.9    | Motion in Space: Velocity and Acceleration  |
 +----+-------------+---------+---------------------------------------------+
-| 5  | 2/16–2/20   | 11.1    | Functions of Several Variables              |
+| 5  | 10/5–10/8   | 11.1    | Functions of Several Variables              |
 |    |             +---------+---------------------------------------------+
 |    |             | 11.2    | Limits and Continuity                       |
-+----+-------------+---------+---------------------------------------------+
-| 6  | 2/23–2/27   | 11.3    | Partial Derivatives                         |
 |    |             +---------+---------------------------------------------+
-|    |             | 11.4    | Tangent Planes and Linear Approximation     |
+|    |             | 11.3    | Partial Derivatives                         |
++----+-------------+---------+---------------------------------------------+
+| 6  | 10/12–10/15 | 11.4    | Tangent Planes and Linear Approximation     |
 |    |             +---------+---------------------------------------------+
 |    |             | 11.5    | The Chain Rule                              |
-+----+-------------+---------+---------------------------------------------+
-| 7  | 3/2–3/6     | 11.6    | Directional Derivatives and the Gradient    |
-|    |             |         | Vector                                      |
 |    |             +---------+---------------------------------------------+
 |    |             |           **Midterm**                                 |
 +----+-------------+---------+---------------------------------------------+
-| 8  | 3/9–3/13    | 11.7    | Maximum and Minimum Values                  |
+| 7  | 10/19–10/22 | 11.5    | The Chain Rule                              |
+|    |             +---------+---------------------------------------------+
+|    |             | 11.6    | Directional Derivatives and the Gradient    |
+|    |             |         | Vector                                      |
++----+-------------+---------+---------------------------------------------+
+| 8  | 10/26–10/29 | 11.7    | Maximum and Minimum Values                  |
 |    |             +---------+---------------------------------------------+
 |    |             | 11.8    | Lagrange Multipliers                        |
 +----+-------------+---------+---------------------------------------------+
-| SB | 3/16–3/20   |           **Spring Break**                            |
-+----+-------------+---------+---------------------------------------------+
-| 9  | 3/23–3/27   | 12.1    | Double Integrals over Rectangles            |
+| 9  | 11/2–11/5   | 12.1    | Double Integrals over Rectangles            |
 |    |             +---------+---------------------------------------------+
 |    |             | 12.2    | Double Integrals over General Regions       |
 |    |             +---------+---------------------------------------------+
 |    |             | 12.3    | Double Integrals in Polar Coordinates       |
 +----+-------------+---------+---------------------------------------------+
-| 10 | 3/30–4/3    | 12.5    | Triple Integrals                            |
+| 10 | 11/9–11/12  | 12.5    | Triple Integrals                            |
 |    |             +---------+---------------------------------------------+
 |    |             | 12.6    | Triple Integrals in Cylindrical Coordinates |
 |    |             +---------+---------------------------------------------+
 |    |             | 12.7    | Triple Integrals in Spherical Coordinates   |
 +----+-------------+---------+---------------------------------------------+
-| 11 | 4/6–4/10    | 13.1    | Vector Fields                               |
+| 11 | 11/16–11/19 | 13.1    | Vector Fields                               |
 |    |             +---------+---------------------------------------------+
 |    |             | 13.2    | Line Integrals                              |
 |    |             +---------+---------------------------------------------+
 |    |             | 13.3    | The Fundamental Theorem of Line Integrals   |
 +----+-------------+---------+---------------------------------------------+
-| 12 | 4/13–4/17   | 13.4    | Green's Theorem                             |
+| 12 | 11/23–11/25 | 13.4    | Green's Theorem                             |
 |    |             +---------+---------------------------------------------+
 |    |             | 13.5    | Curl and Divergence                         |
 +----+-------------+---------+---------------------------------------------+
-| 13 | 4/20–4/24   | 13.6    | Parametric Surfaces and their Areas         |
+| 13 | 11/30–12/3  | 13.6    | Parametric Surfaces and their Areas         |
 |    |             +---------+---------------------------------------------+
 |    |             | 13.7    | Surface Integrals                           |
 +----+-------------+---------+---------------------------------------------+
-| 14 | 4/27–5/1    | 13.8    | Stokes's Theorem                            |
+| 14 | 12/7–12/10  | 13.8    | Stokes's Theorem                            |
 |    |             +---------+---------------------------------------------+
 |    |             | 13.9    | The Divergence Theorem                      |
 +----+-------------+---------+---------------------------------------------+
-| 15 | 5/4         | Review (MW, MWF only)                                 |
+| 15 | 12/14–12/15 | Review                                                |
 +----+-------------+---------+---------------------------------------------+
 
-Class meeting times and final exam times
-========================================
+For final exam days and times by class meeting time, please see the `registrar's exam page`__.
 
-.. csv-table:: 
-   :header: Section,Class Days,Class Time,Class Location,Final Date,Final Time
-
-   1,MWF,09:30am–10:45am,SILV 512,5/6/09,8:00am–9:50am
-   2,MW,02:00pm–03:50pm,48CS 113,5/11/09,10:00am–11:50am
-   3,TRF,09:30am–10:45am,GODD A,5/12/09,8:00am–9:50am
-   4,TR,06:20pm–08:10pm,SILV 501,5/7/09,8:00pm–9:50pm
-   5,MWF,09:30am–10:45am,SILV 701,5/6/09,8:00am–9:50am
+__ http://www.nyu.edu/registrar/registration/final-exam-schedules-fall09.html#class
 
