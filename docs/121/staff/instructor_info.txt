@@ -14,21 +14,33 @@
    :link rel=alternate type=text/x-rst: instructor_info.txt
 
 
-Instructor's Guide to Calculus I and II
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Instructor's Guide to Calculus
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang
 :Date: |date|
 
-**Spring 2009 version.  Some of the details may be changing in Fall 2009.**
-
-Welcome to Courant's calculus program.  This document is a
-work-in-progress guide to the nuts and bolts of the course and its
-organization.  For the week-by-week list of topics, see the calendar.
-For information and tips on teaching, see the lesson guide.  See also
-the list of homework problems to be assigned.
+Welcome to Courant's calculus program.  This document is a guide to
+the nuts and bolts of the course and its organization.  For the
+week-by-week list of topics, see the calendar.  For information and
+tips on teaching, see the lesson guide.  See also the list of homework
+problems to be assigned.
 
 .. contents::
+
+Last things first
+=================
+
+**The final for Calculus I and II is Friday, December 18, from
+2:00–3:50pm.  The exam will be graded en masse on Saturday,
+December 19.  All instructors and teaching assistants should be on
+campus and available from December 14–19 to assist in the preparation,
+proctoring, and grading of the exam.**
+
+.. I don't mean to shout but this is part of the price you pay for
+.. having the rest of the course coordinated. :-)
+
+Calculus III will have individual finals.
 
 
 Topics and Goals
@@ -48,6 +60,14 @@ curves, and polar coordinates.  Our Calc I and II covers about the
 same material as the AP Calculus BC syllabus, but again in much more
 depth.  
 
+In Calc III we study the geometry of three-dimensional space and
+multivariable (mostly two- and three-variable) calculus.  Topics
+include vectors in two and three dimensions, quadric surfaces,
+functions of several variables, partial derivatives, gradients,
+constrained and unconstrained optimization, multiple integration,
+vector fields, line and flux integrals, and Green's/Gauss's/Stokes's
+theorems.
+
 A major goal of college mathematics (says the MAA) is to move
 students from thinking of mathematics as a set of *procedures* to a
 set of *concepts*.  So in a college course we discuss the concepts and
@@ -60,82 +80,64 @@ Course Details
 Class Meetings and Teams
 ------------------------
 
-Courses meet in one of two varieties.
+The generic calculus course meets in one of two varieties.
 
-* One variety (sections 001–019) meets MW or TR for 110 minutes each
-  class period.  These sections are further arranged by meeting time
-  into teams of three sections.  Each team will collaborate on
-  teaching practices and will share a grader.
+* One variety meets twice a week for 110 minutes each class period.
+  The instructor presents all class material, although it may (and
+  probably should) have an interactive component to it.
 
-* The other variety (sections 20, 27, and 34) meets MW or TR for 75
-  minutes each class, along with a 50 minute recitation section
-  (21–26, 28–33, and 35–40).  Students must register for lecture and
-  recitation separately.
+* The other variety meets twice a week for 75 minutes each class,
+  along with a weekly 50 minute recitation section.  The instructor
+  presents the main material while the TA organizes the recitations.
 
-If you are in a team, you should be meeting weekly to share ideas for
-the upcoming classes.  The team model works when the experienced
-teachers can trickle down information to to the less experience.
-Communication among the team members is essential for this.
+When at all possible, sections which meet at the same time should work
+together as a team.  This is a good way for experienced faculty to
+pass down wisdom to eager young faculty, and to distribute repeated
+work (e.g., writing and grading of quizzes and exams).
 
-Each team should write a midterm that will be given to all sections in
-the team.  That way you can share the grading.  Quizzes should also be
-uniform across the team.  The Calculus I final is common--all students
-will take the same one at the same time.  Each team has a grader that
-will grade all the sections.  This way, the only difference two
-students in different sections of a team will see is the actual
-teacher.
-
-Some Calculus I teams will be joined by a teacher at Bard High
-School/Early College.  This is a pilot program designed to allow BHSEC
-students to get a genuine college course in mathematics and to allow
-CIMS to understand high school mathematics students better.  BHSEC
-teachers will observe team meetings and possibly some class meetings.
-There is no other obligation teams have to the BHSEC teachers.
-
-If you are giving one of the big lecturer or a recitation, you should
+If you are giving one of the big lectures or a recitation, you should
 also be working together.  Recitation instructors should be aware of
 what topics are being covered, and should prepare recitations finding
 examples fitting those topics.  Lecturers should feel free to assign
 certain examples or topics (provided it's not new material not covered
-in lecture) to recitations.  Keep in mind that some recitations happen
-between the week's two classes and some happen before the week's first
-class, so all recitations can't always be doing the exact same thing.
+in lecture) to recitations.  Keep in mind that recitations can meet on
+any day of the week, so they can't always be doing the exact same
+thing.
 
 Homework 
 --------
 
-There is a list of homework problems on the course website.  The
-homework list includes "practice" problems.  These are neither
-collected nor graded.  They are all odd-numbered problems, and the
-answers are in the back of the book.
+Homework takes two forms: WebAssign problems which are for practice
+with computation and technique, and written problems which are more
+conceptual.  Usually WebAssign problems will be due the first day of
+the week (Monday or Tuesday) after the material is covered, and
+written problems the last day of the week (Wednesday or Thursday).
 
-Each week a problem set of about ten problems will be collected.
-Three problems will be chosen at random and graded.  Graders will
-grade the homework promptly, and solutions will be made available on
-the course website.  Graders will be expecting students to express
-ideas clearly, legibly, and completely, often requiring complete
-English sentences rather than merely just a long string of equations.
-This means points could be taken off for unexplained answers.  See the
-homework page for a more detailed rubric.
+Graders are told to expect students to express ideas clearly, legibly,
+and completely, often requiring complete English sentences rather than
+merely just a long string of equations.  This means points could be
+taken off for unexplained answers.  They may be reluctant to do this,
+so give them your support.  See the homework page for a more detailed
+rubric.  If students complain, point to the rubric.
 
 In fairness to the rest of the students and to graders, late homework
 will generally not be accepted.  We do drop the lowest grade, which
 you can point out to students who for whatever reason need a pass.
 
-Solutions sets to the problems can be generated with the solution
-builder website.  Since all sections will be having the same problem
-sets, we'll rotate the responsibility of generating solution sets
-among the graders.  They will then circulate the solutions and get
-them onto the blackboard site.
+Since all sections will be having the same problem sets, we'll have a
+common Blackboard site for all sections (in addition to any Blackboard
+site you want to create for your own section).  We'll hire one person
+to generate solution sets for the assignments and put them on the
+common Blackboard.
 
-Encourage students to collaborate on homework and studying in
-general.  Many students who would benefit from group studying have not
-been conditioned to do so.  Just require that what they turn in should
-be written up by them in their own words, and that they list their
+Encourage students to collaborate on homework and studying in general.
+Many students who would benefit from group studying have not been
+conditioned to do so.  Just require that what they turn in should be
+written up by them in their own words, and that they list their
 collaborators on the paper.
 
 There is free math tutoring sponsored by the math department, meeting
-in room 620 of Warren Weaver Hall.  Check the signs posted throughout WWH
+in room 524 of Warren Weaver Hall.  Check the signs posted throughout WWH
 and the `tutoring web page`__.
 
 __ http://math.nyu.edu/degree/undergrad/tutor_schedule.html
@@ -143,26 +145,48 @@ __ http://math.nyu.edu/degree/undergrad/tutor_schedule.html
 
 Exams 
 ------
+
+Midterm Exam
+~~~~~~~~~~~~
  
-There will be one midterm exam, held in class on October 15 (for MW
-sections) and 16 (for TR sections).
+There will be one midterm exam, held in class on October 14 (for MW
+sections) and 15 (for TR sections).  Each section will write their own
+midterm, although as suggested before sections meeting at the same
+time can and should work together to save efforts.  The timing is
+important: this is the latest you can give a test that will give them
+some time to contemplate dropping the course if they're not keeping up
+and yourself some time to prepare midterm grade reports.
 
-Exams should contain a mixture of computational and conceptual problems.
-Some of them should resemble homework problems.  I am also a fan of at
-least one problem that requires synthesizing multiple concepts.
-Students will resist this but gently remind them that we want them to
-have some problem-solving skills, and that means solving problems that
-haven't been solved before.  This is what happens in the real world
-every day.
+We will put old midterms on the common Blackboard sites to help students prepare.  Solutions will appear one week before the exam.
 
-**The final exam for all sections will be Friday, December 19, from
-12:00-1:50pm. Say this out loud in class and display it prominently on
-your blackboard site.**  Some students will make plans (e.g., plane
-tickets) that conflict with the final, and we can't reschedule the
-final for them.
+Exams should contain a mixture of computational and conceptual
+problems.  It may contain some fixed-response questions (e.g.,
+multiple-choice and matching) but must also have free-response
+questions.  Some of them should resemble homework problems.  I am also
+a fan of at least one problem that requires synthesizing multiple
+concepts.  Students will resist this but gently remind them that we
+want them to have some problem-solving skills, and that means solving
+problems that haven't been solved before.  This is what happens in the
+real world every day.
 
-The final exam (in Calc I only) will be common.  We'll all get a
-chance to work on it together.
+I shoot for a median score of 80% on my exams, although I confess I do
+not get there often.  But this allows students to show what they know
+and for the good students to distinguish themselves.  If the mean or
+median score is low students get demoralized, and if the variance is
+low it's hard to decide grades.
+
+Final Exam
+~~~~~~~~~~
+
+**The final exam for all Calc I and II sections (including the evening
+ones, despite what it says on the registrar's schedule) will be
+Friday, December 18, from 2:00-3:50pm. Say this out loud in class on
+the first day.** Some students will make plans (e.g., plane tickets)
+that conflict with the final, and we cannot reschedule the final for
+them.
+
+The final exam for Calc I and II is common.  Finals for Calc III are
+section specific.  Finals should be cumulative.
 
 
 Quizzes
@@ -171,22 +195,21 @@ Quizzes
 You should have several quizzes to make sure students keep up and get
 some feedback.  The number and schedule is up to you.  You could give
 them every week or after every chapter.  The only thing is that the
-syllabus promises no pop quizzes.  So teams should decide when the
-quizzes will be and publicize this information in advance.
-
-Quiz scores will be averaged together, again dropping the lowest, and
-constituting one grade equal in weight to the midterm grade.
+syllabus promises no pop quizzes.  So you should decide when the
+quizzes will be and publicize this information in advance.  Quiz
+scores will be averaged together, again dropping the lowest.
 
 
 Policy on out-of-sequence exams and missed quizzes
 --------------------------------------------------
 
-This is to protect insructors from students who pull heartstrings or
-are trying to work the system.  
+This is to protect instructors from students who pull heartstrings or
+are trying to work the system.
 
 We are only able to accommodate a limited number of out-of-sequence
 exams due to limited availability of rooms and proctors.  For this
-reason, you may approve out-of-sequence exams in the following cases:
+reason, you may approve out-of-sequence midterm exams in the following
+cases:
 
 1.  A documented medical excuse.
 
