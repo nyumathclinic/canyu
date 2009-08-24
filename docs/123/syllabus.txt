@@ -77,15 +77,14 @@ new to you.
 Quizzes will also be given during class or recitation.  The schedule
 will be determined by your teaching team and published in advance
 (i.e., no pop quizzes).  Quiz scores will be averaged together, again
-dropping the lowest, and constituting one grade equal in weight to the
-midterm grade.
+dropping the lowest.
 
 .. include:: ../common/syllabus_policy_oos.txt
 
 Prerequisites
 -------------
  
-Students who wish to enroll in Calculus II must meet *one* of the
+Students who wish to enroll in Calculus III must meet *one* of the
 following prerequisites:
 
     * Calculus II (V63.0122) with a C or higher.
