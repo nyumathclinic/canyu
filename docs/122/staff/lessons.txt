@@ -17,6 +17,8 @@
 Lesson Outline for Calculus II, Spring 2009
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+**Fall 2009 version in the works.**
+
 :Author: Matthew Leingang <leingang@cims.nyu.edu>
 :Date: |date|
 
