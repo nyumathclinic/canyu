@@ -2,7 +2,7 @@ BINDIR=$(TOPDIR)/bin
 BUILDDIR=$(TOPDIR)/build
 
 year=2009
-term=Spring
+term=Fall
 regnum=V63.0$(coursenum)
 
 configvars=coursenum coursename term year regnum
