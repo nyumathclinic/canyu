@@ -48,8 +48,8 @@
   <link rel="stylesheet" type="text/css" media="all" href="http://www.math.nyu.edu/style/math.css" />
   <link rel="stylesheet" type="text/css" media="print" href="http://www.math.nyu.edu/style/print.css" />
   <xsl:call-template name="stylesheet" />
-  <link rel="icon" href="/images/favicon.gif" type="image/x-icon" />
-  <link rel="shortcut icon" href="/images/favicon.gif" type="image/x-icon" />
+  <link rel="icon" href="/courses/Calculus/mathdept-favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/courses/Calculus/mathdept-favicon.png" type="image/x-icon" />
   <script type="text/javascript" src="/scripts/EventHandler.js"></script>
   <script type="text/javascript" src="/scripts/ClearSearch.js"></script>
   <script type="text/javascript" src="/scripts/drop_down.js"></script>
