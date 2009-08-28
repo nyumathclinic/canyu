@@ -8,6 +8,10 @@ config.txt : Makefile $(LIBDIR)/common.mk
 	echo "$(foreach var,$(configvars),.. |$(var)| replace:: $($(var))\n)" | sed -e 's/^ *//' > $@
 DIRTY+=config.txt
 
+syllabus.txt: $(shell find $(TOPDIR)/docs/common -name "syllabus_*.txt")
+
+hw.txt: $(shell find $(TOPDIR)/docs/common -name "hw_*.txt")
+
 html: $(HTML)
 
 html-screen: $(HTML_SCREEN)
