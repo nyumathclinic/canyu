@@ -157,7 +157,8 @@ important: this is the latest you can give a test that will give them
 some time to contemplate dropping the course if they're not keeping up
 and yourself some time to prepare midterm grade reports.
 
-We will put old midterms on the common Blackboard sites to help students prepare.  Solutions will appear one week before the exam.
+We will put old midterms on the common Blackboard sites to help
+students prepare.  Solutions will appear one week before the exam.
 
 Exams should contain a mixture of computational and conceptual
 problems.  It may contain some fixed-response questions (e.g.,
@@ -196,8 +197,14 @@ You should have several quizzes to make sure students keep up and get
 some feedback.  The number and schedule is up to you.  You could give
 them every week or after every chapter.  The only thing is that the
 syllabus promises no pop quizzes.  So you should decide when the
-quizzes will be and publicize this information in advance.  Quiz
-scores will be averaged together, again dropping the lowest.
+quizzes will be and publicize this information in advance.  I've found
+every other week to be a pretty good schedule.  
+
+For the most part quizzes should only assess material that they've
+already had *returned* homework on.  So what's done in week *n* can't be
+quizzed until week *n+2*.
+
+Quiz scores will be averaged together, again dropping the lowest.
 
 
 Policy on out-of-sequence exams and missed quizzes
@@ -238,6 +245,23 @@ tell them to get in touch with the Moses Center for Student
 Disabilities.  They will help you and the student make arrangements
 for the student's particular needs.
 
+Makeup midterm exams
+~~~~~~~~~~~~~~~~~~~~
+
+Use your discretion on allowing these.  If a student had some schedule conflict that they didn't tell you about (something that might fall under #2 above), I think they're not entitled to a makeup exam.  If it's a documentable medical excuse. make sure they do document it.  
+
+Statistically speaking, a lot of students' grandparents will die during the term.  For many students, it's the first time they'll experience a death in the family.  So be sensitive to that.  Request some kind of documentation (like an obituary).
+
+When asking for documentation, you might feel like you're telling the student that you think they're dishonest.  It helps to say that this policy is to prevent *other* students from manipulating the system.  
+
+
+Makeup final exams
+~~~~~~~~~~~~~~~~~~
+
+Makeups for final exams should be coordinated to save work.  Since all students have the same material, one makeup exam can probably be used for all of them.  
+
+Because final exams are so important, we should be even more formal in scheduling them.  I think it's best to give a grade of Incomplete to anyone who misses the final and then we'll schedule another one in February.  
+
 
 Prerequisites
 -------------
@@ -255,29 +279,16 @@ Undergraduate Studies.
 Grades
 ------
 
-
-Course scores will be determined as the following weighted average: 
- 
-+--------------+--------+
-| Item         | Weight |
-+==============+========+
-| Midterm      | 25%    |
-+--------------+--------+
-| Homework     | 10%    |
-+--------------+--------+
-| Quizzes      | 25%    |
-+--------------+--------+
-| Final        | 40%    |
-+--------------+--------+
-| **Total**    | 100%   |
-+--------------+--------+
+The final course score will be a weighted average of the various
+course components (exams, homework, quizzes, etc.), with weights given
+as on the syllabus.  This term the homework counts more because
+they'll be doing lots of WebAssign work.  
 
 We should coordinate our efforts in the assignment of letter grades to
 scores.  Much of the grades will be based on the same material (i.e.,
 the common final in Calc I).  The others can be normalized so as to be
 comparable.  It's important that students who score equally in two
-different sections should get comparable grades.
-
+different sections should get comparable grades.  I
 
 We will convert this score to a letter grade *beginning* with these
 values as cutoffs:
@@ -314,8 +325,28 @@ them secret.  That has the appearance of generosity (B+'s magically go
 to A-'s), and the advantage of resumed secrecy (nobody knows the exact
 cutoff so they can't grub for it).  
 
-I rarely feel that I've given a student a grade higher than he or she
-deserved because of a published table.
+In practice, the exams are difficult enough I rarely feel that I've
+given a student a grade higher than he or she deserved because of a
+published table.  So don't take this table as overly restrictive—you
+will still probably be able to give the grades you want.
+
+Curves
+~~~~~~
+
+Students will ask if they'll be graded on a curve.  Basically, the
+policy of lowering cutoffs is what they're interested in.  They will
+also probably ask for the midterm exams or other assessments to be
+"curved."  We know that the the variance of a sum of independent
+variables is the sum of the variances, so I tell them that a single
+curve at the end of the course suffices. 
+
+When students ask about grades, yes, they want to know details, but
+they also want to know how you feel they're progressing.  So if they
+have a score that they feel is low, but is actually above average,
+make sure they know that.  You can turn an annoying conversation about
+curves into a meaningful conversation about their progress and what
+they can do to accelerate it.
+
 
 
 Techniques
@@ -353,7 +384,6 @@ organize my class.  Use it as you see fit.
 Class choreography
 ------------------
 
-
 We like lectures that go definition-theorem-proof-example but we
 didn't when we were learning mathematics for the first time.  Teaching
 mathematics to mathematics learners requires an Aristotelian rather
@@ -374,10 +404,9 @@ prime place for interactivity.  The difficulty will be getting
 students to come to recitation.  Having quizzes there helps, but it
 also has to be demonstrated that recitations will help them learn.
 
-If you are in a team, your class periods are 110 minutes long.  That
-should be plenty of time to involve some interactive components in
-your classes.  Please don't lecture at them for almost two hours in a
-row!
+If your class periods are 110 minutes long, that should be plenty of
+time to involve some interactive components in your classes.  Please
+don't lecture at them for almost two hours in a row!
 
 Examples of interactive engagement are:
 
@@ -415,9 +444,13 @@ intranet, which is http://home.nyu.edu/ .  From there, click the
 "Academics" tab and follow the links to set up your Blackboard "shell"
 (a website for your section).
 
+There will be common blackboard sites for each Calculus course to hold
+common documents such as sample exams and homework solutions.
+Sections should have their own section-specific blackboards as well.
+
 Sections which are lecture/recitation should probably merge their
 Blackboard sites so that all students have a common site and a
-recitation subsection.  Triplets can do as they please on this.
+recitation subsection.  
 
 Blackboard sites should have *at a minimum* contact information and
 office hours for the teaching staff.  There are lots of other
@@ -425,7 +458,7 @@ doohickeys you can put on them, such as:
 
 * online forums where students can discuss topics.  Teachers should
   keep track of these to answer questions and look out for students
-  sharing answers to homework.
+  sharing answers to homework. 
 
 * chat widgets so you can have online office hours.  This might be
   useful if you want to be at home but available.
@@ -440,7 +473,7 @@ doohickeys you can put on them, such as:
   mistake you made.  Blogging about things which aren't entirely math
   will help convince students you're human.
 
-Be aware of copyright, a very impoprtant issue at NYU.  If you put
+Be aware of copyright, a very important issue at NYU.  If you put
 copyrighted material on your course website, make sure that access to
 it is limited to the NYU community.  This applies to the solutions to
 problem sets that we will be putting up as well.
