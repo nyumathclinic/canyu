@@ -65,6 +65,13 @@
       <xsl:apply-templates select="@rel|@rev|@type|@media"/>
     </link>
   </xsl:template>
+
+  <!-- If there's a source element with a $HeadURL$ keyword, strip it out. -->
+  <xsl:template match="html:meta[@name='DC.Source' and @scheme='subversion']">
+    <meta xmlns="http://www.w3.org/1999/xhtml" name="DC.Source">
+      <xsl:attribute name="content"><xsl:value-of select="substring-before(substring(@content,11),' $')"/></xsl:attribute>
+    </meta>
+  </xsl:template>
   
   <!-- Default BEHAVIOR: identity transformation -->
   <xsl:template match="@*|node()">
