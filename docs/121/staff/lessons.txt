@@ -3,6 +3,7 @@
    :description: |coursename|, |term| |year|
    :keywords: |coursename|, |regnum|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
+   :DC.Source scheme=subversion: $HeadURL$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2008-07-31
@@ -20,10 +21,8 @@
 Lesson Outline for Calculus I, Spring 2009
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Author: Matthew Leingang <leingang@courant.nyu.edu>
 :Date: |date|
-
-**Spring 2009 version.  Some details and dates will change for Fall 2009.**
 
 This is a topic-by-topic checklist for Calculus I.  I've included
 specific *learning objectives* for each section—things that students
@@ -38,8 +37,8 @@ calendar quirks.
 Lesson 1: Functions and their Representations
 =============================================
 
-:MW Date: January 21
-:TR Date: January 20
+:MW Date: September 9
+:TR Date: September 8
 :Duration: varies
 :See Also: Stewart_, Section 1.1
 
@@ -64,37 +63,21 @@ Learning Objectives
 
 * Understand and apply the definition of *decreasing function*.
 
-* Understand and apply the definition of *even function*.
-
-* Understand and apply the definition of *odd function*.
-
 Notes
 -----
 
-January 19 is a holiday and no classes will meet.  This means that MW
-sections will only meet Wednesday, and Lessons 1 and 2 will have to be
-compressed into one class period.  Worse, there should be some kind of
-icebreaker on the first day of class, meaning even more material must
-be compressed.  Luckily, this is foundational material and pretty
-easily digested.
-
-Note also that January 20 is Inauguration Day and many students will be
-interested in that.
-
-.. I have a worksheet called the *Bottle Calibration Problem* (written
-   originally by the Shell Centre at the University of Nottingham).
-   The goal is associate to the shape of a bottle the graph of its
-   height function versus volume while filling it with water.  It's
-   actually quite challenging (for instructors as well as students!)
-   and levels the playing fields, gets students talking, and helps
-   them get a different idea of college math.  I can give you this
-   worksheet if you're interested.
+September 7 is a holiday and no classes will meet.  This means that MW
+sections will only meet Wednesday, and Lessons 1, 2, and 3 will have
+to be compressed into one class period.  You should also introduce
+yourself and give a quick blurb for the course, which takes a bit of
+time as well.  Luckily, this is foundational material and pretty
+easily digested.  Focus most on Lesson 3.
 
 Lesson 2: A Catalog of Essential Functions
 ==========================================
 
-:MW Date: January 21
-:TR Date: January 22
+:MW Date: September 9
+:TR Date: September 8–10
 :Duration: varies
 :See Also: Stewart_, Section 1.2
 
@@ -150,9 +133,9 @@ Lesson 3: The Limit of a Function
 =================================
 
 
-:MW Date: January 26
-:TR Date: January 27
-:Duration: one class period
+:MW Date: September 9
+:TR Date: September 10
+:Duration: varies
 :See Also: Stewart_, Section 1.3
 
 Learning Objectives
@@ -216,8 +199,8 @@ A limit will fail to exist if the one-sided limits exist and disagree.
 Lesson 4: Calculating Limits
 ============================
 
-:MW Date: January 28
-:TR Date: January 29
+:MW Date: September 14
+:TR Date: September 15
 :Duration: one class period
 :See Also: Stewart_, Section 1.4
 
@@ -270,8 +253,8 @@ picture (Figure 8 on page 42) to justify that.
 Lesson 5: Continuity
 ====================
 
-:MW Date: February 2
-:TR Date: February 3
+:MW Date: September 16
+:TR Date: September 17
 :Duration: one class period
 :See Also: Stewart_, Section 1.5
 
@@ -353,7 +336,7 @@ Now ask again: were you ever exactly three feet tall?
 Then give them an equation and show how to construct a function so
 that the function takes a specific value at a solution of the
 equation.  If the equation is :latex:`$f(x) = g(x)$`, try the function
-:latex:$h(x) =f(x) - g(x)$`.  That's obvious to you and me but it
+:latex:`$h(x) =f(x) - g(x)$`.  That's obvious to you and me but it
 probably wasn't until the first time we saw it.  Now you can tackle
 the height vs. weight question.
 
@@ -363,8 +346,8 @@ Now ponder the last question if you have time...
 Lesson 6: Limits Involving Infinity
 ===================================
 
-:MW Date: February 4
-:TR Date: February 5
+:MW Date: September 21
+:TR Date: September 22
 :Duration: one class period
 :See Also: Stewart_, Section 1.6
 
@@ -428,9 +411,9 @@ rewrite the limit laws to exclude all the bad arithmetic with
 Lesson 7: Derivatives and Rates of Change
 =========================================
 
-:MW Date: February 9
-:TR Date: February 10
-:Duration: two-thirds of one class period
+:MW Date: September 23
+:TR Date: September 24
+:Duration: one class period
 :See Also: Stewart_, Section 2.1
 
 
@@ -464,13 +447,15 @@ learned to drive the car.  Now they will learn to fix the car.
 It might help to have the class work on different examples based on
 their ability and experience here.
 
+You can start some of the Section 2.2 material if you have extra time.  
+
 
 Lesson 8: The Derivative as a Function
 ======================================
 
-:MW Date: February 9–11
-:TR Date: February 10–12
-:Duration: two-thirds of one class period
+:MW Date: September 28
+:TR Date: September 29
+:Duration: one-half of one class period
 :See Also: Stewart_, Section 2.2
 
 Learning Objectives
@@ -501,9 +486,9 @@ talk about Newtonian and Leibnizian notation for derivatives.
 Lesson 9: Basic Differentiation Rules
 =====================================
 
-:MW Date: February 11
-:TR Date: February 12
-:Duration: two-thirds of one class period
+:MW Date: September 28
+:TR Date: September 29
+:Duration: one-half of one class period
 :See Also: Stewart_, Section 2.3
 
 
@@ -541,14 +526,14 @@ Do the sum and constant multiple rules, pointing out that this is
 really just the limit laws applied the the difference quotients.
 
 The hard work for the derivative of sine (i.e., the fact that
-:latex:`$\lim_{x\to 0}\frac{\sin x}{x}=1$` is done in Section 1.3.
+:latex:`$\lim_{x\to 0}\frac{\sin x}{x}=1$`) is done in Section 1.3.
 
 
 Lesson 10: The Product and Quotient Rules
 =========================================
 
-:MW Date: February 18
-:TR Date: February 17
+:MW Date: September 30
+:TR Date: October 1
 :Duration: one class period
 :See Also: Stewart_, Section 2.4
 
@@ -571,14 +556,17 @@ rule, I use an economic example: Say you're working at McDonald's and
 you want to make more money.  You can either get a raise or work more
 hours.  If you do both, how does your income change?
 
-Monday, February 16 is a holiday (Presidents' Day) throwing the schedule out of
-whack from here until the midterm.
+There's no such intutition for the quotient rule.  The standard way to
+justify this is to say that if the quotient of two functions were
+differentiable, its derivative would have to be the quotient rule, by
+applying the product rule to `$(u/v)\cdot v$`.
+
 
 Lesson 11: The Chain Rule
 =========================
 
-:MW Date: February 23
-:TR Date: February 19
+:MW Date: October 5
+:TR Date: October 6
 :Duration: one class period
 :See Also: Stewart_, Section 2.5
 
@@ -616,8 +604,8 @@ evaluated: at the point that's being input to the original function.
 Lesson 12: Implicit Differentiation
 ===================================
 
-:MW Date: February 25
-:TR Date: February 24
+:MW Date: October 7
+:TR Date: October 8
 :Duration: one class period
 :See Also: Stewart_, Section 2.6
 
@@ -635,11 +623,53 @@ elementary inverse functions (e.g., log, arcsin, etc.), but that's
 done in later sections.  So in this section you can talk a little bit
 about how to visualize or graph curves defined implicitly.
 
-Lesson 13: Linear Approximations and Differentials
+
+Lesson 13: Related Rates Problems
+=================================
+
+:MW Date: October 12
+:TR Date: October 13
+:Duration: one class period
+:See Also: Stewart_, Section 2.7
+
+Learning Objectives
+-------------------
+
+* Read a related rates problem and convert it to a question of
+  derivatives.
+
+* Apply the chain rule to various real-world settings.
+
+Notes
+-----
+
+Students will have trouble with "word problems" like this.  See if you can coach them on how to read a paragraph and extract what is known and what is unknown.  A common difficulty is to confuse data which is a specific value of a variable with a constant.  For instance, if the problem is to find the rate of change of the area of a circle when the radius of the circle is 3 cm and growing at a rate of 1cm/sec, a student might instead find the area of a circle of radius 3, then not know what to differentiate because they are left with the constant `$9\pi$`.
+
+Students will probably also need to be reminded about some of the geometric formulas for area, trigonometry, and similar triangles.
+
+Midterm
+=======
+
+:MW Date: October 14
+:TR Date: October 15
+:Duration: one class period
+
+Notes
+-----
+
+The midterm should cover material up to Section 2.4.  Any point after
+that means that they will not have finished homework and had it graded
+and returned, so they won't have had sufficient feedback to be
+comfortable for an exam.
+
+Please see the syllabus and instructor's guide for specific exam policies and more information.
+
+
+Lesson 14: Linear Approximations and Differentials
 ==================================================
 
-:MW Date: March 2
-:TR Date: February 26
+:MW Date: October 19
+:TR Date: October 20
 :Duration: one class period
 :See Also: Stewart_, Section 2.8
 
@@ -679,13 +709,13 @@ then :latex:`$\Delta y = f(x+dx) - f(x)$` is approximately equal to
 suitable `$dx$`.
 
 
-Lesson 14: Exponential Functions
-================================
+Lesson 15: Exponential Functions, Logarithms, and their Derivatives
+===================================================================
 
-:MW Date: March 9
-:TR Date: March 3
-:Duration: varies
-:See Also: Stewart_, Section 3.1
+:MW Date: October 21
+:TR Date: October 22
+:Duration: one class period
+:See Also: Stewart_, Section 3.1–3
 
 Learning Objectives
 -------------------
@@ -694,43 +724,11 @@ Learning Objectives
 
 * Know the properties of exponential functions
 
-Notes
------
-
-We need to get the schedules back in sync so we need to finish Section 3.5 by
-March 13.  That is why these time lengths vary.
-
-
-Lesson 15: Inverse Functions and Logarithms
-===========================================
-
-:MW Date: March 9
-:TR Date: March 10
-:Duration: varies
-:See Also: Stewart_, Section 3.2
-
-Learning Objectives
--------------------
-
 * Understand the definition of the *inverse function* to a given
   function.
 
-* Decide whether a function is *invertible* (has an inverse)
-
 * Understand and apply the laws of logarithms, including the change of
   base formula.
-
-
-Lesson 16: Derivatives of Logarithmic and Exponential Functions
-===============================================================
-
-:MW Date: March 11
-:TR Date: March 12
-:Duration: varies
-:See Also: Stewart_, Section 3.3
-
-Learning Objectives
--------------------
 
 * Know the derivatives of the exponential functions (with any base)
 
@@ -741,6 +739,16 @@ Learning Objectives
 
 Notes
 -----
+
+You can summarize the basic properties of exponentials and logarithms.
+They should know that ("should" in the sense that "if they don't, they
+can be responsible and refresh themselves" more than in the sense of
+"probably").  
+
+Don't spend too much time on inverse functions conceptually or the
+inverse function theorem.  The thing I use the most is to convert the
+graph of a function to the graph of its inverse, you interchange `$x$`
+and `$y$` or flip the graph in the diagonal `$y=x$`.
 
 You can be dramatic about the derivative of log.  If look at all the
 integer power functions :latex:`$x^n$`, you can see each
@@ -753,12 +761,33 @@ regular differentiation and logarithmic differentiation and ask them
 which they prefer.
 
 
+Lesson 16: Exponential Growth and Decay
+=======================================
+
+:MW Date: October 26
+:TR Date: October 27
+:Duration: one class period
+:See Also: Stewart_, Section 3.4
+
+Notes
+-----
+
+This material is important because so many things grow or decay
+exponentially over time.  Two of our biggest student clienteles are
+pre-meds and economics majors.  The pre-meds will need to know about
+bacteria growth and drug dosages, while the econ majors will need to
+know about inflation and compound interest.  The guiding principle in
+all of these cases is the differential equation `$y' = ky$`, i.e., if
+the rate of change is proportional to the amount, the function
+grows/decays exponentially.
+
+
 Lesson 17: Inverse Trigonometric Functions
 ==========================================
 
-:MW Date: March 11
-:TR Date: March 13
-:Duration: varies
+:MW Date: October 28
+:TR Date: October 29
+:Duration: one class period
 :See Also: Stewart_, Section 3.5
 
 Learning Objectives
@@ -781,18 +810,72 @@ often, so one could focus on those.  But in principle, the others are
 just as easy to differentiate: implicitly, with a trigonometric
 identity to make the derivative explicit.
 
-Spring Break
-============
+Lesson 18: Indeterminate Forms and |LHopital|'s Rule
+====================================================
 
-Some students will want to travel over the break and maximize their time away.
-They may ask you to take quizzes ahead of time.  Please do not grant these
-requests as then we shall have to honor all of them.
+:MW Date: November 2
+:TR Date: November 3
+:Duration: one class period
+:See Also: Stewart_, Section 3.7
 
-Lesson 18: Maximum and Minimum Values
+Learning Objectives
+-------------------
+
+* Know when a limit is of indeterminate form:
+
+  * indeterminate quotients: `$0/0$`, `$\infty/\infty$`
+
+  * indeterminate products: `$0 \times \infty$`
+
+  * indeterminate differences: `$\infty-\infty$`
+
+  * indeterminate powers: :latex:`$0^0$`, :latex:`$\infty^0$`, and
+    :latex:`$1^\infty$`
+
+* Use |LHopital|'s Rule to evaluate indeterminate limits
+
+Notes
+-----
+
+The "recognizing indeterminate forms" objective is very important.
+The controversy surrounding |LHopital|'s Rule is that it's so often
+misapplied to non-indeterminate forms, which results in garbage.  So
+make sure they know what's indeterminate and what isn't.
+
+I usually demonstrate why we call limits of the form `$0/0$`
+indeterminate.  You can take :latex:`$\frac{\sin^2 x}{x}$`,
+:latex:`$\frac{\sin x}{x}$`, and :latex:`$\frac{\sin x}{x^2}$` as
+`$x$` tends to zero.  All of these are of the form 0/0 but the first
+limit is zero, the second one, and the last |infinity|. (you can show
+these without |LHopital|'s Rule).
+
+There's a big difference between the limit being of indeterminate form
+and the function failing to have a limit.  Notice in two of the above
+cases, the limit does exist.  Students will also confuse *limits of
+the form* 0/0, which are *indeterminate* with the *expression* 0/0
+which is *undefined*. That's exactly what |LHopital|'s Rule is
+for. [#]_
+
+.. [#] I saw this comment on the `Wikipedia talk page`__ for |LHopital|'s Rule:
+
+     "0/0? You can't divide by zero if you do it gives you all sorts
+     of weird answers.  The preceding unsigned comment was added by
+     71.246.231.88 (talk) 23:04, 2 January 2007 (UTC).
+
+     "Hence |LHopital|'s Rule, my friend. -216.145.255.2 11:32, 5
+     January 2007 (UTC)"
+   
+   __ http://en.wikipedia.org/w/index.php?title=Talk:L%27H%C3%B4pital%27s_rule&oldid=214019846#You_Divided_by_zero
+
+You may not have time to do all the indeterminate powers in
+class.  Tell them to read it in the book.
+
+
+Lesson 19: Maximum and Minimum Values
 =====================================
 
-:MW Date: March 23
-:TR Date: March 24
+:MW Date: November 4
+:TR Date: November 5
 :Duration: one class period
 :See Also: Stewart_, Section 4.1
 
@@ -808,12 +891,46 @@ Learning Objectives
 * Use the *Closed Interval Method* to find the extreme values of a
   function defined on a closed interval.
 
-Lesson 19: The Mean Value Theorem
+Notes
+-----
+
+The Extreme Value Theorem is one of those topological theorems that we
+can't prove.  It follows from the fact that the image of a compact
+set under a continuous function is also compact, and that compact
+subsets of the real line are closed, bounded intervals.  You can
+show, though, that the theorem is "tight" in the sense that if you try
+to apply it to a function which is not continuous, or not restricted
+to a closed, bounded interval, than the theorem is not true.
+
+Fermat's Theorem says if a function is differentiable at a local
+extreme point, the derivative must be zero.  It's easy to prove: the
+difference quotient must be nonnegative on one side of the point and
+nonpositive on the other.  If the limit exists, it simultaneously has
+to be nonnegative and nonpositive, i.e., zero.
+
+I usually do a digression on Fermat's Last Theorem at this point.
+Every mathematics student should know that story, right?
+
+The logic behind the Closed Interval Method is impeccable.  Sometimes
+I draw a flowchart.  To find the maximum and minimum values, either
+they occur inside the interval (in which case they occur at local extreme
+points) or they don't.  If they are local extreme values, either the
+function's differentiable at those points or it's not.  By Fermat's
+Theorem, if the local extremes are points of differentiability, the
+derivative must be zero.  So...the only points that can be extreme
+points are places where the function is not differentiable, has a
+derivative of zero, or endpoints of the interval.
+
+We are told by the Economics department to remind students that the
+maximum value can occur on the endpoint.
+
+
+Lesson 20: The Mean Value Theorem
 =================================
 
-:MW Date: March 25
-:TR Date: March 26
-:Duration: one-half of one class period
+:MW Date: November 9
+:TR Date: November 10
+:Duration: one class period
 :See Also: Stewart_, Section 4.2
 
 * Understand and be able to explain the statement of *Rolle's Theorem*.
@@ -833,14 +950,19 @@ is the theorem which ties derivative information to information about
 the original function.  From the MVT we prove that a function with
 zero derivative (on an interval) must be a constant, or that two
 functions with the same derivative (again, on an interval), differ by
-a constant.  The MVT is used in the proof of the FTC.  
+a constant.  The MVT is used in the proof of the FTC.
 
-Lesson 20: Derivatives and the Shapes of Graphs
+For this chapter, we are most interested in using MVT to graph
+functions.  So you can start going into the Monotonicity and Concavity
+tests too (Section 4.3).
+  
+
+Lesson 21: Derivatives and the Shapes of Graphs
 ===============================================
 
-:MW Date: March 25
-:TR Date: March 26
-:Duration:  one-half of one class period
+:MW Date: November 11
+:TR Date: November 12
+:Duration:  one class period
 :See Also: Stewart_, Section 4.3
 
 Learning Objectives
@@ -861,12 +983,20 @@ Learning Objectives
   critical points as local maxima or local minima, when applicable
   (The *Second Derivative Test*)
 
+Notes
+-----
 
-Lesson 21: Curve Sketching
+Veteran's Day is not a holiday this year, I'm afraid.
+
+You can apply these tests to easy examples to get the students warmed
+up with graphing.
+
+
+Lesson 22: Curve Sketching
 ==========================
 
-:MW Date: March 30–April 1
-:TR Date: March 31–April 2
+:MW Date: November 16
+:TR Date: November 17
 :Duration: two class periods
 :See Also: Stewart_, Section 4.4
 
@@ -884,19 +1014,59 @@ Learning Objective
 Notes
 -----
 
+Much of this should have been foreshadowed in the previous two sections.
+
 I really feel that curve sketching is the quintessential calculus
 skill.  If you can take apart a function with calculus and piece it
 all back together then you really know what derivatives are.  It's
 kind of like diagramming sentences, which are also kind of old
 fashioned but very instructive.
 
-This semester I decided to take a week on this important topic.
+Lesson 23: Antiderivatives
+==========================
 
-Lesson 22: Optimization Problems
+:MW Date: November 18
+:TR Date: November 19
+:Duration: one class period
+:See Also: Stewart_, Section 4.7
+
+Learning Objectives
+-------------------
+
+* Given a "simple" elementary function, find a function whose
+  derivative is that function. 
+
+* Remember that a function whose derivative is zero along an interval
+  *must* be zero along that interval.
+
+* Solve problems involving rectilinear motion.
+
+Notes
+-----
+
+I used to hate this section, but it does make some sense in this chapter.
+
+The fact that `$f'=0$` means that `$f$` is constant on intervals is
+due to the Mean Value Theorem.  It tells us that any two
+antiderivatives are only different by a constant.
+
+From this we can derive the equations of rectilinear motion under
+constant acceleration: If `$a(t) = c$`, then `$ct$` would be an
+antiderivative and so the most general antiderivative is `$v(t)
+=ct+C$`.  By plugging in, `$C=v_0$` and so `$v(t) = ct +v_0$`.
+Likewise the position function is seen to be `$s(t) = s_0 + v_0 t+
+\frac12 ct^2$`.
+
+There is some stuff involving baby differential equations—the ones of
+the form `$y' = f(x)$`, which are directly integrable already.  Skip
+this.
+
+
+Lesson 24: Optimization Problems
 ================================
 
-:MW Date: April 6–8
-:TR Date: April 7–9
+:MW Date: November 23
+:TR Date: November 24
 :Duration: one class period
 :See Also: Stewart_, Section 4.5
 
@@ -922,21 +1092,36 @@ patient.
 
 Like the related rates sections, I'm inclined to start with simple
 problems, done completely by you, then gradually nudging them towards
-doing their own problems in groups.
-
-In the second half of class, I'm probably going to give them a worksheet with
-two extended optimization problems, one of them being the "Statue of
-Liberty problem": how far away from the statue should you stand to
-maximize the size of the statue in your vision?
+doing their own problems, alone or in groups.
 
 
+Wednesday, November 25
+----------------------
 
-Lesson 23: Areas and Distances
+This is a really short week, because Thursday is Thanksgiving Day.
+It's pretty common for students to travel this week, either home or
+the home of a friend if their home is far away.  They will often be
+traveling the day before (Wednesday), even though that's officially a
+school day.  TR sections will obviously not meet on Thursday.  Thus,
+MW sections will have an extra class period, which many students will
+not attend.
+
+I've learned it's expedient to go with the flow of traditions like
+these.  So whatever happens on Wednesday shouldn't be new material
+from Monday, but should be useful for understanding the first four
+sections.  A good worksheet would make this time worthwhile without
+penalizing those who miss it.  I'm probably going to give them a
+worksheet with two extended optimization problems, one of them being
+the "Statue of Liberty problem": how far away from the statue should
+you stand to maximize the size of the statue in your vision?
+
+
+Lesson 25: Areas and Distances
 ==============================
 
-:MW Date: April 13
-:TR Date: April 14
-:Duration: one class period
+:MW Date: November 30
+:TR Date: December 1
+:Duration: two-thirds of one class period
 :See Also: Stewart_, Section 5.1
 
 Learning Objectives
@@ -960,12 +1145,12 @@ divide and conquer: divide into small intervals along which one of the
 functions can be reasonably approximated by a constant.  Then let the
 intervals tend to zero in width.
 
-Lesson 24: The Definite Integral
+Lesson 26: The Definite Integral
 ================================
 
-:MW Date: April 15
-:TR Date: April 16
-:Duration: one class period
+:MW Date: November 30–December 2
+:TR Date: December 1–3
+:Duration: two-thirds of one class period
 :See Also: Stewart_, Section 5.2
 
 Learning Objectives
@@ -991,12 +1176,12 @@ First Fundamental Theorem of Calculus.
 
 
 
-Lesson 25: Evaluating Definite Integrals
+Lesson 27: Evaluating Definite Integrals
 ========================================
 
-:MW Date: April 20
-:TR Date: April 21
-:Duration: one class period
+:MW Date: December 2
+:TR Date: December 3
+:Duration: two-thirds of one class period
 :See Also: Stewart_, Section 5.3
 
 Learning Objectives
@@ -1045,11 +1230,11 @@ is velocity it's distance.  If `$f$` is density it's mass.  If `$f$` is
 marginal cost it's total cost.  And so on.
 
 
-Lesson 26: The Fundamental Theorem of Calculus
+Lesson 28: The Fundamental Theorem of Calculus
 ==============================================
 
-:MW Date: April 23
-:TR Date: April 24
+:MW Date: December 7
+:TR Date: December 8
 :Duration: one class period
 :See Also: Stewart_, Section 5.4
 
@@ -1109,20 +1294,13 @@ defined in terms of an integral, such as the error function
 :latex:`$\int_0^x\frac{\sin t}{t}\,dt$`, and the Fresnel function.
 
 
-Lesson 27: The Substitution Rule
+Lesson 29: The Substitution Rule
 ================================
 
-:MW Date: April 27
-:TR Date: April 28
+:MW Date: December 9
+:TR Date: December 10
 :Duration: one class period
 :See Also: Stewart_, Section 5.5
-
-Prequisites
------------
-
-* The Fundamental Theorem of Calculus
-
-* Even and odd functions
 
 
 Learning Objectives
@@ -1134,8 +1312,6 @@ Learning Objectives
 * Evaluate indefinite integrals using the method of substitution.
 
 * Evaluate definite integrals using the method of substitution.
-
-* Use symmetry to simplify integrals of even and odd functions.
 
 Notes
 -----
@@ -1177,19 +1353,12 @@ function/derivative pairs, the obvious ones being :latex:`$x^n$` with
 ones being :latex:`$e^x$` with  :latex:`$e^x$`, :latex:`$\sqrt{x}$` with
 :latex:`$\frac{1}{\sqrt x}$`, and :latex:`$\ln x$` with :latex:`$\frac{1}{x}$`.
 
-Substitution applied to symmetric (even or odd) functions gives nice
-simplification for definite integrals over intervals which are
-symmetric about zero.  The integral of an odd function over such an
-interval is zero; while the integral of an even function over such an
-interval is twice the integral over the second half.  A picture is
-most convincing here, the substitution `$u=-x$` makes it rigorous.
-
 
 Finale
 ======
 
-:MW Date: April 29
-:TR Date: April 30
+:MW Date: December 14
+:TR Date: December 15
 :Duration: One class period
 
 Here you can do whatever you want, except cancel class.  Some
@@ -1208,20 +1377,11 @@ suggestions.
 
 .. _(pi): http://www.imdb.com/title/tt0138704/
 
-Monday, May 4
-=============
-
-MW sections should review for the final here.
-
-Tuesday, May 5
-==============
-
-TR sections will not meet this week, but on this "reading day" instructors should schedule a review session if possible.
 
 Final Exam
 ==========
 
-**The final exam will be Friday, May 8, from 2:00–3:50pm.** There will be many
+**The final exam will be Friday, December 18, from 2:00–3:50pm.** There will be many
 technical and logistical questions about the final.  Please check the
 departmental syllabus or with Prof. Leingang if you do not know the answer.
 
@@ -1241,7 +1401,7 @@ Textbook
 
 .. |ocirc|  unicode:: U+000F4 .. LATIN SMALL LETTER O WITH CIRCUMFLEX
 
-.. |pi| unicode:: U+003C0 .. π
+.. |pi| unicode:: U+003C0 .. PI
 
 .. |LHopital| replace::
    L'H\ |ocirc|\ pital 
