@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Lesson Outline for Calculus III, Spring 2009
-   :keywords: Math 122, V63.0122, NYU, Math, Calculus
+   :description: |coursename|, |term| |year|
+   :keywords: |regnum|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id: lessons.txt 154 2009-01-14 18:26:27Z matthew $
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -13,13 +13,14 @@
 
 .. default-role:: latex
 
+.. include:: config.txt
 
-Lesson Outline for Calculus III, Spring 2009
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-**Fall 2009 version in the works.**
+Lesson Outline for |coursename|, |term| |year|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@cims.nyu.edu>
+
+:Author: Matthew Leingang <leingang@courant.nyu.edu>
 :Date: |date|
 
 This is a topic-by-topic checklist for Calculus III.  I've included
@@ -41,6 +42,7 @@ Lesson 1: Three-dimensional Coordinate Systems
 
 :MW Date: September 9
 :TR Date: September 8
+:Duration (class periods): varies
 :See Also: Stewart_, Section 10.1
 
 Learning Objectives
@@ -70,6 +72,7 @@ Lesson 2: Vectors
 
 :MW Date: September 14
 :TR Date: September 10
+:Duration (class periods): varies
 :See Also: Stewart_, Section 10.2
 
 Learning Objectives
@@ -92,8 +95,9 @@ Learning Objectives
 Lesson 3: The Dot Product
 =========================
 
-:MW Date: September 14/16
+:MW Date: September 14–16
 :TR Date: September 15
+:Duration (class periods): varies
 :See Also: Stewart_, Section 10.3
 
 Learning Objectives
@@ -126,6 +130,7 @@ Lesson 4: The Cross Product
 
 :MW Date: September 16
 :TR Date: September 17
+:Duration (class periods): 1
 :See Also: Stewart_, Section 10.4
 
 Learning Objectives
@@ -157,6 +162,7 @@ Lesson 5: Equations of Lines and Planes
 
 :MW Date: September 21
 :TR Date: September 22
+:Duration (class periods): 1
 :See Also: Stewart_, Section 10.5
 
 
@@ -223,6 +229,7 @@ Lesson 6: Cylinders and Quadric Surfaces
 
 :MW Date: September 23
 :TR Date: September 24
+:Duration (class periods): 1
 :See Also: Stewart_, Section 10.6
 
 Learning Objectives
@@ -249,6 +256,7 @@ Lesson 7: Vector functions and space curves
 
 :MW Date: September 28
 :TR Date: October 1
+:Duration (class periods): 1
 :See Also: Stewart_, Section 10.7
 
 Learning Objectives
@@ -324,6 +332,7 @@ Lesson 9: Motion in Space: Velocity and Acceleration
 
 :MW Date: October 2
 :TR Date: October 3
+:Duration (class periods): 1
 :See Also: Stewart_, Section 10.9
 
 Learning Objectives
@@ -350,6 +359,7 @@ Lesson 10: Functions of Several Variables
 
 :MW Date: October 5
 :TR Date: October 6
+:Duration (class periods): 2/3
 :See Also: Stewart_, Section 11.1
 
 Learning Objectives
@@ -380,6 +390,7 @@ Lesson 11: Limits and Continuity
 
 :MW Date: October 5/7
 :TR Date: October 6/8
+:Duration (class periods): 2/3
 :See Also: Stewart_, Section 11.2
 
 Learning Objectives
@@ -402,6 +413,7 @@ Lesson 12: Partial Derivatives
 
 :MW Date: October 7
 :TR Date: October 8
+:Duration (class periods): 2/3
 :See Also: Stewart_, Section 11.3
 
 Learning Objectives
@@ -430,6 +442,7 @@ Lesson 13: Tangent Planes and Linear Approximation
 
 :MW Date: October 12
 :TR Date: October 13
+:Duration (class periods): 1
 :See Also: Stewart_, Section 11.4
 
 Learning Objectives
@@ -466,6 +479,7 @@ Lesson 14: The Chain Rule
 
 :MW Date: October 19
 :TR Date: October 20
+:Duration (class periods): 1
 :See Also: Stewart_, Section 11.5
 
 * To understand and be able to apply the chain rule for functions of
@@ -489,6 +503,7 @@ Lesson 15: Directional Derivatives and the gradient vector
 
 :MW Date: October 21
 :TR Date: October 22
+:Duration (class periods): 1
 :See Also: Stewart_, Section 11.6
 
 
@@ -514,6 +529,7 @@ Lesson 16: Maximum and Minimum Values
 
 :MW Date: October 26
 :TR Date: October 27
+:Duration (class periods): 1
 :See Also: Stewart_, Section 11.7
 
 Learning Objectives
@@ -546,6 +562,7 @@ Lesson 17: Lagrange Multipliers
 
 :MW Date: October 28
 :TR Date: October 29
+:Duration (class periods): 1
 :See Also: Stewart_, Section 11.8
 
 Learning Objectives
@@ -583,6 +600,7 @@ Lesson 18: Double Integrals over Rectangles
 
 :MW Date: November 2
 :TR Date: November 3
+:Duration (class periods): 1
 :See Also: Stewart_, Section 12.1
 
 Learning Objectives
@@ -619,9 +637,9 @@ Notes
 Lesson 19: Double Integrals over General Regions
 ================================================
 
-:MW Date: November 2/4
-:TR Date: November 3/5
-
+:MW Date: November 2–4
+:TR Date: November 3–5
+:Duration (class periods): 1
 :See Also: Stewart_, Section 12.2
 
 * To understand and be able to compute the double integral of a
@@ -697,6 +715,7 @@ Lesson 20: Double Integrals in Polar Coordinates
 
 :MW Date: November 4
 :TR Date: November 5
+:Duration (class periods): 1
 :See Also: Stewart_, Section 12.3
 
 Learning Objectives
@@ -721,6 +740,7 @@ Lesson 21: Triple Intgrals
 
 :MW Date: November 9
 :TR Date: November 10
+:Duration (class periods): 1
 :See Also: Stewart_, Section 12.5
 
 Learning Objectives
@@ -794,8 +814,9 @@ Notes
 Lesson 22: Triple Integrals in Cylindrical Coordinates
 ======================================================
 
-:MW Date: November 9/11
-:TR Date: November 10/12
+:MW Date: November 9–11
+:TR Date: November 10–12
+:Duration (class periods): 1
 :See Also: Stewart_, Section 12.6
 
 Learning Objectives
@@ -828,6 +849,7 @@ Lesson 23: Triple Integrals in Spherical Coordinates
 
 :MW Date: November 11
 :TR Date: November 12
+:Duration (class periods): 1
 :See Also: Stewart_, Section 12.7
 
 Learning Objectives
@@ -858,6 +880,7 @@ Lesson 24: Vector Fields
 
 :MW Date: November 16
 :TR Date: November 17
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.1
 
 
@@ -876,8 +899,9 @@ Notes
 Lesson 25: Line Integrals
 =========================
 
-:MW Date: November 16/18
-:TR Date: November 17/19
+:MW Date: November 16–18
+:TR Date: November 17–19
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.2
 
 Learning Objectives
@@ -923,6 +947,7 @@ Lesson 26: The Fundamental Theorem of Line Integrals
 
 :MW Date: November 18
 :TR Date: November 19
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.3
 
 Learning Objectives
@@ -966,6 +991,7 @@ Lesson 27: Green's Theorem
 
 :MW Date: November 23
 :TR Date: November 24
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.4
 
 Learning Objectives
@@ -1003,6 +1029,7 @@ Lesson 28: Curl and Divergence
 
 :MW Date: November 25
 :TR Date: November 24
+:Duration (class periods): 0.5–1
 
 Learning Objectives
 -------------------
@@ -1071,6 +1098,9 @@ Notes
 Lesson 29: Parametric Surfaces and their Areas
 ==============================================
 
+:MW Date: November 30
+:TR Date: December 1
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.6
 
 Learning Objectives
@@ -1139,6 +1169,9 @@ Notes
 Lesson 30: Surface Integrals
 ============================
 
+:MW Date: December 2
+:TR Date: December 3
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.7
 
 Learning Objectives
@@ -1197,6 +1230,9 @@ Notes
 Lesson 31: Stokes's Theorem
 ===========================
 
+:MW Date: December 7
+:TR Date: December 8
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.8
 
 Learning Objectives
@@ -1217,9 +1253,14 @@ Learning Objectives
 Notes
 -----
 
+The man's name was *Stokes*, so things which belong to him are called *Stokes's* or *Stokes'*, but not *Stoke's*.
+
 Lesson 32: (Gauss's) Divergence Theorem
 =======================================
 
+:MW Date: December 9
+:TR Date: December 10
+:Duration (class periods): 1
 :See Also: Stewart_, Section 13.9
 
 Learning Objectives
@@ -1239,6 +1280,9 @@ Learning Objectives
 Notes
 -----
 
+The man's name was *Gauss*, so things which belong to him are called *Gauss's* or *Gauss'*, but not *Gaus's*.
+
+
 At some point I like to point out that there's really only one
 Fundamental Theorem of Calculus (which we in the business know as
 Stokes's Theorem).  The one-variable FTC, the Fundamental Theorem of
@@ -1249,21 +1293,33 @@ of (the coboundary) over the boundary of that set (in the inherited
 orientation).  Once you understand that, there's really only one way
 to line up all these identities.
 
-Monday, May 4
-=============
+Finale
+======
 
-MW and MWF classes should review for the final here.
+:MW Date: December 14
+:TR Date: December 15
+:Duration (class periods): 1
 
-Tuesday, May 5
-==============
+Here you can do whatever you want, except cancel class.  Some
+suggestions.
 
-TR and TRF class will not meet this week, but on this "reading day"
-instructors should schedule a review session if possible.
+* Review the course.  If there were problems you teased at the
+  beginning of the term you can solve them now.
+
+* Talk about something more advanced.  You can connect Calc II, or to
+  Calc III, or to something else, even approaching your own research.
+
+* Do something entertaining.  I show a number of clips from movies
+  about mathematics such as :title:`(pi)` and :title:`Good Will Hunting`,
+  and then the Disney short :title:`Donald [Duck] in Mathmagic-land`.
+
+.. _(pi): http://www.imdb.com/title/tt0138704/
+
 
 Final Exam
 ==========
 
-**The final exam dates and times are on the syllabus.** There will be
+**The final exam dates and times are on the registar's website.** There will be
 many technical and logistical questions about the final.  Please check
 the departmental syllabus or with Prof. Leingang if you do not know
 the answer.
@@ -1283,4 +1339,5 @@ Textbook
 
 .. |times| unicode:: U+2A09
 
-.. |date| date::
+.. |date| date:: %B %e, %Y
+

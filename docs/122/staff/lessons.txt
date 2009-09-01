@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
-   :description: Lesson Outline for Calculus II, Spring 2009
-   :keywords: Math 122, V63.0122, NYU, Math, Calculus
+   :description: |coursename|, |term| |year|
+   :keywords: |regnum|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -13,16 +13,17 @@
 
 .. default-role:: latex
 
+.. include:: config.txt
 
-Lesson Outline for Calculus II, Spring 2009
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-**Fall 2009 version in the works.**
+Lesson Outline for |coursename|, |term| |year|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@cims.nyu.edu>
+
+:Author: Matthew Leingang <leingang@courant.nyu.edu>
 :Date: |date|
 
-This is a topic-by-topic checklist for Calculus II.  I've included
+This is a topic-by-topic checklist for |coursename|.  I've included
 specific *learning objectives* for each section—things that students
 should be capable of after completing the topic.  I've also written
 notes on each topic to help with planning a lecture, and to explain
@@ -35,9 +36,9 @@ calendar quirks.
 Lesson 1: Review of the Definite Integral and the Fundamental Theorem of Calculus
 =================================================================================
 
-:MW Date: January 21
-:TR Date: January 20-22
-:Duration: varies
+:MW Date: September 9
+:TR Date: September 8–10
+:Duration (class periods): 1–2
 :See Also: Stewart_, Section 5.1, 5.2, 5.3, 5.5
 
 Learning Objectives
@@ -94,9 +95,9 @@ substitution some more.
 Lesson 2: Integration by Parts
 ==============================
 
-:MW Date: January 27
-:TR Date: January 28
-:Duration: one class period
+:MW Date: September 15
+:TR Date: September 16
+:Duration (class periods): 1
 :See Also: Stewart_, Section 6.1
 
 Learning Objectives
@@ -227,9 +228,9 @@ the right answer.]
 Lesson 3: Trigonometric Integrals and Substitution
 ==================================================
 
-:MW Date: January 29
-:TR Date: January 30
-:Duration: one class period
+:MW Date: September 17
+:TR Date: September 18
+:Duration (class periods): 1
 :See Also: Stewart_, Section 6.2
 
 Learning Objectives
@@ -275,9 +276,9 @@ radius 1 is `$\pi$`.
 Lesson 4: Integration by Partial Fraction Decomposition
 =======================================================
 
-:MW Date: February 2
-:TR Date: February 3
-:Duration: one class period
+:MW Date: September 22
+:TR Date: September 23
+:Duration (class periods): 1
 :See Also: Stewart_, Section 6.3
 
 Prerequisites
@@ -354,9 +355,9 @@ polynomials and multiply it all out.  It leaves `$n$` independent equations in
 Lesson 5: Integration with Tables; Strategies for Integration
 =============================================================
 
-:MW Date: February 4
-:TR Date: February 5
-:Duration: one class period
+:MW Date: September 24
+:TR Date: September 25
+:Duration (class periods): 1
 :See Also: Stewart_, Section 6.4
 
 Learning Objectives
@@ -391,9 +392,9 @@ work in groups.
 Lesson 6: Approximate Integration
 =================================
 
-:MW Date: February 9
-:TR Date: February 10
-:Duration: one class period
+:MW Date: September 28
+:TR Date: September 29
+:Duration (class periods): 1
 :See Also: Stewart_, Section 6.5
 
 Learning Objectives
@@ -445,9 +446,9 @@ think of the process and articulate it clearly.
 Lesson 7: Improper Integrals
 ============================
 
-:MW Date: February 11
-:TR Date: February 12
-:Duration: one class period
+:MW Date: September 30
+:TR Date: October 1
+:Duration (class periods): 1
 :See Also: Stewart_, Section 6.6
 
 Learning Objectives
@@ -487,9 +488,9 @@ bound ever: that `$|\sin x| \leq 1$`.)
 Lesson 8: Areas between Curves
 ==============================
 
-:MW Date: February 18
-:TR Date: February 17
-:Duration: varies
+:MW Date: October 5
+:TR Date: October 6
+:Duration (class periods): 2/3
 :See Also: Stewart_, Section 7.1
 
 Learning Objectives
@@ -517,9 +518,9 @@ horizontal integrations takes two integrals but only one vertically.
 Lesson 9: Volumes
 =================
 
-:MW Date: February 18
-:TR Date: Feburary 19
-:Duration: varies
+:MW Date: October 5–7
+:TR Date: October 6–8
+:Duration (class periods): 2/3
 :See Also: Stewart_, Section 7.2
 
 Learning Objectives
@@ -558,9 +559,9 @@ integrate something.
 Lesson 10: Volumes by Cylindrical Shells
 ========================================
 
-:MW Date: February 23
-:TR Date: February 24
-:Duration: one half of one class period
+:MW Date: October 7
+:TR Date: October 8
+:Duration (class periods): 2/3
 :See Also: Stewart_, Section 7.3
 
 Learning Objective
@@ -588,9 +589,9 @@ they see when and why `$x$` needs to be changed to `$x-a$` (or whatever).
 Lesson 10: Arc length
 =====================
 
-:MW Date: February 23
-:TR Date: February 24
-:Duration: one-half of one class period
+:MW Date: October 12
+:TR Date: October 13
+:Duration (class periods): 1
 :See Also: Stewart_, Section 7.4
 
 Learning Objectives
@@ -611,13 +612,34 @@ Do not use this formula to "prove" that the circumference of a unit
 circle is `$2\pi$`; this is circular (no pun intended) because that's
 the definition of `$\pi$`.
 
+Since this is a short topic you could spend some time answering
+questions about the midterm.
 
-Lesson 11: Applications to Physics
-==================================
+Midterm
+=======
 
-:MW Date: February 25–March 2
-:TR Date: February 26–March 3
-:Duration: 1.5 class periods
+:MW Date: October 14
+:TR Date: October 15
+:Duration (class periods): 1
+
+Notes
+-----
+
+The midterm should cover material up to Section 6.6.  Any point after
+that means that they will not have finished homework and had it graded
+and returned, so they won't have had sufficient feedback to be
+comfortable for an exam.
+
+Please see the syllabus and instructor's guide for specific exam policies and more information.
+
+
+
+Lesson 11: Applications of Integration
+======================================
+
+:MW Date: October 19–21
+:TR Date: October 20–22
+:Duration (class periods): 2
 :See Also: Stewart_, Section 7.5
 
 Learning Objectives
@@ -656,15 +678,13 @@ would be effective here.
 
 Hydrostatic force is also in this section; let's skip it.
 
-You should also have some time on March 2 or 3 to review for the midterm.
-
 
 Lesson 12: Differential Equations
 =================================
 
-:MW Date: October 20
-:TR Date: October 21
-:Duration: two class periods
+:MW Date: October 26–28
+:TR Date: October 27–29
+:Duration (class periods): 2
 :See Also: Stewart_, Section 7.6
 
 Learning Objectives
@@ -706,20 +726,13 @@ to the separation-of-variables trick later.
 You can talk about equilibrium solutions to homogeneous ODEs if you
 like, but there are no problems on that in the book so we won't test them.
 
-Spring Break
-============
-
-Some students will want to travel over the break and maximize their time away.
-They may ask you to take quizzes ahead of time.  Please do not grant these
-requests as then we shall have to honor all of them.
-
 
 Lesson 13: Sequences
 ====================
 
-:MW Date: March 23
-:TR Date: March 24
-:Duration: one class period
+:MW Date: November 2
+:TR Date: November 3
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.1
 
 Learning Objectives
@@ -762,9 +775,9 @@ rational numbers.
 Lesson 14: Series
 =================
 
-:MW Date: March 25
-:TR Date: March 26
-:Duration: one class period
+:MW Date: November 4
+:TR Date: November 5
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.2
 
 Learning Objectives
@@ -810,9 +823,9 @@ for an infinite class you will serve the entire cake.
 Lesson 15: The Integral and Comparison Tests
 ============================================
 
-:MW Date: March 30
-:TR Date: March 31
-:Duration: one class period
+:MW Date: November 9
+:TR Date: November 10
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.3
 
 Learning Objectives
@@ -882,9 +895,9 @@ or the series?" when presented with a "bald" expression like `$\frac{1}{n}$`.
 Lesson 16: Other convergence tests
 ==================================
 
-:MW Date: April 1
-:TR Date: April 2
-:Duration: one class period
+:MW Date: November 11
+:TR Date: November 12
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.4
 
 Learning Objectives
@@ -930,9 +943,9 @@ well as what inconclusive means.
 Lesson 17: Power Series
 =======================
 
-:MW Date: April 6
-:TR Date: April 7
-:Duration: one class period
+:MW Date: November 16
+:TR Date: November 17
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.5
 
 Learning Objectives
@@ -968,9 +981,9 @@ the terms start to blow up.  So it's all there.
 Lesson 18: Representing Functions as Power Series
 =================================================
 
-:MW Date: April 8
-:TR Date: April 9
-:Duration: one class period
+:MW Date: November 18
+:TR Date: November 19
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.5
 
 Learning Objectives
@@ -1013,9 +1026,10 @@ about the zeta function if you want, too.
 Lesson 19: Taylor and Maclaurin Series
 ======================================
 
-:MW Date: April 13
-:TR Date: April 14
-:Duration: one class period
+:MW Date: November 23
+:TR Date: November 24
+:Duration (class periods): 1
+:Duration (class periods): one class period
 :See Also: Stewart_, Section 8.7
 
 Learning Objectives
@@ -1050,9 +1064,9 @@ Quotient Rule.  That's the whole point; there are better ways to do it.
 Lesson 20: Applications of Taylor Polynomials
 =============================================
 
-:MW Date: April 15
-:TR Date: April 16
-:Duration: one class period
+:MW Date: November 24
+:TR Date: November 25
+:Duration (class periods): 1
 :See Also: Stewart_, Section 8.7
 
 Learning Objectives
@@ -1088,9 +1102,9 @@ approximated by sums and products, which calculators definitely can do!
 Lesson 21: Parametric Curves
 ============================
 
-:MW Date: April 20
-:TR Date: April 21
-:Duration: one class period
+:MW Date: November 30
+:TR Date: December 1
+:Duration (class periods): 1
 :See Also: Stewart_, Section 9.1
 
 Learning Objectives
@@ -1126,9 +1140,9 @@ An `Etch A Sketch`_ might make a good demo here.
 Lesson 22: Calculus with Parametric Curves
 ==========================================
 
-:MW Date: April 22
-:TR Date: April 23
-:Duration: one class period
+:MW Date: December 2
+:TR Date: December 3
+:Duration (class periods): 1
 :See Also: Stewart_, Section 9.3
 
 Learning Objectives
@@ -1159,9 +1173,9 @@ and emphasizing how it's more symmetric than the first way.
 Lesson 23: Polar Coordinates
 ============================
 
-:MW Date: April 27
-:TR Date: April 28
-:Duration: one class period
+:MW Date: December 7
+:TR Date: December 8
+:Duration (class periods): 1
 :See Also: Stewart_, Section 9.3
 
 Learning Objectives
@@ -1197,9 +1211,9 @@ out of polar equations than to find the coordinates of a specific point.
 Lesson 24: Areas and Lengths in Polar Coordinates
 =================================================
 
-:MW Date: April 29
-:TR Date: April 30
-:Duration: one class period
+:MW Date: December 9
+:TR Date: December 10
+:Duration (class periods): 1
 :See Also: Stewart_, Section 9.4
 
 Learning Objectives
@@ -1220,20 +1234,34 @@ Notice again that the arc length formula doesn't usually give an
 integral which can be found in elementary terms.  Oh, well.
 
 
-Monday, May 4
-=============
+Finale
+======
 
-MW classes should review for the final here.
+:MW Date: December 14
+:TR Date: December 15
+:Duration: One class period
 
-Tuesday, May 5
-==============
+Here you can do whatever you want, except cancel class.  Some
+suggestions.
 
-TR class will not meet this week, but on this "reading day" instructors should schedule a review session if possible.
+* Review the course.  If there were problems you teased at the
+  beginning of the term you can solve them now.
+
+* Talk about something more advanced.  You can connect Calc II, or to
+  Calc III, or to something else, even approaching your own research.
+
+* Do something entertaining.  I show a number of clips from movies
+  about mathematics such as :title:`(pi)` and :title:`Good Will Hunting`,
+  and then the Disney short :title:`Donald [Duck] in Mathmagic-land`.
+
+.. _(pi): http://www.imdb.com/title/tt0138704/
+
+
 
 Final Exam
 ==========
 
-**The final exam will be Friday, May 8, from 2:00–3:50pm.** There will be many
+**The final exam will be Friday, December 18, from 2:00–3:50pm.** There will be many
 technical and logistical questions about the final.  Please check the
 departmental syllabus or with Prof. Leingang if you do not know the answer.
 
@@ -1252,4 +1280,4 @@ Textbook
 
 .. |times| unicode:: U+2A09
 
-.. |date| date::
+.. |date| date:: %B %e, %Y
