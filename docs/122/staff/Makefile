@@ -9,7 +9,7 @@ LIBDIR=$(TOPDIR)/lib
 include $(LIBDIR)/config.mk 
 
 # directory and  string configuration
-coursename=Calculus I
+coursename=Calculus II
 coursenum=122
 
 # build/install configuration
