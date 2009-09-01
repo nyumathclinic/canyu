@@ -1,8 +1,8 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
    :description: |coursename|, |term| |year|
-   :keywords: |coursename|, |regnum|, NYU, Math, Calculus
-   :DC.Identifier scheme=subversion: $Id$
+    :keywords: |regnum|, NYU, Math, Calculus
+  :DC.Identifier scheme=subversion: $Id$
    :DC.Source scheme=subversion: $HeadURL$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
@@ -18,8 +18,8 @@
 .. include:: config.txt
 
 
-Lesson Outline for Calculus I, Spring 2009
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Lesson Outline for |coursename|, |term| |year|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :Author: Matthew Leingang <leingang@courant.nyu.edu>
 :Date: |date|
@@ -1409,5 +1409,5 @@ Textbook
 .. |times| replace::
    :latex:`$times$`
 
-.. |date| date:: %B %d, %Y
+.. |date| date:: %B %e, %Y
 
