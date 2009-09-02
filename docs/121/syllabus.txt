@@ -69,9 +69,11 @@ the current term's listings will automatically come up.
 
 __ http://www.nyu.edu/registrar/listings/
 
-**Sections 60 and 61, taught by Arun Sundararajan, will have a
-different syllabus and textbook, but will still take the common exam.
-Please see Prof. Sundararajan for details on his sections.**
+**Sections 60 and 61, taught by Arun Sundararajan, will have a 
+different syllabus and textbook. Please see Prof. Sundararajan for 
+details on his sections.**
+
+.. deleted: but will still take the common exam.
  
 .. include:: ../common/syllabus_hw.txt
  
