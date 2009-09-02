@@ -13,11 +13,12 @@
    :link rel=alternate type=application/pdf: instructor_info.pdf
    :link rel=alternate type=text/x-rst: instructor_info.txt
 
+.. include:: config.txt
 
 Instructor's Guide to Calculus
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang
+:Author: |author|
 :Date: |date|
 
 Welcome to Courant's calculus program.  This document is a guide to

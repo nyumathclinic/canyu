@@ -1,8 +1,8 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
    :description: |coursename|, |term| |year|
-    :keywords: |regnum|, NYU, Math, Calculus
-  :DC.Identifier scheme=subversion: $Id$
+   :keywords: |regnum|, NYU, Math, Calculus
+   :DC.Identifier scheme=subversion: $Id$
    :DC.Source scheme=subversion: $HeadURL$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
