@@ -3,7 +3,7 @@
    :description: Syllabus for |coursename|, |term| |year|
    :keywords: |coursename|, |regnum|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
-   :DC.Creator: Matthew Leingang
+   :DC.Creator: |author|
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2009-08-19
    :DCT.Created language=en-US: August 19, 2009
@@ -26,7 +26,7 @@
 
 .. include:: config.txt
 
-:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Author: |author|
 :Term: |term| |year|
 :Date: |date|
 

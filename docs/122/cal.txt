@@ -3,7 +3,7 @@
    :description: Calendar for |coursename|, |term| |year|
    :keywords: |regnum|, NYU, Math, |coursename|, Calculus
    :DC.Identifier scheme=subversion: $Id$
-   :DC.Creator: Matthew Leingang
+   :DC.Creator: |author|
    :DC.Creator scheme=mbox_sha1sum: 9a4b7887cf33bd8142613c0832ba2710d242999c
    :DCT.Created scheme=W3CDTF: 2009-08-11
    :DCT.Created language=en-US: August 11, 2009
@@ -24,7 +24,7 @@
 Calendar for |coursename|, |term| |year|
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@courant.nyu.edu>
+:Author: |author|
 :Date:   |date|
 
 This is a week-by-week calendar of topics covered in |coursename|.
@@ -48,11 +48,11 @@ This is a week-by-week calendar of topics covered in |coursename|.
 |    |             +---------+---------------------------------------------+
 |    |             | 5.5     | The Substitution Rule                       |
 +----+-------------+---------+---------------------------------------------+
-| 2  | 9/15–9/18   | 6.1     | Integration by parts                        |
+| 2  | 9/14–9/17   | 6.1     | Integration by parts                        |
 |    |             +---------+---------------------------------------------+
 |    |             | 6.2     | Trigonometric Integrals and Substitution    |
 +----+-------------+---------+---------------------------------------------+
-| 3  | 9/22–9/25   | 6.3     | Integration by Partial Fraction             |
+| 3  | 9/21–9/24   | 6.3     | Integration by Partial Fraction             |
 |    |             |         | Decomposition                               |
 |    |             +---------+---------------------------------------------+
 |    |             | 6.4     | Integration with tables and                 |
