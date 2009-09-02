@@ -27,7 +27,7 @@
 Calendar for |coursename|, |term| |year|
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@courant.nyu.edu>
+:Author: |author|
 :Date:   |date|
 
 This is a week-by-week calendar of topics covered in |coursename|.

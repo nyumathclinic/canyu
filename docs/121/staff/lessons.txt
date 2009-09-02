@@ -21,7 +21,8 @@
 Lesson Outline for |coursename|, |term| |year|
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@courant.nyu.edu>
+:Author: |author|
+
 :Date: |date|
 
 This is a topic-by-topic checklist for Calculus I.  I've included

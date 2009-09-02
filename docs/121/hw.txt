@@ -30,7 +30,7 @@
 Homework Assignments for |coursename|, |term| |year|
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@courant.nyu.edu>
+:Author: |author|
 :Date: |date|
 
 

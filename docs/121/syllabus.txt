@@ -27,7 +27,7 @@
 |regnum|: |coursename|
 !!!!!!!!!!!!!!!!!!!!!!
 
-:Author: Matthew Leingang <leingang@cims.nyu.edu>
+:Author: |author|
 :Term: |term| |year|
 :Date: |date|
 
@@ -45,7 +45,7 @@ Topics
 
 The derivative measures the instantaneous rate of change of a
 function.  The definite integral measures the total accumulation of a
-function over an interval.  These two ideas form the basic for nearly
+function over an interval.  These two ideas form the basis for nearly
 all mathematical formulas in science.  The rules by which we can
 compute the derivative (respectively, the integral) of any function
 are called a calculus.  The Fundamental Theorem of Calculus links the
