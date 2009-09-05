@@ -20,24 +20,28 @@ up front, easier to carry around (since you don't have to carry the
 entire textbook at once), but cannot be sold back to the bookstore.
 
 You may also buy the latest edition of `Essential Calculus, Early
-Transcendentals`, non-customized, elsewhere.  Then you can buy 
-to buy WebAssign_ (regular or Enhanced with Stewart's `Calculus, Early
-Transcendentals`) from them online directly.
+Transcendentals`, `ISBN-13 978-0-495-01428-7`_ non-customized,
+elsewhere.  Then you can buy WebAssign_ (regular or Enhanced with
+Stewart's `Calculus, Early Transcendentals`) from them online
+directly.
 
-Finally, you may decide to go completely electronic.  You may buy an
-electronic format of `Essential Calculus, Early Transcendentals`, or a
-subset of that text consisting of which chapters you will need.  This
-will be the exact same text, problem numbering, section numbering, and
-pagination as the official edition, but is not hyperlinked.  With this
-you could buy regular WebAssign without the electronic text included.
-Or, you may buy Enhanced WebAssign alone, and we will provide the
-correspondence between problems assigned in `Essentials` with those
-from the full version of `Calculus`.  Or, of course, you could buy
-both the electronic format of `Essential Calculus, Early
-Transcendentals`, and Enhanced WebAssign which includes the
-hyperlinked version of `Essential Calculus, Early Transcendentals`.
+.. _`ISBN-13 978-0-495-01428-7`: http://en.wikipedia.org/wiki/Special:BookSources/9780495014287
 
-.. _iChapters: http://www.ichapters.com/
+Finally, you may decide to go completely electronic.  You may buy
+online (through iChapters_) an electronic format of `Essential
+Calculus, Early Transcendentals`, or a subset of that text consisting
+of which chapters you will need.  This will be the exact same text,
+problem numbering, section numbering, and pagination as the official
+edition, but is not hyperlinked.  With this you could buy regular
+WebAssign without the electronic text included.  Or, you may buy
+Enhanced WebAssign alone, and we will provide the correspondence
+between problems assigned in `Essentials` with those from the full
+version of `Calculus`.  Or, of course, you could buy both the
+electronic format of `Essential Calculus, Early Transcendentals`, and
+Enhanced WebAssign which includes the hyperlinked version of
+`Essential Calculus, Early Transcendentals`.
+
+.. _iChapters: http://www.ichapters.com/tl1/en/US/storefront/ichapters?cmd=catProductDetail&ISBN=978-0-495-01428-7
 
 Which one is right for you?  If you want to minimize your total costs
 but want some kind of paper textbook, it's either a used textbook and
