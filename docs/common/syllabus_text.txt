@@ -1,18 +1,57 @@
 .. -*- mode: rst; coding: utf-8 -*-
 
-Text
-----
+Textbook and Materials
+----------------------
 
-`Essential Calculus: Early Transcendentals` by James
-Stewart. Thomson/Brooks Cole, NYU has a custom version of this text
-which is sold bundled with the WebAssign access card.  To give you
-some options, there are three formats of the text at different price
-levels: hardcover, looseleaf, and electronic.  *We cannot endorse any
-other version, edition, or imprint of this book other than those sold
-in the bookstore.* If you want to find a similar book used and buy it,
-you may, but you will still need to purchase WebAssign access and you
-will still be responsible for doing the problems as written and
-labeled in the departmental version of the textbook.
+You need a textbook and you need WebAssign access.  We have tried to
+provide as many options as possible for you to achieve this.
+
+`Essential Calculus, Early Transcendentals` by James Stewart is the
+official textbook for the course.  NYU has a custom imprint of this
+text which is sold bundled with access to Enhanced WebAssign.
+Enhanced WebAssign includes a hyperlinked electronic format of
+Stewart's `Calculus, Early Transcendentals` (of which `Essentials` is
+a slimmed-down version) accessible through the web.
+
+In addition to the hardcover custom textbook, the NYU bookstore also has a
+limited number of looseleaf printings on three-hole punched paper,
+bundled with access to Enhanced WebAssign.  These are less expensive
+up front, easier to carry around (since you don't have to carry the
+entire textbook at once), but cannot be sold back to the bookstore.
+
+You may also buy the latest edition of `Essential Calculus, Early
+Transcendentals`, non-customized, elsewhere.  Then you can buy 
+to buy WebAssign_ (regular or Enhanced with Stewart's `Calculus, Early
+Transcendentals`) from them online directly.
+
+Finally, you may decide to go completely electronic.  You may buy an
+electronic format of `Essential Calculus, Early Transcendentals`, or a
+subset of that text consisting of which chapters you will need.  This
+will be the exact same text, problem numbering, section numbering, and
+pagination as the official edition, but is not hyperlinked.  With this
+you could buy regular WebAssign without the electronic text included.
+Or, you may buy Enhanced WebAssign alone, and we will provide the
+correspondence between problems assigned in `Essentials` with those
+from the full version of `Calculus`.  Or, of course, you could buy
+both the electronic format of `Essential Calculus, Early
+Transcendentals`, and Enhanced WebAssign which includes the
+hyperlinked version of `Essential Calculus, Early Transcendentals`.
+
+.. _iChapters: http://www.ichapters.com/
+
+Which one is right for you?  If you want to minimize your total costs
+but want some kind of paper textbook, it's either a used textbook and
+regular WebAssign or the official looseleaf edition which includes
+Enhanced WebAssign.  If you don't desire a paper text, get Enhanced
+WebAssign and nothing else.
+
+If you want the most textbook for your dollar, you probably want one
+of the paper textbook plus Enhanced WebAssign bundles sold in the
+bookstore.  You'll have the full paper version with no confusion about
+staying in sync with the instructor, and the full hyperlinked
+electronic version.  The hardcover can be sold back, but the looseleaf
+is more convenient.
+
 
 The calculator question
 -----------------------
