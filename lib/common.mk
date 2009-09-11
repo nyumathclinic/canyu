@@ -26,8 +26,7 @@ build-html: all
             		$(INSTALL) `basename $$file .html`-screen.html $(BUILDDIR_HTML)/$$file;\
             		$(INSTALL) $$file $(BUILDDIR_HTML)/`basename $$file .html`-print.html; \
 		done; \
-		$(INSTALL) $(PDF) $(BUILDDIR_HTML); \
-		$(INSTALL) $(TEXFILES) $(BUILDDIR_HTML); \
+		$(INSTALL) $(PDF) $(TEXFILES) $(MISC_INSTALL_FILES) $(BUILDDIR_HTML); \
 		if test -e "htaccess"; then $(INSTALL) htaccess $(BUILDDIR_HTML)/.htaccess; fi; \
 		cd $(BUILDDIR_HTML) && ln -fs $(INDEXALIAS) index.html; \
 	fi
