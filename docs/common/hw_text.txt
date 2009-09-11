@@ -1,0 +1,10 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+Since both the paper version of Stewart's `Essential Calculus, Early
+Transcendentals` and the electronic version of Stewart's `Calculus,
+Early Transcendals` are supported in this course, there are two
+numberings for the problems.  If a problem assigned from `Essentials`
+appears in the full version, the right-hand column lists the full
+version number.  If a problem is not in the full version, there is a
+link to a PDF with the statement of that problem.  
+
