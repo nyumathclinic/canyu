@@ -16,13 +16,12 @@ coursenum=121
 # build/install configuration
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
-PDF+=missing_problems.pdf
 
 # Use txt files as source
 TXTSRC=hw.txt syllabus.txt cal.txt
 HTML=$(TXTSRC:%.txt=%.html)
 HTML_SCREEN=$(TXTSRC:%.txt=%-screen.html)
-PDF=$(TXTSRC:%.txt=%.pdf)
+PDF=$(TXTSRC:%.txt=%.pdf) 
 TEXFILES=$(TXTSRC:%.txt=%.tex)
 DIRTY+=$(TXTSRC:%.txt=%.html) $(TXTSRC:%.txt=%-screen.html) $(TXTSRC:%.txt=%.pdf) $(TXTSRC:%.txt=%.tex) $(TEXFILES:%.tex=%.dep) 
 
