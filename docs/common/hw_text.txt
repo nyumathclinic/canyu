@@ -6,5 +6,7 @@ Early Transcendals` are supported in this course, there are two
 numberings for the problems.  If a problem assigned from `Essentials`
 appears in the full version, the right-hand column lists the full
 version number.  If a problem is not in the full version, there is a
-link to a PDF with the statement of that problem.  
+link to a PDF with the statement of that problem.  Generally, if
+you're using a paper text, you probably want the first column, while
+if you're using an electronic text, you probably want the second.
 
