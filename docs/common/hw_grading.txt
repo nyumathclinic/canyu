@@ -19,9 +19,8 @@ for examples of how to write up solutions to a problem well.
 Some exam problems will also ask for justifications, so this will be
 good practice.
 
-Each problem will usually be worth 3 points.  Multi-part problems will usually have each
-part graded on the same scale.  Graders will grade each three-point part according to the
-following rubric:
+Each problem will usually be worth 3 points.  Graders will grade each
+three-point part according to the following rubric:
 
 .. list-table::
    :widths: 5 25
