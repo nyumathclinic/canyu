@@ -26,6 +26,7 @@ TEXFILES=$(TXTSRC:%.txt=%.tex)
 DIRTY+=$(TXTSRC:%.txt=%.html) $(TXTSRC:%.txt=%-screen.html) $(TXTSRC:%.txt=%.pdf) $(TXTSRC:%.txt=%.tex) $(TEXFILES:%.tex=%.dep) 
 
 ALLFILES=$(HTML) $(HTML_SCREEN) $(TEXFILES) $(PDF)
+MISC_INSTALL_FILES=$(shell ls Prob*.png)
 
 all: $(ALLFILES)
 
