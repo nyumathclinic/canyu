@@ -998,7 +998,7 @@ Lesson 22: Curve Sketching
 
 :MW Date: November 16
 :TR Date: November 17
-:Duration: two class periods
+:Duration: one class period
 :See Also: Stewart_, Section 4.4
 
 Learning Objective
