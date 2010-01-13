@@ -5,19 +5,21 @@ Grades
 
 Your course score will be determined as the following weighted average: 
  
-+--------------+--------+
-| Item         | Weight |
-+==============+========+
-| Midterm      | 25%    |
-+--------------+--------+
-| Homework     | 20%    |
-+--------------+--------+
-| Quizzes      | 15%    |
-+--------------+--------+
-| Final        | 40%    |
-+--------------+--------+
-| **Total**    | 100%   |
-+--------------+--------+
++-------------------+--------+
+| Item              | Weight |
++===================+========+
+| Midterm           | 25%    |
++-------------------+--------+
+| WebAssign         | 10%    |
++-------------------+--------+
+| Written Homework  | 10%    |
++-------------------+--------+
+| Quizzes           | 15%    |
++-------------------+--------+
+| Final             | 40%    |
++-------------------+--------+
+| **Total**         | 100%   |
++-------------------+--------+
 
 We will convert this score to a letter grade beginning with these
 values as cutoffs:

@@ -32,10 +32,10 @@ problems to be assigned.
 Last things first
 =================
 
-**The final for Calculus I and II is Friday, December 18, from
-2:00–3:50pm.  The exam will be graded en masse on Saturday,
-December 19.  All instructors and teaching assistants should be on
-campus and available from December 14–19 to assist in the preparation,
+**The final for Calculus I and II is Monday, May 10, from
+12:00–1:50pm.  The exam will be graded en masse immediately following.
+All instructors and teaching assistants should be on campus and
+available from May 3–11 to assist in the preparation,
 proctoring, and grading of the exam.**
 
 .. I don't mean to shout but this is part of the price you pay for
@@ -83,13 +83,13 @@ Class Meetings and Teams
 
 The generic calculus course meets in one of two varieties.
 
-* One variety meets twice a week for 110 minutes each class period.
+* Calculus I meets twice a week for 75 minutes each class, along with
+  a weekly 50 minute recitation section.  The instructor presents the
+  main material while the TA organizes the recitations.
+
+* Calculus II and III meet twice a week for 110 minutes each class period.
   The instructor presents all class material, although it may (and
   probably should) have an interactive component to it.
-
-* The other variety meets twice a week for 75 minutes each class,
-  along with a weekly 50 minute recitation section.  The instructor
-  presents the main material while the TA organizes the recitations.
 
 When at all possible, sections which meet at the same time should work
 together as a team.  This is a good way for experienced faculty to
@@ -105,8 +105,8 @@ in lecture) to recitations.  Keep in mind that recitations can meet on
 any day of the week, so they can't always be doing the exact same
 thing.
 
-Homework 
---------
+WebAssign
+---------
 
 Homework takes two forms: WebAssign problems which are for practice
 with computation and technique, and written problems which are more
@@ -114,16 +114,80 @@ conceptual.  Usually WebAssign problems will be due the first day of
 the week (Monday or Tuesday) after the material is covered, and
 written problems the last day of the week (Wednesday or Thursday).
 
-Graders are told to expect students to express ideas clearly, legibly,
-and completely, often requiring complete English sentences rather than
-merely just a long string of equations.  This means points could be
-taken off for unexplained answers.  They may be reluctant to do this,
-so give them your support.  See the homework page for a more detailed
-rubric.  If students complain, point to the rubric.
+This term we will take care of uploading rosters to WebAssign so
+students will get an email about their accounts (no self-enrollment,
+no class keys, no students in the wrong section unless we put them
+there).  We set it so that their username is their NetID and (unless
+they already have an account) their password is the same as their
+NetID.  Strongly encourage the students with new passwords to change
+them!
+
+For issues with WebAssign enrollment, please contact Trang Nguyen
+<trang@nyu.edu>, our Web assistant.
+
+You don't need to write the assignments; that will be coordinated.
+There will be a WebAssign-ment for each section of the book covered,
+so multiple WebAssign-ments are due at the beginning of each week.
+This is so that you can adjust due dates for your section if
+necessary.
+
+Some of the WebAssign problems are multiple choice, some are
+numerical, and some are symbolic.  The symbolic ones are especially
+tricky because of the interface for entering mathematical expressions.
+Sometimes students enter the wrong thing but can't see why the parser
+doesn't understand; and sometimes the parser isn't smart enough to see
+that what the student has entered is correct.  These problems were
+entered into the question bank from the textbook's instructor
+solution manual, but neither the solution nor the entering are done by
+the textbook author.  So there can be some flaws in the way the
+questions are coded.
+
+You can override WebAssign's scoring of any problem.  For question
+errors, contact WebAssign support <support@webassign.net> and help
+them rewrite the problem (and me so we can change or drop the
+problem).
+ 
+Despite the millennials' aptitude for technology, not all students
+will take to WebAssign easily.  And, truth be told, the software is
+far from perfect.  Please remember that the department has adopted
+WebAssign, and you represent the department.  So students will mimic
+your attitudes. If you think it's a great way for them to get the
+practice they need, they will slog through it expecting it to be
+worthwhile.  If you tell them it's a piece of junk a first-year CS
+major would be ashamed to produce, they will write editorials in the
+student paper about it. [#]_
+
+.. _[#] Based on a true story
+
+
+Written Homework 
+-----------------
+
+Written homework is a place for students to practice the harder,
+conceptual problems.  Graders are told to expect students to express
+ideas clearly, legibly, and completely, often requiring complete
+English sentences rather than merely just a long string of equations.
+This means points could be taken off for unexplained answers.  They
+may be reluctant to do this, so give them your support.  See the
+homework page for a more detailed rubric.  If students complain, point
+to the rubric.
+
+Students may need some models for what constitutes a good homework
+writeup, so try to give examples in class.  The solutions in the back
+of the book are too terse, but those to the examples in the text are
+good.
+
+Students will sometimes be high-strung about low homework scores.
+This comes from us asking them to do something they haven't done
+before.  Remind them that the system is designed as a feedback loop:
+WebAssign is the first pass, then written homework, then quizzes, then
+exams.  The point of homework is not to get it right the first time,
+but to get it right the second time.
 
 In fairness to the rest of the students and to graders, late homework
-will generally not be accepted.  We do drop the lowest grade, which
-you can point out to students who for whatever reason need a pass.
+will generally not be accepted.  This is to protect instructors from
+being taken advantage of.  We do drop the lowest grade, which you can
+point out to students who for whatever reason need a pass.
 
 Since all sections will be having the same problem sets, we'll have a
 common Blackboard site for all sections (in addition to any Blackboard
@@ -150,8 +214,9 @@ Exams
 Midterm Exam
 ~~~~~~~~~~~~
  
-There will be one midterm exam, held in class on October 14 (for MW
-sections) and 15 (for TR sections).  Each section will write their own
+There will be one midterm exam.  For Calculus I and II it will be
+March 3 (for MW sections) or 4 (for TR sections).  For Calculus III it
+will be February 24 or 25.  Each section will write their own
 midterm, although as suggested before sections meeting at the same
 time can and should work together to save efforts.  The timing is
 important: this is the latest you can give a test that will give them
@@ -182,10 +247,13 @@ Final Exam
 
 **The final exam for all Calc I and II sections (including the evening
 ones, despite what it says on the registrar's schedule) will be
-Friday, December 18, from 2:00-3:50pm. Say this out loud in class on
+Monday, May 10, from 12:00-1:50pm. Say this out loud in class on
 the first day.** Some students will make plans (e.g., plane tickets)
 that conflict with the final, and we cannot reschedule the final for
-them.
+them. 
+
+Calculus III has section-specific finals scheduled by the registrar,
+depending on the class meeting time.  See their website for times.
 
 The final exam for Calc I and II is common.  Finals for Calc III are
 section specific.  Finals should be cumulative.
@@ -195,15 +263,17 @@ Quizzes
 -------
 
 You should have several quizzes to make sure students keep up and get
-some feedback.  The number and schedule is up to you.  You could give
-them every week or after every chapter.  The only thing is that the
-syllabus promises no pop quizzes.  So you should decide when the
-quizzes will be and publicize this information in advance.  I've found
-every other week to be a pretty good schedule.  
+some feedback.  The number and schedule is up to you—I think five is
+about right, others give a quiz as often as weekly.  The only thing is
+that the syllabus promises no pop quizzes.  So you should decide when
+the quizzes will be and publicize this information in advance.  I've
+found every other week to be a pretty good schedule.
 
 For the most part quizzes should only assess material that they've
-already had *returned* homework on.  So what's done in week *n* can't be
-quizzed until week *n+2*.
+already had *returned* homework on.  So what's covered in week *n* has
+homework due in week *n+1* and shouldn't be quizzed until week
+*n+2*. (At the very least, solutions to homework should be distributed
+first.)
 
 Quiz scores will be averaged together, again dropping the lowest.
 
@@ -249,19 +319,32 @@ for the student's particular needs.
 Makeup midterm exams
 ~~~~~~~~~~~~~~~~~~~~
 
-Use your discretion on allowing these.  If a student had some schedule conflict that they didn't tell you about (something that might fall under #2 above), I think they're not entitled to a makeup exam.  If it's a documentable medical excuse. make sure they do document it.  
+Use your discretion on allowing these.  If a student had some schedule
+conflict that they didn't tell you about (something that might fall
+under #2 above), I think they're not entitled to a makeup exam.  If
+it's a documentable medical excuse. make sure they do document it.
 
-Statistically speaking, a lot of students' grandparents will die during the term.  For many students, it's the first time they'll experience a death in the family.  So be sensitive to that.  Request some kind of documentation (like an obituary).
+Statistically speaking, a lot of students' grandparents will die
+during the term.  For many students, it's the first time they'll
+experience a death in the family.  So be sensitive to that.  Request
+some kind of documentation (like an obituary).
 
-When asking for documentation, you might feel like you're telling the student that you think they're dishonest.  It helps to say that this policy is to prevent *other* students from manipulating the system.  
+When asking for documentation, you might feel like you're telling the
+student that you think they're dishonest.  It helps to say that this
+policy is to prevent *other* students from manipulating the system.
 
 
 Makeup final exams
 ~~~~~~~~~~~~~~~~~~
 
-Makeups for final exams should be coordinated to save work.  Since all students have the same material, one makeup exam can probably be used for all of them.  
+Makeups for final exams should be coordinated to save work.  Since all
+students have the same material, one makeup exam can probably be used
+for all of them.
 
-Because final exams are so important, we should be even more formal in scheduling them.  I think it's best to give a grade of Incomplete to anyone who misses the final and then we'll schedule another one in February.  
+Because final exams are so important, we should be even more formal in
+rescheduling them.  I think it's best to give a grade of Incomplete to
+anyone who misses the final and then we'll schedule another one in
+the following term.
 
 
 Prerequisites
@@ -273,7 +356,7 @@ list, see the math deparment's `placement`__ web page.
 __ http://math.nyu.edu/degree/undergrad/calculus.html
 
 Students may ask you if there's another way to place into the class.
-Say no.  If they persist, ask them to see the Director of
+Stick to the policy.  If they persist, ask them to see the Director of
 Undergraduate Studies.  
 
 
@@ -362,11 +445,11 @@ Preparing for class
 You will need some time to prepare for your classes.  How much depends
 on your experience.  
 
-For Calc I and II I've put specific *learning objectives* for the
-sections of the book into a big packet.  These are the things you
-should make sure get covered.  (As a side note for when you plan a
-course on your own: these learning objectives become a study guide
-when exam time comes around).  How you get to them is up to you.
+I've put specific *learning objectives* for the sections of the book
+into a big document.  These are the things you should make sure get
+covered.  (As a side note for when you plan a course on your own:
+these learning objectives become a study guide when exam time comes
+around).  How you get to them is up to you.
 
 Think about the key ideas of the day, and think of key examples that
 will illuminate them.  Make sure your examples are not (all) too
@@ -449,9 +532,9 @@ There will be common blackboard sites for each Calculus course to hold
 common documents such as sample exams and homework solutions.
 Sections should have their own section-specific blackboards as well.
 
-Sections which are lecture/recitation should probably merge their
-Blackboard sites so that all students have a common site and a
-recitation subsection.  
+For sections with recitations, it's useful to have a separate
+Blackboard site for each recitation section, if for no other reason
+than to keep track of which students are registered for which section.
 
 Blackboard sites should have *at a minimum* contact information and
 office hours for the teaching staff.  There are lots of other

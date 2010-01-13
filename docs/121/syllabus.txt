@@ -69,12 +69,6 @@ the current term's listings will automatically come up.
 
 __ http://www.nyu.edu/registrar/listings/
 
-**Sections 60 and 61, taught by Arun Sundararajan, will have a 
-different syllabus and textbook. Please see Prof. Sundararajan for 
-details on his sections.**
-
-.. deleted: but will still take the common exam.
- 
 .. include:: ../common/syllabus_hw.txt
  
 .. include:: ../common/syllabus_exams.txt
@@ -107,9 +101,9 @@ __ http://math.nyu.edu/degree/undergrad/calculus.html
 Calendar 
 --------
 
-The day-by-day `calendar`_ is also available.
+The day-by-day `schedule`_ is also available.
 
-.. _calendar: cal.html
+.. _schedule: cal.html
  
 Conclusion 
 ----------

@@ -3,11 +3,11 @@
 Exams 
 ------
 
-There will be one midterm exam, held in class on October 14 (for MW
-sections) or 15 (for TR sections).
+There will be one midterm exam, held in class on March 3 (for MW
+sections) or 4 (for TR sections).
 
 **The final exam for all sections (including evening sections) will be
-Friday, December 18, from 2:00-3:50pm. Please make a note of it and plan
+Monday, May 10 from 12:00–1:50pm. Please make a note of it and plan
 your winter travel schedule accordingly.**
 
 Exams will contain a mixture of computational and conceptual problems.

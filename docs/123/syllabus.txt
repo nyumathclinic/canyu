@@ -59,13 +59,13 @@ __ http://www.nyu.edu/registrar/listings/
 Exams 
 ------
  
-There will be one midterm exam, held in class on October 14 (for MW
-sections) or 15 (for TR sections).
+There will be one midterm exam, held in class on March 3 (for MW
+sections) or 4 (for TR sections).
 
 The final exam is scheduled by the registar by class meeting time.
 See `their schedule`__ for the time specific to your section.
 
-__ http://www.nyu.edu/registrar/registration/final-exam-schedules-fall09.html#class
+__ http://www.nyu.edu/registrar/registration/final-exam-schedules-spring10.html#class
 
 **Please make a note of your final exam time and plan your travel
 schedule accordingly.**
@@ -90,7 +90,9 @@ following prerequisites:
     * Calculus II (V63.0122) with a C or higher.
     * Our department's Calculus III placement test.
 
-A score of 5 on the Advanced Placement Calculus BC test does not per se qualify for enrollment in Calculus III.  See the math deparment's `placement`__ web page for more information.
+A score of 5 on the Advanced Placement Calculus BC test does not per
+se qualify for enrollment in Calculus III.  See the math deparment's
+`placement`__ web page for more information.
 
 __ http://math.nyu.edu/degree/undergrad/calculus.html
  

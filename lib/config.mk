@@ -1,8 +1,8 @@
 BINDIR=$(TOPDIR)/bin
 BUILDDIR=$(TOPDIR)/build
 
-year=2009
-term=Fall
+year=2010
+term=Spring
 regnum=V63.0$(coursenum)
 author=Matthew Leingang and the Mathematics Department
 
