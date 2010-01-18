@@ -42,7 +42,7 @@ Lesson 1: Three-dimensional Coordinate Systems
 
 :MW Date: January 20
 :TR Date: Janaury 19
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 10.1
 
 Learning Objectives
@@ -72,7 +72,7 @@ Lesson 2: Vectors
 
 :MW Date: January 25
 :TR Date: January 21
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 10.2
 
 Learning Objectives
@@ -97,7 +97,7 @@ Lesson 3: The Dot Product
 
 :MW Date: January 25–27
 :TR Date: January 26
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 10.3
 
 Learning Objectives
@@ -130,7 +130,7 @@ Lesson 4: The Cross Product
 
 :MW Date: January 27
 :TR Date: January 28
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 10.4
 
 Learning Objectives
@@ -167,7 +167,7 @@ Lesson 5: Equations of Lines and Planes
 
 :MW Date: February 1
 :TR Date: February 2
-:Duration (class periods): 1
+:Duration: 1 class
 :See Also: Stewart_, Section 10.5
 
 
@@ -234,7 +234,7 @@ Lesson 6: Cylinders and Quadric Surfaces
 
 :MW Date: February 3
 :TR Date: February 4
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 10.6
 
 Learning Objectives
@@ -261,7 +261,7 @@ Lesson 7: Vector functions and space curves
 
 :MW Date: February 8
 :TR Date: February 9
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 10.7
 
 Learning Objectives
@@ -306,7 +306,7 @@ Lesson 8: Arc length
 
 :MW Date: February 10
 :TR Date: February 11
-:Duration (class periods): 1/2
+:Duration: 1/2
 :See Also: Stewart_, Section 10.8
 
 Learning Objectives
@@ -342,7 +342,7 @@ Lesson 9: Motion in Space: Velocity and Acceleration
 
 :MW Date: February 10
 :TR Date: February 11
-:Duration (class periods): 1/2
+:Duration: 1/2
 :See Also: Stewart_, Section 10.9
 
 Learning Objectives
@@ -369,7 +369,7 @@ Lesson 10: Functions of Several Variables
 
 :MW Date: February 17
 :TR Date: February 16
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 11.1
 
 Learning Objectives
@@ -403,7 +403,7 @@ Lesson 11: Limits and Continuity
 
 :MW Date: February 17
 :TR Date: February 18
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 11.2
 
 Learning Objectives
@@ -433,7 +433,7 @@ Lesson 12: Partial Derivatives
 
 :MW Date: February 22
 :TR Date: February 18
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 11.3
 
 Learning Objectives
@@ -462,7 +462,7 @@ Lesson 13: Tangent Planes and Linear Approximation
 
 :MW Date: February 22
 :TR Date: February 23
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 11.4
 
 Learning Objectives
@@ -499,7 +499,7 @@ Lesson 14: The Chain Rule
 
 :MW Date: February 24
 :TR Date: February 25
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 11.5
 
 * To understand and be able to apply the chain rule for functions of
@@ -523,7 +523,7 @@ Lesson 15: Directional Derivatives and the gradient vector
 
 :MW Date: March 1
 :TR Date: March 2
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 11.6
 
 
@@ -556,7 +556,7 @@ Lesson 16: Maximum and Minimum Values
 
 :MW Date: March 8
 :TR Date: March 9
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 11.7
 
 Learning Objectives
@@ -589,7 +589,7 @@ Lesson 17: Lagrange Multipliers
 
 :MW Date: March 10
 :TR Date: March 11
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 11.8
 
 Learning Objectives
@@ -627,7 +627,7 @@ Lesson 18: Double Integrals over Rectangles
 
 :MW Date: March 22
 :TR Date: March 23
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 12.1
 
 Learning Objectives
@@ -666,7 +666,7 @@ Lesson 19: Double Integrals over General Regions
 
 :MW Date: March 22–24
 :TR Date: March 23–25
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 12.2
 
 * To understand and be able to compute the double integral of a
@@ -742,7 +742,7 @@ Lesson 20: Double Integrals in Polar Coordinates
 
 :MW Date: March 24
 :TR Date: March 25
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 12.3
 
 Learning Objectives
@@ -767,7 +767,7 @@ Lesson 21: Triple Intgrals
 
 :MW Date: March 29
 :TR Date: March 30 
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 12.5
 
 Learning Objectives
@@ -843,7 +843,7 @@ Lesson 22: Triple Integrals in Cylindrical Coordinates
 
 :MW Date: March 31 
 :TR Date: April 1
-:Duration (class periods): 1/2
+:Duration: 1/2
 :See Also: Stewart_, Section 12.6
 
 Learning Objectives
@@ -876,7 +876,7 @@ Lesson 23: Triple Integrals in Spherical Coordinates
 
 :MW Date: March 31
 :TR Date: April 1
-:Duration (class periods): 1/2
+:Duration: 1/2
 :See Also: Stewart_, Section 12.7
 
 Learning Objectives
@@ -913,7 +913,7 @@ Lesson 24: Vector Fields
 
 :MW Date: April 5
 :TR Date: April 6
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 13.1
 
 
@@ -934,7 +934,7 @@ Lesson 25: Line Integrals
 
 :MW Date: April 5/7
 :TR Date: April 6/8
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 13.2
 
 Learning Objectives
@@ -980,7 +980,7 @@ Lesson 26: The Fundamental Theorem of Line Integrals
 
 :MW Date: April 7
 :TR Date: April 8
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 13.3
 
 Learning Objectives
@@ -1024,7 +1024,7 @@ Lesson 27: Green's Theorem
 
 :MW Date: April 12
 :TR Date: April 13
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 13.4
 
 Learning Objectives
@@ -1065,7 +1065,7 @@ Lesson 28: Curl and Divergence
 
 :MW Date: April 14
 :TR Date: April 15
-:Duration (class periods): 1
+:Duration: 1
 
 Learning Objectives
 -------------------
@@ -1136,7 +1136,7 @@ Lesson 29: Parametric Surfaces and their Areas
 
 :MW Date: April 19
 :TR Date: April 20
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 13.6
 
 Learning Objectives
@@ -1207,7 +1207,7 @@ Lesson 30: Surface Integrals
 
 :MW Date: April 21
 :TR Date: April 22
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 13.7
 
 Learning Objectives
@@ -1268,7 +1268,7 @@ Lesson 31: Stokes's Theorem
 
 :MW Date: April 26
 :TR Date: April 27
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 13.8
 
 Learning Objectives
@@ -1297,7 +1297,7 @@ Lesson 32: (Gauss's) Divergence Theorem
 
 :MW Date: April 28
 :TR Date: April 29
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 13.9
 
 Learning Objectives
@@ -1333,9 +1333,8 @@ Finale
 ======
 
 :MW Date: May 3
-:TR Date: not on the schedule.  Feel free to schedule one of your own
-if you can find a good time.
-:Duration (class periods): 1
+:TR Date: not on the schedule.  Feel free to schedule one of your own if you can find a good time.
+:Duration: 1 class period
 
 Here you can do whatever you want.  Some suggestions.
 
@@ -1376,4 +1375,3 @@ Textbook
 .. |times| unicode:: U+2A09
 
 .. |date| date:: %B %e, %Y
-
