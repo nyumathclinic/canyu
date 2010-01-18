@@ -1,7 +1,7 @@
 .. -*- mode: rst; coding: utf-8 -*-
 .. meta:: 
    :description: Instructor information for Calculus at Courant
-   :keywords: Math 121, NYU, Math, Calculus
+   :keywords: |course|, NYU, Math, Calculus
    :DC.Identifier scheme=subversion: $Id$
    :DC.Creator: Matthew Leingang
    :DC.Creator scheme=mbox_sha1sum: 3825a5544f5a18755e03ce881a50cc248f1193ca
@@ -84,7 +84,7 @@ Class Meetings and Teams
 The generic calculus course meets in one of two varieties.
 
 * Calculus I meets twice a week for 75 minutes each class, along with
-  a weekly 50 minute recitation section.  The instructor presents the
+  a weekly 75 minute recitation section.  The instructor presents the
   main material while the TA organizes the recitations.
 
 * Calculus II and III meet twice a week for 110 minutes each class period.
@@ -157,7 +157,7 @@ worthwhile.  If you tell them it's a piece of junk a first-year CS
 major would be ashamed to produce, they will write editorials in the
 student paper about it. [#]_
 
-.. _[#] Based on a true story
+.. [#] : Based on a true story
 
 
 Written Homework 
