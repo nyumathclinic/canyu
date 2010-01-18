@@ -167,10 +167,14 @@ Written homework is a place for students to practice the harder,
 conceptual problems.  Graders are told to expect students to express
 ideas clearly, legibly, and completely, often requiring complete
 English sentences rather than merely just a long string of equations.
-This means points could be taken off for unexplained answers.  They
+This means points could be taken off for unexplained answers.  Graders
 may be reluctant to do this, so give them your support.  See the
 homework page for a more detailed rubric.  If students complain, point
-to the rubric.
+to the rubric.  This is also important because pirated copies of the
+complete solution manual to the textbook are available on the
+internet.  The grader needs to be convinced that the student
+understands the solution to the problem and can explain it in his own
+words.
 
 Students may need some models for what constitutes a good homework
 writeup, so try to give examples in class.  The solutions in the back
