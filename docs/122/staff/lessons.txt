@@ -38,7 +38,7 @@ Lesson 1: Review of the Definite Integral and the Fundamental Theorem of Calculu
 
 :MW Date: January 19
 :TR Date: January 18–20
-:Duration (class periods): 1–2
+:Duration: 1–2
 :See Also: Stewart_, Section 5.1, 5.2, 5.3, 5.5
 
 Learning Objectives
@@ -95,7 +95,7 @@ Lesson 2: Integration by Parts
 
 :MW Date: January 25
 :TR Date: January 26
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 6.1
 
 Learning Objectives
@@ -228,7 +228,7 @@ Lesson 3: Trigonometric Integrals and Substitution
 
 :MW Date: January 27
 :TR Date: January 28
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 6.2
 
 Learning Objectives
@@ -276,7 +276,7 @@ Lesson 4: Integration by Partial Fraction Decomposition
 
 :MW Date: February 1
 :TR Date: February 2
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 6.3
 
 Prerequisites
@@ -355,7 +355,7 @@ Lesson 5: Integration with Tables; Strategies for Integration
 
 :MW Date: February 3 
 :TR Date: February 4
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 6.4
 
 Learning Objectives
@@ -392,7 +392,7 @@ Lesson 6: Approximate Integration
 
 :MW Date: February 8
 :TR Date: February 9
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 6.5
 
 Learning Objectives
@@ -446,7 +446,7 @@ Lesson 7: Improper Integrals
 
 :MW Date: February 10
 :TR Date: February 11
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 6.6
 
 Learning Objectives
@@ -488,7 +488,7 @@ Lesson 8: Areas between Curves
 
 :MW Date: February 17
 :TR Date: February 16
-:Duration (class periods): 2/3
+:Duration: 2/3
 :See Also: Stewart_, Section 7.1
 
 Learning Objectives
@@ -518,7 +518,7 @@ Lesson 9: Volumes
 
 :MW Date: February 17
 :TR Date: February 18
-:Duration (class periods): varies
+:Duration: varies
 :See Also: Stewart_, Section 7.2
 
 Learning Objectives
@@ -559,7 +559,7 @@ Lesson 10: Volumes by Cylindrical Shells
 
 :MW Date: February 22
 :TR Date: February 23
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 7.3
 
 Learning Objective
@@ -593,7 +593,7 @@ Lesson 10: Arc length
 
 :MW Date: February 23
 :TR Date: February 24
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 7.4
 
 Learning Objectives
@@ -624,7 +624,7 @@ Lesson 11: Applications of Integration
 
 :MW Date: March 1
 :TR Date: March 2
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 7.5
 
 Learning Objectives
@@ -668,7 +668,7 @@ Midterm
 
 :MW Date: March 3
 :TR Date: March 4
-:Duration (class periods): 1
+:Duration: 1
 
 Notes
 -----
@@ -686,7 +686,7 @@ Lesson 12: Differential Equations
 
 :MW Date: March 8–10
 :TR Date: March 9–11
-:Duration (class periods): 2
+:Duration: 2
 :See Also: Stewart_, Section 7.6
 
 Learning Objectives
@@ -737,7 +737,7 @@ Lesson 13: Sequences
 
 :MW Date: March 22
 :TR Date: March 23
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.1
 
 Learning Objectives
@@ -782,7 +782,7 @@ Lesson 14: Series
 
 :MW Date: March 23
 :TR Date: March 24
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.2
 
 Learning Objectives
@@ -830,7 +830,7 @@ Lesson 15: The Integral and Comparison Tests
 
 :MW Date: March 29
 :TR Date: March 30
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.3
 
 Learning Objectives
@@ -902,7 +902,7 @@ Lesson 16: Other convergence tests
 
 :MW Date: March 31
 :TR Date: April 1
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.4
 
 Learning Objectives
@@ -950,7 +950,7 @@ Lesson 17: Power Series
 
 :MW Date: April 5
 :TR Date: April 6
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.5
 
 Learning Objectives
@@ -988,7 +988,7 @@ Lesson 18: Representing Functions as Power Series
 
 :MW Date: April 7
 :TR Date: April 8
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.5
 
 Learning Objectives
@@ -1033,8 +1033,8 @@ Lesson 19: Taylor and Maclaurin Series
 
 :MW Date: April 12
 :TR Date: April 13
-:Duration (class periods): 1
-:Duration (class periods): one class period
+:Duration: 1
+:Duration: one class period
 :See Also: Stewart_, Section 8.7
 
 Learning Objectives
@@ -1072,7 +1072,7 @@ Lesson 20: Applications of Taylor Polynomials
 
 :MW Date: April 12
 :TR Date: April 13
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 8.7
 
 Learning Objectives
@@ -1110,7 +1110,7 @@ Lesson 21: Parametric Curves
 
 :MW Date: April 19
 :TR Date: April 20
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 9.1
 
 Learning Objectives
@@ -1148,7 +1148,7 @@ Lesson 22: Calculus with Parametric Curves
 
 :MW Date: April 21
 :TR Date: April 22
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 9.3
 
 Learning Objectives
@@ -1181,7 +1181,7 @@ Lesson 23: Polar Coordinates
 
 :MW Date: April 26
 :TR Date: April 27
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 9.3
 
 Learning Objectives
@@ -1219,7 +1219,7 @@ Lesson 24: Areas and Lengths in Polar Coordinates
 
 :MW Date: April 27
 :TR Date: April 28
-:Duration (class periods): 1
+:Duration: 1
 :See Also: Stewart_, Section 9.4
 
 Learning Objectives
