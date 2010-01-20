@@ -54,7 +54,7 @@ Homework Assignments for |coursename|, |term| |year|
 +--------+------------+--------------------------------------------------------+------------------------------------------+
 | 9      | 4/7        | 12.5.26, 12.5.34, 12.6.24(a), 12.7.38                  | TBD                                      |
 +--------+------------+--------------------------------------------------------+------------------------------------------+
-| 10     | 4/14 [#]_  | 13.1.14, 13.1.32, 13.2.16, 13.3.24                     | TBD                                      |
+| 10     | 4/14       | 13.1.14, 13.1.32, 13.2.16, 13.3.24                     | TBD                                      |
 +--------+------------+--------------------------------------------------------+------------------------------------------+
 | 11     | 4/21       | 13.4.20 (no graph), 13.4.22, 13.5.18, 13.5.24          | TBD                                      |
 +--------+------------+--------------------------------------------------------+------------------------------------------+
@@ -67,9 +67,6 @@ Homework Assignments for |coursename|, |term| |year|
 
 .. [#] The midterm will be March 3 or 4.  No homework will be collected
        that week.
-
-.. [#] The written assignment from Section 4.4 will be given in the WebAssign problems.  The WebAssign problems will include some which indicate you
-       should turn them in on paper.  Two of those problems (the same two for each student) will be selected at random and graded.
 
 .. [#] The final problem set will not be collected or graded.  Solutions will be published
        on the websites, however.
