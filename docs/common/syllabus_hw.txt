@@ -42,8 +42,9 @@ homework_ page for a more detailed rubric.
 
 In fairness to fellow students and to graders, late homework will
 generally not be accepted.  Because sometimes things more important
-than math homework come up, you have some free passes: Your lowest
-problem set score will be dropped in the final grade calculation.
+than math homework come up, you have some free passes: Your lowest written 
+assignment score and your three lowest WebAssign scores (one week's worth
+in both cases) will be dropped in the final grade calculation.
 
 By all means you may work in groups on the homework assignments.
 Collaboration is a big part of learning and of scholarship in general.
