@@ -16,7 +16,7 @@ coursenum=121
 # build/install configuration
 BUILDDIR_HTML=$(BUILDDIR)/public_html/$(year)/$(term)/$(coursenum)
 INSTALLDIR_HTML=/usr/httpd/htdocs_math/courses/Calculus/$(year)/$(term)/$(coursenum)
-MISC_INSTALL_FILES=missing_exercises.pdf $(shell ls Prob*.pdf)
+MISC_INSTALL_FILES=missing_exercises.pdf $(shell ls Prob*.{png,pdf})
 
 # Use txt files as source
 TXTSRC=hw.txt syllabus.txt cal.txt
