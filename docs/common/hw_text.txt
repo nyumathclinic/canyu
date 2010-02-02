@@ -6,8 +6,11 @@ Early Transcendentals` are supported in this course, there are two
 numberings for the problems.  If a problem assigned from `Essentials`
 appears in the full version, the right-hand column lists the full
 version number.  If a problem is not in the full version, the number
-is bracketed, and we will provide a PDF of those problem (it's in the
-works).  Generally, if you're using a paper text, you probably want
-the first column, while if you're using an electronic text, you
-probably want the second.
+is bracketed, and the problem is listed on a `separate page`__.
+Generally, if you're using a paper text, you probably want the first
+column, while if you're using an electronic text, you probably want
+the second.
+
+__ missing_
+
 
